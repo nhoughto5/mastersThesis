@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: mainthesisUVIC.aux
+A level-1 auxiliary file: chapters/1/chapter_intro.aux
+A level-1 auxiliary file: chapters/2/chapter_hardwareSecurity.aux
+A level-1 auxiliary file: chapters/3/chapter_new.aux
+A level-1 auxiliary file: chapters/4/chapter_experiments.aux
+A level-1 auxiliary file: chapters/5/chapter_evaluation.aux
+A level-1 auxiliary file: chapters/6/chapter_conclusion.aux
+A level-1 auxiliary file: chapters/appendix/chapter_app.aux
+The style file: plain.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "SamerCategorization"
+Name 1 in "Samer Moein, Salman Khan, T. Aaron Gulliver, Fayez Gebali, and M. Watheq El-Kharashi" has a comma at the end for entry SamerClassification
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Samer Moein, Salman Khan, T. Aaron Gulliver, Fayez Gebali, and M. Watheq El-Kharashi" for entry SamerClassification
+while executing---line 1049 of file plain.bst
+Name 1 in "Samer Moein, Jayaram Subramnian, T. Aaron Gulliver, Fayez Gebali, and M. Watheq El-Kharashi." has a comma at the end for entry SamerDetection
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "Samer Moein, Jayaram Subramnian, T. Aaron Gulliver, Fayez Gebali, and M. Watheq El-Kharashi." for entry SamerDetection
+while executing---line 1049 of file plain.bst
+Name 1 in "M. Potkonjak, A. Nahapetian, M. Nelson, and T. Massey" has a comma at the end for entry detectionMethod1
+while executing---line 1049 of file plain.bst
+Name 1 in "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" has a comma at the end for entry detectionMethod2
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" for entry detectionMethod2
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" for entry detectionMethod2
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" for entry detectionMethod2
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" for entry detectionMethod2
+while executing---line 1049 of file plain.bst
+Name 1 in "M. Potkonjak, A. Nahapetian, M. Nelson, and T. Massey" has a comma at the end for entry detectionMethod1
+while executing---line 1090 of file plain.bst
+Name 1 in "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" has a comma at the end for entry detectionMethod2
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" for entry detectionMethod2
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" for entry detectionMethod2
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" for entry detectionMethod2
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "S. Narasimhan, D. Du, R. Chakaraborty, S. Paul, F. Wolff, C.Papachristou, K. Roy, and S. Bhunia" for entry detectionMethod2
+while executing---line 1090 of file plain.bst
+Name 1 in "Samer Moein, Jayaram Subramnian, T. Aaron Gulliver, Fayez Gebali, and M. Watheq El-Kharashi." has a comma at the end for entry SamerDetection
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Samer Moein, Jayaram Subramnian, T. Aaron Gulliver, Fayez Gebali, and M. Watheq El-Kharashi." for entry SamerDetection
+while executing---line 1090 of file plain.bst
+Name 1 in "Samer Moein, Salman Khan, T. Aaron Gulliver, Fayez Gebali, and M. Watheq El-Kharashi" has a comma at the end for entry SamerClassification
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "Samer Moein, Salman Khan, T. Aaron Gulliver, Fayez Gebali, and M. Watheq El-Kharashi" for entry SamerClassification
+while executing---line 1090 of file plain.bst
+(There were 20 error messages)

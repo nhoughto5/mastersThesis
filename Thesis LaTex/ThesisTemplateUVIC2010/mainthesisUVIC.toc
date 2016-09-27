@@ -1,0 +1,39 @@
+\contentsline {chapter}{Supervisory Committee}{ii}
+\contentsline {chapter}{Abstract}{iii}
+\contentsline {chapter}{Table of Contents}{iv}
+\contentsline {chapter}{List of Tables}{vi}
+\contentsline {chapter}{List of Figures}{vii}
+\contentsline {chapter}{Acknowledgements}{viii}
+\contentsline {chapter}{Dedication}{ix}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Overview}{1}
+\contentsline {section}{\numberline {1.2}Motivation}{1}
+\contentsline {section}{\numberline {1.3}Contributions}{1}
+\contentsline {section}{\numberline {1.4}Thesis Organization}{1}
+\contentsline {chapter}{\numberline {2}Hardware Security}{2}
+\contentsline {section}{\numberline {2.1}Overview}{2}
+\contentsline {section}{\numberline {2.2}Viruses}{2}
+\contentsline {section}{\numberline {2.3}Detection Methods}{2}
+\contentsline {chapter}{\numberline {3}More Research}{3}
+\contentsline {chapter}{\numberline {4}Quantitative Analysis}{4}
+\contentsline {section}{\numberline {4.1}Introduction}{4}
+\contentsline {section}{\numberline {4.2}Classification}{4}
+\contentsline {section}{\numberline {4.3}Detection}{8}
+\contentsline {section}{\numberline {4.4}Attacks}{10}
+\contentsline {chapter}{\numberline {5}Discussion, Platform and Results}{11}
+\contentsline {section}{\numberline {5.1}Introduction}{11}
+\contentsline {section}{\numberline {5.2}Web Environment}{11}
+\contentsline {subsection}{\numberline {5.2.1}Technologies Used}{12}
+\contentsline {subsubsection}{ASP.NET Web Form Framework}{12}
+\contentsline {subsubsection}{Entity Framework}{12}
+\contentsline {subsubsection}{Data Driven Documents (D3)}{12}
+\contentsline {subsubsection}{Microsoft Azure}{14}
+\contentsline {subsection}{\numberline {5.2.2}Website Architecture}{14}
+\contentsline {subsection}{\numberline {5.2.3}Distributed System Architecture}{15}
+\contentsline {section}{\numberline {5.3}Applications}{17}
+\contentsline {subsection}{\numberline {5.3.1}Classification}{17}
+\contentsline {subsection}{\numberline {5.3.2}Detection}{20}
+\contentsline {subsection}{\numberline {5.3.3}Attacks}{22}
+\contentsline {chapter}{\numberline {6}Contributions}{23}
+\contentsline {chapter}{\numberline {A}Additional Information}{24}
+\contentsline {chapter}{Bibliography}{25}
