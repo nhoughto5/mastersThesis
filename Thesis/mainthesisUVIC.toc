@@ -11,7 +11,9 @@
 \contentsline {section}{\numberline {1.3}My Claims}{5}
 \contentsline {subsection}{\numberline {1.3.1}The Importance of My Claims}{5}
 \contentsline {section}{\numberline {1.4}Agenda}{6}
-\contentsline {chapter}{\numberline {2}The Problem to be Solved}{8}
+\contentsline {chapter}{\numberline {2}Hardware Trojans}{8}
+\contentsline {section}{\numberline {2.1}Background}{8}
+\contentsline {section}{\numberline {2.2}Topology}{8}
 \contentsline {chapter}{\numberline {3}The New Approach and Solution}{11}
 \contentsline {section}{\numberline {3.1}Some \LaTeX Examples}{12}
 \contentsline {subsection}{\numberline {3.1.1}Preamble}{12}
