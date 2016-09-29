@@ -1,5 +1,10 @@
 \begin{thebibliography}{1}
 
+\bibitem{trojanSurvey2014}
+N.~Jacob, D.~Merli, J.~Heyszl, and G.~Sigl.
+\newblock Hardware trojans: current challenges and approaches.
+\newblock {\em IET Computers Digital Techniques}, 8(6):264--273, 2014.
+
 \bibitem{taxonomy3}
 R.~Karri, J.~Rajendran, K.~Rosenfeld, and M.~Tehranipoor.
 \newblock Trustworthy hardware: Identifying and classifying hardware trojans.
