@@ -1,4 +1,11 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{counterfeitIEEESpectrum}
+Celia Gorman.
+\newblock Counterfeit chips on the rise.
+\newblock IEEE Spectrum: Technology, Engineering, and Science News, 5 2012.
+\newblock url:
+  http://spectrum.ieee.org/computing/hardware/counterfeit-chips-on-the-rise.
 
 \bibitem{trojanSurvey2014}
 N.~Jacob, D.~Merli, J.~Heyszl, and G.~Sigl.
@@ -9,6 +16,12 @@ N.~Jacob, D.~Merli, J.~Heyszl, and G.~Sigl.
 R.~Karri, J.~Rajendran, K.~Rosenfeld, and M.~Tehranipoor.
 \newblock Trustworthy hardware: Identifying and classifying hardware trojans.
 \newblock {\em Computer}, 43(10):39--46, Oct 2010.
+
+\bibitem{hardwareTrojanSurvey2015}
+H.~Li, Q.~Liu, J.~Zhang, and Y.~Lyu.
+\newblock A survey of hardware trojan detection, diagnosis and prevention.
+\newblock In {\em 2015 14th International Conference on Computer-Aided Design
+  and Computer Graphics (CAD/Graphics)}, pages 173--180, Aug 2015.
 
 \bibitem{samerAttribute}
 S.~Moein, S.~Khan, T.~A. Gulliver, F.~Gebali, and M.~W. El-Kharashi.
@@ -23,6 +36,13 @@ R.~M. Rad, X.~Wang, M.~Tehranipoor, and J.~Plusquellic.
 \newblock In {\em 2008 IEEE/ACM International Conference on Computer-Aided
   Design}, pages 632--639, Nov 2008.
 
+\bibitem{stoppingHTsIEEESpectrum}
+H.-S. Philip~Wong Subhasish~Mitra and Simon Wong.
+\newblock Stopping hardware trojans in their tracks.
+\newblock IEEE Spectrum: Technology, Engineering, and Science News, 1 2015.
+\newblock url:
+  http://spectrum.ieee.org/semiconductors/design/stopping-hardware-trojans-in-their-tracks.
+
 \bibitem{taxonomy4}
 Xiaoxiao Wang, M.~Tehranipoor, and J.~Plusquellic.
 \newblock Detecting malicious inclusions in secure hardware: Challenges and
@@ -36,5 +56,10 @@ F.~Wolff, C.~Papachristou, S.~Bhunia, and R.~S. Chakraborty.
   scheme.
 \newblock In {\em 2008 Design, Automation and Test in Europe}, pages
   1362--1365, March 2008.
+
+\bibitem{searchForTrojanWar}
+Michael Wood.
+\newblock {\em "In search of the Trojan war}.
+\newblock The British Broadcasting Corporation, 1 edition, 1998.
 
 \end{thebibliography}
