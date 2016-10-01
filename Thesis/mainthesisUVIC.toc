@@ -17,12 +17,12 @@
 \contentsline {section}{\numberline {3.1}Methodology}{8}
 \contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{10}
 \contentsline {section}{\numberline {3.3}The \acrshort {FPGA} Bitstream}{11}
-\contentsline {section}{\numberline {3.4}Bitstream Extraction}{13}
-\contentsline {section}{\numberline {3.5}Frame Comparison}{13}
-\contentsline {section}{\numberline {3.6}Tile Mapping}{13}
-\contentsline {section}{\numberline {3.7}Trojan Attributes}{13}
-\contentsline {chapter}{\numberline {4}Experiments}{14}
-\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{16}
-\contentsline {chapter}{\numberline {6}Conclusions}{18}
-\contentsline {chapter}{\numberline {A}Additional Information}{19}
-\contentsline {chapter}{Bibliography}{20}
+\contentsline {section}{\numberline {3.4}\gls {Bitstream} Extraction}{13}
+\contentsline {section}{\numberline {3.5}Frame Comparison}{14}
+\contentsline {section}{\numberline {3.6}Tile Mapping}{14}
+\contentsline {section}{\numberline {3.7}Trojan Attributes}{14}
+\contentsline {chapter}{\numberline {4}Experiments}{15}
+\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{17}
+\contentsline {chapter}{\numberline {6}Conclusions}{19}
+\contentsline {chapter}{\numberline {A}Additional Information}{20}
+\contentsline {chapter}{Bibliography}{21}

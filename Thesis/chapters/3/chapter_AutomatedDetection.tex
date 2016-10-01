@@ -132,7 +132,17 @@ This is described in section~\ref{sec:tileMapping}.
 %	\item \acrfull{GCLK} columns global clock resources including clock buffers and the \acrfull{DCM}.
 %\end{itemize}
  
-\section{Bitstream Extraction} \label{sec:bitstreamExtraction}
+\section{\gls{Bitstream} Extraction} \label{sec:bitstreamExtraction}
+In order to detect any trojans in the \gls{target} device the configuration \gls{Bitstream} will need to be recovered.
+As mentioned in section~\ref{sec:architectureAndConfig} the \gls{Bitstream} is stored in a memory unit external to the gate-array.
+All \Xilinx devices provide a feature known as \gls{Readback}.
+There are two styles of \gls{Readback}; \gls{Readback} verify and \gls{Readback} Capture.
+The \gls{Readback} capture method provides a large quantity of debug information which is not needed; \gls{Readback} verify will be used.
+\gls{Readback} verify is the process where the device is put into a 'frozen' state during run-time and all of the configuration bits are returned from the gate-array to the \acrshort{SRAM}. 
+The results can then be uploaded to a \acrfull{PC} for analysis.
+This process overwrites the original frame data in the \acrshort{SRAM} with the values which actually configured the device. 
+By using this method rather than simply reading the \acrshort{SRAM} it ensures that what is tested in section~\ref{sec:frameComparison} is actually what configured the device.
+This minimizes risk of tampered external memory units or configuration mechanics. 
 \section{Frame Comparison} \label{sec:frameComparison}
 \section{Tile Mapping} \label{sec:tileMapping}
 \section{Trojan Attributes} \label{sec:trojanAttributes}
