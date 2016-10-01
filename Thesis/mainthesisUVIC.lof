@@ -3,6 +3,10 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The thirty-three attributes of the hardware trojan taxonomy in\nobreakspace {}\cite {samerAttribute}.}}{4}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces The hardware trojan levels \cite {samerAttribute}.}}{5}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces FPGA Life-Cycle}}{8}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Methodology Overview}}{9}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Rudimentary Layout of a Virtex Gate-Array}}{10}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces FPGA Device Layout}}{11}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
