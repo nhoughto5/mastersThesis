@@ -62,4 +62,9 @@ Michael Wood.
 \newblock {\em "In search of the Trojan war}.
 \newblock The British Broadcasting Corporation, 1 edition, 1998.
 
+\bibitem{virtex5ConfigGuide}
+Xilinx.
+\newblock {\em Virtex-5 FPGA Configuration User Guide}, v3.11 edition, Oct
+  2012.
+
 \end{thebibliography}

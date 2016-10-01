@@ -33,12 +33,14 @@ The \gls{golden} and \gls{target} \gls{Bitstream}s are analyzed in conjunction t
 Any discovered differences are then attributed to the corresponding component in the architecture, described in section~\ref{sec:tileMapping}.
 Finally, descriptive attributes presented in section~\ref{sec:topology} are returned to the user, described in section~\ref{sec:trojanAttributes}. 
 
-\section{FPGA Architecture and Configuration}
-A \Xilinx \acrfull{FPGA} is comprised of a matrix of tiles referred to as the 'gate-array' and is shown in Figure~\ref{fig:FPGA}.
-A device can contain anywhere from a couple hundred to a few thousand tiles; they are arranged into columns by type.
-An FPGA may have over one-hundred different types of tiles however each column is comprised almost entirely of a single type.
+\section{FPGA Architecture and Configuration} \label{sec:architectureAndConfig}
+A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Figure~\ref{fig:FPGA}.
+A device can contain anywhere from a couple hundred to a few thousand blocks; they are arranged into columns by type.
+A block will consist of one or multiple tiles depending on the type.
+A tile is a component specific to a particular function such as \acrfull{IO}, design logic, memory...etc but their detailed functionality can be configured by the user.
+An \acrshort{FPGA} may have over one-hundred different types of tiles however each column is comprised entirely by a single block type.
 Columns are separated by clock regions as shown by the dashed lines in Figure~\ref{fig:FPGA}.
-Each region is an independent array of tiles that uses a dedicated clock resource; this minimizes clock skew from causing undesired timing delays.
+Each region is an independent array of blocks that uses a dedicated clock resource; this minimizes clock skew from causing undesired timing delays.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/FPGA}
@@ -62,8 +64,74 @@ When an \acrshort{FPGA} is powered on the \gls{Bitstream} is loaded from the ext
 \section{The \acrshort{FPGA} Bitstream} \label{sec:fpgaBitStream}
 The \Xilinx bitstream is organized into 'frames'.
 A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Figure~\ref{fig:FPGA}.
-In other words, each frame affects every tile in a column.
-Multiple adjacent frames are required to configure an entire column. 
+Frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
+They are uniquely identified by a 32-bit address and are the smallest addressable element.
+The composition of the frame address is fairly consistent across the \Xilinx catalog however there are small differences between device families.
+The following is the structure of the Virtex-5 family frame address scheme according to~\cite{virtex5ConfigGuide}.
+The make-up of a frame address is shown in Table~\ref{tbl:frameAddress}.
+\begin{table}[h]
+	\centering
+	\caption{Frame Address}
+	\label{tbl:frameAddress}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\multicolumn{8}{|c|}{Unused} & \multicolumn{3}{c|}{BA} & T & \multicolumn{5}{c|}{Row Address} & \multicolumn{8}{c|}{Major Address} & \multicolumn{7}{c|}{Minor Address} \\ \hline
+			31 & 30 & 29 & 28 & 27 & 26 & 25 & 24 & 23 & 22 & 21 & 20 & 19 & 18 & 17 & 16 & 15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\ \hline
+			0 & 0 & 0 & 0 & 0 & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\end{tabular}		
+	}
+\end{table}
+The \acrfull{BA} identifies the block type.
+\begin{itemize}
+	\item BA 0: Logic type.
+	\item BA 1: \acrfull{BRAM}.
+	\item BA 2: \acrshort{BRAM} Interconnect.
+	\item BA 3: \acrshort{BRAM} non-configuration frame.
+\end{itemize}
+The logic block contains the columns which provides the primary configuration for the device (\acrshort{CLBs}, \acrshort{IOBs}... etc).
+The \acrshort{BRAM} columns initialize the memory for the device while the \acrshort{BRAM} Interconnect columns configure how the logic of the design interacts with the \acrshort{BRAM}.
+
+In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Figure~\ref{fig:RowOrder}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=.7\linewidth]{Figures/RowOrder}
+\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
+\label{fig:RowOrder}
+\end{figure}
+Each row of blocks is given a row value in it's address that increments away from the clock bus starting at 0. 
+The frame address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the horizontal clock bus.
+The major address specifies the block within the row.
+These addresses are numbered from left to right and begin at 0.
+The minor address indicates the frame number within a column. 
+Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column type.
+\begin{table}[]
+	\centering
+	\caption{Number of Frames (minor addresses) per Column}
+	\label{tbl:minorAddressNumbers}
+	\begin{tabular}{|c|c|}
+		\hline
+		Block             & Number Of Frames \\ \hline
+		CLB               & 36               \\ \hline
+		DSP               & 28               \\ \hline
+		\acrshort{BRAM} & 30               \\ \hline
+		IOB               & 54               \\ \hline
+		Clock             & 4                \\ \hline
+	\end{tabular}
+\end{table}
+The number of frames given in Table~\ref{tbl:minorAddressNumbers} corresponds to the block in the column.
+As described in section~\ref{sec:architectureAndConfig} a block may contain multiple tiles.
+In a CLB column a block consists of an interconnect column and a \acrshort{CLB}.
+To further understand how frames configure tiles a mapping must be made between each frame and the corresponding tile.
+This is described in section~\ref{sec:tileMapping}.
+%The logic block type has sub block-type columns:
+%\begin{itemize}
+%	\item \acrfull{CLB} columns which configure the logic blocks, routing and the majority of the interconnect.
+%	\item \acrfull{IOB} columns which configure the I/O voltage standard.
+%	\item \acrfull{IOI} columns which configure the \acrshort{IOB} registers, multiplexers and buffers.
+%	\item \acrfull{GCLK} columns global clock resources including clock buffers and the \acrfull{DCM}.
+%\end{itemize}
+ 
 \section{Bitstream Extraction} \label{sec:bitstreamExtraction}
 \section{Frame Comparison} \label{sec:frameComparison}
 \section{Tile Mapping} \label{sec:tileMapping}

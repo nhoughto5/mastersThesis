@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  1 OCT 2016 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  1 OCT 2016 15:05
 entering extended mode
 **mainthesisUVIC.tex
 (mainthesisUVIC.tex
@@ -427,27 +427,27 @@ Writing nomenclature file mainthesisUVIC.nlo
 \glswrite=\write4
 \glo@main@file=\write5
 Package glossaries Info: Writing glossary file mainthesisUVIC.glo on input line
- 103.
+ 109.
 \glo@acronym@file=\write6
 Package glossaries Info: Writing glossary file mainthesisUVIC.acn on input line
- 103.
+ 109.
 (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
 (chapters/2/chapter_HardwareTrojans.aux)
 (chapters/3/chapter_AutomatedDetection.aux)
 (chapters/4/chapter_Implementation.aux) (chapters/5/chapter_Website.aux)
 (chapters/6/chapter_conclusion.aux) (chapters/appendix/chapter_app.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
+LaTeX Font Info:    ... okay on input line 112.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -595,43 +595,54 @@ Package pdftex.def Info: Figures/methodologyOverview.png used on input line 23.
 
 
 
- <./figures/Concept.png>] [9 <./Figures/methodologyOverview.png>] <figures/FPGA
-.png, id=74, 469.755pt x 234.8775pt>
+ <./figures/Concept.png>] [9 <./Figures/methodologyOverview.png>]
+<figures/FPGA.png, id=74, 1957.3125pt x 978.65625pt>
 File: figures/FPGA.png Graphic file (type png)
+ <use figures/FPGA.png>
+Package pdftex.def Info: figures/FPGA.png used on input line 46.
+(pdftex.def)             Requested size: 433.62001pt x 216.79834pt.
 
-<use figures/FPGA.png>
-Package pdftex.def Info: figures/FPGA.png used on input line 44.
-(pdftex.def)             Requested size: 433.62001pt x 216.81029pt.
- [10 <./figures/FPGA.png>]
-<Figures/architecture.png, id=79, 1759.57375pt x 941.5175pt>
+[10 <./figures/FPGA.png>]
+<Figures/architecture.png, id=80, 1759.57375pt x 941.5175pt>
 File: Figures/architecture.png Graphic file (type png)
 
 <use Figures/architecture.png>
-Package pdftex.def Info: Figures/architecture.png used on input line 57.
+Package pdftex.def Info: Figures/architecture.png used on input line 59.
 (pdftex.def)             Requested size: 390.25536pt x 208.81535pt.
-) [11 <./Figures/architecture.png>]
-(chapters/4/chapter_Implementation.tex
+ [11 <./Figures/architecture.png>]
+<Figures/RowOrder.png, id=85, 1167.36125pt x 1129.21875pt>
+File: Figures/RowOrder.png Graphic file (type png)
+
+<use Figures/RowOrder.png>
+Package pdftex.def Info: Figures/RowOrder.png used on input line 98.
+(pdftex.def)             Requested size: 303.53267pt x 293.60718pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 108.
+
+[12 <./Figures/RowOrder.png>]) [13] (chapters/4/chapter_Implementation.tex
 Chapter 4.
-[12
-
-
-
-]) [13] (chapters/5/chapter_Website.tex
-Chapter 5.
-Missing character: There is no ’ in font cmti12!
 [14
 
 
 
-]) [15] (chapters/6/chapter_conclusion.tex
+]) [15] (chapters/5/chapter_Website.tex
+Chapter 5.
+Missing character: There is no ’ in font cmti12!
+[16
+
+
+
+]) [17] (chapters/6/chapter_conclusion.tex
 Chapter 6.
-) [16
+) [18
 
 
 
 ] (chapters/appendix/chapter_app.tex
 Appendix A.
-) [17
+) [19
 
 
 
@@ -646,7 +657,7 @@ Underfull \hbox (badness 5203) in paragraph at lines 4--9
  url:
  []
 
-[18
+[20
 
 
 ])
@@ -655,16 +666,16 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[19] (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
+[21] (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
 (chapters/2/chapter_HardwareTrojans.aux)
 (chapters/3/chapter_AutomatedDetection.aux)
 (chapters/4/chapter_Implementation.aux) (chapters/5/chapter_Website.aux)
 (chapters/6/chapter_conclusion.aux) (chapters/appendix/chapter_app.aux)) ) 
 Here is how much of TeX's memory you used:
- 9947 strings out of 493698
- 143868 string characters out of 3144415
- 377935 words of memory out of 3000000
- 12997 multiletter control sequences out of 15000+200000
+ 10137 strings out of 493698
+ 146741 string characters out of 3144415
+ 379472 words of memory out of 3000000
+ 13186 multiletter control sequences out of 15000+200000
  11765 words of font info for 44 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  46i,12n,45p,1948b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -677,9 +688,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb>
-Output written on mainthesisUVIC.pdf (28 pages, 370540 bytes).
+Output written on mainthesisUVIC.pdf (30 pages, 453192 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
