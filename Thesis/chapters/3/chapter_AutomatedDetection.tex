@@ -61,10 +61,22 @@ When an \acrshort{FPGA} is powered on the \gls{Bitstream} is loaded from the ext
 \label{fig:architecture}
 \end{figure}
 
-\section{The \acrshort{FPGA} Bitstream} \label{sec:fpgaBitStream}
-The \Xilinx bitstream is organized into 'frames'.
+\section{\gls{Bitstream} Extraction} \label{sec:bitstreamExtraction}
+In order to detect any trojans in the \gls{target} device the configuration \gls{Bitstream} will need to be recovered.
+As mentioned in section~\ref{sec:architectureAndConfig} the \gls{Bitstream} is stored in a memory unit external to the gate-array.
+All \Xilinx devices provide a feature known as \gls{Readback}.
+There are two styles of \gls{Readback}; \gls{Readback} verify and \gls{Readback} Capture.
+The \gls{Readback} capture method provides a large quantity of debug information which is not needed; \gls{Readback} verify will be used.
+\gls{Readback} verify is the process where the device is put into a 'frozen' state during run-time and all of the configuration bits are returned from the gate-array to the \acrshort{SRAM}. 
+The results can then be uploaded to a \acrfull{PC} for analysis.
+This process overwrites the original frame data in the \acrshort{SRAM} with the values which actually configured the device. 
+By using this method rather than simply reading the \acrshort{SRAM} it ensures that what is tested in section~\ref{sec:frameComparison} is actually what configured the device.
+This minimizes risk of tampered external memory units or configuration mechanics. 
+
+\section{The \acrshort{FPGA} Bitstream Analysis} \label{sec:fpgaBitStream}
+The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into 'frames'.
 A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Figure~\ref{fig:FPGA}.
-Frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
+A frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
 They are uniquely identified by a 32-bit address and are the smallest addressable element.
 The composition of the frame address is fairly consistent across the \Xilinx catalog however there are small differences between device families.
 The following is the structure of the Virtex-5 family frame address scheme according to~\cite{virtex5ConfigGuide}.
@@ -121,30 +133,15 @@ Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column typ
 \end{table}
 The number of frames given in Table~\ref{tbl:minorAddressNumbers} corresponds to the block in the column.
 As described in section~\ref{sec:architectureAndConfig} a block may contain multiple tiles.
-In a CLB column a block consists of an interconnect column and a \acrshort{CLB}.
+In a CLB column a block consists of an interconnect tile, also known as a \acrfull{SM} and a \acrshort{CLB}.
 To further understand how frames configure tiles a mapping must be made between each frame and the corresponding tile.
 This is described in section~\ref{sec:tileMapping}.
-%The logic block type has sub block-type columns:
-%\begin{itemize}
-%	\item \acrfull{CLB} columns which configure the logic blocks, routing and the majority of the interconnect.
-%	\item \acrfull{IOB} columns which configure the I/O voltage standard.
-%	\item \acrfull{IOI} columns which configure the \acrshort{IOB} registers, multiplexers and buffers.
-%	\item \acrfull{GCLK} columns global clock resources including clock buffers and the \acrfull{DCM}.
-%\end{itemize}
- 
-\section{\gls{Bitstream} Extraction} \label{sec:bitstreamExtraction}
-In order to detect any trojans in the \gls{target} device the configuration \gls{Bitstream} will need to be recovered.
-As mentioned in section~\ref{sec:architectureAndConfig} the \gls{Bitstream} is stored in a memory unit external to the gate-array.
-All \Xilinx devices provide a feature known as \gls{Readback}.
-There are two styles of \gls{Readback}; \gls{Readback} verify and \gls{Readback} Capture.
-The \gls{Readback} capture method provides a large quantity of debug information which is not needed; \gls{Readback} verify will be used.
-\gls{Readback} verify is the process where the device is put into a 'frozen' state during run-time and all of the configuration bits are returned from the gate-array to the \acrshort{SRAM}. 
-The results can then be uploaded to a \acrfull{PC} for analysis.
-This process overwrites the original frame data in the \acrshort{SRAM} with the values which actually configured the device. 
-By using this method rather than simply reading the \acrshort{SRAM} it ensures that what is tested in section~\ref{sec:frameComparison} is actually what configured the device.
-This minimizes risk of tampered external memory units or configuration mechanics. 
-\section{Frame Comparison} \label{sec:frameComparison}
+
 \section{Tile Mapping} \label{sec:tileMapping}
+In the case of Virtex-5 devices a frame is composed of 41 words that can be thought of as a vertical stack that aligns with the column it configures.
+As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of basic blocks; there are 20 \acrshort{CLB} blocks per column, 40 \acrshort{IOB}s, 4 \acrshort{BRAM}...etc.
+Each row consists of a central 
+
 \section{Trojan Attributes} \label{sec:trojanAttributes}
 
 

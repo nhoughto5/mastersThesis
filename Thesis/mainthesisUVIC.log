@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  1 OCT 2016 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  2 OCT 2016 16:02
 entering extended mode
 **mainthesisUVIC.tex
 (mainthesisUVIC.tex
@@ -591,7 +591,12 @@ File: Figures/methodologyOverview.png Graphic file (type png)
 Package pdftex.def Info: Figures/methodologyOverview.png used on input line 23.
 
 (pdftex.def)             Requested size: 433.62001pt x 331.50427pt.
- [8
+
+
+LaTeX Warning: Reference `sec:frameComparison' on page 8 undefined on input lin
+e 32.
+
+[8
 
 
 
@@ -609,19 +614,27 @@ File: Figures/architecture.png Graphic file (type png)
 <use Figures/architecture.png>
 Package pdftex.def Info: Figures/architecture.png used on input line 59.
 (pdftex.def)             Requested size: 390.25536pt x 208.81535pt.
- [11 <./Figures/architecture.png>]
+
+
+LaTeX Warning: Reference `sec:frameComparison' on page 11 undefined on input li
+ne 73.
+
+[11 <./Figures/architecture.png>]
 <Figures/RowOrder.png, id=85, 1167.36125pt x 1129.21875pt>
 File: Figures/RowOrder.png Graphic file (type png)
 
 <use Figures/RowOrder.png>
-Package pdftex.def Info: Figures/RowOrder.png used on input line 98.
+Package pdftex.def Info: Figures/RowOrder.png used on input line 110.
 (pdftex.def)             Requested size: 303.53267pt x 293.60718pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 108.
+               Default added (so using `tbp') on input line 120.
 
-[12 <./Figures/RowOrder.png>]) [13] [14] (chapters/4/chapter_Implementation.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12] [13 <./Figures/RowOrder.png>]) [14] (chapters/4/chapter_Implementation.tex
 Chapter 4.
 [15
 
@@ -670,25 +683,28 @@ This document will not have a glossary.
 (chapters/2/chapter_HardwareTrojans.aux)
 (chapters/3/chapter_AutomatedDetection.aux)
 (chapters/4/chapter_Implementation.aux) (chapters/5/chapter_Website.aux)
-(chapters/6/chapter_conclusion.aux) (chapters/appendix/chapter_app.aux)) ) 
+(chapters/6/chapter_conclusion.aux) (chapters/appendix/chapter_app.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
  10167 strings out of 493698
  147139 string characters out of 3144415
- 379719 words of memory out of 3000000
+ 379708 words of memory out of 3000000
  13216 multiletter control sequences out of 15000+200000
  11765 words of font info for 44 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  46i,12n,45p,1948b,360s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
-2.pfb>
-Output written on mainthesisUVIC.pdf (31 pages, 454644 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmti12.pfb>
+Output written on mainthesisUVIC.pdf (31 pages, 455205 bytes).
 PDF statistics:
  148 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

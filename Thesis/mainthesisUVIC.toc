@@ -16,11 +16,10 @@
 \contentsline {chapter}{\numberline {3}Automated Trojan Detection}{8}
 \contentsline {section}{\numberline {3.1}Methodology}{8}
 \contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{10}
-\contentsline {section}{\numberline {3.3}The \acrshort {FPGA} Bitstream}{11}
-\contentsline {section}{\numberline {3.4}\gls {Bitstream} Extraction}{13}
-\contentsline {section}{\numberline {3.5}Frame Comparison}{14}
-\contentsline {section}{\numberline {3.6}Tile Mapping}{14}
-\contentsline {section}{\numberline {3.7}Trojan Attributes}{14}
+\contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{11}
+\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} Bitstream Analysis}{12}
+\contentsline {section}{\numberline {3.5}Tile Mapping}{14}
+\contentsline {section}{\numberline {3.6}Trojan Attributes}{14}
 \contentsline {chapter}{\numberline {4}Experiments}{15}
 \contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{17}
 \contentsline {chapter}{\numberline {6}Conclusions}{19}
