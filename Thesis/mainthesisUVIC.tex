@@ -4,11 +4,19 @@
 \usepackage{cite}
 \usepackage[acronym]{glossaries}
 \usepackage{nomencl}
+\usepackage{array}
+\usepackage{mathtools}
 %\loadglsentries{Utils/Glossary}
 \makenomenclature
 \renewcommand{\nomname}{List of Symbols}
-
 \newcommand{\Xilinx}{\textit{Xilinx}~}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\newenvironment{conditions}
+{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+	{\end{tabular}\par\vspace{\belowdisplayskip}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %To compile glossary and acronyms run following sequence under Tools
 %Commands -> pdfLatex

@@ -17,11 +17,11 @@
 \contentsline {section}{\numberline {3.1}Methodology}{8}
 \contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{10}
 \contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{11}
-\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} Bitstream Analysis}{12}
+\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} \gls {Bitstream} Analysis}{12}
 \contentsline {section}{\numberline {3.5}Tile Mapping}{14}
-\contentsline {section}{\numberline {3.6}Trojan Attributes}{14}
-\contentsline {chapter}{\numberline {4}Experiments}{15}
-\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{17}
-\contentsline {chapter}{\numberline {6}Conclusions}{19}
-\contentsline {chapter}{\numberline {A}Additional Information}{20}
-\contentsline {chapter}{Bibliography}{21}
+\contentsline {section}{\numberline {3.6}Trojan Attributes}{15}
+\contentsline {chapter}{\numberline {4}Experiments}{16}
+\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{18}
+\contentsline {chapter}{\numberline {6}Conclusions}{20}
+\contentsline {chapter}{\numberline {A}Additional Information}{21}
+\contentsline {chapter}{Bibliography}{22}

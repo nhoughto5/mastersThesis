@@ -29,7 +29,7 @@ The resultant files are kept in secure storage while a copy is sent to be fabric
 Though it is known that fabrication houses will often attempt to make optimizations on designs this methodology requires that no such efforts are made.
 When the completed batch of fabricated chips are returned the \gls{Bitstream} is extracted via the method described in section~\ref{sec:bitstreamExtraction}. 
 That which is extracted is referred to as the \gls{target} \gls{Bitstream}.
-The \gls{golden} and \gls{target} \gls{Bitstream}s are analyzed in conjunction to detect differences, described in section~\ref{sec:frameComparison}.
+The \gls{golden} and \gls{target} \gls{Bitstream}s are analyzed in conjunction to detect differences, described in section~\ref{sec:fpgaBitStream}.
 Any discovered differences are then attributed to the corresponding component in the architecture, described in section~\ref{sec:tileMapping}.
 Finally, descriptive attributes presented in section~\ref{sec:topology} are returned to the user, described in section~\ref{sec:trojanAttributes}. 
 
@@ -70,14 +70,14 @@ The \gls{Readback} capture method provides a large quantity of debug information
 \gls{Readback} verify is the process where the device is put into a 'frozen' state during run-time and all of the configuration bits are returned from the gate-array to the \acrshort{SRAM}. 
 The results can then be uploaded to a \acrfull{PC} for analysis.
 This process overwrites the original frame data in the \acrshort{SRAM} with the values which actually configured the device. 
-By using this method rather than simply reading the \acrshort{SRAM} it ensures that what is tested in section~\ref{sec:frameComparison} is actually what configured the device.
+By using this method rather than simply reading the \acrshort{SRAM} it ensures that what is tested in section~\ref{sec:fpgaBitStream} is actually what configured the device.
 This minimizes risk of tampered external memory units or configuration mechanics. 
 
-\section{The \acrshort{FPGA} Bitstream Analysis} \label{sec:fpgaBitStream}
+\section{The \acrshort{FPGA} \gls{Bitstream} Analysis} \label{sec:fpgaBitStream}
 The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into 'frames'.
 A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Figure~\ref{fig:FPGA}.
 A frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
-They are uniquely identified by a 32-bit address and are the smallest addressable element.
+Each frame is uniquely identified by a 32-bit address and is the smallest addressable element.
 The composition of the frame address is fairly consistent across the \Xilinx catalog however there are small differences between device families.
 The following is the structure of the Virtex-5 family frame address scheme according to~\cite{virtex5ConfigGuide}.
 The make-up of a frame address is shown in Table~\ref{tbl:frameAddress}.
@@ -140,7 +140,37 @@ This is described in section~\ref{sec:tileMapping}.
 \section{Tile Mapping} \label{sec:tileMapping}
 In the case of Virtex-5 devices a frame is composed of 41 words that can be thought of as a vertical stack that aligns with the column it configures.
 As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of basic blocks; there are 20 \acrshort{CLB} blocks per column, 40 \acrshort{IOB}s, 4 \acrshort{BRAM}...etc.
-Each row consists of a central 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Figures/frameTileMap}
+	\caption[Configuration Words in the Bitstream~\cite{virtex5ConfigGuide}]{Configuration Words in the Bitstream~\cite{virtex5ConfigGuide}}
+	\label{fig:frameTileMap}
+\end{figure}
+As can be seen in Figure~\ref{fig:frameTileMap} the central word in a frame configures the horizontally running clock bus.
+The remaining words are used to configure the blocks in the column.
+From this, equation~\ref{eqn:numWordsPerBlock} can be deduced which is used to compute the number of 32-bit words that span each block.
+\begin{equation} \label{eqn:numWordsPerBlock}
+n = (W - C) + B
+\end{equation}
+where:
+\begin{conditions}
+	n     &  Number of Words per Block \\
+	W     &  Number of 32-bit words per frame \\   
+	C     &  Number of clock words per frame \\
+	B     &  Number of blocks per column
+\end{conditions}
+As shown in Figure~\ref{fig:frameTileMap} words are addressed from the 'top' of a device downwards.
+
+\begin{equation} \label{eqn:getTileNumber}
+i = n - \floor*{w / B}
+\end{equation}
+where:
+\begin{conditions}
+	i     &  Word Number in frame\\
+	n     &  Number of Words per Block \\
+	$w$   &  Number of 32-bit words per frame \\  
+	B     &  Number of blocks per column
+\end{conditions}
 
 \section{Trojan Attributes} \label{sec:trojanAttributes}
 

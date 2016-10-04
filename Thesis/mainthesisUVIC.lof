@@ -8,6 +8,7 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Rudimentary Layout of a Virtex Gate-Array}}{10}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces FPGA Device Layout}}{11}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Row Order of Virtex-5 Clock Region}}{13}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Configuration Words in the Bitstream\nobreakspace {}\cite {virtex5ConfigGuide}}}{14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
