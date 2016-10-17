@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  3 OCT 2016 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  16 OCT 2016 17:23
 entering extended mode
 **mainthesisUVIC.tex
 (mainthesisUVIC.tex
@@ -452,33 +452,37 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen145
 \l_MT_below_shortintertext_sep=\dimen146
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\threeparttable\threeparttable.sty"
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box33
+)
 \@nomenclaturefile=\write3
 
 Writing nomenclature file mainthesisUVIC.nlo
 \glswrite=\write4
 \glo@main@file=\write5
 Package glossaries Info: Writing glossary file mainthesisUVIC.glo on input line
- 118.
+ 119.
 \glo@acronym@file=\write6
 Package glossaries Info: Writing glossary file mainthesisUVIC.acn on input line
- 118.
+ 119.
 (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
 (chapters/2/chapter_HardwareTrojans.aux)
 (chapters/3/chapter_AutomatedDetection.aux)
 (chapters/4/chapter_Implementation.aux) (chapters/5/chapter_Website.aux)
 (chapters/6/chapter_conclusion.aux) (chapters/appendix/chapter_app.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -518,7 +522,7 @@ LaTeX Font Info:    ... okay on input line 121.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count139
 \scratchdimen=\dimen147
-\scratchbox=\box33
+\scratchbox=\box34
 \nofMPsegments=\count140
 \nofMParguments=\count141
 \everyMPshowfont=\toks39
@@ -631,16 +635,16 @@ Chapter 3.
 <figures/Concept.png, id=65, 560.0925pt x 252.945pt>
 File: figures/Concept.png Graphic file (type png)
  <use figures/Concept.png>
-Package pdftex.def Info: figures/Concept.png used on input line 10.
+Package pdftex.def Info: figures/Concept.png used on input line 12.
 (pdftex.def)             Requested size: 433.62001pt x 195.83736pt.
 
-<Figures/methodologyOverview.png, id=66, 2314.6475pt x 1769.61125pt>
+<Figures/methodologyOverview.png, id=66, 2522.42375pt x 1769.61125pt>
 File: Figures/methodologyOverview.png Graphic file (type png)
 
 <use Figures/methodologyOverview.png>
-Package pdftex.def Info: Figures/methodologyOverview.png used on input line 23.
+Package pdftex.def Info: Figures/methodologyOverview.png used on input line 25.
 
-(pdftex.def)             Requested size: 433.62001pt x 331.50427pt.
+(pdftex.def)             Requested size: 433.62001pt x 304.20518pt.
  [8
 
 
@@ -649,7 +653,7 @@ Package pdftex.def Info: Figures/methodologyOverview.png used on input line 23.
 <figures/FPGA.png, id=74, 1957.3125pt x 978.65625pt>
 File: figures/FPGA.png Graphic file (type png)
  <use figures/FPGA.png>
-Package pdftex.def Info: figures/FPGA.png used on input line 46.
+Package pdftex.def Info: figures/FPGA.png used on input line 50.
 (pdftex.def)             Requested size: 433.62001pt x 216.79834pt.
 
 [10 <./figures/FPGA.png>]
@@ -657,37 +661,43 @@ Package pdftex.def Info: figures/FPGA.png used on input line 46.
 File: Figures/architecture.png Graphic file (type png)
 
 <use Figures/architecture.png>
-Package pdftex.def Info: Figures/architecture.png used on input line 59.
+Package pdftex.def Info: Figures/architecture.png used on input line 63.
 (pdftex.def)             Requested size: 390.25536pt x 208.81535pt.
  [11 <./Figures/architecture.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 116.
+
 <Figures/RowOrder.png, id=85, 1167.36125pt x 1129.21875pt>
 File: Figures/RowOrder.png Graphic file (type png)
 
 <use Figures/RowOrder.png>
-Package pdftex.def Info: Figures/RowOrder.png used on input line 110.
+Package pdftex.def Info: Figures/RowOrder.png used on input line 118.
 (pdftex.def)             Requested size: 303.53267pt x 293.60718pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 120.
+               Default added (so using `tbp') on input line 128.
+
+[12] [13 <./Figures/RowOrder.png>]
+<Figures/frameTileMap.png, id=93, 536.0025pt x 492.33937pt>
+File: Figures/frameTileMap.png Graphic file (type png)
+
+<use Figures/frameTileMap.png>
+Package pdftex.def Info: Figures/frameTileMap.png used on input line 158.
+(pdftex.def)             Requested size: 390.25536pt x 358.45816pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12] <Figures/frameTileMap.png, id=89, 536.0025pt x 492.33937pt>
-File: Figures/frameTileMap.png Graphic file (type png)
-
-<use Figures/frameTileMap.png>
-Package pdftex.def Info: Figures/frameTileMap.png used on input line 145.
-(pdftex.def)             Requested size: 390.25536pt x 358.45816pt.
- [13 <./Figures/RowOrder.png>] [14 <./Figures/frameTileMap.png>]) [15] (chapter
-s/4/chapter_Implementation.tex
+[14] [15 <./Figures/frameTileMap.png>]) [16]
+(chapters/4/chapter_Implementation.tex
 Chapter 4.
-[16
+) [17
 
 
 
-]) [17] (chapters/5/chapter_Website.tex
+] (chapters/5/chapter_Website.tex
 Chapter 5.
 Missing character: There is no ’ in font cmti12!
 [18
@@ -738,11 +748,11 @@ This document will not have a glossary.
 (chapters/4/chapter_Implementation.aux) (chapters/5/chapter_Website.aux)
 (chapters/6/chapter_conclusion.aux) (chapters/appendix/chapter_app.aux)) ) 
 Here is how much of TeX's memory you used:
- 10732 strings out of 493698
- 157021 string characters out of 3144415
- 391596 words of memory out of 3000000
- 13770 multiletter control sequences out of 15000+200000
- 11765 words of font info for 44 fonts, out of 3000000 for 9000
+ 10790 strings out of 493698
+ 157945 string characters out of 3144415
+ 392702 words of memory out of 3000000
+ 13824 multiletter control sequences out of 15000+200000
+ 12370 words of font info for 46 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  46i,12n,45p,1948b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/P
@@ -754,7 +764,7 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb>
-Output written on mainthesisUVIC.pdf (32 pages, 503803 bytes).
+Output written on mainthesisUVIC.pdf (32 pages, 517604 bytes).
 PDF statistics:
  152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

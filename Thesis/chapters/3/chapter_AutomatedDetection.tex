@@ -1,5 +1,7 @@
 \startchapter{Automated Trojan Detection}
 \label{chapter:trojanDetection}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methodology}
 Figure~\ref{fig:Concept} provides a visual representation of the basic concept assumed for the purposes of this work. 
 All stages of production of an \acrshort{FPGA} implementation are done "in-house" with the exception of the fabrication process. 
@@ -33,6 +35,8 @@ The \gls{golden} and \gls{target} \gls{Bitstream}s are analyzed in conjunction t
 Any discovered differences are then attributed to the corresponding component in the architecture, described in section~\ref{sec:tileMapping}.
 Finally, descriptive attributes presented in section~\ref{sec:topology} are returned to the user, described in section~\ref{sec:trojanAttributes}. 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{FPGA Architecture and Configuration} \label{sec:architectureAndConfig}
 A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Figure~\ref{fig:FPGA}.
 A device can contain anywhere from a couple hundred to a few thousand blocks; they are arranged into columns by type.
@@ -61,6 +65,8 @@ When an \acrshort{FPGA} is powered on the \gls{Bitstream} is loaded from the ext
 \label{fig:architecture}
 \end{figure}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\gls{Bitstream} Extraction} \label{sec:bitstreamExtraction}
 In order to detect any trojans in the \gls{target} device the configuration \gls{Bitstream} will need to be recovered.
 As mentioned in section~\ref{sec:architectureAndConfig} the \gls{Bitstream} is stored in a memory unit external to the gate-array.
@@ -73,6 +79,8 @@ This process overwrites the original frame data in the \acrshort{SRAM} with the 
 By using this method rather than simply reading the \acrshort{SRAM} it ensures that what is tested in section~\ref{sec:fpgaBitStream} is actually what configured the device.
 This minimizes risk of tampered external memory units or configuration mechanics. 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The \acrshort{FPGA} \gls{Bitstream} Analysis} \label{sec:fpgaBitStream}
 The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into 'frames'.
 A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Figure~\ref{fig:FPGA}.
@@ -105,7 +113,7 @@ The logic block contains the columns which provides the primary configuration fo
 The \acrshort{BRAM} columns initialize the memory for the device while the \acrshort{BRAM} Interconnect columns configure how the logic of the design interacts with the \acrshort{BRAM}.
 
 In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Figure~\ref{fig:RowOrder}.
-\begin{figure}[h]
+\begin{figure}[]
 \centering
 \includegraphics[width=.7\linewidth]{Figures/RowOrder}
 \caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
@@ -126,19 +134,24 @@ Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column typ
 		Block             & Number Of Frames \\ \hline
 		CLB               & 36               \\ \hline
 		DSP               & 28               \\ \hline
-		\acrshort{BRAM} & 30               \\ \hline
+		\acrshort{BRAM}   & 30               \\ \hline
 		IOB               & 54               \\ \hline
 		Clock             & 4                \\ \hline
 	\end{tabular}
 \end{table}
-The number of frames given in Table~\ref{tbl:minorAddressNumbers} corresponds to the block in the column.
 As described in section~\ref{sec:architectureAndConfig} a block may contain multiple tiles.
-In a CLB column a block consists of an interconnect tile, also known as a \acrfull{SM} and a \acrshort{CLB}.
+In a \acrshort{CLB} column a block consists of an interconnect tile, also known as a \acrfull{SM} and a \acrshort{CLB}.
+Frames are numbered from left to right, starting with 0. 
+For each block, except in a clock column, frames numbered 0 to 25 access the Interconnect for that column. 
+For all blocks, except the \acrshort{CLB} and the clock column, frames numbered 26 and 27 access the Interface for that column. 
+All other frames are specific to that block.~\cite{virtex5ConfigGuide}
 To further understand how frames configure tiles a mapping must be made between each frame and the corresponding tile.
 This is described in section~\ref{sec:tileMapping}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Tile Mapping} \label{sec:tileMapping}
-In the case of Virtex-5 devices a frame is composed of 41 words that can be thought of as a vertical stack that aligns with the column it configures.
+The process of tile mapping aims to attribute each word in a configuration frame to the component of the device it configures.
+In the case of Virtex-5 devices a frame is composed of 41 words that can be thought of as a vertical stack that aligns with a column.
 As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of basic blocks; there are 20 \acrshort{CLB} blocks per column, 40 \acrshort{IOB}s, 4 \acrshort{BRAM}...etc.
 \begin{figure}[h]
 	\centering
@@ -148,6 +161,8 @@ As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of bas
 \end{figure}
 As can be seen in Figure~\ref{fig:frameTileMap} the central word in a frame configures the horizontally running clock bus.
 The remaining words are used to configure the blocks in the column.
+The purpose of the central word in the column is known to be mapped to the clock bus.
+For the purposes of the following computations it is considered removed from the frame.
 From this, equation~\ref{eqn:numWordsPerBlock} can be deduced which is used to compute the number of 32-bit words that span each block.
 \begin{equation} \label{eqn:numWordsPerBlock}
 n = (W - C) + B
@@ -159,38 +174,41 @@ where:
 	C     &  Number of clock words per frame \\
 	B     &  Number of blocks per column
 \end{conditions}
-As shown in Figure~\ref{fig:frameTileMap} words are addressed from the 'top' of a device downwards.
-
+As shown in Figure~\ref{fig:frameTileMap} words are addressed from the 'top' of a device down.
+Equation~\ref{eqn:getTileNumber} can be used to map a particular word in a frame to a tile on the device.
 \begin{equation} \label{eqn:getTileNumber}
-i = n - \floor*{w / B}
+i = B - \floor*{\frac{w}{n}}
 \end{equation}
 where:
 \begin{conditions}
 	i     &  Word Number in frame\\
-	n     &  Number of Words per Block \\
-	$w$   &  Number of 32-bit words per frame \\  
-	B     &  Number of blocks per column
+	B     &  Number of blocks per column \\
+	w     &  Word number \\
+	n     &  Number of Words per Block 
 \end{conditions}
+With equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber} it is now possible attribute any modifications in the \gls{Bitstream} to its corresponding component.
+The \gls{golden} and \gls{target} \gls{Bitstream}s undergo a comparison process.
+Any frames that contain words that have been modified are stored for analysis.
+The address of a modified frame is used to determine the row and column as described in section~\ref{sec:fpgaBitStream}.
+\subsection{Column-SubColumn Mapping}
+\subsection{SubColumn-Frame Mapping}
+\subsection{Tile-Word Mapping}
 
-\section{Trojan Attributes} \label{sec:trojanAttributes}
+\section{Determining Trojan Attributes} \label{sec:trojanAttributes}
+The purpose of attributes recap.
+\subsection{Direct Extraction Methods}
+\subsubsection{Observed Location Attributes}
+The presence of attributes in the \textit{Location} category are directly observable from the results of the tile mapping method described in section~\ref{sec:tileMapping}.
+\Xilinx tiles conform to purpose-specific groups or block types which were discussed in section~\ref{sec:fpgaBitStream}.
+These block types contain sub-types that perform actions which pertain to the \textit{Location}, category. 
+\begin{enumerate}
+	\item The \textbf{Processor} attribute pertains to the core functionality of the design logic. It can be awarded for presence of a modified \acrshort{CLB} tile or Interconnect tile.
+	\item The \textbf{Memory} attribute can be awarded for the presence of modified \acrshort{BRAM} components.
+	\item The \textbf{\acrshort{IO}} attribute can be awarded for presence of modified \acrshort{IOB} tiles.
+	\item The \textbf{Power Supply} attribute can be awarded for the presence of modified interface or configuration tiles.
+	\item The \textbf{Clock Grid} attribute can be awarded for modified clock tiles.
+\end{enumerate}
+\subsubsection{Scatter Score Method}
+\subsubsection{Insertion and Abstraction Attributes}
+\subsection{Relation Matrix Use}
 
-
-
-%This is where you go all out and tell us all about your new discovery and research related to the problem in the previous chapter. No arrogant sweeping statements which cannot be fully justified, but no false modesty either. You must impress your reader that you have accomplished something.
-%
-%Simply summarized, this chapter should be comprised of at least two main sections, each with appropriate subsections. The first section should describe:
-%\begin{itemize}
-%\item {what the new approach is;}
-%\item {what is really totally new;}
-%\item {what is incrementally new;}
-%\item {what you built upon.}
-%\end{itemize}
-%
-%The second part should describe fully how the new approach works, both with the overall theoretical exposition (e.g. an algorithm) and with as many examples as necessary for clarity. Remember that if the reader does not understand fully, you will get a lot of questions and doubts. Good examples, good figures, good diagrams with super clear tutorial explanations can be a joy to read and make even a small contribution appear to be more impressive. Are you afraid that if you are too tutorial your work will not seem as deep and difficult? Only shallow people will make such a superficial evaluation, have trust instead in the wisdom of your supervisory committee.
-%
-%Use at least one good example throughout, and even better if this is one of the examples you used in Chapter 2 to describe the original problem.
-%
-%By the way, this would be the first chapter I would write. This is what I know best right now, as I just finished working on it. It is clear to me and on the tip of my fingers. Start with your strengths! The second chapter I would write is the next one about the experiments, followed closely by chapter 2 describing the problem. It may not seem intuitive to you, but it works and it is the most productive way I ever found to finish a document.
-%
-%
-%\input chapters/3/sec_latexhelp
