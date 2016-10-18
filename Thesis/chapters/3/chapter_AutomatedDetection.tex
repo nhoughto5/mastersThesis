@@ -277,11 +277,37 @@ The \gls{scatterScore} in Equation~\ref{eqn:scatterScore} describes how spread o
 	S_{xy} = (\sigma_x,~\sigma_y)
 	\end{equation}
 \end{minipage}
-\newline
+\ConditionSize
+
+where:
+\begin{conditions}
+	$$M_{xy}$$     &  The \gls{positionMedian} \\   
+	$$S_{xy}$$     &  The \gls{scatterScore}
+\end{conditions}
+\normalsize
 
 The results of the tile mapping method described in section~\ref{fig:frameTileMap} are used to generate the set of all tiles reconfigured by the trojan.
 The set of reconfigured tiles can be said to contain three subsets: the subset of tiles activated by the trojan, those deactivated and those modified. 
-
+%Table~\ref{tbl:subsetVariables} gives the notation used for the numeric descriptors of the subsets.
+%\begin{table}[]
+%	\centering
+%	\caption{Average and Standard Deviation of the Subsets }
+%	\label{tbl:subsetVariables}
+%	\begin{tabular}{|c|c|c|c|c|c|}
+%		\hline
+%		\multicolumn{2}{|c|}{Activated} & \multicolumn{2}{c|}{Deactivated} & \multicolumn{2}{c|}{Modified} \\ \hline
+%		$a_{xa}$ & $a_{ya}$ & $a_{xd}$ & $a_{yd}$ & $a_{xm}$ & $a_{ym}$ \\ \hline
+%		$\sigma_{xa}$ & $\sigma_{ya}$ & $\sigma_{xd}$ & $\sigma_{yd}$ & $\sigma_{xm}$ & $\sigma_{ym}$ \\ \hline
+%	\end{tabular}
+%\end{table}
+The results of the golden design analysis, the subsets, and the numeric descriptors can be used to discern which of the \textit{Physical Location} attributes the trojan possesses. 
+The \textit{Physical Location} category contains six attributes.
+These six can be considered three pairs; a trojan exhibits one attribute from each pair. 
+\begin{enumerate}
+	\item \textbf{Large or Small} (attributes 23 or 24): According to~\cite{samerAttribute}, small trojans are defined as those that are nearly impossible to detect via power consumption. From this it can be said that 'small' trojans occupy minimal resources. Trojans where the number of reconfigured tiles is less than 5\% of the number of tiles in the golden design are considered small. Other wise they are attributed as large.
+	\item \textbf{Changed Layout or Augmented} (attributes 25 or 26): A 'changed layout' trojan is such that only tiles that are configured by the golden design are reconfigured. An augmented trojan is where additional layout is added. The presence of 'activated' or 'deactivated' tiles indicates an augmented trojan. 
+	\item \textbf{Clustered or Distributed} (attributes 27 or 28): The trojan is considered to be clustered when the standard deviation of the reconfigured tile positions is less than 15\%; distributed otherwise.
+\end{enumerate}
 \subsubsection{Insertion and Abstraction Attributes}
 \subsection{Relation Matrix Use}
 
