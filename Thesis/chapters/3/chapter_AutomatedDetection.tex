@@ -179,6 +179,7 @@ Equation~\ref{eqn:getTileNumber} can be used to map a particular word in a frame
 \begin{equation} \label{eqn:getTileNumber}
 i = B - \floor*{\frac{w}{n}}
 \end{equation}
+\ConditionSize
 where:
 \begin{conditions}
 	i     &  Word Number in frame\\
@@ -186,6 +187,7 @@ where:
 	w     &  Word number \\
 	n     &  Number of Words per Block 
 \end{conditions}
+\normalsize
 With equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber} it is now possible attribute any modifications in the \gls{Bitstream} to its corresponding component.
 The \gls{golden} and \gls{target} \gls{Bitstream}s undergo a comparison process.
 Any frames that contain words that have been modified are stored for analysis.
@@ -209,6 +211,77 @@ These block types contain sub-types that perform actions which pertain to the \t
 	\item The \textbf{Clock Grid} attribute can be awarded for modified clock tiles.
 \end{enumerate}
 \subsubsection{Scatter Score Method}
+The gate-array configuration of components in \Xilinx \acrshort{FPGA}s allows for an analytical method of determining attributes in the \textit{Physical Layout} category.
+The "Scatter Score" method uses the grid coordinates of components to derive a numerical score rating for the size, position, and augmentation of configured tiles.
+Tiles are assigned global coordinates that represent their horizontal and vertical positions within the gate array denoted $x$ and $y$ respectively. 
+
+The golden chip is first analyzed.
+The set of all tiles which are configured in the golden design is found and a series of numerical descriptors are computed.
+\begin{equation} \label{eqn:numConfiguredTiles}
+n = \sum_{x = 0}^{X}\sum_{y = 0}^{Y}T_{xy}
+\end{equation}
+\ConditionSize
+where:
+\begin{conditions}
+	n     &  Number of all configured tiles \\
+	X     &  The column width of the gate-array \\   
+	Y     &  The row height of the gate-array \\
+	T     &  A configured tile
+\end{conditions}
+\normalsize
+
+\noindent\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:xAverage}
+	a_x = \frac{1}{n}\sum_{x=0}^{n}T_x
+	\end{equation}
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:yAverage}
+	a_y = \frac{1}{n}\sum_{y=0}^{n}T_y
+	\end{equation}
+\end{minipage}
+\\
+\noindent\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:stdDevX}
+	\sigma_x = \sqrt{\frac{1}{n}\sum_{x = 0}^{X}(x_i - a_x)^2)}
+	\end{equation}
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:stdDevY}
+	\sigma_y = \sqrt{\frac{1}{n}\sum_{y = 0}^{Y}(y_i - a_y)^2)}
+	\end{equation}
+\end{minipage}
+
+\ConditionSize
+where:
+\begin{conditions}
+	$$a_x$$     &  The average x coordinate of configured tiles \\   
+	$$a_y$$     &  The average y coordinate of configured tiles \\
+	$$T_x$$     &  The x coordinate of a configured tile \\
+	$$T_y$$	    &  The y coordinate of a configured tile \\
+	$$\sigma_x$$ & The standard deviation of the x coordinate of configured tiles \\
+	$$\sigma_y$$ & The standard deviation of the y coordinate of configured tiles
+\end{conditions}
+\normalsize
+Equations~\ref{eqn:xAverage} and~\ref{eqn:yAverage} are used to create a rating known as the \gls{positionMedian} in Equation~\ref{eqn:positionMedian}.
+The \gls{positionMedian} value provides a simple descriptor for where in the gate array the design is centralized.
+The \gls{scatterScore} in Equation~\ref{eqn:scatterScore} describes how spread out or, \textit{clustered} the design is.
+
+\noindent\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:positionMedian}
+	M_{xy} = (a_x,~a_y)
+	\end{equation}
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:scatterScore}
+	S_{xy} = (\sigma_x,~\sigma_y)
+	\end{equation}
+\end{minipage}
+\newline
+
+The results of the tile mapping method described in section~\ref{fig:frameTileMap} are used to generate the set of all tiles reconfigured by the trojan.
+The set of reconfigured tiles can be said to contain three subsets: the subset of tiles activated by the trojan, those deactivated and those modified. 
+
 \subsubsection{Insertion and Abstraction Attributes}
 \subsection{Relation Matrix Use}
 

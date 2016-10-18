@@ -6,11 +6,14 @@
 \usepackage{nomencl}
 \usepackage{array}
 \usepackage{mathtools}
+\usepackage{multicol}
 \usepackage[flushleft]{threeparttable}
+\usepackage{amsmath}
 %\loadglsentries{Utils/Glossary}
 \makenomenclature
 \renewcommand{\nomname}{List of Symbols}
 \newcommand{\Xilinx}{\textit{Xilinx}~}
+\newcommand{\ConditionSize}{\footnotesize}
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 
@@ -116,6 +119,8 @@
 \newglossaryentry{winAPI}{name={Windows \gls{API}},description={Windows API or WinAPI is a core set of Microsoft's \acrshort{API}s available within the Windows Operating System. It provides basic \acrshort{UI}, Environment handling, data access and storage utilities and more.~\cite{windowsAPI}}}
 \newglossaryentry{Fragment}{name={Fragment},description={A 1-bit configurable component of an FPGA. Fragments do not exist however they are used as a conceptual aid to improve understanding of configuration process.}}
 \newglossaryentry{gateArray}{name={Gate Array},description={The primary structure of an \gls{FPGA} device. Composed of a regular arrangement of logic gates.}}
+\newglossaryentry{positionMedian}{name={Position Median},description={The computed center of an \acrshort{FPGA} design}}
+\newglossaryentry{scatterScore}{name={Scatter Score},description={A numeric representation of the clustering of a design}}
 \makeglossaries
 
 

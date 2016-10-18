@@ -26,13 +26,13 @@
 \contentsline {subsection}{\numberline {3.6.1}Direct Extraction Methods}{16}
 \contentsline {subsubsection}{Observed Location Attributes}{16}
 \contentsline {subsubsection}{Scatter Score Method}{16}
-\contentsline {subsubsection}{Insertion and Abstraction Attributes}{16}
-\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{16}
-\contentsline {chapter}{\numberline {4}Software Implementation}{17}
-\contentsline {section}{\numberline {4.1}Technologies Used}{17}
-\contentsline {section}{\numberline {4.2}Design}{17}
-\contentsline {section}{\numberline {4.3}\acrfull {UI}}{17}
-\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{18}
-\contentsline {chapter}{\numberline {6}Conclusions}{20}
-\contentsline {chapter}{\numberline {A}Additional Information}{21}
-\contentsline {chapter}{Bibliography}{22}
+\contentsline {subsubsection}{Insertion and Abstraction Attributes}{18}
+\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{18}
+\contentsline {chapter}{\numberline {4}Software Implementation}{19}
+\contentsline {section}{\numberline {4.1}Technologies Used}{19}
+\contentsline {section}{\numberline {4.2}Design}{19}
+\contentsline {section}{\numberline {4.3}\acrfull {UI}}{19}
+\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{20}
+\contentsline {chapter}{\numberline {6}Conclusions}{22}
+\contentsline {chapter}{\numberline {A}Additional Information}{23}
+\contentsline {chapter}{Bibliography}{24}

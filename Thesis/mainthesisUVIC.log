@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  16 OCT 2016 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  17 OCT 2016 19:06
 entering extended mode
 **mainthesisUVIC.tex
 (mainthesisUVIC.tex
@@ -452,9 +452,58 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen145
 \l_MT_below_shortintertext_sep=\dimen146
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
+\c@tracingmulticols=\count139
+\mult@box=\box33
+\multicol@leftmargin=\dimen147
+\c@unbalance=\count140
+\c@collectmore=\count141
+\doublecol@number=\count142
+\multicoltolerance=\count143
+\multicolpretolerance=\count144
+\full@width=\dimen148
+\page@free=\dimen149
+\premulticols=\dimen150
+\postmulticols=\dimen151
+\multicolsep=\skip112
+\multicolbaselineskip=\skip113
+\partial@page=\box34
+\last@line=\box35
+\maxbalancingoverflow=\dimen152
+\mult@rightbox=\box36
+\mult@grightbox=\box37
+\mult@gfirstbox=\box38
+\mult@firstbox=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\c@columnbadness=\count145
+\c@finalcolumnbadness=\count146
+\last@try=\dimen153
+\multicolovershoot=\dimen154
+\multicolundershoot=\dimen155
+\mult@nat@firstbox=\box57
+\colbreak@box=\box58
+\mc@col@check@num=\count147
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\threeparttable\threeparttable.sty"
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box33
+\@tempboxb=\box59
 )
 \@nomenclaturefile=\write3
 
@@ -462,27 +511,27 @@ Writing nomenclature file mainthesisUVIC.nlo
 \glswrite=\write4
 \glo@main@file=\write5
 Package glossaries Info: Writing glossary file mainthesisUVIC.glo on input line
- 119.
+ 124.
 \glo@acronym@file=\write6
 Package glossaries Info: Writing glossary file mainthesisUVIC.acn on input line
- 119.
+ 124.
 (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
 (chapters/2/chapter_HardwareTrojans.aux)
 (chapters/3/chapter_AutomatedDetection.aux)
 (chapters/4/chapter_Implementation.aux) (chapters/5/chapter_Website.aux)
 (chapters/6/chapter_conclusion.aux) (chapters/appendix/chapter_app.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 127.
+LaTeX Font Info:    ... okay on input line 127.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -520,16 +569,16 @@ LaTeX Font Info:    ... okay on input line 122.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count139
-\scratchdimen=\dimen147
-\scratchbox=\box34
-\nofMPsegments=\count140
-\nofMParguments=\count141
+\scratchcounter=\count148
+\scratchdimen=\dimen156
+\scratchbox=\box60
+\nofMPsegments=\count149
+\nofMParguments=\count150
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count142
-\MPscratchDim=\dimen148
-\MPnumerator=\count143
-\makeMPintoPDFobject=\count144
+\MPscratchCnt=\count151
+\MPscratchDim=\dimen157
+\MPnumerator=\count152
+\makeMPintoPDFobject=\count153
 \everyMPtoPDFconversion=\toks40
 ) (mainthesisUVIC.glsdefs) (frontmatter/fm.tex (frontmatter/tp.tex
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
@@ -611,7 +660,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]) [2] (chapters/2/chapter_HardwareTrojans.tex
 Chapter 2.
-\savedunitlength=\skip112
+\savedunitlength=\skip114
 <figures/HW_trojan.png, id=41, 561.5379pt x 347.6187pt>
 File: figures/HW_trojan.png Graphic file (type png)
 
@@ -690,29 +739,33 @@ Package pdftex.def Info: Figures/frameTileMap.png used on input line 158.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] [15 <./Figures/frameTileMap.png>]) [16]
-(chapters/4/chapter_Implementation.tex
+[14] [15 <./Figures/frameTileMap.png>] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 270--281
+
+ []
+
+) [17] [18] (chapters/4/chapter_Implementation.tex
 Chapter 4.
-) [17
+) [19
 
 
 
 ] (chapters/5/chapter_Website.tex
 Chapter 5.
 Missing character: There is no ’ in font cmti12!
-[18
+[20
 
 
 
-]) [19] (chapters/6/chapter_conclusion.tex
+]) [21] (chapters/6/chapter_conclusion.tex
 Chapter 6.
-) [20
+) [22
 
 
 
 ] (chapters/appendix/chapter_app.tex
 Appendix A.
-) [21
+) [23
 
 
 
@@ -733,7 +786,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[22
+[24
 
 
 ])
@@ -742,31 +795,34 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[23] (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
+[25] (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
 (chapters/2/chapter_HardwareTrojans.aux)
 (chapters/3/chapter_AutomatedDetection.aux)
 (chapters/4/chapter_Implementation.aux) (chapters/5/chapter_Website.aux)
 (chapters/6/chapter_conclusion.aux) (chapters/appendix/chapter_app.aux)) ) 
 Here is how much of TeX's memory you used:
- 10790 strings out of 493698
- 157945 string characters out of 3144415
- 392702 words of memory out of 3000000
- 13824 multiletter control sequences out of 15000+200000
- 12370 words of font info for 46 fonts, out of 3000000 for 9000
+ 10987 strings out of 493698
+ 161340 string characters out of 3144415
+ 397717 words of memory out of 3000000
+ 14011 multiletter control sequences out of 15000+200000
+ 15637 words of font info for 60 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  46i,12n,45p,1948b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
-2.pfb>
-Output written on mainthesisUVIC.pdf (32 pages, 517604 bytes).
+onts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on mainthesisUVIC.pdf (34 pages, 568163 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
+ 174 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
