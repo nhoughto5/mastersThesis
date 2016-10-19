@@ -2,7 +2,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Frame Address}}{12}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Number of Frames (minor addresses) per Column}}{13}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Number of Frames (minor addresses) per Column\nobreakspace {}\cite {virtex5ConfigGuide}}}{13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

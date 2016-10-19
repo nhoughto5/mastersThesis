@@ -9,14 +9,35 @@
 \usepackage{multicol}
 \usepackage[flushleft]{threeparttable}
 \usepackage{amsmath}
+\usepackage{listings}
+\usepackage{color}
 %\loadglsentries{Utils/Glossary}
 \makenomenclature
 \renewcommand{\nomname}{List of Symbols}
 \newcommand{\Xilinx}{\textit{Xilinx}~}
 \newcommand{\ConditionSize}{\footnotesize}
+\newcommand{\Name}{Automated Hardware Trojan System}
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\definecolor{dkgreen}{rgb}{0.1,0.5,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
 
+\lstset{frame=tb,
+	aboveskip=1mm,
+	belowskip=1mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
 \newenvironment{conditions}
 {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
 	{\end{tabular}\par\vspace{\belowdisplayskip}}
@@ -104,13 +125,14 @@
 \newglossaryentry{SRL16}{name={SRL16},description={\acrshort{LUT} used as a 16-bit shift register}}
 \newglossaryentry{SLICEM}{name={SLICEM},description={A component of a \acrshort{CLB} in the Spartan-3E family of \acrshort{FPGA}s capable of both logic and memory functions}}
 \newglossaryentry{SLICEL}{name={SLICEL},description={A component of a \acrshort{CLB} in the Spartan-3E family of \acrshort{FPGA}s capable of only logic functions}}
-\newglossaryentry{sch2hdl}{name={sch2hdl},description={A \gls{Xilinx} tool used to convert schematic designs to \gls{HDL}}}
-\newglossaryentry{XST}{name={XST},description={\gls{Xilinx} Synthesis Tools}}
-\newglossaryentry{ngdbuild}{name={ngdbuild},description={A \gls{Xilinx} tool used to build a NETLIST}}
-\newglossaryentry{MAP}{name={MAP},description={A \gls{Xilinx} tool used to calculate the optimal routing map for the implementation fo the design}}
-\newglossaryentry{PAR}{name={PAR},description={A \gls{Xilinx} tool used to place and route the design in the specific device}}
-\newglossaryentry{trce}{name={trce},description={A \gls{Xilinx} tool used to perform timing of routing traces}}
-\newglossaryentry{Bitgen}{name={Bitgen},description={A \gls{Xilinx} tool used to generate the final configuration \gls{Bitstream}}}
+\newglossaryentry{sch2hdl}{name={sch2hdl},description={used to convert schematic designs to \gls{HDL}. This stage is optional as many choose to develop directly in \acrshort{HDL}}}
+\newglossaryentry{XST}{name={XST},description={\gls{Xilinx} Synthesis Tools, a package of which parse, optimize and compile the \acrshort{HDL} code.}}
+\newglossaryentry{ngdbuild}{name={ngdbuild},description={A tool used to build a NETLIST.}}
+\newglossaryentry{MAP}{name={MAP},description={A \gls{Xilinx} tool used to calculate the optimal routing for the finalized design.}}
+\newglossaryentry{PAR}{name={PAR},description={used to place and route the design in the specific \Xilinx device.}}
+\newglossaryentry{trce}{name={trce},description={used to perform timing and performance analysis.}}
+\newglossaryentry{Bitgen}{name={Bitgen},description={The final stage used to generate the configuration \gls{Bitstream} which will configure the device.}}
+\newglossaryentry{xdl2ndc}{name={xdl2ndc},description={A command line tool used to convert between the non human-readable ndc netlist format and the human readable \acrshort{XDL} format.}}
 \newglossaryentry{thread}{name={thread},description={The smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system.}}
 \newglossaryentry{Group}{name={Group},description={A collection of columns of 1-bit wide components in an FPGA}}
 \newglossaryentry{FragementMatrix}{name={Fragement Matrix},description={A conceptual interpretation of the architecture of an FPGA where by it is imagined as a matrix of 1-bit configurable components}}

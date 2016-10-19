@@ -127,7 +127,7 @@ The minor address indicates the frame number within a column.
 Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column type.
 \begin{table}[]
 	\centering
-	\caption{Number of Frames (minor addresses) per Column}
+	\caption{Number of Frames (minor addresses) per Column~\cite{virtex5ConfigGuide}}
 	\label{tbl:minorAddressNumbers}
 	\begin{tabular}{|c|c|}
 		\hline
@@ -149,8 +149,16 @@ To further understand how frames configure tiles a mapping must be made between 
 This is described in section~\ref{sec:tileMapping}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Tile Mapping} \label{sec:tileMapping}
-The process of tile mapping aims to attribute each word in a configuration frame to the component of the device it configures.
+\section{Component Mapping} \label{sec:tileMapping}
+The process of component mapping aims to attribute each word in a configuration frame to the component of the device it configures.
+
+%The \gls{golden} and \gls{target} \gls{Bitstream}s undergo a comparison process.
+%Any frames that contain words that have been modified are stored for analysis.
+%The address of a modified frame is used to determine the row and column as described in section~\ref{sec:fpgaBitStream}.
+\subsection{Frame to Column Mapping}
+As described in section~\ref{sec:architectureAndConfig} a gate-array is composed of blocks organized into rows and columns.
+A block is composed of either one or multiple devices referred to as tiles. 
+\subsection{Word to Block Mapping}
 In the case of Virtex-5 devices a frame is composed of 41 words that can be thought of as a vertical stack that aligns with a column.
 As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of basic blocks; there are 20 \acrshort{CLB} blocks per column, 40 \acrshort{IOB}s, 4 \acrshort{BRAM}...etc.
 \begin{figure}[h]
@@ -167,6 +175,7 @@ From this, equation~\ref{eqn:numWordsPerBlock} can be deduced which is used to c
 \begin{equation} \label{eqn:numWordsPerBlock}
 n = (W - C) + B
 \end{equation}
+\ConditionSize
 where:
 \begin{conditions}
 	n     &  Number of Words per Block \\
@@ -174,8 +183,9 @@ where:
 	C     &  Number of clock words per frame \\
 	B     &  Number of blocks per column
 \end{conditions}
+\normalsize
 As shown in Figure~\ref{fig:frameTileMap} words are addressed from the 'top' of a device down.
-Equation~\ref{eqn:getTileNumber} can be used to map a particular word in a frame to a tile on the device.
+Equation~\ref{eqn:getTileNumber} can be used to map a particular word in a frame to a block on the device.
 \begin{equation} \label{eqn:getTileNumber}
 i = B - \floor*{\frac{w}{n}}
 \end{equation}
@@ -188,13 +198,7 @@ where:
 	n     &  Number of Words per Block 
 \end{conditions}
 \normalsize
-With equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber} it is now possible attribute any modifications in the \gls{Bitstream} to its corresponding component.
-The \gls{golden} and \gls{target} \gls{Bitstream}s undergo a comparison process.
-Any frames that contain words that have been modified are stored for analysis.
-The address of a modified frame is used to determine the row and column as described in section~\ref{sec:fpgaBitStream}.
-\subsection{Column-SubColumn Mapping}
-\subsection{SubColumn-Frame Mapping}
-\subsection{Tile-Word Mapping}
+With equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber} it is now possible attribute any modifications in the \gls{Bitstream} to its corresponding block.
 
 \section{Determining Trojan Attributes} \label{sec:trojanAttributes}
 The complexity of \acrlong{IC} designs and their corresponding trojans requires a more human-friendly scope.

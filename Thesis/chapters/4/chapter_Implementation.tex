@@ -1,6 +1,92 @@
 \startchapter{Software Implementation}
 \label{chapter:implementation}
+\section{Introduction}
+The \Name was build to be a stand-alone application.
+In order to allow it to be a powerful yet simple application the technologies used were selected with the idea of portability in mind.
 
 \section{Technologies Used}
+\subsection{\Xilinx}
+\Xilinx is one of the two largest manufacturers of \acrshort{FPGA}s. 
+Their devices are considerably more popular than their competitors.
+The configuration of devices employs a well known series of steps referred to as the \Xilinx 'tool-chain'~\cite{xilnxDevManual}.
+The 'tool-chain' not only compiles user designs and constraints into the configuration \gls{Bitstream} but performs a series of complex operations to optimize designs and effectively implement them on any \Xilinx model of the user's choosing.
+\begin{enumerate}
+	\item \textbf{\gls{sch2hdl}}: \glsdesc{sch2hdl}
+	\item \textbf{\gls{XST}}: \glsdesc{XST}
+	\item \textbf{\gls{MAP}}: \glsdesc{MAP}
+	\item \textbf{\gls{PAR}}: \glsdesc{PAR}
+	\item \textbf{\gls{ngdbuild}}: \glsdesc{ngdbuild}
+	\item \textbf{\gls{trce}}: \glsdesc{trce}
+	\item \textbf{\gls{Bitgen}}: \glsdesc{Bitgen}
+\end{enumerate}
+Each step produces a series of files that are used for a variety of purposes. 
+Often the resultant files are used by the subsequent step but some are intended for user information.
+The \gls{ngdbuild} tool generates what is known as the netlist for the design.
+The netlist is a description of the connectivity of the circuit implemented on the device. 
+The generated netlist is in a non human-readable format in an 'ndc' file.
+Fortunately, \Xilinx provides an additional tool called \acrshort{xdl2ndc} which allows the conversion to the human-readable \acrfull{XDL}.
+\subsubsection{\acrfull{XDL}}
+The \acrfull{XDL} is a human-readable ASCII format; though it is not actively part of the 'tool-chain' it is considered a native netlist format for describing and representing \acrshort{FPGA} designs~\cite{xdlTutorial}. 
+A part is a human-defined component which is to be implemented.
+Netlists either contain or refer to descriptions of the parts used and where in the device they are implemented.
+When a part is used it is called an 'instance'; thus each 'instance' has a definition, sometimes referred to as a master.
+
+An \acrshort{XDL} file contains two sections, the instance placement and configuration section, and the net routing section. 
+The placement and configuration section provides a list of every instance in a design. 
+Their descriptions include all of the configuration details required for their implementation on a component (power settings, logic, timing configurations... etc).
+In the \Xilinx jargon, a net refers to any electrical path between two components; more specifically, a net describes a communication channel.
+The gate-array of a \Xilinx device is composed of a grid of wires.
+These wires can be fused together by \acrfull{PIP} to make a useful connection between two components, thus creating a net.
+The output-pin of a net receives the signal from the transmitting component while the input-pin delivers the signal to the receiver.
+The \acrshort{PIP}s in-between dictate the path the signal takes between the two components.
+The net routing section of the \acrshort{XDL} file describes every path in the design.
+Combined, these two sections completely describe a design and how it is implemented.
+\subsubsection{XDLRC}
+The \acrshort{XDL} file describes the design implemented on a device.
+From this a lot of information regarding the composition of a \Xilinx device can be learned but it does not provide the entire description; only what has been used by the design.
+The \acrshort{xdl2ndc} command line tool provides an option to generate a resource report file referred to as an XDLRC file. 
+A XDLRC file describes the entire architecture of a \Xilinx \acrshort{FPGA}.
+\ConditionSize
+\begin{lstlisting}[label={lst:xdlrc}, language=Python, caption={A hierarchical XDLRC resource description of a Spartan 6 FPGA consisting of a header, a tile section, and a trailing device summary~\cite{xdlTutorial}}]
+#header
+(xdl_resource_report v0.2 xc6slx16csg324-3 spartan6
+# Device Level Dimensions
+(tiles 73 62
+...
+	#Configurable logic block with two slices
+	(tile 4 6 CLEXL_X1Y61 CLEXL 2
+		(primitive_site SLICE_X0Y61 SLICEL internal 45
+			(pinwire A1 input L_A1)
+		...
+		(primitive_site SLICE_X1Y61 SLICEX internal 43
+		...
+		(pinwire D output XX_D)
+	...)
+	# Interconnect tile
+	(tile 4 5 INT_X1Y61 INT 1
+	...
+		(wire EE2B0 2
+			(conn CLEXM_X2Y61 CLEXM_EE2M0)
+			(conn INT_BRAM_X3Y61 EE2E0)
+		...
+		# Programmable Interconnect Points
+		(pip INT_X1Y61 EE2E0 -> EE2B0)
+		(pip INT_X1Y61 EE4E0 -> EE2B0)
+		(pip INT_X1Y61 EL1E_S0 -> LOGICIN_B9)
+	...)
+# summary
+(summary tiles=4526 sites=5378 sitedefs=46 numpins=157962 numpips=5782505))
+\end{lstlisting}
+\normalsize
+
+Listing~\ref{lst:xdlrc} provides and example of the XDLRC format.
+The report begins with a header describing the device.
+It then reports that the overall architecture contains a matrix of tiles 73-wide and 62-tall.
+Further down we a configurable logic block at coordinate (4,6) and an interconnect tile at coordinates (4,5) are shown.
+\subsection{RapidSmith}
+\subsubsection{Database Files}
+\subsubsection{}
+\subsection{Java Swing}
+\subsection{Java}
 \section{Design}
 \section{\acrfull{UI}}
