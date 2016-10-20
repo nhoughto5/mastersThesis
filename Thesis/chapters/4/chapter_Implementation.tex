@@ -41,14 +41,14 @@ The output-pin of a net receives the signal from the transmitting component whil
 The \acrshort{PIP}s in-between dictate the path the signal takes between the two components.
 The net routing section of the \acrshort{XDL} file describes every path in the design.
 Combined, these two sections completely describe a design and how it is implemented.
-\subsubsection{XDLRC}
+\subsubsection{XDLRC} \label{sec:XDLRC}
 The \acrshort{XDL} file describes the design implemented on a device.
 From this a lot of information regarding the composition of a \Xilinx device can be learned but it does not provide the entire description; only what has been used by the design.
 The \acrshort{xdl2ndc} command line tool provides an option to generate a resource report file referred to as an XDLRC file. 
 A XDLRC file describes the entire architecture of a \Xilinx \acrshort{FPGA}.
 \ConditionSize
 \begin{lstlisting}[label={lst:xdlrc}, language=Python, caption={A hierarchical XDLRC resource description of a Spartan 6 FPGA consisting of a header, a tile section, and a trailing device summary~\cite{xdlTutorial}}]
-#header
+#Header section
 (xdl_resource_report v0.2 xc6slx16csg324-3 spartan6
 # Device Level Dimensions
 (tiles 73 62
@@ -82,11 +82,50 @@ A XDLRC file describes the entire architecture of a \Xilinx \acrshort{FPGA}.
 Listing~\ref{lst:xdlrc} provides and example of the XDLRC format.
 The report begins with a header describing the device.
 It then reports that the overall architecture contains a matrix of tiles 73-wide and 62-tall.
-Further down we a configurable logic block at coordinate (4,6) and an interconnect tile at coordinates (4,5) are shown.
-\subsection{RapidSmith}
-\subsubsection{Database Files}
-\subsubsection{}
-\subsection{Java Swing}
-\subsection{Java}
+Further down we can see a configurable logic block at coordinate (4,6) and an interconnect tile at coordinate (4,5) are shown.
+Each of these tile descriptions provide details of the subcomponents they contain, pinwires, \acrshort{PIP}s, slices...etc.
+The tool is capable of generating a variety of different XDLRC files for a device, ranging in the level of detail.
+The smaller files can range around 10MB while the fully detailed descriptions can reach 7GB.
+\subsection{Java} \label{sec:java}
+Java is a powerful and general-purpose programming language. 
+It is specifically designed to be as independent as possible.
+The original developer, James Gosling, intended the language to allow developers a comfortable implementation experience with seamless deployment. 
+The custodians of the Java language, Sun Microsystems, promotes the slogan 'write-once, run anywhere'.  
+\Name was written in Java primarily in order to interface with the \acrshort{API} known as RapidSmith which is described in section~\ref{sec:rapidSmith}.
+However, the additional benefits of allowing \Name to be compact, cross-platform application can not be understated.
+The Java language provides a native \acrfull{GUI} toolkit known as \Swing.
+\Swing is an \acrshort{API} that is part of Oracle's Java Foundation Classes; in other words it is readily available to all users of Java.
+It provides a simple to use programming structure for creating sophisticated \acrshort{UIs}.
+\Name employs Java and Java \Swing to make it as user-friendly as possible. 
+
+\subsection{RapidSmith} \label{sec:rapidSmith}
+RapidSmith is a set of tools and \acrfull{APIs} written in Java that enable \acrfull{CAD} tool creation for \Xilinx \acrshort{FPGA}s~\cite{rapidSmith}.
+Its purpose is to be used as a rapid prototyping platform for experimentation and research.
+The code is freely to use readily accessible.
+It was chosen as a supporting library for \Name for several reasons.
+First, the code base provides a series of class structures that astutely mirrors structure of \Xilinx devices and infrastructure.
+Secondly, it provides ready-made tools for extracting frames \gls{Bitstream} files. 
+\gls{Bitstream} files are huge binary files, without the tools provided by RapidSmith the analysis of these files becomes an arduous task.
+Finally, and most importantly, the creators of RapidSmith have developed a means of condensing XDLRC files into a greatly compressed format referred to as a 'database' file.
+\Name requires considerable detail of an \acrshort{FPGA}'s architecture in order to accurately described the effects a trojan has on a design.
+As mentioned in section~\ref{sec:XDLRC}, the fully detailed XDLRC files can reach 7GB in size.
+Working with text-based files of this size determents performance to an unusable level.
+\subsubsection{Class Structure} \label{sec:classStructure}
+\begin{figure*}[h]
+	\centering
+	\begin{subfigure}[t]{0.5\textwidth} \label{fig:rapidSmithDesign}
+		\centering
+		\includegraphics[height=2.1in]{Figures/rapidSmithDesign}
+		\caption{The Class Heirarchy For the RapidSmith Design Object}
+	\end{subfigure}%
+	~ 
+	\begin{subfigure}[t]{0.5\textwidth} \label{fig:rapidSmithDevice}
+		\centering
+		\includegraphics[height=2.1in]{Figures/rapidSmithDevice}
+		\caption{The Class Heirarchy For the RapidSmith Device Object}
+	\end{subfigure}
+	\caption{The RapidSmith Class Heirarchy~\cite{rapidSmithManual}}
+\end{figure*}
+\subsubsection{Database Files} \label{sec:databaseFiles}
 \section{Design}
 \section{\acrfull{UI}}

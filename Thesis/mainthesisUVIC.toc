@@ -33,14 +33,13 @@
 \contentsline {subsection}{\numberline {4.2.1}\textit {Xilinx}\nobreakspace {}}{21}
 \contentsline {subsubsection}{\acrfull {XDL}}{22}
 \contentsline {subsubsection}{XDLRC}{23}
-\contentsline {subsection}{\numberline {4.2.2}RapidSmith}{24}
-\contentsline {subsubsection}{Database Files}{24}
-\contentsline {subsubsection}{}{24}
-\contentsline {subsection}{\numberline {4.2.3}Java Swing}{24}
-\contentsline {subsection}{\numberline {4.2.4}Java}{24}
-\contentsline {section}{\numberline {4.3}Design}{24}
-\contentsline {section}{\numberline {4.4}\acrfull {UI}}{24}
-\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{25}
-\contentsline {chapter}{\numberline {6}Conclusions}{27}
-\contentsline {chapter}{\numberline {A}Additional Information}{28}
-\contentsline {chapter}{Bibliography}{29}
+\contentsline {subsection}{\numberline {4.2.2}Java}{24}
+\contentsline {subsection}{\numberline {4.2.3}RapidSmith}{24}
+\contentsline {subsubsection}{Class Structure}{25}
+\contentsline {subsubsection}{Database Files}{25}
+\contentsline {section}{\numberline {4.3}Design}{25}
+\contentsline {section}{\numberline {4.4}\acrfull {UI}}{25}
+\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{26}
+\contentsline {chapter}{\numberline {6}Conclusions}{28}
+\contentsline {chapter}{\numberline {A}Additional Information}{29}
+\contentsline {chapter}{Bibliography}{30}

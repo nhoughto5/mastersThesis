@@ -34,6 +34,21 @@ R.~Karri, J.~Rajendran, K.~Rosenfeld, and M.~Tehranipoor.
 \newblock Trustworthy hardware: Identifying and classifying hardware trojans.
 \newblock {\em Computer}, 43(10):39--46, Oct 2010.
 
+\bibitem{rapidSmithManual}
+C.~Lavin, M.~Padilla, J.~Lamprecht, P.~Lundrigan, B.~Nelson, and M.~Wirthlin
+  B.~Hutchings.
+\newblock Rapidsmith: A library for low-level manipulation of partially
+  placed-and-routed fpga designs.
+\newblock NSF Center for High Performance Reconfigurable Computing (CHREC)
+  Department of Electrical and Computer Engineering Brigham Young University, 1
+  2014.
+
+\bibitem{rapidSmith}
+C.~Lavin, M.~Padilla, J.~Lamprecht, P.~Lundrigan, B.~Nelson, and B.~Hutchings.
+\newblock Rapidsmith: Do-it-yourself cad tools for xilinx fpgas.
+\newblock In {\em 2011 21st International Conference on Field Programmable
+  Logic and Applications}, pages 349--355, Sept 2011.
+
 \bibitem{hardwareTrojanSurvey2015}
 H.~Li, Q.~Liu, J.~Zhang, and Y.~Lyu.
 \newblock A survey of hardware trojan detection, diagnosis and prevention.

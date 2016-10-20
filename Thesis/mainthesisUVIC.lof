@@ -1,7 +1,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The thirty-three attributes of the hardware trojan taxonomy in\nobreakspace {}\cite {samerAttribute}.}}{4}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The hardware trojan levels \cite {samerAttribute}.}}{5}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The thirty-three attributes of the hardware trojan taxonomy in\nobreakspace {}\cite {samerAttribute}.\relax }}{4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The hardware trojan levels \cite {samerAttribute}.\relax }}{5}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces FPGA Life-Cycle}}{8}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Methodology Overview}}{9}
@@ -10,6 +10,7 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Row Order of Virtex-5 Clock Region}}{13}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Configuration Words in the Bitstream\nobreakspace {}\cite {virtex5ConfigGuide}}}{15}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The RapidSmith Class Heirarchy\nobreakspace {}\cite {rapidSmithManual}\relax }}{25}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
