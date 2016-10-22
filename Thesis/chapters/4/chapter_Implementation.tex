@@ -91,41 +91,71 @@ Java is a powerful and general-purpose programming language.
 It is specifically designed to be as independent as possible.
 The original developer, James Gosling, intended the language to allow developers a comfortable implementation experience with seamless deployment. 
 The custodians of the Java language, Sun Microsystems, promotes the slogan 'write-once, run anywhere'.  
-\Name was written in Java primarily in order to interface with the \acrshort{API} known as RapidSmith which is described in section~\ref{sec:rapidSmith}.
+\Name was written in Java primarily in order to interface with the \acrshort{API} known as \RapidSmith which is described in section~\ref{sec:rapidSmith}.
 However, the additional benefits of allowing \Name to be compact, cross-platform application can not be understated.
 The Java language provides a native \acrfull{GUI} toolkit known as \Swing.
 \Swing is an \acrshort{API} that is part of Oracle's Java Foundation Classes; in other words it is readily available to all users of Java.
 It provides a simple to use programming structure for creating sophisticated \acrshort{UIs}.
 \Name employs Java and Java \Swing to make it as user-friendly as possible. 
 
-\subsection{RapidSmith} \label{sec:rapidSmith}
-RapidSmith is a set of tools and \acrfull{APIs} written in Java that enable \acrfull{CAD} tool creation for \Xilinx \acrshort{FPGA}s~\cite{rapidSmith}.
+\subsection{\RapidSmith} \label{sec:rapidSmith}
+\RapidSmith is a set of tools and \acrfull{APIs} written in Java that enable \acrfull{CAD} tool creation for \Xilinx \acrshort{FPGA}s~\cite{rapidSmith}.
 Its purpose is to be used as a rapid prototyping platform for experimentation and research.
 The code is freely to use readily accessible.
 It was chosen as a supporting library for \Name for several reasons.
 First, the code base provides a series of class structures that astutely mirrors structure of \Xilinx devices and infrastructure.
 Secondly, it provides ready-made tools for extracting frames \gls{Bitstream} files. 
-\gls{Bitstream} files are huge binary files, without the tools provided by RapidSmith the analysis of these files becomes an arduous task.
-Finally, and most importantly, the creators of RapidSmith have developed a means of condensing XDLRC files into a greatly compressed format referred to as a 'database' file.
+\gls{Bitstream} files are huge binary files, without the tools provided by \RapidSmith the analysis of these files becomes an arduous task.
+Finally, and most importantly, the creators of \RapidSmith have developed a means of condensing XDLRC files into a greatly compressed format referred to as a 'database' file.
 \Name requires considerable detail of an \acrshort{FPGA}'s architecture in order to accurately described the effects a trojan has on a design.
 As mentioned in section~\ref{sec:XDLRC}, the fully detailed XDLRC files can reach 7GB in size.
 Working with text-based files of this size determents performance to an unusable level.
+The makers of \RapidSmith have developed a compression scheme which converts the XDLRC files into a non human-readable format.
+The compression scheme reduces the size of the XDLRC files from 7GB to 1.3MB. 
+The \acrshort{API} provides interface classes that support querying the compressed files.
+With these features \RapidSmith enables the ability to analyze the effect any discovered trojan has on a device.
 \subsubsection{Class Structure} \label{sec:classStructure}
+Building off of the information provided by the XDLRC architecture files, \RapidSmith provides a class structure that enables developers an easy to use interface for working with \acrshort{FPGA}s.
+As described in section~\ref{sec:architectureAndConfig}, the gate-array of an \acrshort{FPGA} is composed of blocks made up of tiles.
+These tiles are further composed of sub-components collectively referred to as 'primitives'.
+Figure~\ref{fig:classStructures} shows the top-down construction of the \RapidSmith class structure.
+The \Name employs both the 'Device' and 'Design' classes shown in Figures~\ref{fig:rapidSmithDevice} and~\ref{fig:rapidSmithDesign} respectively.
+The \gls{Bitstream} for the \gls{golden} and \gls{target} devices are read into memory. 
+The \gls{Bitstream} parser class determines the model of the devices and the 'Device' class is then loaded.
+When loaded the 'Device' class imports the compressed XDLRC file describing the chosen model.
+The complete description of the architecture is read and loaded; every tile, primitive, wire, and how they all interconnect is stored in memory.
+The \gls{golden} \acrshort{XDL} file is then loaded.
+The \acrshort{XDL} files is read and the 'Design' class is similarly loaded with the user-defined design.
 \begin{figure*}[h]
 	\centering
-	\begin{subfigure}[t]{0.5\textwidth} \label{fig:rapidSmithDesign}
-		\centering
-		\includegraphics[height=2.1in]{Figures/rapidSmithDesign}
-		\caption{The Class Heirarchy For the RapidSmith Design Object}
+	\begin{subfigure}[t]{0.5\textwidth}
+			\centering
+			\includegraphics[height=2in]{Figures/rapidSmithDevice}
+			\caption{The Device Class-Structure}
+			\label{fig:rapidSmithDevice}
 	\end{subfigure}%
 	~ 
-	\begin{subfigure}[t]{0.5\textwidth} \label{fig:rapidSmithDevice}
+	\begin{subfigure}[t]{0.5\textwidth}
 		\centering
-		\includegraphics[height=2.1in]{Figures/rapidSmithDevice}
-		\caption{The Class Heirarchy For the RapidSmith Device Object}
+		\includegraphics[height=2in]{Figures/rapidSmithDesign}
+		\caption{The Design Class-Structure}
+		 \label{fig:rapidSmithDesign}
 	\end{subfigure}
-	\caption{The RapidSmith Class Heirarchy~\cite{rapidSmithManual}}
+	\caption{The \RapidSmith Class Hierarchy~\cite{rapidSmithManual}}
+	 \label{fig:classStructures}
 \end{figure*}
-\subsubsection{Database Files} \label{sec:databaseFiles}
+Not shown in Figure~\ref{fig:classStructures} are a series of utility classes.
+The \gls{Bitstream} parser class reads and interprets the \gls{Bitstream} files. 
+It uses a 'Frame' class to organize the \gls{Bitstream} file into an array of objects that adhere to the configuration pattern described in section~\ref{sec:architectureAndConfig}.
+The frame objects are populated with the frame's 32-bit address, an array of 32-bit words which make up the frame and a series of helper methods.
 \section{Design}
-\section{\acrfull{UI}}
+\subsection{\acrfull{UI}}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{Figures/UI}
+\caption[The User-Interface of the \Name]{The User-Interface of the \Name}
+\label{fig:UI}
+\end{figure}
+
+\subsection{Operation}
+\subsection{Use-Manual}
