@@ -39,8 +39,7 @@
 \contentsline {section}{\numberline {4.3}Design}{26}
 \contentsline {subsection}{\numberline {4.3.1}\acrfull {UI}}{26}
 \contentsline {subsection}{\numberline {4.3.2}Operation}{26}
-\contentsline {subsection}{\numberline {4.3.3}Use-Manual}{26}
-\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{29}
-\contentsline {chapter}{\numberline {6}Conclusions}{31}
-\contentsline {chapter}{\numberline {A}Additional Information}{32}
-\contentsline {chapter}{Bibliography}{33}
+\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{30}
+\contentsline {chapter}{\numberline {6}Conclusions}{32}
+\contentsline {chapter}{\numberline {A}Additional Information}{33}
+\contentsline {chapter}{Bibliography}{34}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  22 OCT 2016 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  22 OCT 2016 21:31
 entering extended mode
 **mainthesisUVIC.tex
 (mainthesisUVIC.tex
@@ -870,10 +870,10 @@ Writing nomenclature file mainthesisUVIC.nlo
 \glswrite=\write4
 \glo@main@file=\write5
 Package glossaries Info: Writing glossary file mainthesisUVIC.glo on input line
- 155.
+ 156.
 \glo@acronym@file=\write6
 Package glossaries Info: Writing glossary file mainthesisUVIC.acn on input line
- 155.
+ 156.
 (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
 (chapters/2/chapter_HardwareTrojans.aux)
 (chapters/3/chapter_AutomatedDetection.aux
@@ -882,18 +882,18 @@ LaTeX Warning: Label `R' multiply defined.
 
 ) (chapters/4/chapter_Implementation.aux) (chapters/5/chapter_Website.aux)
 (chapters/6/chapter_conclusion.aux) (chapters/appendix/chapter_app.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 158.
-LaTeX Font Info:    ... okay on input line 158.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 159.
+LaTeX Font Info:    ... okay on input line 159.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -955,17 +955,17 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2015/10/15 v2.6m siunitx: Abbreviated units
 )
 \c__siunitx_mathsf_int=\count286
-LaTeX Font Info:    Try loading font information for U+msa on input line 158.
+LaTeX Font Info:    Try loading font information for U+msa on input line 159.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 158.
+LaTeX Font Info:    Try loading font information for U+msb on input line 159.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 158.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 159.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -1157,34 +1157,34 @@ File: Figures/UI.png Graphic file (type png)
 Package pdftex.def Info: Figures/UI.png used on input line 160.
 (pdftex.def)             Requested size: 416.2781pt x 283.82716pt.
 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 180.
+
 <Figures/Operation.png, id=141, 2493.315pt x 1619.04875pt>
 File: Figures/Operation.png Graphic file (type png)
 
 <use Figures/Operation.png>
-Package pdftex.def Info: Figures/Operation.png used on input line 169.
+Package pdftex.def Info: Figures/Operation.png used on input line 182.
 (pdftex.def)             Requested size: 433.62001pt x 281.55904pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [26 <./Figures/rapidSmithDevice.png> <./Figures/rapidSmithDesign.png>]
-[27 <./Figures/UI.png>] [28 <./Figures/Operation.png>]
-(chapters/5/chapter_Website.tex
+ [26 <./Figures/rapidSmithDevice.png> <./Figures/rapidSmithDesign.png>] [27 <./
+Figures/UI.png>] [28 <./Figures/Operation.png>])
+[29] (chapters/5/chapter_Website.tex
 Chapter 5.
 Missing character: There is no ’ in font cmti12!
-[29
+[30
 
 
 
-]) [30] (chapters/6/chapter_conclusion.tex
+]) [31] (chapters/6/chapter_conclusion.tex
 Chapter 6.
-) [31
+) [32
 
 
 
 ] (chapters/appendix/chapter_app.tex
 Appendix A.
-) [32
+) [33
 
 
 
@@ -1205,7 +1205,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[33
+[34
 
 
 ])
@@ -1214,7 +1214,7 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-[34] (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
+[35] (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
 (chapters/2/chapter_HardwareTrojans.aux)
 (chapters/3/chapter_AutomatedDetection.aux)
 (chapters/4/chapter_Implementation.aux) (chapters/5/chapter_Website.aux)
@@ -1224,10 +1224,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 23146 strings out of 493698
- 416796 string characters out of 3144415
- 594471 words of memory out of 3000000
- 26088 multiletter control sequences out of 15000+200000
+ 23149 strings out of 493698
+ 416835 string characters out of 3144415
+ 594487 words of memory out of 3000000
+ 26091 multiletter control sequences out of 15000+200000
  19644 words of font info for 76 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  53i,12n,92p,10382b,1743s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1244,9 +1244,9 @@ ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on mainthesisUVIC.pdf (43 pages, 785505 bytes).
+Output written on mainthesisUVIC.pdf (44 pages, 788154 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
+ 221 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

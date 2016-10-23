@@ -1,7 +1,7 @@
 \startchapter{Software Implementation}
 \label{chapter:implementation}
 \section{Introduction}
-The \Name was build to be a stand-alone application.
+The \NameNoPeriod was build to be a stand-alone application.
 In order to allow it to be a powerful yet simple application the technologies used were selected with the idea of portability in mind.
 
 \section{Technologies Used}
@@ -25,7 +25,7 @@ The \gls{ngdbuild} tool generates what is known as the netlist for the design.
 The netlist is a description of the connectivity of the circuit implemented on the device. 
 The generated netlist is in a non human-readable format in an 'ndc' file.
 Fortunately, \Xilinx provides an additional tool called \acrshort{xdl2ndc} which allows the conversion to the human-readable \acrfull{XDL}.
-\subsubsection{\acrfull{XDL}}
+\subsubsection{\acrfull{XDL}} \label{sec:XDL}
 The \acrfull{XDL} is a human-readable ASCII format; though it is not actively part of the 'tool-chain' it is considered a native netlist format for describing and representing \acrshort{FPGA} designs~\cite{xdlTutorial}. 
 A part is a human-defined component which is to be implemented.
 Netlists either contain or refer to descriptions of the parts used and where in the device they are implemented.
@@ -91,23 +91,23 @@ Java is a powerful and general-purpose programming language.
 It is specifically designed to be as independent as possible.
 The original developer, James Gosling, intended the language to allow developers a comfortable implementation experience with seamless deployment. 
 The custodians of the Java language, Sun Microsystems, promotes the slogan 'write-once, run anywhere'.  
-\Name was written in Java primarily in order to interface with the \acrshort{API} known as \RapidSmith which is described in section~\ref{sec:rapidSmith}.
-However, the additional benefits of allowing \Name to be compact, cross-platform application can not be understated.
+\NameNoPeriod was written in Java primarily in order to interface with the \acrshort{API} known as \RapidSmith which is described in section~\ref{sec:rapidSmith}.
+However, the additional benefits of allowing \NameNoPeriod to be compact, cross-platform application can not be understated.
 The Java language provides a native \acrfull{GUI} toolkit known as \Swing.
 \Swing is an \acrshort{API} that is part of Oracle's Java Foundation Classes; in other words it is readily available to all users of Java.
 It provides a simple to use programming structure for creating sophisticated \acrshort{UIs}.
-\Name employs Java and Java \Swing to make it as user-friendly as possible. 
+\NameNoPeriod employs Java and Java \Swing to make it as user-friendly as possible. 
 
 \subsection{\RapidSmith} \label{sec:rapidSmith}
 \RapidSmith is a set of tools and \acrfull{APIs} written in Java that enable \acrfull{CAD} tool creation for \Xilinx \acrshort{FPGA}s~\cite{rapidSmith}.
 Its purpose is to be used as a rapid prototyping platform for experimentation and research.
 The code is freely to use readily accessible.
-It was chosen as a supporting library for \Name for several reasons.
+It was chosen as a supporting library for \NameNoPeriod for several reasons.
 First, the code base provides a series of class structures that astutely mirrors structure of \Xilinx devices and infrastructure.
 Secondly, it provides ready-made tools for extracting frames \gls{Bitstream} files. 
 \gls{Bitstream} files are huge binary files, without the tools provided by \RapidSmith the analysis of these files becomes an arduous task.
 Finally, and most importantly, the creators of \RapidSmith have developed a means of condensing XDLRC files into a greatly compressed format referred to as a 'database' file.
-\Name requires considerable detail of an \acrshort{FPGA}'s architecture in order to accurately described the effects a trojan has on a design.
+\NameNoPeriod requires considerable detail of an \acrshort{FPGA}'s architecture in order to accurately described the effects a trojan has on a design.
 As mentioned in section~\ref{sec:XDLRC}, the fully detailed XDLRC files can reach 7GB in size.
 Working with text-based files of this size determents performance to an unusable level.
 The makers of \RapidSmith have developed a compression scheme which converts the XDLRC files into a non human-readable format.
@@ -119,7 +119,7 @@ Building off of the information provided by the XDLRC architecture files, \Rapid
 As described in section~\ref{sec:architectureAndConfig}, the gate-array of an \acrshort{FPGA} is composed of blocks made up of tiles.
 These tiles are further composed of sub-components collectively referred to as 'primitives'.
 Figure~\ref{fig:classStructures} shows the top-down construction of the \RapidSmith class structure.
-The \Name employs both the 'Device' and 'Design' classes shown in Figures~\ref{fig:rapidSmithDevice} and~\ref{fig:rapidSmithDesign} respectively.
+The \NameNoPeriod employs both the 'Device' and 'Design' classes shown in Figures~\ref{fig:rapidSmithDevice} and~\ref{fig:rapidSmithDesign} respectively.
 The \gls{Bitstream} for the \gls{golden} and \gls{target} devices are read into memory. 
 The \gls{Bitstream} parser class determines the model of the devices and the 'Device' class is then loaded.
 When loaded the 'Device' class imports the compressed XDLRC file describing the chosen model.
@@ -151,24 +151,46 @@ The frame objects are populated with the frame's 32-bit address, an array of 32-
 \section{Design}
 \subsection{\acrfull{UI}}
 Java and Java \Swing provide an easy to use \acrlong{UI} development system which produces light-weight, portable and cross platform applications.
-The \Name uses a provides a very simplistic and easy to use interface which can be seen in Figure~\ref{fig:UI}.
+The \NameNoPeriod uses a provides a very simplistic and easy to use interface which can be seen in Figure~\ref{fig:UI}.
 To perform and analysis the user must use the \acrshort{UI} to navigate to and select the \gls{golden} \gls{Bitstream}, the \gls{target} \gls{Bitstream} and the \gls{golden} \acrshort{XDL} file via the three browese buttons on the left.
 Once loaded the detection process can be launched via the 'Analyze' button.
 On the right the user is able to review information specific to the trojan, described in section~\ref{sec:operation}.
 \begin{figure}
 \centering
 \includegraphics[width=0.96\linewidth]{Figures/UI}
-\caption[The User-Interface of the \Name]{The User-Interface of the \Name}
+\caption[The User-Interface of the \NameNoPeriod]{The User-Interface of the \NameNoPeriod}
 \label{fig:UI}
 \end{figure}
 
 \subsection{Operation} \label{sec:operation}
-
-\begin{figure}[h]
+Figure~\ref{fig:Operation} gives a visual representation of the operating procedure of the \Name.
+To perform analysis the user must submit the \gls{golden} and \gls{target} \gls{Bitstream} files.
+As seen on the left of Figure~\ref{fig:Operation}, these large binary files are parsed. 
+The \RapidSmith \acrshort{API} provides an \gls{Bitstream} parsing utility.
+It is able to detect the model of the device by scanning the 'header' information in the files.
+Different \Xilinx models use different configuration schemes; their configuration files have slightly different features including frame size and frame ordering. 
+Knowing the device, the parser is able to refer to additional utility files and accurately extract the frames.
+The \gls{golden} and \gls{target} frames are extracted and stored in memory as arrays.
+The two arrays are then passed to a comparison process.
+Each frame is compared bit by bit.
+A trojan-free circuit will have no differences between the \gls{golden} and \gls{target} files.
+Any modified frames discovered are stored in a 'Modified\_Frame' class.
+The 'Modified\_Frame' object stores the \gls{golden} frame data, the \gls{target} frame data, the address of the frame and more.
+The modified frame objects are then used by the 'Tile Mapping' method described in section~\ref{sec:tileMapping} to determine where in the device architecture the modifications have been made.
+\begin{figure}[]
 \centering
 \includegraphics[width=1\linewidth]{Figures/Operation}
 \caption[Overview of Functional Operation]{Overview of Functional Operation}
 \label{fig:Operation}
 \end{figure}
+The tile-mapping procedure relies heavily on the compressed XDLRC files and the corresponding \acrshort{API} described in section~\ref{sec:XDLRC} as well as the 'Device' class structure shown in Figure~\ref{fig:rapidSmithDevice}.
+The tile mapping procedure produces a list of objects of the 'Modified\_Tile' class.
+This class contains a reference to the corresponding tile in the XDLRC file, the \gls{golden} and \gls{target} words (which differ), the frame address in which it occurred, the sub-column type and the column type.
+The user is also required to enter the \gls{golden} \acrshort{XDL} file.
+As described in section~\ref{sec:XDL} the \acrshort{XDL} file contains the Netlist for the \gls{golden} design.
+This file describes not only how each of the users components are built and interconnected but where on the device they are placed.
+The modified tiles, as shown in Figure~\ref{fig:Operation}, must be correlated to the users design to extract valuable information.
+The instances and nets described in the \acrshort{XDL} file list the exact tile and primitive in which they are placed.
+The 'Design' class structure shown in Figure~\ref{fig:rapidSmithDesign} lists 
+The list of 'Modified\_Tile' objects are compared to the tile placings of the instances and nets in the 
 
-\subsection{Use-Manual}
