@@ -134,6 +134,7 @@ The make-up of a frame address is shown in Table~\ref{tbl:frameAddress}.
 		\end{tabular}		
 	}
 \end{table}
+
 The \acrfull{BA} identifies the block type.
 \begin{itemize}
 	\item BA 0: Logic type.
@@ -144,20 +145,20 @@ The \acrfull{BA} identifies the block type.
 The logic block contains the columns which provides the primary configuration for the device (\acrshort{CLBs}, \acrshort{IOBs}... etc).
 The \acrshort{BRAM} columns initialize the memory for the device while the \acrshort{BRAM} Interconnect columns configure how the logic of the design interacts with the \acrshort{BRAM}.
 
-In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Figure~\ref{fig:RowOrder}.
-\begin{figure}[]
+%In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Figure~\ref{fig:RowOrder}.
+\begin{figure}[h]
 \centering
 \includegraphics[width=.7\linewidth]{Figures/RowOrder}
 \caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
 \label{fig:RowOrder}
 \end{figure}
-Each row of blocks is given a row value in it's address that increments away from the clock bus starting at 0. 
-The frame address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the horizontal clock bus.
-The major address specifies the block within the row.
+Each clock region is given a row value in its address that increments away from the center of the device starting at 0. 
+The frame address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the center of the device~\cite{virtex5ConfigGuide}.
+The major address specifies the column within the row.
 These addresses are numbered from left to right and begin at 0.
 The minor address indicates the frame number within a column. 
 Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column type.
-\begin{table}[]
+\begin{table}[h!]
 	\centering
 	\caption{Number of Frames (minor addresses) per Column~\cite{virtex5ConfigGuide}}
 	\label{tbl:minorAddressNumbers}
@@ -174,7 +175,7 @@ Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column typ
 As described in section~\ref{sec:architectureAndConfig} a block may contain multiple tiles.
 In a \acrshort{CLB} column a block consists of an interconnect tile, also known as a \acrfull{SM} and a \acrshort{CLB}.
 Frames are numbered from left to right, starting with 0. 
-For each block, except in a clock column, frames numbered 0 to 25 access the Interconnect for that column. 
+For each block, except in a clock column, frames numbered 0 to 25 access the interconnect tile for that column. 
 For all blocks, except the \acrshort{CLB} and the clock column, frames numbered 26 and 27 access the Interface for that column. 
 All other frames are specific to that block.~\cite{virtex5ConfigGuide}
 To further understand how frames configure tiles a mapping must be made between each frame and the corresponding tile.
@@ -182,17 +183,24 @@ This is described in section~\ref{sec:tileMapping}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Component Mapping} \label{sec:tileMapping}
-The process of component mapping aims to attribute each word in a configuration frame to the component of the device it configures.
+The \Name employs a method referred to as Component Mapping to create a mapping between each word in a configuration frame and the component on the device that it configures.
+This information is not publicly released by \Xilinx as a means of providing security through obscurity.
 
-%The \gls{golden} and \gls{target} \gls{Bitstream}s undergo a comparison process.
-%Any frames that contain words that have been modified are stored for analysis.
-%The address of a modified frame is used to determine the row and column as described in section~\ref{sec:fpgaBitStream}.
 \subsection{Frame to Column Mapping}
-As described in section~\ref{sec:architectureAndConfig} a gate-array is composed of blocks organized into rows and columns.
-A block is composed of either one or multiple devices referred to as tiles. 
+The configuration \gls{Bitstream} is stored in an external memory device as described in section~\ref{sec:architectureAndConfig}.
+When powered-on the \gls{Bitstream} is transmitted in frame address order to populate the dynamic in the tiles of the gate-array.
+The frame addressing scheme describes where in the gate-array the frame is destined fairly directly.
+Frames with a \acrshort{BA} value of 1 are clearly destined to configure the \acrshort{BRAM} and do not need further analysis for the purposes of this method.
+Frames with a \acrshort{BA} value of 0 or 2 must be mapped more finitely.
+The row address can be thought of as the Y value for the clock-region in which the frame resides.
+Figure~\ref{fig:FPGA} shows four clock regions organized into two rows. 
+As an example the Virtex-5 240T has 12 rows; its row address spans from 0-5 and the Top bit in the address indicates whether it is in the top or bottom half of the device.
+Once the correct clock region is discerned the major address is used to determine the block column.
+The major address begins at 0 on the left and counts up towards the number of columns in the clock region.
+Finally, the minor address is used to determine which sub-column has been modified according to Table~\ref{tbl:frameAddress}.
 \subsection{Word to Block Mapping}
 In the case of Virtex-5 devices a frame is composed of 41 words that can be thought of as a vertical stack that aligns with a column.
-As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of basic blocks; there are 20 \acrshort{CLB} blocks per column, 40 \acrshort{IOB}s, 4 \acrshort{BRAM}...etc.
+As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of basic blocks; there are 20 \acrshort{CLB} blocks per column, 40 \acrshort{IOB}s, 4 \acrshort{BRAM}...etc for Virtex-5 device.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Figures/frameTileMap}

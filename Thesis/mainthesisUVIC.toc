@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {3.6.1}Extraction Methods}{18}
 \contentsline {subsubsection}{Observed Location Attributes}{18}
 \contentsline {subsubsection}{Scatter Score Method}{19}
-\contentsline {subsubsection}{Insertion and Abstraction Attributes}{20}
+\contentsline {subsubsection}{Insertion and Abstraction Attributes}{21}
 \contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{21}
 \contentsline {chapter}{\numberline {4}Software Implementation}{23}
 \contentsline {section}{\numberline {4.1}Introduction}{23}
