@@ -2,7 +2,7 @@
 \label{chapter:implementation}
 \section{Introduction}
 The \NameNoPeriod was build to be a stand-alone application.
-In order to allow it to be a powerful yet simple application the technologies used were selected with the idea of portability in mind.
+In order to allow it to be a powerful yet simple tool the technologies used were selected with the idea of portability in mind.
 
 \section{Technologies Used}
 \subsection{\Xilinx}
@@ -189,8 +189,10 @@ This class contains a reference to the corresponding tile in the XDLRC file, the
 The user is also required to enter the \gls{golden} \acrshort{XDL} file.
 As described in section~\ref{sec:XDL} the \acrshort{XDL} file contains the Netlist for the \gls{golden} design.
 This file describes not only how each of the users components are built and interconnected but where on the device they are placed.
-The modified tiles, as shown in Figure~\ref{fig:Operation}, must be correlated to the users design to extract valuable information.
+The modified tiles, as shown in Figure~\ref{fig:Operation}, must be correlated to the users design to extract useful information.
 The instances and nets described in the \acrshort{XDL} file list the exact tile and primitive in which they are placed.
-The 'Design' class structure shown in Figure~\ref{fig:rapidSmithDesign} lists 
-The list of 'Modified\_Tile' objects are compared to the tile placings of the instances and nets in the 
+The \RapidSmith \acrshort{XDL} parser reads the user's design and populates the 'Design' class shown in Figure~\ref{fig:rapidSmithDesign}.
+The list of 'Modified\_Tile' objects are compared to the tile placings of the instances and nets in the populated 'Design' object.
+Any instances or nets that are placed in 'modified' tiles are flagged and stored.
+The user is able to view which instances and nets of their design have been modified by the three buttons on the right of the \acrshort{UI} shown in Figure~\ref{fig:UI}.
 

@@ -3,10 +3,23 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methodology} \label{sec:methodology}
-Figure~\ref{fig:Concept} provides a visual representation of the basic concept assumed for the purposes of this work. 
-All stages of production of an \acrshort{FPGA} implementation are done "in-house" with the exception of the fabrication process. 
-It is assumed that any trojan discovered is inserted in the fabrication phase; all other stages are trusted.  
-The method of automated trojan detection described in this work would take place in the 'testing' phase of the life-cycle. 
+An \acrfull{IC} belongs to one of two categories.
+An \acrfull{ASIC} or a \acrfull{FPGA}.
+An \acrshort{ASIC} is manufactured once and is immutable; its hardware is permanently printed into its silicon.
+\acrshort{FPGA}s are reconfigurable because they are comprised of an array of \acrfull{PLDs}.
+A \acrshort{PLD} is a component whose functionality is dependent on a set of configuration options; in other words, a user can define how it behaves.
+Each \acrshort{PLD} receives configuration instructions from the user that defines its functionality; these instructions are in the form of a binary message.
+In \Xilinx terminology a \acrshort{PLD} is referred to as a tile. 
+A single \acrshort{FPGA} can contain hundreds, or even thousands of tiles.
+A device is usually made up of over a hundred different types.
+Different types are used for different functions, such as \acrfull{IO}, Logic, Memory...etc.
+The set of messages sent to all of the \acrshort{PLD}s in the device from the user is referred to as the configuration \gls{Bitstream}. 
+\acrshort{FPGA} users create designs using a programming language; the design is then downloaded or "configured" onto the device via the \gls{Bitstream}.
+Creating \acrshort{HDL} designs for \acrshort{FPGA}s is considerably cheaper and easier then designing \acrshort{ASIC} chips.
+Additionally, if the user wishes to make modifications the design on the device can be updated when out in the field; this is another large advantage over \acrshort{ASIC}s.
+%The design process is simpler and modifications can be made after manufacture.
+Because of this, \acrshort{FPGA}s are becoming the \acrshort{IC} of choice in larger scale productions.
+These same features, however, increase their vulnerability to attack.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/Concept}
@@ -14,24 +27,32 @@ The method of automated trojan detection described in this work would take place
 	\label{fig:Concept}
 \end{figure}
 
-Figure~\ref{fig:methodologyOverview} shows an overview of the trojan detection scheme.
-\acrshort{FPGA} designs are written in a \acrfull{HDL}.
-\Xilinx provides a series of \acrfull{UI} or command line tools to process the design known as the 'tool-chain'.
-The tool chain generates a series of files that are used for a variety of purposes.
-The Bit file is a binary representation of the design to be implemented.
-It is referred to as the \gls{Bitstream} or Configuration \gls{Bitstream} and is the final form which is loaded into the device.
+Figure~\ref{fig:Concept} provides a visual representation of the use-case assumed for the purposes of this work. 
+With the exception of the fabrication process, all stages of production of an \acrshort{FPGA} implementation are assumed to have been done "in-house". 
+Any trojan discovered is inserted in the fabrication phase; all other stages are trusted.  
+The method of automated trojan detection described in this work would take place in the 'testing' phase of the life-cycle. 
+
+Figure~\ref{fig:methodologyOverview} shows an overview of the trojan detection methodology.
+As mentioned, \acrshort{FPGA} designs are written in a \acrfull{HDL}.
+\Xilinx provides a series of \acrfull{UI} and command line tools to process the \acrshort{HDL} known as the 'tool-chain'.
+The tool chain generates a series of files that are used for a variety of purposes as shown in the 'Resultant Files' box in Figure~\ref{fig:methodologyOverview}.
+The NGC file is a non-human readable semantic description of the design known as a netlist.
+This file can be converted into a human-readable version known as \acrfull{XDL} which will be described in section~\ref{sec:XDL}.
+The Bit file is the binary representation of the design to be implemented.
+It is referred to as the \gls{Bitstream} or 'configuration' \gls{Bitstream} and is the final form that is loaded into the \acrshort{FPGA}.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{Figures/methodologyOverview}
 	\caption[Methodology Overview]{Methodology Overview}
 	\label{fig:methodologyOverview}
 \end{figure}
-This Bit file is also one of the primary files sent to the fabrication house where it will be implemented onto the batch of devices ordered.
-The resultant files are kept in secure storage while a copy is sent to be fabricated; these 'clean' copies are reffered to as \gls{golden}.
-Though it is known that fabrication houses will often attempt to make optimizations on designs this methodology requires that no such efforts are made.
+This Bit file is the primary file sent to the fabrication house where it will be implemented onto the batch of devices ordered.
+The resultant files are to be kept in secure storage while a copy is sent to be fabricated; these 'clean' copies are referred to as \gls{golden}.
+Though it is known that the fabrication houses will often attempt to make optimizations on designs, this methodology requires that no such efforts are made.
 When the completed batch of fabricated chips are returned the \gls{Bitstream} is extracted via the method described in section~\ref{sec:bitstreamExtraction}. 
 That which is extracted is referred to as the \gls{target} \gls{Bitstream}.
-The \gls{golden} and \gls{target} \gls{Bitstream}s are analyzed in conjunction to detect differences, described in section~\ref{sec:fpgaBitStream}.
+The \gls{golden} and \gls{target} \gls{Bitstream}s are analyzed in conjunction to detect differences.
+This technique is described in section~\ref{sec:fpgaBitStream}.
 Any discovered differences are then attributed to the corresponding component in the architecture, described in section~\ref{sec:tileMapping}.
 Finally, descriptive attributes presented in section~\ref{sec:topology} are returned to the user, described in section~\ref{sec:trojanAttributes}. 
 
@@ -39,31 +60,42 @@ Finally, descriptive attributes presented in section~\ref{sec:topology} are retu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{FPGA Architecture and Configuration} \label{sec:architectureAndConfig}
 A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Figure~\ref{fig:FPGA}.
-A device can contain anywhere from a couple hundred to a few thousand blocks; they are arranged into columns by type.
-A block will consist of one or multiple tiles depending on the type.
-A tile is a component specific to a particular function such as \acrfull{IO}, design logic, memory...etc but their detailed functionality can be configured by the user.
-An \acrshort{FPGA} may have over one-hundred different types of tiles however each column is comprised entirely by a single block type.
-Columns are separated by clock regions as shown by the dashed lines in Figure~\ref{fig:FPGA}.
-Each region is an independent array of blocks that uses a dedicated clock resource; this minimizes clock skew from causing undesired timing delays.
+A device can contain anywhere from a couple hundred to a few thousand blocks and are arranged into columns by type.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/FPGA}
 	\caption[Rudimentary Layout of a Virtex Gate-Array]{Rudimentary Layout of a Virtex Gate-Array}
 	\label{fig:FPGA}
 \end{figure}
+A block is not a physical device but a conceptual grouping of tiles.
+A block will consist of one or multiple tiles depending on the type.
+A tile is a component specific to a particular function such as \acrfull{IO}, design logic, memory...etc but their detailed functionality can be configured by the user.
+Though an \acrshort{FPGA} may have over one-hundred different types of tiles each column is comprised entirely by a single block type.
+Columns are separated by clock regions shown by the dashed lines in Figure~\ref{fig:FPGA}.
+Each region is an independent array of blocks that uses a dedicated clock resource; this minimizes clock skew from causing undesired timing delays.
+Figure~\ref{fig:column} depicts a \acrfull{CLB} column.
+A column is comprised of blocks stacked vertically; \acrshort{CLB} blocks contain a \acrshort{CLB} tile and an interconnect tile.
+The stack of interconnects can be considered the 'interconnect' sub-column while the stack of \acrshort{CLB} tiles can be thought of as the \acrshort{CLB} sub-column.
+Combined, the two sub-columns make up the column. 
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{Figures/column}
+\caption[Column Composition]{Column Composition}
+\label{fig:column}
+\end{figure}
 Though each tile has a designated purposes (ex. \acrfull{IO}, \acrfull{CL}, memory...etc) their functionality can be configured by the user; this is how designs are implemented on a device.
 The configuration of each tile is dictated by the \gls{Bitstream}. 
-To improve performance the contents of the gate-array is referred to as dynamic.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Figures/architecture}
+	\caption[FPGA Device Layout]{FPGA Device Layout}
+	\label{fig:architecture}
+\end{figure}
+
+To improve performance the blocks of the gate-array are dynamic memory components.
 A dynamic device is unable to retain the contents of its memory when it looses power.
 To prevent having to plug in a device and download the configuration every time it is powered on, an external static memory device (i.e. retains its contents with loss of power) holds the \gls{Bitstream}. 
 When an \acrshort{FPGA} is powered on the \gls{Bitstream} is loaded from the external memory (often \acrfull{SRAM}) into the gate-array, as can be seen in Figure~\ref{fig:architecture}.
-
-\begin{figure}
-\centering
-\includegraphics[width=0.9\linewidth]{Figures/architecture}
-\caption[FPGA Device Layout]{FPGA Device Layout}
-\label{fig:architecture}
-\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

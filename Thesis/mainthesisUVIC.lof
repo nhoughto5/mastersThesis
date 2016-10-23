@@ -3,16 +3,17 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The thirty-three attributes of the hardware trojan taxonomy in\nobreakspace {}\cite {samerAttribute}.\relax }}{4}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces The hardware trojan levels \cite {samerAttribute}.\relax }}{5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces FPGA Life-Cycle}}{8}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Methodology Overview}}{9}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Rudimentary Layout of a Virtex Gate-Array}}{10}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces FPGA Device Layout}}{11}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Row Order of Virtex-5 Clock Region}}{13}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Configuration Words in the Bitstream\nobreakspace {}\cite {virtex5ConfigGuide}}}{15}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces FPGA Life-Cycle}}{9}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Methodology Overview}}{10}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Rudimentary Layout of a Virtex Gate-Array}}{11}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Column Composition}}{12}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces FPGA Device Layout}}{13}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Row Order of Virtex-5 Clock Region}}{15}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Configuration Words in the Bitstream\nobreakspace {}\cite {virtex5ConfigGuide}}}{17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The \textit {RapidSmith}\nobreakspace {}Class Hierarchy\nobreakspace {}\cite {rapidSmithManual}\relax }}{26}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The User-Interface of the Automated Hardware Trojan System\nobreakspace {}}}{27}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of Functional Operation}}{28}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The \textit {RapidSmith}\nobreakspace {}Class Hierarchy\nobreakspace {}\cite {rapidSmithManual}\relax }}{28}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The User-Interface of the Automated Hardware Trojan System\nobreakspace {}}}{29}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of Functional Operation}}{30}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

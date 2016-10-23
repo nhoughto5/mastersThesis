@@ -12,34 +12,33 @@
 \contentsline {chapter}{\numberline {2}Hardware Trojans}{3}
 \contentsline {section}{\numberline {2.1}Background}{3}
 \contentsline {section}{\numberline {2.2}Topology}{3}
-\contentsline {section}{\numberline {2.3}\acrfull {FPGAs}}{7}
 \contentsline {chapter}{\numberline {3}Automated Trojan Detection}{8}
 \contentsline {section}{\numberline {3.1}Methodology}{8}
-\contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{10}
-\contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{11}
-\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} \gls {Bitstream} Analysis}{12}
-\contentsline {section}{\numberline {3.5}Component Mapping}{14}
-\contentsline {subsection}{\numberline {3.5.1}Frame to Column Mapping}{14}
-\contentsline {subsection}{\numberline {3.5.2}Word to Block Mapping}{14}
-\contentsline {section}{\numberline {3.6}Determining Trojan Attributes}{16}
-\contentsline {subsection}{\numberline {3.6.1}Extraction Methods}{16}
-\contentsline {subsubsection}{Observed Location Attributes}{16}
-\contentsline {subsubsection}{Scatter Score Method}{17}
-\contentsline {subsubsection}{Insertion and Abstraction Attributes}{18}
-\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{19}
-\contentsline {chapter}{\numberline {4}Software Implementation}{21}
-\contentsline {section}{\numberline {4.1}Introduction}{21}
-\contentsline {section}{\numberline {4.2}Technologies Used}{21}
-\contentsline {subsection}{\numberline {4.2.1}\textit {Xilinx}\nobreakspace {}}{21}
-\contentsline {subsubsection}{\acrfull {XDL}}{22}
-\contentsline {subsubsection}{XDLRC}{23}
-\contentsline {subsection}{\numberline {4.2.2}Java}{24}
-\contentsline {subsection}{\numberline {4.2.3}\textit {RapidSmith}\nobreakspace {}}{24}
-\contentsline {subsubsection}{Class Structure}{25}
-\contentsline {section}{\numberline {4.3}Design}{26}
-\contentsline {subsection}{\numberline {4.3.1}\acrfull {UI}}{26}
-\contentsline {subsection}{\numberline {4.3.2}Operation}{26}
-\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{30}
-\contentsline {chapter}{\numberline {6}Conclusions}{32}
-\contentsline {chapter}{\numberline {A}Additional Information}{33}
-\contentsline {chapter}{Bibliography}{34}
+\contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{11}
+\contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{13}
+\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} \gls {Bitstream} Analysis}{14}
+\contentsline {section}{\numberline {3.5}Component Mapping}{16}
+\contentsline {subsection}{\numberline {3.5.1}Frame to Column Mapping}{16}
+\contentsline {subsection}{\numberline {3.5.2}Word to Block Mapping}{16}
+\contentsline {section}{\numberline {3.6}Determining Trojan Attributes}{18}
+\contentsline {subsection}{\numberline {3.6.1}Extraction Methods}{18}
+\contentsline {subsubsection}{Observed Location Attributes}{18}
+\contentsline {subsubsection}{Scatter Score Method}{19}
+\contentsline {subsubsection}{Insertion and Abstraction Attributes}{20}
+\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{21}
+\contentsline {chapter}{\numberline {4}Software Implementation}{23}
+\contentsline {section}{\numberline {4.1}Introduction}{23}
+\contentsline {section}{\numberline {4.2}Technologies Used}{23}
+\contentsline {subsection}{\numberline {4.2.1}\textit {Xilinx}\nobreakspace {}}{23}
+\contentsline {subsubsection}{\acrfull {XDL}}{24}
+\contentsline {subsubsection}{XDLRC}{25}
+\contentsline {subsection}{\numberline {4.2.2}Java}{26}
+\contentsline {subsection}{\numberline {4.2.3}\textit {RapidSmith}\nobreakspace {}}{26}
+\contentsline {subsubsection}{Class Structure}{27}
+\contentsline {section}{\numberline {4.3}Design}{28}
+\contentsline {subsection}{\numberline {4.3.1}\acrfull {UI}}{28}
+\contentsline {subsection}{\numberline {4.3.2}Operation}{28}
+\contentsline {chapter}{\numberline {5}Evaluation, Analysis and Comparisons}{32}
+\contentsline {chapter}{\numberline {6}Conclusions}{34}
+\contentsline {chapter}{\numberline {A}Additional Information}{35}
+\contentsline {chapter}{Bibliography}{36}

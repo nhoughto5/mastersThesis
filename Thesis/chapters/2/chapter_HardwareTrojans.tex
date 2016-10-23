@@ -159,19 +159,4 @@ An example of this submatrix is
 \label{R12}
 \]
 
-\section{\acrfull{FPGAs}}
-An \acrshort{IC} belongs to one of two categories.
-An \acrfull{ASIC} or a \acrfull{FPGA}.
-An \acrshort{ASIC} is manufactured once and is immutable; its hardware is permanently printed in silicon.
-\acrshort{FPGA}s are reconfigurable.
-They are comprised of an array of \acrfull{PLDs}.
-A \acrshort{PLD} is a component whose functionality is dependent on a set of configuration options.
-Each \acrshort{PLD} in and \acrshort{FPGA} device receives a series of configuration instructions in the form of a binary message.
-A single \acrshort{FPGA} can contain hundreds, or even thousands of \acrshort{PLD}s, each of which can be one of hundreds of possible different types.
-The messages from all \acrshort{PLD}s comprise the configuration \gls{Bitstream} for the whole device. 
-\acrshort{FPGA} developers create processor designs using a programming language; the design is then downloaded or "configured" onto the device via the \gls{Bitstream}.
-The design process is simpler and modifications can be made after manufacture.
-Because of this, \acrshort{FPGA}s are becoming the \acrshort{IC} of choice in larger scale productions however these same features increase their vulnerability.
-
-
 \setlength{\unitlength}{\savedunitlength}
