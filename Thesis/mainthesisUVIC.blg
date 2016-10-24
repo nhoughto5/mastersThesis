@@ -3,8 +3,10 @@ A level-1 auxiliary file: chapters/1/chapter_intro.aux
 A level-1 auxiliary file: chapters/2/chapter_HardwareTrojans.aux
 A level-1 auxiliary file: chapters/3/chapter_AutomatedDetection.aux
 A level-1 auxiliary file: chapters/4/chapter_Implementation.aux
-A level-1 auxiliary file: chapters/5/chapter_Website.aux
+A level-1 auxiliary file: chapters/5/chapter_Results.aux
 A level-1 auxiliary file: chapters/6/chapter_conclusion.aux
 A level-1 auxiliary file: chapters/appendix/chapter_app.aux
 The style file: plain.bst
 Database file #1: UvicThesis.bib
+Warning--to sort, need author or key in iscasBenchmarks
+(There was 1 warning)

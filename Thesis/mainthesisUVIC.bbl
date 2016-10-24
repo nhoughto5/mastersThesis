@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{iscasBenchmarks}
+Collection of digital design benchmarks.
+\newblock \url{http://ddd.fit.cvut.cz/prj/Benchmarks/}.
+\newblock Accessed: 2016-10-24.
+
 \bibitem{killSwitch}
 S.~Adee.
 \newblock The hunt for the kill switch.
@@ -16,6 +21,12 @@ C.~Beckhoff, D.~Koch, and J.~Torresen.
 \newblock The xilinx design language (xdl): Tutorial and use cases.
 \newblock In {\em Reconfigurable Communication-centric Systems-on-Chip
   (ReCoSoC), 2011 6th International Workshop on}, pages 1--8, June 2011.
+
+\bibitem{iscas85}
+F.~Brglez, D.~Bryan, and K.~Kozminski.
+\newblock Combinational profiles of sequential benchmark circuits.
+\newblock In {\em Circuits and Systems, 1989., IEEE International Symposium
+  on}, pages 1929--1934 vol.3, May 1989.
 
 \bibitem{counterfeitIEEESpectrum}
 Celia Gorman.

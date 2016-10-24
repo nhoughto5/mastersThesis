@@ -30,58 +30,70 @@
 \glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{16}
 \glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{18}
-\glossaryentry{Position Median?\glossentry{positionMedian}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{Position Median?\glossentry{positionMedian}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{Position Median?\glossentry{positionMedian}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{Scatter Score?\glossentry{scatterScore}|setentrycounter[]{page}\glsnumberformat}{19}
 \glossaryentry{Position Median?\glossentry{positionMedian}|setentrycounter[]{page}\glsnumberformat}{20}
 \glossaryentry{Scatter Score?\glossentry{scatterScore}|setentrycounter[]{page}\glsnumberformat}{20}
-\glossaryentry{Position Median?\glossentry{positionMedian}|setentrycounter[]{page}\glsnumberformat}{20}
-\glossaryentry{Scatter Score?\glossentry{scatterScore}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{sch2hdl?\glossentry{sch2hdl}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{sch2hdl?\glossentry{sch2hdl}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{XST?\glossentry{XST}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{XST?\glossentry{XST}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{\Xilinx ?\glossentry{Xilinx}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{MAP?\glossentry{MAP}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{MAP?\glossentry{MAP}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{\Xilinx ?\glossentry{Xilinx}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{PAR?\glossentry{PAR}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{PAR?\glossentry{PAR}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{ngdbuild?\glossentry{ngdbuild}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{ngdbuild?\glossentry{ngdbuild}|setentrycounter[]{page}\glsnumberformat}{22}
+\glossaryentry{trce?\glossentry{trce}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{trce?\glossentry{trce}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{Bitgen?\glossentry{Bitgen}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{Bitgen?\glossentry{Bitgen}|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{sch2hdl?\glossentry{sch2hdl}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{sch2hdl?\glossentry{sch2hdl}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{XST?\glossentry{XST}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{XST?\glossentry{XST}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{\Xilinx ?\glossentry{Xilinx}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{MAP?\glossentry{MAP}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{MAP?\glossentry{MAP}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{\Xilinx ?\glossentry{Xilinx}|setentrycounter[]{page}\glsnumberformat}{23}
-\glossaryentry{PAR?\glossentry{PAR}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{PAR?\glossentry{PAR}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{ngdbuild?\glossentry{ngdbuild}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{ngdbuild?\glossentry{ngdbuild}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{trce?\glossentry{trce}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{trce?\glossentry{trce}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{Bitgen?\glossentry{Bitgen}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{Bitgen?\glossentry{Bitgen}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{24}
-\glossaryentry{ngdbuild?\glossentry{ngdbuild}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{ngdbuild?\glossentry{ngdbuild}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{xdl2ndc?\glossentry{xdl2ndc}|setentrycounter[]{page}\glsnumberformat}{23}
 \glossaryentry{xdl2ndc?\glossentry{xdl2ndc}|setentrycounter[]{page}\glsnumberformat}{24}
 \glossaryentry{xdl2ndc?\glossentry{xdl2ndc}|setentrycounter[]{page}\glsnumberformat}{25}
-\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{26}
 \glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{27}
 \glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{27}
-\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{28}
-\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{30}
-\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{31}
 \glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{Target?\glossentry{target}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{Golden?\glossentry{golden}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{Bitstream?\glossentry{Bitstream}|setentrycounter[]{page}\glsnumberformat}{34}

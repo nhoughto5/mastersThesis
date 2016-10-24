@@ -15,6 +15,12 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{siunitx}
+\usepackage{multirow}
+\let\labelindent\relax
+\usepackage{enumitem}
+\setlist{nolistsep}
+\usepackage{stfloats}
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "l" column type
 %\loadglsentries{Utils/Glossary}
 \makenomenclature
 \renewcommand{\nomname}{List of Symbols}
@@ -23,6 +29,7 @@
 \newcommand{\Name}{Automated Hardware Trojan System}
 \newcommand{\NameNoPeriod}{\Name~}
 \newcommand{\Swing}{\textit{Swing}~}
+\newcommand{\SwingEnd}{\textit{Swing}}
 \newcommand{\RapidSmith}{\textit{RapidSmith}~}
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
@@ -98,6 +105,7 @@
 \newacronym{DCM}{DCM}{Digital Clock Managers}
 \newacronym{ROM}{ROM}{Read-Only Memory}
 \newacronym{BEL}{BEL}{Basic Element}
+\newacronym{ISCAS}{ISCAS}{IEEE International Symposium on Circuits and Systems}
 \newacronym{UCF}{UCF}{User Constraint File}
 \newacronym{API}{API}{Application Programming Interface}
 \newacronym{APIs}{API}{Application Programming Interfaces}
@@ -136,7 +144,7 @@
 \newglossaryentry{SLICEM}{name={SLICEM},description={A component of a \acrshort{CLB} in the Spartan-3E family of \acrshort{FPGA}s capable of both logic and memory functions}}
 \newglossaryentry{SLICEL}{name={SLICEL},description={A component of a \acrshort{CLB} in the Spartan-3E family of \acrshort{FPGA}s capable of only logic functions}}
 \newglossaryentry{sch2hdl}{name={sch2hdl},description={used to convert schematic designs to \gls{HDL}. This stage is optional as many choose to develop directly in \acrshort{HDL}}}
-\newglossaryentry{XST}{name={XST},description={\gls{Xilinx} Synthesis Tools, a package of which parse, optimize and compile the \acrshort{HDL} code.}}
+\newglossaryentry{XST}{name={XST},description={\gls{Xilinx} Synthesis Tools, a package that parses, optimizes and compiles the \acrshort{HDL} code.}}
 \newglossaryentry{ngdbuild}{name={ngdbuild},description={A tool used to build a NETLIST.}}
 \newglossaryentry{MAP}{name={MAP},description={A \gls{Xilinx} tool used to calculate the optimal routing for the finalized design.}}
 \newglossaryentry{PAR}{name={PAR},description={used to place and route the design in the specific \Xilinx device.}}
@@ -167,7 +175,7 @@
 	\include{chapters/2/chapter_HardwareTrojans}
 	\include{chapters/3/chapter_AutomatedDetection}
 	\include{chapters/4/chapter_Implementation}
-	\include{chapters/5/chapter_Website}
+	\include{chapters/5/chapter_Results}
 	\include{chapters/6/chapter_conclusion}
 	\appendix
 	\include{chapters/appendix/chapter_app}

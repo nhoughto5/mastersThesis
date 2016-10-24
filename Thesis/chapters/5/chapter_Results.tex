@@ -1,0 +1,131 @@
+\startchapter{Results and Discussion}
+\label{chapter:eval}
+\section{Results}
+\subsection{Methodology}
+\acrlong{IC} manufacturers distribute their product to devices which control everything from cell phones to fighter jets. 
+Those who employ \acrlong{FPGAs} require the means to ensure that their chips function as intended. 
+The \NameNoPeriod provides manufacturers a quick means of ensuring that they are providing a safe and secure product to their customers.
+To demonstrate its potential, it has been tested using a series of benchmarks.
+\subsection{Priority Decoder} \label{sec:priorityDecoder}
+At the \acrfull{ISCAS} in 1989, F. Brglez and H. Fujiwara presented a series of \acrshort{FPGA} benchmark circuits originally written in C~\cite{iscas85}. 
+These benchmarks were accessed and a small 'Priority Decoder' circuit was chosen~\cite{iscasBenchmarks}.
+The provided verilog code for the decoder benchmark was synthesized on a Virtex-5 XC5VLX155 and the generated \gls{Bitstream} and \acrshort{XDL} files were acquired.
+The priority decoder \gls{Bitstream} file was fed to both the \gls{golden} and \gls{target} inputs to the \Name.
+Feeding the same \gls{Bitstream} file to both inputs replicates the occurrence where the third-party fabrication house made no modifications; the \gls{Bitstream} extracted from the \gls{target} device is exactly the same as the \gls{golden}.
+It is expected that the \NameNoPeriod returns a result indicating that there is no trojan present.
+As can be seen in Figure~\ref{fig:priorityDecoder}, the \NameNoPeriod successfully analyzed the \gls{Bitstream}s and determined that there was no trojan present, as expected.
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{Figures/priorityDecoder}
+\caption[Priority Decoder Analysis Results]{Priority Decoder Analysis Results}
+\label{fig:priorityDecoder}
+\end{figure}
+
+\subsection{User Authentication Circuit} \label{sec:userAuthentication}
+Consider a circuit designed to compute a function $F(x)$ for a system to authenticate user-password pairs $x$ and $F(x)$.
+The system performs the arithmetic operation $F(x) = x^2$ to validate users.
+The customer wishes to provide access to ten users labeled $I_0$ to $I_9$.
+To identify all ten users, four input bits are required, $x_1$ to $x_4$.
+The largest function output is $81$ meaning seven bits are required for output, $Z_1$ to $Z_7$, as illustrated in Fig.~\ref{fig:userAuthenticationCircuit}.
+\begin{figure*}[h]
+	\centering
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2in]{Figures/circuit1}
+		\caption{A Simple User Authentication Circuit}
+		\label{fig:userAuthenticationCircuit}
+	\end{subfigure}%
+	~ 
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[height=2in]{Figures/circuit2}
+		\caption{The Back-door Trojan}
+		\label{fig:userAuthenticationCircuitTrojan}
+	\end{subfigure}
+	\caption{The User Authentication Circuit: Clean and Trojan}
+	\label{fig:userAuthentication}
+\end{figure*}
+\begin{table*}[]
+	\setlength{\tabcolsep}{3pt}
+	\centering
+	\caption{Outputs of the Circuits in Figs.~\ref{fig:userAuthenticationCircuit} and \ref{fig:userAuthenticationCircuitTrojan}~\cite{samerAttribute}}
+	\label{tbl:trojanOutputs}
+	\begin{tabular}{CC|C|C|C|C|C||C|C|C|C|C|C|C|C||C|C|C|C|C|C|C|C|}
+		\cline{3-23}
+		&  & \multicolumn{5}{c||}{Inputs} & \multicolumn{8}{c||}{Circuit A} & \multicolumn{8}{c|}{Circuit B} \\ \cline{3-23}
+		&  & X_1 & X_2 & X_3 & X_4 & X & Z_1 & Z_2 & Z_3 & Z_4 & Z_5 & Z_6 & Z_7 & F(x) & Z_1 & Z_2 & Z_3 & Z_4 & Z_5 & Z_6 & Z_7 & F(x) \\ \hline
+		\multicolumn{1}{|c|}{\multirow{10}{*}{\rotatebox[origin=c]{90}{Inputs}}} & I_0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_1 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_2 & 0 & 0 & 1 & 0 & 2 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 4 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_3 & 0 & 0 & 1 & 1 & 3 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 9 & 0 & 0 & 0 & 1 & 0 & 0 & 1 & 9 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_4 & 0 & 1 & 0 & 0 & 4 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 16 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 16 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_5 & 0 & 1 & 0 & 1 & 5 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 25 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 25 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_6 & 0 & 1 & 1 & 0 & 6 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 36 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 36 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_7 & 0 & 1 & 1 & 1 & 7 & 0 & 1 & 1 & 0 & 0 & 0 & 1 & 49 & 0 & 1 & 1 & 0 & 0 & 0 & 1 & 49 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_8 & 1 & 0 & 0 & 0 & 8 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 64 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 64 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_9 & 1 & 0 & 0 & 1 & 9 & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 81 & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 81 \\ \hline
+		\multicolumn{1}{|c|}{\multirow{6}{*}{\rotatebox[origin=c]{90}{Undefined}}} & I_{10} & 1 & 0 & 1 & 0 & 10 & 1 & 0 & 0 & 0 & 1 & 0 & 0 & 68 & 1 & 1 & 0 & 0 & 1 & 0 & 0 & 100 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_{11} & 1 & 0 & 1 & 1 & 11 & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 89 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 121 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_{12} & 1 & 1 & 0 & 0 & 12 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 112 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 80 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_{13} & 1 & 1 & 0 & 1 & 13 & 1 & 1 & 1 & 1 & 0 & 0 & 1 & 121 & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 89 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_{14} & 1 & 1 & 1 & 0 & 14 & 1 & 1 & 0 & 0 & 1 & 0 & 0 & 100 & 1 & 1 & 0 & 0 & 1 & 0 & 0 & 100 \\ \cline{2-23}
+		\multicolumn{1}{|c|}{} & I_{15} & 1 & 1 & 1 & 1 & 15 & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 113 & 1 & 1 & 1 & 0 & 0 & 0 & 1 & 113 \\ \hline
+	\end{tabular}
+\end{table*}
+A trojan can be inserted into this circuit as shown in Fig.~\ref{fig:userAuthenticationCircuitTrojan} (called a backdoor trojan).
+The outputs of the original and infected circuits are compared in Table~\ref{tbl:trojanOutputs}.
+A simple test will show that the circuit outputs the desired $F(x) = x^2$ for each of the users.
+However, upon closer inspection it is noted that the inputs corresponding to $x = 10$ to $x = 15$ are not used.
+These unused inputs are referred to as 'dont-cares', meaning that it is not important to the function of the circuit what their corresponding output is.
+Don't-care cases are a typical vulnerability which can be exploited by an attacker.
+Under the 'Circuit A' column of Table~\ref{tbl:trojanOutputs} it can be seen that $I_{10}$ and $I_{11}$ produce results 68 and 89 respectively.
+These results are not correct according to $F(x) = x^2$.
+This is an intended result by the circuit designer to add security for these don't care conditions.
+If an attacker is able to make the modification in Fig.~\ref{fig:userAuthenticationCircuitTrojan}, inputs $10$ and $11$ will now produce results 100 and 121 which are correct according to $F(x) = x^2$.
+This can be seen under the 'Circuit B' column of Table~\ref{tbl:trojanOutputs}.
+Now, the attacker has built a 'back-door' into the circuit.
+The original 10 users' authentication is not altered but inputs 10 and 11 provide unauthorized access to the attacker.
+
+The circuits shown in Figure~\ref{fig:userAuthentication} were implemented using \Xilinx's schematic designer and placed on a Virtex-5 240T (XC5VSX240T).
+The \gls{Bitstream}s and \acrshort{XDL} files were generated input to the \Name.
+The analysis detected a trojan and output the list of determined attributes as can be seen in Figure~\ref{fig:backDoorResult}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\linewidth]{Figures/backDoorResult}
+\caption[Results of The Authentication Circuit Trojan Detection]{Results of The Authentication Circuit Trojan Detection}
+\label{fig:backDoorResult}
+\end{figure}
+
+The system output the attributes:
+\begin{itemize}
+	\item Attribute 3: Fabrication
+	\item Attribute 4: Testing
+	\item Attribute 5: Assembly
+	\item Attribute 6: System
+	\item Attribute 7: RTL
+	\item Attribute 12: Change in Functionailty
+	\item Attribute 17: Combinational
+	\item Attribute 18: Functional
+	\item Attribute 20: Always On
+	\item Attribute 29: Processor
+\end{itemize}
+As expected the results state that the trojan was inserted in the Fabrication phase; it is the earliest stage in the 'insertion' phase produced indicating it as the source.
+The effects of this modification propagate to the testing and assembly phases as expected.
+The modifications reach both the System and \acrfull{RTL} abstraction levels.
+Since the modifications were made using the schematic designer provided by \Xilinx which works in the \acrshort{RTL} level, these results are as expected.
+The properties attributes listed state that the trojan changes the functionality of the circuit. 
+This agrees with the modification to the values listed in Table~\ref{tbl:trojanOutputs}.
+The trojan does not take affect over multiple clock cycles; this indicates it is composed of only combinational circuitry which is reflected in the results.
+The trojan did not modify power levels or operation configurations, only design configurations.
+This indicates that the trojan can be described as Functional, not Parametric; this agrees with the results.
+Since the modification made a permanent alteration to the internal wiring of the circuit it can be said to be 'Always On'.
+The modified values for input $x=10$ or $x=11$ are always available and not activated.
+This is consistent with the returned results.
+Finally, all of the tiles modified by the trojan began to major block type 0, Logic Type.
+These tiles only affect the internal processing of the circuit.
+No \acrshort{IOB}, Clock or \acrshort{BRAM} tiles were modified.
+This is reflected by the fact that only Location attribute 29, Processor, was returned by the analysis.
+The results observed by the experiment conformed with the experiments expectations demonstrating the accuracy of the method.
+The entire analysis takes less than a minute to perform.
+\subsection{AES-T100}
+\section{Discussion}
