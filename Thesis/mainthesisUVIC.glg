@@ -1,4 +1,7 @@
-Warning: File 'mainthesisUVIC.glo' is empty.
-Have you used any entries defined in glossary 'main'?
-Remember to use package option 'nomain' if you
-don't want to use the main glossary.
+This is makeindex, version 2.15 [MiKTeX 2.9 64-bit] (kpathsea + Thai support).
+Scanning style file ./mainthesisUVIC.ist.............................done (29 attributes redefined, 0 ignored).
+Scanning input file mainthesisUVIC.glo....done (99 entries accepted, 0 rejected).
+Sorting entries....done (680 comparisons).
+Generating output file mainthesisUVIC.gls....done (60 lines written, 0 warnings).
+Output written in mainthesisUVIC.gls.
+Transcript written in mainthesisUVIC.glg.

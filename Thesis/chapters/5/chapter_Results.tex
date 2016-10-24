@@ -1,11 +1,12 @@
 \startchapter{Results and Discussion}
 \label{chapter:eval}
-\section{Results}
+\section{Results} \label{sec:Results}
 \subsection{Methodology}
 \acrlong{IC} manufacturers distribute their product to devices which control everything from cell phones to fighter jets. 
 Those who employ \acrlong{FPGAs} require the means to ensure that their chips function as intended. 
 The \NameNoPeriod provides manufacturers a quick means of ensuring that they are providing a safe and secure product to their customers.
 To demonstrate its potential, it has been tested using a series of benchmarks.
+These benchmarks are included in the \NameNoPeriod application package as an example for users.
 \subsection{Priority Decoder} \label{sec:priorityDecoder}
 At the \acrfull{ISCAS} in 1989, F. Brglez and H. Fujiwara presented a series of \acrshort{FPGA} benchmark circuits originally written in C~\cite{iscas85}. 
 These benchmarks were accessed and a small 'Priority Decoder' circuit was chosen~\cite{iscasBenchmarks}.
@@ -107,6 +108,9 @@ The system output the attributes:
 	\item Attribute 17: Combinational
 	\item Attribute 18: Functional
 	\item Attribute 20: Always On
+	\item Attribute 24: Small
+	\item Attribute 26: Augmented
+	\item Attribute 27: Clustered
 	\item Attribute 29: Processor
 \end{itemize}
 As expected the results state that the trojan was inserted in the Fabrication phase; it is the earliest stage in the 'insertion' phase produced indicating it as the source.
@@ -121,11 +125,86 @@ This indicates that the trojan can be described as Functional, not Parametric; t
 Since the modification made a permanent alteration to the internal wiring of the circuit it can be said to be 'Always On'.
 The modified values for input $x=10$ or $x=11$ are always available and not activated.
 This is consistent with the returned results.
-Finally, all of the tiles modified by the trojan began to major block type 0, Logic Type.
+The trojan changed only minor routing configurations in the circuit designs, this required the alteration of only a few tiles.
+The new route required the activation of tiles which were not active in the \gls{golden} design; further, all of the modified tiles are nearby the those in the \gls{golden} design. 
+With these observations it can be said that this trojan exhibits Physical Layout attributes Small (24), Augmented (26) and Clustered (28). 
+All of the expected Physical Layout attributes were correctly determined by the Scatter Score method of section~\ref{sec:scatterScore}.
+Finally, all of the tiles modified by the trojan belong to major block type 0: Logic Type.
 These tiles only affect the internal processing of the circuit.
 No \acrshort{IOB}, Clock or \acrshort{BRAM} tiles were modified.
 This is reflected by the fact that only Location attribute 29, Processor, was returned by the analysis.
 The results observed by the experiment conformed with the experiments expectations demonstrating the accuracy of the method.
 The entire analysis takes less than a minute to perform.
-\subsection{AES-T100}
+\subsection{AES-T100} \label{sec:aesT100}
+In 2013 H. Salmani, M. Tehranipoor and R. Karri published a discussion on the design and development of \acrshort{FPGA} trojan benchmarks.
+They collaboratively developed a series of verilog, VHDL and virtual machines that demonstrated effective creation of testable benchmarks.
+They took the benchmarks they created and published them on a website they created called \textit{Trust-Hub}.
+The benchmarks provided are organized by a taxonomy they proposed in~\cite{trustHubPaper}.
+Their taxonomy is slightly different than the one used by \NameNoPeriod which was proposed in~\cite{samerAttribute}, however the two are conceptually very similar.
+To demonstrate the efficacy of the \NameNoPeriod a benchmark names 'AES-T100' was chosen. 
+The supporting documents describe this trojan as follows:
+\begin{displaycquote}{trusthubWebsite}
+	The Trojan leaks the secret key from a cryptographic chip running the AES algorithm through a covert channel. The channel adapts the concepts from spread spectrum communications (also known as Code-Division Multiple Access (CDMA)) to distribute the leakage of single bits over many clock cycles. The Trojan employs this method by using a pseudo-random number generator (PRNG) to create a CDMA code sequence, the PRNG initialized to a predefined value. The code sequence is then used to XOR modulate the secret information bits. The modulated sequence is forwarded to a leakage circuit (LC) to set up a covert CDMA channel in the power side-channel. The LC is realized by connecting eight identical flip-flop elements to the single output of the XOR gate to mimic a large capacitance.
+\end{displaycquote}
+
+From the description it is reasonable to expect certain results from the \Name.
+The description states that the trojan 'leaks the secret key'.
+From this we should expect our results to contain Effect attribute Information Leakage (13).
+Information being leaked from a device will need a means to be transmitted to the attacker.
+Location attribute \acrshort{IO} (31) may be observed.
+It then states that it leaks 'single bits over many clock cycles'. 
+This suggests that the trojan exhibits some form of Sequential Logic (16).
+This may or may not require modification to clock tiles; Location attribute Clock Grid (33) may be observed. 
+It then states that the PRNG is initialized to a predefined value; initialization requires the value be stored in memory. 
+Location attribute Memory (30) should be expected.
+The trojan then uses a 'power side-channel' as a communication channel.
+This will require modification to power tiles; Location attribute Power Supply (32) should be expected.
+
+The source code for the \gls{golden} and \gls{target} designs were downloaded from \textit{trust-hub.org} and synthesized on a Virtex-5 240T  (XC5VSX240T).
+The analysis results were successfully found by the system as seen in Figure~\ref{fig:aesResult}.
+\begin{figure}
+\centering
+\includegraphics[width=1\linewidth]{Figures/aesResult}
+\caption[Results of Analysis on the AES-T100 Benchmark]{Results of Analysis on the AES-T100 Benchmark}
+\label{fig:aesResult}
+\end{figure}
+
+The \NameNoPeriod output the following attributes:
+\begin{itemize}
+	\item Attribute 3: Fabrication
+	\item Attribute 4: Testing
+	\item Attribute 5: Assembly
+	\item Attribute 6: System
+	\item Attribute 7: RTL
+	\item Attribute 13: Information Leakage
+	\item Attribute 16: Sequential
+	\item Attribute 18: Functional
+	\item Attribute 20: Always On
+	\item Attribute 24: Large
+	\item Attribute 26: Augmented
+	\item Attribute 27: Distributed
+	\item Attribute 29: Processor
+	\item Attribute 30: Memory
+	\item Attribute 31: \acrshort{IO}
+	\item Attribute 32: Power Supply
+	\item Attribute 33: Clock Grid
+\end{itemize}
+
+Again, it is assumed that this trojan was inserted during the fabrication phase; due to this the effects propagate to the Testing (4) and Assembly (5) phases.
+Again, the trojan resides in the System (6) and \acrshort{RTL} (7) abstraction levels as was expected.
+Attributes 13, 16, 30, 31, 32 and 33 appear in the analysis results as expected.
+The Scatter Score method describes this trojan as Large, Augments and Distributed. 
+These results seem to correspond well with the description. 
+The addition of the leakage circuit and the PRNG would be non-trivial addenda likely requiring the activation of considerable resources resulting in attribute Augmented (26).
+Due to their complexity these added circuits will most likely need to be placed away from the \gls{golden} resources causing attribute Distributed (27).
 \section{Discussion}
+\begin{itemize}
+	\item \textbf{How was the hypothesis been answered?}: The analysis performed on the three benchmarks effectively demonstrate this new means of trojan detection in \acrshort{FPGA}s. 
+	\item \textbf{How has the field changed with this knowledge?}: without this FPGA IC manufactureres lack a viable means of detection.
+\end{itemize}
+Configuration \gls{Bitstream}s are enormous strings of binary data.
+To the human reader this information means nothing.
+To an \acrshort{FPGA}, however, this data is everything.
+Due to the shear volume of information and the lack of details on it's format the \gls{Bitstream} has not previously been considered a viable opportunity for study of functionality.
+The analysis performed on the three benchmarks described in section~\ref{sec:Results} effectively demonstrates that not only is the \NameNoPeriod capable of exploiting the \gls{Bitstream} but the methodology employed is able to effectively describe trojans.
+

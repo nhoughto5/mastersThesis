@@ -3,20 +3,21 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces The thirty-three attributes of the hardware trojan taxonomy in\nobreakspace {}\cite {samerAttribute}.\relax }}{4}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces The hardware trojan levels \cite {samerAttribute}.\relax }}{5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces FPGA Life-Cycle}}{9}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Methodology Overview}}{10}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Rudimentary Layout of a Virtex Gate-Array}}{11}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Column Composition}}{12}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces FPGA Device Layout}}{13}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Row Order of Virtex-5 Clock Region}}{15}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Configuration Words in the Bitstream\nobreakspace {}\cite {virtex5ConfigGuide}}}{17}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces FPGA Life-Cycle}}{11}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Methodology Overview}}{12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Rudimentary Layout of a Virtex Gate-Array}}{13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Column Composition}}{14}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces FPGA Device Layout}}{15}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Row Order of Virtex-5 Clock Region}}{17}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Configuration Words in the Bitstream\nobreakspace {}\cite {virtex5ConfigGuide}}}{19}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The \textit {RapidSmith}\nobreakspace {}Class Hierarchy\nobreakspace {}\cite {rapidSmithManual}\relax }}{27}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The User-Interface of the Automated Hardware Trojan System\nobreakspace {}}}{28}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of Functional Operation}}{30}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The \textit {RapidSmith}\nobreakspace {}Class Hierarchy\nobreakspace {}\cite {rapidSmithManual}\relax }}{29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The User-Interface of the Automated Hardware Trojan System\nobreakspace {}}}{30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of Functional Operation}}{32}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Priority Decoder Analysis Results}}{32}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The User Authentication Circuit: Clean and Trojan\relax }}{34}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Results of The Authentication Circuit Trojan Detection}}{35}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Priority Decoder Analysis Results}}{34}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The User Authentication Circuit: Clean and Trojan\relax }}{36}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Results of The Authentication Circuit Trojan Detection}}{37}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Results of Analysis on the AES-T100 Benchmark}}{40}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -12,39 +12,43 @@
 \contentsline {chapter}{\numberline {2}Hardware Trojans}{3}
 \contentsline {section}{\numberline {2.1}Background}{3}
 \contentsline {section}{\numberline {2.2}Topology}{3}
-\contentsline {chapter}{\numberline {3}Automated Trojan Detection}{8}
-\contentsline {section}{\numberline {3.1}Methodology}{8}
-\contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{11}
-\contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{13}
-\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} \gls {Bitstream} Analysis}{14}
-\contentsline {section}{\numberline {3.5}Component Mapping}{15}
-\contentsline {subsection}{\numberline {3.5.1}Frame to Column Mapping}{16}
-\contentsline {subsection}{\numberline {3.5.2}Word to Block Mapping}{16}
-\contentsline {section}{\numberline {3.6}Determining Trojan Attributes}{18}
-\contentsline {subsection}{\numberline {3.6.1}Extraction Methods}{18}
-\contentsline {subsubsection}{Observed Location Attributes}{18}
-\contentsline {subsubsection}{Scatter Score Method}{19}
-\contentsline {subsubsection}{Insertion and Abstraction Attributes}{20}
-\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{21}
-\contentsline {chapter}{\numberline {4}Software Implementation}{22}
-\contentsline {section}{\numberline {4.1}Introduction}{22}
-\contentsline {section}{\numberline {4.2}Technologies Used}{22}
-\contentsline {subsection}{\numberline {4.2.1}\textit {Xilinx}\nobreakspace {}}{22}
-\contentsline {subsubsection}{\acrfull {XDL}}{23}
-\contentsline {subsubsection}{XDLRC}{24}
-\contentsline {subsection}{\numberline {4.2.2}Java}{25}
-\contentsline {subsection}{\numberline {4.2.3}\textit {RapidSmith}\nobreakspace {}}{25}
-\contentsline {subsubsection}{Class Structure}{26}
-\contentsline {section}{\numberline {4.3}Automated Hardware Trojan System}{27}
-\contentsline {subsection}{\numberline {4.3.1}\acrfull {UI}}{27}
-\contentsline {subsection}{\numberline {4.3.2}Operation}{29}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{31}
-\contentsline {section}{\numberline {5.1}Results}{31}
-\contentsline {subsection}{\numberline {5.1.1}Methodology}{31}
-\contentsline {subsection}{\numberline {5.1.2}Priority Decoder}{31}
-\contentsline {subsection}{\numberline {5.1.3}User Authentication Circuit}{32}
-\contentsline {subsection}{\numberline {5.1.4}AES-T100}{36}
-\contentsline {section}{\numberline {5.2}Discussion}{36}
-\contentsline {chapter}{\numberline {6}Conclusions}{37}
-\contentsline {chapter}{\numberline {A}Additional Information}{38}
-\contentsline {chapter}{Bibliography}{39}
+\contentsline {section}{\numberline {2.3}Recent Work}{7}
+\contentsline {subsection}{\numberline {2.3.1}\acrfull {CRC} Detection}{7}
+\contentsline {subsection}{\numberline {2.3.2}\acrfull {RO} Detection}{8}
+\contentsline {subsection}{\numberline {2.3.3}The Multi-Faceted Approach}{8}
+\contentsline {chapter}{\numberline {3}Automated Trojan Detection}{10}
+\contentsline {section}{\numberline {3.1}Methodology}{10}
+\contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{13}
+\contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{15}
+\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} \gls {Bitstream} Analysis}{16}
+\contentsline {section}{\numberline {3.5}Component Mapping}{17}
+\contentsline {subsection}{\numberline {3.5.1}Frame to Column Mapping}{18}
+\contentsline {subsection}{\numberline {3.5.2}Word to Block Mapping}{18}
+\contentsline {section}{\numberline {3.6}Determining Trojan Attributes}{20}
+\contentsline {subsection}{\numberline {3.6.1}Extraction Methods}{20}
+\contentsline {subsubsection}{Observed Location Attributes}{20}
+\contentsline {subsubsection}{Scatter Score Method}{21}
+\contentsline {subsubsection}{Insertion and Abstraction Attributes}{22}
+\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{23}
+\contentsline {chapter}{\numberline {4}Software Implementation}{24}
+\contentsline {section}{\numberline {4.1}Introduction}{24}
+\contentsline {section}{\numberline {4.2}Technologies Used}{24}
+\contentsline {subsection}{\numberline {4.2.1}\textit {Xilinx}\nobreakspace {}}{24}
+\contentsline {subsubsection}{\acrfull {XDL}}{25}
+\contentsline {subsubsection}{XDLRC}{26}
+\contentsline {subsection}{\numberline {4.2.2}Java}{27}
+\contentsline {subsection}{\numberline {4.2.3}\textit {RapidSmith}\nobreakspace {}}{27}
+\contentsline {subsubsection}{Class Structure}{28}
+\contentsline {section}{\numberline {4.3}Automated Hardware Trojan System}{29}
+\contentsline {subsection}{\numberline {4.3.1}\acrfull {UI}}{29}
+\contentsline {subsection}{\numberline {4.3.2}Operation}{31}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{33}
+\contentsline {section}{\numberline {5.1}Results}{33}
+\contentsline {subsection}{\numberline {5.1.1}Methodology}{33}
+\contentsline {subsection}{\numberline {5.1.2}Priority Decoder}{33}
+\contentsline {subsection}{\numberline {5.1.3}User Authentication Circuit}{34}
+\contentsline {subsection}{\numberline {5.1.4}AES-T100}{38}
+\contentsline {section}{\numberline {5.2}Discussion}{41}
+\contentsline {chapter}{\numberline {6}Conclusions}{42}
+\contentsline {chapter}{\numberline {A}Additional Information}{43}
+\contentsline {chapter}{Bibliography}{44}

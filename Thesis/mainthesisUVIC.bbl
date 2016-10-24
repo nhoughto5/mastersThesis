@@ -2,13 +2,24 @@
 
 \bibitem{iscasBenchmarks}
 Collection of digital design benchmarks.
-\newblock \url{http://ddd.fit.cvut.cz/prj/Benchmarks/}.
+\newblock http://ddd.fit.cvut.cz/prj/Benchmarks/.
+\newblock Accessed: 2016-10-24.
+
+\bibitem{trusthubWebsite}
+Trust-hub.org.
+\newblock http://trust-hub.org/.
 \newblock Accessed: 2016-10-24.
 
 \bibitem{killSwitch}
 S.~Adee.
 \newblock The hunt for the kill switch.
 \newblock {\em IEEE Spectrum}, 45(5):34--39, May 2008.
+
+\bibitem{crcDetection}
+A.~Al-Anwar, Y.~Alkabani, M.~W. El-Kharashi, and H.~Bedour.
+\newblock Hardware trojan detection methodology for fpga.
+\newblock In {\em Communications, Computers and Signal Processing (PACRIM),
+  2013 IEEE Pacific Rim Conference on}, pages 177--182, Aug 2013.
 
 \bibitem{regionBasedApproach}
 M.~Banga and M.~S. Hsiao.
@@ -45,6 +56,12 @@ R.~Karri, J.~Rajendran, K.~Rosenfeld, and M.~Tehranipoor.
 \newblock Trustworthy hardware: Identifying and classifying hardware trojans.
 \newblock {\em Computer}, 43(10):39--46, Oct 2010.
 
+\bibitem{ringOscillatorMethod}
+P.~Kitsos and A.~G. Voyiatzis.
+\newblock Fpga trojan detection using length-optimized ring oscillators.
+\newblock In {\em Digital System Design (DSD), 2014 17th Euromicro Conference
+  on}, pages 675--678, Aug 2014.
+
 \bibitem{rapidSmithManual}
 C.~Lavin, M.~Padilla, J.~Lamprecht, P.~Lundrigan, B.~Nelson, and M.~Wirthlin
   B.~Hutchings.
@@ -72,12 +89,30 @@ S.~Moein, S.~Khan, T.~A. Gulliver, F.~Gebali, and M.~W. El-Kharashi.
 \newblock In {\em Computer Engineering Systems (ICCES), 2015 Tenth
   International Conference on}, pages 351--356, Dec 2015.
 
+\bibitem{bitStreamToNetlist}
+J.B. Note and E.~Rannaud.
+\newblock From the bitstream to the netlist.
+\newblock In {\em the International Symposium on Field Programmable Gate Arrays
+  (FPGA)}, 2008.
+
+\bibitem{multiFacetedApproach}
+M.~Patterson, A.~Mills, R.~Scheel, J.~Tillman, E.~Dye, and J.~Zambreno.
+\newblock A multi-faceted approach to fpga-based trojan circuit detection.
+\newblock In {\em VLSI Test Symposium (VTS), 2013 IEEE 31st}, pages 1--4, April
+  2013.
+
 \bibitem{taxonomy2}
 R.~M. Rad, X.~Wang, M.~Tehranipoor, and J.~Plusquellic.
 \newblock Power supply signal calibration techniques for improving detection
   resolution to hardware trojans.
 \newblock In {\em 2008 IEEE/ACM International Conference on Computer-Aided
   Design}, pages 632--639, Nov 2008.
+
+\bibitem{trustHubPaper}
+H.~Salmani, M.~Tehranipoor, and R.~Karri.
+\newblock On design vulnerability analysis and trust benchmarks development.
+\newblock In {\em 2013 IEEE 31st International Conference on Computer Design
+  (ICCD)}, pages 471--474, Oct 2013.
 
 \bibitem{stoppingHTsIEEESpectrum}
 H.-S. Philip~Wong Subhasish~Mitra and Simon Wong.
