@@ -1,7 +1,8 @@
 \documentclass[12pt,oneside]{book}
 \include{macros/style}
 \include{macros/use_packages}
-\usepackage{cite}
+%\usepackage{cite}
+\usepackage[backend=bibtex,style=numeric, sorting=none]{biblatex}
 \usepackage[acronym]{glossaries}
 \usepackage{nomencl}
 \usepackage{array}
@@ -167,7 +168,9 @@
 \newglossaryentry{positionMedian}{name={Position Median},description={The computed center of an \acrshort{FPGA} design}}
 \newglossaryentry{scatterScore}{name={Scatter Score},description={A numeric representation of the clustering of a design}}
 \makeglossaries
-
+%\bibliographystyle{acm}
+%\bibliography{UvicThesis}
+\addbibresource{UvicThesis.bib}  
 
 \begin{document}
 
@@ -195,9 +198,9 @@
 % The Bibliography file is a BibTex file named
 % UVicThesis.bib and called below
 
-	\TOCadd{Bibliography}
-	\bibliographystyle{plain}
+	%\TOCadd{Bibliography}
+	%\bibliographystyle{plain}
 	%\bibliographystyle{./IEEEtran}
-	\bibliography{UvicThesis}
-
+	
+	\printbibliography
 \end{document}
