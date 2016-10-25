@@ -48,7 +48,6 @@
 \contentsline {subsection}{\numberline {5.1.2}Priority Decoder}{33}
 \contentsline {subsection}{\numberline {5.1.3}User Authentication Circuit}{34}
 \contentsline {subsection}{\numberline {5.1.4}AES-T100}{38}
-\contentsline {section}{\numberline {5.2}Discussion}{41}
-\contentsline {chapter}{\numberline {6}Conclusions}{42}
-\contentsline {chapter}{\numberline {A}Additional Information}{43}
-\contentsline {chapter}{Bibliography}{44}
+\contentsline {chapter}{\numberline {6}Contributions}{42}
+\contentsline {chapter}{\numberline {A}Additional Information}{44}
+\contentsline {chapter}{Bibliography}{45}

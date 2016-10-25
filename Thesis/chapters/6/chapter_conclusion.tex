@@ -1,10 +1,38 @@
-\startchapter{Conclusions}
+\startchapter{Contributions}
 \label{concl}
+%\begin{itemize}
+%	\item \textbf{How was the hypothesis been answered?}: The analysis performed on the three benchmarks effectively demonstrate this new means of trojan detection in \acrshort{FPGA}s. 
+%	\item \textbf{How has the field changed with this knowledge?}: without this FPGA IC manufactureres lack a viable means of detection.
+%\end{itemize}
+Configuration \gls{Bitstream}s are enormous strings of binary data.
+To the human reader this information means nothing.
+To an \acrshort{FPGA}, however, this data is everything.
+Every conceivable design, and every possible trojan is contained within the \gls{Bitstream}.
+Yet, due to the shear volume of information within it and the lack of details on it's format it has not previously been a common subject of study.
 
-My first rule for this chapter is to avoid finishing it with a section talking about future work. It may seem logical, yet it also appears to give a list of all items which remain undone! It is not the best way psychologically.
+The purpose of this work is to provide an easy-to-use application that automates the processes of discovering and analyzing malicious modifications.
+With its success, \acrlong{IC} manufacturers that use \acrshort{FPGA}s will have an additional tool to ensure that their products operate as expected.
+Using the \NameNoPeriod takes only a few button clicks on the \acrlong{UI}.
+Its simple construction does not require any additional software or complicated install procedures and it can be used on any major operating system.
+Ensuring chips that have returned from Fabrication operate as expected takes no more than a few minutes.
+With the use of the \NameNoPeriod manufacturers will not need to train employees, buy expensive equipment or waste man-hours on additional testing.
 
-This chapter should contain a mirror of the introduction, where a summary of the \textit{extraordinary} new results and their wonderful attributes should be stated first, followed by an executive summary of how this new solution was arrived at. Consider the practical fact that this chapter will be read quickly at the beginning of a review (thus it needs to provide a strong impact) and then again in depth at the very end, perhaps a few days after the details of the previous 3 chapters have been somehow forgotten. Reinforcement of the positive is the key strategy here, without of course blowing hot air.
+The contributions of this work are:
+\begin{enumerate}
+	\item Developed a method of extracting all of the information necessary to detect and analyze trojans directly from the configuration \gls{Bitstream}. 
+	\item Described methods for directly observing the presence of attributes in detected trojans.
+	\item Provided a method for inferring attributes that are not directly observable using a known taxonomy.
+	\item Developed a user-friendly application which automates the described methodology.
+	\item Succeeded in ensuring the application is cross-platform and does not require a complicated install procedure.
+\end{enumerate}
 
-One other consideration is that some people like to join the chapter containing the analysis with the only with conclusions. This can indeed work very well in certain topics.
 
-Finally, the conclusions do not appear only in this chapter. This sample mini thesis lacks a feature which I regard as absolutely necessary, namely a short paragraph at the end of each chapter giving a brief summary of what was presented together with a one sentence preview as to what might expect the connection to be with the next chapter(s). You are writing a story, the \textit{story of your wonderful research work}. A story needs a line connecting all its parts and you are responsible for these linkages.
+
+
+%My first rule for this chapter is to avoid finishing it with a section talking about future work. It may seem logical, yet it also appears to give a list of all items which remain undone! It is not the best way psychologically.
+%
+%This chapter should contain a mirror of the introduction, where a summary of the \textit{extraordinary} new results and their wonderful attributes should be stated first, followed by an executive summary of how this new solution was arrived at. Consider the practical fact that this chapter will be read quickly at the beginning of a review (thus it needs to provide a strong impact) and then again in depth at the very end, perhaps a few days after the details of the previous 3 chapters have been somehow forgotten. Reinforcement of the positive is the key strategy here, without of course blowing hot air.
+%
+%One other consideration is that some people like to join the chapter containing the analysis with the only with conclusions. This can indeed work very well in certain topics.
+%
+%Finally, the conclusions do not appear only in this chapter. This sample mini thesis lacks a feature which I regard as absolutely necessary, namely a short paragraph at the end of each chapter giving a brief summary of what was presented together with a one sentence preview as to what might expect the connection to be with the next chapter(s). You are writing a story, the \textit{story of your wonderful research work}. A story needs a line connecting all its parts and you are responsible for these linkages.
