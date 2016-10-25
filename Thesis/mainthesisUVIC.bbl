@@ -139,6 +139,334 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{kSubset}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=LN}{%
+         family={Lesperance},
+         familyi={L\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kulkarni},
+         familyi={K\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=CKT}{%
+         family={Cheng},
+         familyi={C\bibinitperiod},
+         given={Kwang-Ting},
+         giveni={K\bibinitperiod-T\bibinitperiod},
+      }}%
+    }
+    \keyw{cryptography;integrated circuit design;security;AES
+  design;controllability metrics;cryptographic hardware;design
+  modifications;exhaustive testing;k-bit subspaces;malicious
+  circuitry;observability metrics;plaintext bits;post-silicon hardware trojan
+  detection;verification effort;Equations;Hardware;Logic
+  gates;Observability;Testing;Trojan horses;Vectors}
+    \strng{namehash}{LNKSCKT1}
+    \strng{fullhash}{LNKSCKT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{The 20th Asia and South Pacific Design Automation
+  Conference}
+    \verb{doi}
+    \verb 10.1109/ASPDAC.2015.7059101
+    \endverb
+    \field{issn}{2153-6961}
+    \field{pages}{755\bibrangedash 760}
+    \field{title}{Hardware Trojan detection using exhaustive testing of k-bit
+  subspaces}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{monteCarloTestPattern}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=MX}{%
+         family={Mingfu},
+         familyi={M\bibinitperiod},
+         given={X.},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=AH}{%
+         family={Aiqun},
+         familyi={A\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=YH}{%
+         family={Yi},
+         familyi={Y\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GL}{%
+         family={Guyue},
+         familyi={G\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+    }
+    \keyw{Monte Carlo methods;automatic test pattern generation;invasive
+  software;HT detection technique;Monte Carlo technique;hardware Trojan
+  detection;hardware security;information security;security threat;test pattern
+  generation;Accuracy;Hardware;Integrated circuit modeling;Monte Carlo
+  methods;Trojan horses;Vectors;Monte Carlo technique;hardware Trojan
+  detection;hardware security;information security;test pattern generation}
+    \strng{namehash}{MX+1}
+    \strng{fullhash}{MXAHYHGL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Dependable, Autonomic and Secure Computing (DASC), 2013
+  IEEE 11th International Conference on}
+    \verb{doi}
+    \verb 10.1109/DASC.2013.50
+    \endverb
+    \field{pages}{131\bibrangedash 136}
+    \field{title}{Monte Carlo Based Test Pattern Generation for Hardware Trojan
+  Detection}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{towardsDetectionMethodology}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=KP}{%
+         family={Kitsos},
+         familyi={K\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=VAG}{%
+         family={Voyiatzis},
+         familyi={V\bibinitperiod},
+         given={A.\bibnamedelima G.},
+         giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \keyw{Delays;Hardware;Integrated circuit modeling;Power demand;Trojan
+  horses;Vectors;detection techniques;integrated circuits;security hardware
+  Trojans horses;trusted hardware}
+    \strng{namehash}{KPVAG1}
+    \strng{fullhash}{KPVAG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2014 3rd Mediterranean Conference on Embedded Computing
+  (MECO)}
+    \verb{doi}
+    \verb 10.1109/MECO.2014.6862687
+    \endverb
+    \field{issn}{2377-5475}
+    \field{pages}{18\bibrangedash 23}
+    \field{title}{Towards a hardware Trojan detection methodology}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{sideChannelObfuscation}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=NA}{%
+         family={Nejat},
+         familyi={N\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hely},
+         familyi={H\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=BV}{%
+         family={Beroulle},
+         familyi={B\bibinitperiod},
+         given={V.},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \keyw{copy protection;cryptography;integrated circuit design;integrated
+  circuit reliability;integrated circuit testing;invasive software;IC
+  piracy;delay analysis;environment variation;hardware Trojan
+  detection;integrated circuit piracy;obfuscation methods;process
+  variation;side channel analysis;Delays;Foundries;Handheld
+  computers;Hardware;Integrated circuits;Logic gates;Trojan horses;Design
+  obfuscation;HT detection based on Path delay analysis;HT detection based on
+  power analysis;design for hardware trust;hardware security}
+    \strng{namehash}{NAHDBV1}
+    \strng{fullhash}{NAHDBV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2015 10th International Design Test Symposium (IDT)}
+    \verb{doi}
+    \verb 10.1109/IDT.2015.7396749
+    \endverb
+    \field{pages}{129\bibrangedash 134}
+    \field{title}{Facilitating side channel analysis by obfuscation for
+  Hardware Trojan detection}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{postLayout}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=RSK}{%
+         family={Rao},
+         familyi={R\bibinitperiod},
+         given={S.\bibnamedelima K.},
+         giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Krishnankutty},
+         familyi={K\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=RR}{%
+         family={Robucci},
+         familyi={R\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=BN}{%
+         family={Banerjee},
+         familyi={B\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Patel},
+         familyi={P\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+    }
+    \keyw{cryptography;estimation theory;integrated circuit layout;logic
+  testing;power consumption;power supply circuits;security;DES
+  cryptosystem;DPA;DfS;IC;SPICE simulation;anomaly
+  detection;cipher-text;design-for-security;differential power
+  analysis;encryption core;hardware trojan;integrated circuit;logic
+  operation;malicious hardware insertion;plaintext;post-layout estimation;power
+  consumption correlation;power supply measurement;power supply
+  tracing;practical attack;prefabrication power consumption
+  prediction;side-channel based attack;side-channel power supply signature
+  estimation;Correlation;Hardware;Integrated circuits;Power
+  supplies;SPICE;Security;Transient analysis;Hardware Security;Power Supply
+  analysis;Side-channel attacks;Trojan Detection}
+    \strng{namehash}{RSK+1}
+    \strng{fullhash}{RSKKDRRBNPC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Hardware Oriented Security and Trust (HOST), 2015 IEEE
+  International Symposium on}
+    \verb{doi}
+    \verb 10.1109/HST.2015.7140244
+    \endverb
+    \field{pages}{92\bibrangedash 95}
+    \field{title}{Post-layout estimation of side-channel power supply
+  signatures}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{controllableSleepTransistors}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=GNB}{%
+         family={Gunti},
+         familyi={G\bibinitperiod},
+         given={N.\bibnamedelima B.},
+         giveni={N\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Lingasubramanian},
+         familyi={L\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \keyw{invasive software;HT detection methodology;IC;controllable sleep
+  transistors;detection sensitivity;dynamic power;fabrication process;financial
+  sectors;hardware Trojan detection;integrated circuits;military sectors;power
+  based control;semiconductor design;static power based side channel
+  analysis;Delays;Integrated circuit modeling;Logic gates;Sensitivity;Switching
+  circuits;Transistors;Trojan horses;Hardware Security;Hardware Trojan;Power
+  Gating;sleep transistors;static power}
+    \strng{namehash}{GNBLK1}
+    \strng{fullhash}{GNBLK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{SoutheastCon 2015}
+    \verb{doi}
+    \verb 10.1109/SECON.2015.7132948
+    \endverb
+    \field{issn}{1091-0050}
+    \field{pages}{1\bibrangedash 6}
+    \field{title}{Efficient static power based side channel analysis for
+  Hardware Trojan detection using controllable sleep transistors}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{pcaAlgorithm}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=HC}{%
+         family={He},
+         familyi={H\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hou},
+         familyi={H\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=WL}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={L.},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=EY}{%
+         family={En},
+         familyi={E\bibinitperiod},
+         given={Y.},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=XS}{%
+         family={Xie},
+         familyi={X\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{cryptography;field programmable gate arrays;invasive software;logic
+  design;principal component analysis;18-bit CORDIC IP core;LabVIEW
+  software;PCA algorithm;Trojan circuit;Xilinx FPGA;automatic test
+  platform;data processing algorithm;detection sensitivity;hardware Trojan
+  detection method;high precision oscilloscope;logic test;principal component
+  analysis approach;side-channel analysis;side-channel test;Data
+  processing;Field programmable gate arrays;Hardware;Logic testing;Principal
+  component analysis;Sensitivity;Trojan horses;Hardware Trojan;logic
+  test;principal component analysis;side-channel analysis}
+    \strng{namehash}{HC+1}
+    \strng{fullhash}{HCHBWLEYXS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Reliability, Maintainability and Safety (ICRMS), 2014
+  International Conference on}
+    \verb{doi}
+    \verb 10.1109/ICRMS.2014.7107362
+    \endverb
+    \field{pages}{1043\bibrangedash 1046}
+    \field{title}{A novel hardware Trojan detection method based on
+  side-channel analysis and PCA algorithm}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{trojanSurvey2014}{article}{}
     \name{author}{4}{}{%
       {{hash=JN}{%
