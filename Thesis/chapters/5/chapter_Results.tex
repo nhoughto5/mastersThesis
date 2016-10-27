@@ -76,7 +76,7 @@ The largest function output is $81$ meaning seven bits are required for output, 
 A trojan can be inserted into this circuit as shown in Fig.~\ref{fig:userAuthenticationCircuitTrojan} (called a backdoor trojan).
 The outputs of the original and infected circuits are compared in Table~\ref{tbl:trojanOutputs}.
 A simple test will show that the circuit outputs the desired $F(x) = x^2$ for each of the users.
-However, upon closer inspection it is noted that the inputs corresponding to $x = 10$ to $x = 15$ are not used.
+However, upon closer inspection it is noted that the inputs corresponding to $x = 10$ to $x = 15$ are not used; there are no clients occupying those identifications.
 These unused inputs are referred to as 'dont-cares', meaning that it is not important to the function of the circuit what their corresponding output is.
 Don't-care cases are a typical vulnerability which can be exploited by an attacker.
 Under the 'Circuit A' column of Table~\ref{tbl:trojanOutputs} it can be seen that $I_{10}$ and $I_{11}$ produce results 68 and 89 respectively.
@@ -88,7 +88,7 @@ Now, the attacker has built a 'back-door' into the circuit.
 The original 10 users' authentication is not altered but inputs 10 and 11 provide unauthorized access to the attacker.
 
 The circuits shown in Figure~\ref{fig:userAuthentication} were implemented using \Xilinx's schematic designer and placed on a Virtex-5 240T (XC5VSX240T).
-The \gls{Bitstream}s and \acrshort{XDL} files were generated input to the \Name.
+The \gls{Bitstream}s and \acrshort{XDL} files were generated and input to the \Name.
 The analysis detected a trojan and output the list of determined attributes as can be seen in Figure~\ref{fig:backDoorResult}.
 \begin{figure}[h]
 \centering
@@ -113,26 +113,26 @@ The system output the attributes:
 	\item Attribute 27: Clustered
 	\item Attribute 29: Processor
 \end{itemize}
-As expected the results state that the trojan was inserted in the Fabrication phase; it is the earliest stage in the 'insertion' phase produced indicating it as the source.
-The effects of this modification propagate to the testing and assembly phases as expected.
-The modifications reach both the System and \acrfull{RTL} abstraction levels.
+As expected the results state that the trojan was inserted in the Fabrication phase (3); it is the earliest stage in the 'insertion' phase produced indicating it as the source.
+The effects of this modification propagate to the Testing (4) and Assembly (5) phases as expected.
+The modifications reach both the System (6) and \acrfull{RTL} (7) abstraction levels.
 Since the modifications were made using the schematic designer provided by \Xilinx which works in the \acrshort{RTL} level, these results are as expected.
-The properties attributes listed state that the trojan changes the functionality of the circuit. 
+The results indicate that the trojan Changes Functionality (12). 
 This agrees with the modification to the values listed in Table~\ref{tbl:trojanOutputs}.
-The trojan does not take affect over multiple clock cycles; this indicates it is composed of only combinational circuitry which is reflected in the results.
+The trojan does not take affect over multiple clock cycles; this indicates it is composed of only Combinational (17) circuitry which is reflected in the results.
 The trojan did not modify power levels or operation configurations, only design configurations.
-This indicates that the trojan can be described as Functional, not Parametric; this agrees with the results.
-Since the modification made a permanent alteration to the internal wiring of the circuit it can be said to be 'Always On'.
+This indicates that the trojan can be described as Functional (18), not Parametric (19); this agrees with the results.
+Since the modification made a permanent alteration to the internal wiring of the circuit it can be said to be Always On (20).
 The modified values for input $x=10$ or $x=11$ are always available and not activated.
 This is consistent with the returned results.
 The trojan changed only minor routing configurations in the circuit designs, this required the alteration of only a few tiles.
-The new route required the activation of tiles which were not active in the \gls{golden} design; further, all of the modified tiles are nearby the those in the \gls{golden} design. 
+The new route required the activation of tiles which were not active in the \gls{golden} design; further, all of the modified tiles are nearby those in the \gls{golden} design. 
 With these observations it can be said that this trojan exhibits Physical Layout attributes Small (24), Augmented (26) and Clustered (28). 
 All of the expected Physical Layout attributes were correctly determined by the Scatter Score method of section~\ref{sec:scatterScore}.
 Finally, all of the tiles modified by the trojan belong to major block type 0: Logic Type.
 These tiles only affect the internal processing of the circuit.
 No \acrshort{IOB}, Clock or \acrshort{BRAM} tiles were modified.
-This is reflected by the fact that only Location attribute 29, Processor, was returned by the analysis.
+This is reflected by the fact that only Location attribute, Processor (29), was returned by the analysis.
 The results observed by the experiment conformed with the experiments expectations demonstrating the accuracy of the method.
 The entire analysis takes less than a minute to perform.
 \subsection{AES-T100} \label{sec:aesT100}
@@ -140,8 +140,8 @@ In 2013 H. Salmani, M. Tehranipoor and R. Karri published a discussion on the de
 They collaboratively developed a series of verilog, VHDL and virtual machines that demonstrated effective creation of testable benchmarks.
 They took the benchmarks they created and published them on a website they created called \textit{Trust-Hub}.
 The benchmarks provided are organized by a taxonomy they proposed in~\cite{trustHubPaper}.
-Their taxonomy is slightly different than the one used by \NameNoPeriod which was proposed in~\cite{samerAttribute}, however the two are conceptually very similar.
-To demonstrate the efficacy of the \NameNoPeriod a benchmark names 'AES-T100' was chosen. 
+Their taxonomy is slightly different than the one used by the \NameNoPeriod which was proposed in~\cite{samerAttribute}, however the two are conceptually similar.
+To demonstrate the efficacy of the \NameNoPeriod a benchmark named 'AES-T100' was chosen. 
 The supporting documents describe this trojan as follows:
 \begin{displaycquote}{trusthubWebsite}
 	The Trojan leaks the secret key from a cryptographic chip running the AES algorithm through a covert channel. The channel adapts the concepts from spread spectrum communications (also known as Code-Division Multiple Access (CDMA)) to distribute the leakage of single bits over many clock cycles. The Trojan employs this method by using a pseudo-random number generator (PRNG) to create a CDMA code sequence, the PRNG initialized to a predefined value. The code sequence is then used to XOR modulate the secret information bits. The modulated sequence is forwarded to a leakage circuit (LC) to set up a covert CDMA channel in the power side-channel. The LC is realized by connecting eight identical flip-flop elements to the single output of the XOR gate to mimic a large capacitance.
@@ -193,7 +193,7 @@ The \NameNoPeriod output the following attributes:
 Again, it is assumed that this trojan was inserted during the fabrication phase; due to this the effects propagate to the Testing (4) and Assembly (5) phases.
 Again, the trojan resides in the System (6) and \acrshort{RTL} (7) abstraction levels as was expected.
 Attributes 13, 16, 30, 31, 32 and 33 appear in the analysis results as expected.
-The Scatter Score method describes this trojan as Large, Augments and Distributed. 
+The Scatter Score method describes this trojan as Large, Augmented and Distributed. 
 These results seem to correspond well with the description. 
 The addition of the leakage circuit and the PRNG would be non-trivial addenda likely requiring the activation of considerable resources resulting in attribute Augmented (26).
 Due to their complexity these added circuits will most likely need to be placed away from the \gls{golden} resources causing attribute Distributed (27).
