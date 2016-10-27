@@ -929,6 +929,17 @@
     \field{year}{2008}
   \endentry
 
+  \entry{xilnxDevManual}{manual}{}
+    \list{organization}{1}{%
+      {Xilinx}%
+    }
+    \field{labeltitlesource}{title}
+    \field{edition}{v10.1}
+    \field{title}{Development System Reference Guide}
+    \field{year}{2008}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{virtex5ConfigGuide}{manual}{}
     \list{organization}{1}{%
       {Xilinx}%
@@ -1004,17 +1015,6 @@
     \field{pages}{40\bibrangedash 47}
     \field{title}{A region based approach for the identification of hardware
   Trojans}
-    \field{year}{2008}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{xilnxDevManual}{manual}{}
-    \list{organization}{1}{%
-      {Xilinx}%
-    }
-    \field{labeltitlesource}{title}
-    \field{edition}{v10.1}
-    \field{title}{Development System Reference Guide}
     \field{year}{2008}
     \warn{\item Invalid format of field 'month'}
   \endentry

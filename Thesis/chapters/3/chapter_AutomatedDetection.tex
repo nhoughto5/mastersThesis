@@ -9,15 +9,17 @@ An \acrshort{ASIC} is manufactured once and is immutable; its hardware is perman
 \acrshort{FPGA}s are reconfigurable because they are comprised of an array of \acrfull{PLDs}.
 A \acrshort{PLD} is a component whose functionality is dependent on a set of configuration options; in other words, a user can define how it behaves.
 Each \acrshort{PLD} receives configuration instructions from the user that defines its functionality; these instructions are in the form of a binary message.
+
+The methodology proposed in this chapter focuses on \acrshort{FPGA} devices manufactured by \Xilinx.
 In \Xilinx terminology a \acrshort{PLD} is referred to as a tile. 
-A single \acrshort{FPGA} can contain hundreds, or even thousands of tiles.
-A device is usually made up of over a hundred different types.
+A single \acrshort{FPGA} can contain hundreds, or even thousands of tiles; a device is usually made up of over a hundred different types.
 Different types are used for different functions, such as \acrfull{IO}, Logic, Memory...etc.
-The set of messages sent to all of the \acrshort{PLD}s in the device from the user is referred to as the configuration \gls{Bitstream}. 
-\acrshort{FPGA} users create designs using a programming language; the design is then downloaded or "configured" onto the device via the \gls{Bitstream}.
+The set of messages sent to all of the tiles in the device from the user is referred to as the configuration \gls{Bitstream}. 
+
+\acrshort{FPGA} users create designs using a programming language referred to as a \acrfull{HDL}.
+The design is then compiled and synthesized into a configuration \gls{Bitstream} which is then downloaded or "configured" onto the device.
 Creating \acrshort{HDL} designs for \acrshort{FPGA}s is considerably cheaper and easier then designing \acrshort{ASIC} chips.
 Additionally, if the user wishes to make modifications the design on the device can be updated when out in the field; this is another large advantage over \acrshort{ASIC}s.
-%The design process is simpler and modifications can be made after manufacture.
 Because of this, \acrshort{FPGA}s are becoming the \acrshort{IC} of choice in larger scale productions.
 These same features, however, increase their vulnerability to attack.
 \begin{figure}[h]
@@ -47,36 +49,44 @@ It is referred to as the \gls{Bitstream} or 'configuration' \gls{Bitstream} and 
 	\label{fig:methodologyOverview}
 \end{figure}
 This Bit file is the primary file sent to the fabrication house where it will be implemented onto the batch of devices ordered.
-The resultant files are to be kept in secure storage while a copy is sent to be fabricated; these 'clean' copies are referred to as \gls{golden}.
-Though it is known that the fabrication houses will often attempt to make optimizations on designs, this methodology requires that no such efforts are made.
-When the completed batch of fabricated chips are returned the \gls{Bitstream} is extracted via the method described in section~\ref{sec:bitstreamExtraction}. 
+The resultant files, produced 'in-house' are to be kept in secure storage while a copy is sent to be fabricated; these stored copies are referred to as \gls{golden} and assumed to be trojan-free.
+Though it is known that the fabrication houses will often attempt to make optimizations on designs, this methodology requires that no such efforts be made.
+When the completed batch of fabricated chips are returned the \gls{Bitstream} is extracted from a sample via the method described in section~\ref{sec:bitstreamExtraction}. 
 That which is extracted is referred to as the \gls{target} \gls{Bitstream}.
 The \gls{golden} and \gls{target} \gls{Bitstream}s are analyzed in conjunction to detect differences.
 This technique is described in section~\ref{sec:fpgaBitStream}.
 Any discovered differences are then attributed to the corresponding component in the architecture, described in section~\ref{sec:tileMapping}.
-Finally, descriptive attributes presented in section~\ref{sec:topology} are returned to the user, described in section~\ref{sec:trojanAttributes}. 
+Finally, the descriptive attributes, originally presented in section~\ref{sec:topology}, are returned to the user.
+This is described in section~\ref{sec:trojanAttributes}. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{FPGA Architecture and Configuration} \label{sec:architectureAndConfig}
-A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Figure~\ref{fig:FPGA}.
+A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Figure~\ref{fig:FPGA}~\cite{xilnxDevManual}.
 A device can contain anywhere from a couple hundred to a few thousand blocks and are arranged into columns by type.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{figures/FPGA}
-	\caption[Rudimentary Layout of a Virtex Gate-Array]{Rudimentary Layout of a Virtex Gate-Array}
+	\caption[Gate-Array of Block Columns Separated into Clock Regions]{Gate-Array of Block Columns Separated into Clock Regions}
 	\label{fig:FPGA}
 \end{figure}
 A block is not a physical device but a conceptual grouping of tiles.
-A block will consist of one or multiple tiles depending on the type.
+A block will consist of one or multiple tiles depending on its type.
 A tile is a component specific to a particular function such as \acrfull{IO}, design logic, memory...etc but their detailed functionality can be configured by the user.
 Though an \acrshort{FPGA} may have over one-hundred different types of tiles each column is comprised entirely by a single block type.
-Columns are separated by clock regions shown by the dashed lines in Figure~\ref{fig:FPGA}.
-Each region is an independent array of blocks that uses a dedicated clock resource; this minimizes clock skew from causing undesired timing delays.
+Columns are separated into regions shown by the dashed lines in Figure~\ref{fig:FPGA}.
+These regions each use a separate clock mechanism and are referred to as 'Clock Regions'.
+
+
 Figure~\ref{fig:column} depicts a \acrfull{CLB} column.
-A column is comprised of blocks stacked vertically; \acrshort{CLB} blocks contain a \acrshort{CLB} tile and an interconnect tile.
+As mentioned, blocks may contain multiple tiles.
+Each row in Figure~\ref{fig:column} (i.e. the interconnect/\acrshort{CLB} tile-pair) is a block. 
+In this column the \acrshort{CLB} tile is the primary feature of each block, hence, it is referred to as a \acrshort{CLB} block.
+Consequentially, since this column is made up of \acrshort{CLB} blocks it is referred to as a \acrshort{CLB} column.
+A column is comprised of blocks stacked vertically.
+In the case where blocks contains multiple tiles, columns can be thought to contain sub-columns.
 The stack of interconnects can be considered the 'interconnect' sub-column while the stack of \acrshort{CLB} tiles can be thought of as the \acrshort{CLB} sub-column.
-Combined, the two sub-columns make up the column. 
+Combined, the two sub-columns make up this \acrshort{CLB} column. 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{Figures/column}
@@ -101,9 +111,9 @@ When an \acrshort{FPGA} is powered on the \gls{Bitstream} is loaded from the ext
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\gls{Bitstream} Extraction} \label{sec:bitstreamExtraction}
 In order to detect any trojans in the \gls{target} device the configuration \gls{Bitstream} will need to be recovered.
-As mentioned in section~\ref{sec:architectureAndConfig} the \gls{Bitstream} is stored in a memory unit external to the gate-array.
+As mentioned in section~\ref{sec:architectureAndConfig} the \gls{Bitstream} is stored in a memory unit external to the gate-array~\cite{virtex5ConfigGuide}.
 All \Xilinx devices provide a feature known as \gls{Readback}.
-There are two styles of \gls{Readback}; \gls{Readback} verify and \gls{Readback} Capture.
+There are two styles of \gls{Readback}; \gls{Readback} verify and \gls{Readback} capture.
 The \gls{Readback} capture method provides a large quantity of debug information which is not needed; \gls{Readback} verify will be used.
 \gls{Readback} verify is the process where the device is put into a 'frozen' state during run-time and all of the configuration bits are returned from the gate-array to the \acrshort{SRAM}. 
 The results can then be uploaded to a \acrfull{PC} for analysis.
@@ -177,30 +187,31 @@ In a \acrshort{CLB} column a block consists of an interconnect tile, also known 
 Frames are numbered from left to right, starting with 0. 
 For each block, except in a clock column, frames numbered 0 to 25 access the interconnect tile for that column. 
 For all blocks, except the \acrshort{CLB} and the clock column, frames numbered 26 and 27 access the Interface for that column. 
-All other frames are specific to that block.~\cite{virtex5ConfigGuide}
+All other frames are specific to that block~\cite{virtex5ConfigGuide}.
 To further understand how frames configure tiles a mapping must be made between each frame and the corresponding tile.
 This is described in section~\ref{sec:tileMapping}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Component Mapping} \label{sec:tileMapping}
-The \Name employs a method referred to as Component Mapping to create a mapping between each word in a configuration frame and the component on the device that it configures.
+The \NameNoPeriod employs a method referred to as Component Mapping to create a mapping between each word in a configuration frame and the component on the device that it configures.
 This information is not publicly released by \Xilinx as a means of providing security through obscurity.
 
 \subsection{Frame to Column Mapping}
 The configuration \gls{Bitstream} is stored in an external memory device as described in section~\ref{sec:architectureAndConfig}.
-When powered-on the \gls{Bitstream} is transmitted in frame address order to populate the dynamic in the tiles of the gate-array.
+When powered-on the \gls{Bitstream} is transmitted in frame address order to populate the dynamic memory in the tiles of the gate-array.
 The frame addressing scheme describes where in the gate-array the frame is destined fairly directly.
 Frames with a \acrshort{BA} value of 1 are clearly destined to configure the \acrshort{BRAM} and do not need further analysis for the purposes of this method.
 Frames with a \acrshort{BA} value of 0 or 2 must be mapped more finitely.
-The row address can be thought of as the Y value for the clock-region in which the frame resides.
+The row address specifies which row of clock-regions the frame is destined.
 Figure~\ref{fig:FPGA} shows four clock regions organized into two rows. 
-As an example the Virtex-5 240T has 12 rows; its row address spans from 0-5 and the Top bit in the address indicates whether it is in the top or bottom half of the device.
-Once the correct clock region is discerned the major address is used to determine the block column.
-The major address begins at 0 on the left and counts up towards the number of columns in the clock region.
+
+As an example the Virtex-5 240T has 12 rows; its row address spans from 0-5 and the Top bit in the address indicates whether it is in the top or bottom half of the device in accordance with Figure~\ref{fig:RowOrder}.
+Once the correct clock region is discerned the major address is used to determine which column the frame configures.
+The major address begins at 0 on the left and counts up towards the number of columns in the row.
 Finally, the minor address is used to determine which sub-column has been modified according to Table~\ref{tbl:frameAddress}.
 \subsection{Word to Block Mapping}
 In the case of Virtex-5 devices a frame is composed of 41 words that can be thought of as a vertical stack that aligns with a column.
-As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of basic blocks; there are 20 \acrshort{CLB} blocks per column, 40 \acrshort{IOB}s, 4 \acrshort{BRAM}...etc for Virtex-5 device.
+As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of basic blocks; there are 20 \acrshort{CLB} blocks per column, 40 \acrshort{IOB}s, 4 \acrshort{BRAM}...etc for Virtex-5 devices.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\linewidth]{Figures/frameTileMap}
@@ -242,16 +253,16 @@ With equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber} it is now 
 
 \section{Determining Trojan Attributes} \label{sec:trojanAttributes}
 The complexity of \acrlong{IC} designs and their corresponding trojans requires a more human-friendly scope.
-The taxonomy described in chapter~\ref{chapter:hardwareTrojans} provides a series of thirty-three attributes which a trojan may or may not posses.
+The taxonomy described in Chapter~\ref{chapter:hardwareTrojans} provides a series of thirty-three attributes which a trojan may or may not posses.
 These attributes allow us to readily describe, interpret and discuss trojans in a more comfortable and useful way.
 To employ this taxonomy a trojan must be analyzed; characteristics observed can either infer or provide direct evidence of possession of attributes. 
 Though it is desirable to be able to observe and directly extract the attributes a trojan possesses it is not always possible. 
 In~\cite{samerAttribute} a matrix, $\mathbf{R}$, is provided which describes the relationships between each of the thirty-three attributes in the taxonomy.
 When it is not possible to directly determine the presence of certain attributes, this relation matrix is used to infer their existence.
-The analysis stage of the automated trojan detection technique provided by this work begins extracting the attributes that are directly observable then using them to infer the existence of the remaining attributes. 
+The analysis stage of the automated trojan detection technique provided by this work begins by extracting those attributes that are directly observable then using matrix $\mathbf{R}$ to infer the existence of the remainder. 
 \subsection{Extraction Methods} \label{sec:directExtractionMethods}
 \subsubsection{Observed Location Attributes}
-The presence of attributes in the \textit{Location} category are directly observable from the results of the tile mapping method described in section~\ref{sec:tileMapping}.
+The presence of attributes in the \textit{Location} category are directly observable from the results of the component mapping method described in section~\ref{sec:tileMapping}.
 \Xilinx tiles conform to purpose-specific groups or block types which were discussed in section~\ref{sec:fpgaBitStream}.
 These block types contain sub-types that perform actions which pertain to the \textit{Location}, category. 
 \begin{enumerate}
@@ -275,9 +286,9 @@ n = \sum_{x = 0}^{X}\sum_{y = 0}^{Y}T_{xy}
 \ConditionSize
 where:
 \begin{conditions}
-	n     &  Number of all configured tiles \\
+	n     &  Number of all \textbf{configured} tiles \\
 	X     &  The column width of the gate-array \\   
-	Y     &  The row height of the gate-array \\
+	Y     &  The number of rows of the gate-array \\
 	T     &  A configured tile
 \end{conditions}
 \normalsize
@@ -338,7 +349,7 @@ where:
 \end{conditions}
 \normalsize
 
-The results of the tile mapping method described in section~\ref{fig:frameTileMap} are used to generate the set of all tiles reconfigured by the trojan.
+The results of the component mapping method described in section~\ref{fig:frameTileMap} are used to generate the set of all tiles reconfigured by the trojan.
 The set of reconfigured tiles can be said to contain three subsets: the subset of tiles activated by the trojan, those deactivated and those modified. 
 The results of the golden design analysis, the subsets, and the numeric descriptors can be used to discern which of the \textit{Physical Location} attributes the trojan possesses. 
 The \textit{Physical Location} category contains six attributes.

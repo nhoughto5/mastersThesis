@@ -6,19 +6,18 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces FPGA Life-Cycle}}{12}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Methodology Overview}}{13}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Rudimentary Layout of a Virtex Gate-Array}}{14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Gate-Array of Block Columns Separated into Clock Regions}}{14}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Column Composition}}{15}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces FPGA Device Layout}}{16}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Row Order of Virtex-5 Clock Region}}{18}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Configuration Words in the Bitstream\nobreakspace {}\cite {virtex5ConfigGuide}}}{20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The \textit {RapidSmith}\nobreakspace {}Class Hierarchy\nobreakspace {}\cite {rapidSmithManual}\relax }}{30}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The User-Interface of the Automated Hardware Trojan System\nobreakspace {}}}{31}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of Functional Operation}}{33}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The \textit {RapidSmith}\nobreakspace {}Class Hierarchy\nobreakspace {}\cite {rapidSmithManual}\relax }}{31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The User-Interface of the Automated Hardware Trojan System\nobreakspace {}}}{32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of Functional Operation}}{34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Priority Decoder Analysis Results}}{35}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The User Authentication Circuit: Clean and Trojan\relax }}{37}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Results of The Authentication Circuit Trojan Detection}}{38}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Results of Analysis on the AES-T100 Benchmark}}{41}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Priority Decoder Analysis Results}}{36}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The User Authentication Circuit: Clean and Trojan\relax }}{38}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Results of The Authentication Circuit Trojan Detection}}{39}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Results of Analysis on the AES-T100 Benchmark}}{42}
 \addvspace {10\p@ }

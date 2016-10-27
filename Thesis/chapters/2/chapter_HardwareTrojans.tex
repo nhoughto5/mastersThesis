@@ -6,14 +6,13 @@
 \section{Background} \label{sec:trojanBackGround}
 \acrfull{ICs} are continuously decreasing in size whilst increasing in complexity.
 These trends require ever more people and sophisticated means of manufacture which in turn creates security vulnerabilities.
-Products developed by semiconductor companies generally compromised in one of two ways.
-First, due to the complexity it is rare for a product to be managed within a single company.
+Products developed by semiconductor companies tend to be compromised in one of two ways.
+First, due to its complexity it is rare for an \acrshort{IC} to be entirely manufactured within a single company.
 Frequently, steps in the production-chain are outsourced.
 It is within these 'third-party' contributors that products can be maliciously modified.
-Secondly, for various reasons, employees of trusted contributors have been known to make modifications.~\cite{trojanSurvey2014}
-These modifications are known as hardware Trojans.
+Secondly, for various reasons, employees of trusted contributors have been known to make modifications~\cite{trojanSurvey2014}.
 \acrshort{IC}s are an integral part of every facet of the modern world.
-Proper application of a Trojan can provide information, control of mechanical systems, surveillance and more to an unauthorized party.
+Proper application of a trojan can provide information, control of mechanical systems, surveillance and more to an unauthorized party.
 
 
 \section{Topology} \label{sec:topology}
@@ -171,39 +170,43 @@ There has been little effort to directly analyze the \gls{Bitstream} because man
 \subsection{\acrfull{CRC} Detection} \label{sec:crcDetection}
 Because \acrshort{FPGA} design is done using a software language it is possible for designers to share component designs easily.
 It is common for designers to employ 'third-party' \acrfull{IP}. 
-This sharing of component design provides the opportunity for attackers to add trojans to commercial products by sharing trojan containing \acrshort{IP}.
+This sharing of component design provides the opportunity for attackers to add trojans to commercial products by sharing trojan-containing \acrshort{IP}.
 In 2013 researchers at Cairo University proposed a method of insulating externally sourced \acrshort{IP} with \acrfull{CRC} defense modules~\cite{crcDetection}.
 According to the authors their method is capable of detecting leaked information with a 99.95\% accuracy.
-This method is only capable of detecting trojans that possess Effect attribute Information Leakage (13).
-In addition they report considerable detriment to power consumption and performance.
+This method employs a methodology referred to as 'built-in-self-test" (BIST) where additional hardware is added to the design.
+The additional hardware performs run-time checking of circuit output.
+In general, the BIST method is only capable of detecting modifications the designers have foreseen.
+In this case, this method is only capable of detecting trojans that possess the attribute Information Leakage (13) from the taxonomy presented ins section~\ref{sec:topology}.
+In addition the authors report considerable detriment to power consumption and performance.
+
 
 \subsection{\acrfull{RO} Detection}
 Researchers at the Technological Educational Institute of Western Greece and Industrial Systems Institute/RC “Athena” jointly proposed a method of using \acrfull{ROs} as a mechanism for detecting hardware trojans~\cite{ringOscillatorMethod}.
 A \acrshort{RO} is a circuit composed of inverters formed into a loop.
 Electric current looping through the \acrshort{RO} does so at an inherent frequency.
 By configuring the circuit paths of the user's design into a \acrshort{RO} it is possible to create a 'signature'.
-This signature is an expected frequency emitted from the \gls{golden} design. 
+This signature is an expected frequency emitted from the desired design. 
 The authors claim that modifications to the design will alter the frequency emitted by its circular configuration.
 The experimental results showed that modifications did in-fact alter the frequency enough to reliably detect modifications.
 This method can reliably detect hardware trojans but is incapable of providing any details regarding its effect.
-Further, the stipulation that the \gls{golden} must be such that it forms an oscillating ring is impractical.
+Further, the stipulation that the desired design must be such that it forms an oscillating ring is impractical.
 It is impossible to guarantee that all real-world designs can form an \acrshort{RO} whilst maintaining desired functionality and performance.
 \subsection{The Multi-Faceted Approach}
 Researchers from Iowa State University proposed a multi-faceted approach to trojan detection in \acrshort{FPGA}s~\cite{multiFacetedApproach}.
 Their method composed of three approaches:
 \begin{itemize}
 	\item Functional Testing: A means of feeding test vectors and comparing the output to expected results.
-	\item Power Analysis: Using an oscilloscope, the difference in power consumption between the \gls{golden} and \gls{target} devices performing the same operations were recorded. Differences were used to discern the presence of a trojan.
+	\item Power Analysis: Using an oscilloscope, the difference in power consumption between the desired design and the modified devices performing the same operations were recorded. Differences were used to discern the presence of a trojan.
 	\item Bitfile Analysis: The authors attempted to employ a binary file analysis library named \textit{deBit}~\cite{bitStreamToNetlist} to reverse engineer a netlist from the \gls{Bitstream}.
 \end{itemize}
 The functional testing method attempted provided reasonable results. 
-Test vectors showed unexpected behavior; this provided only the information that trojan was present, no details.
+Test vectors used showed unexpected behavior; this provided only the information that a trojan was present.
 The power analysis method again provided results of moderate quality.
 With careful placement of the oscilloscope probes the authors were able to infer the physical location on the device where modifications occurred.
 This provided no information however as to the relation between the modifications and the design.
-Finally, the authors were able to partially convert the \gls{Bitstream} to its netlist description.
-Only descriptions of the primary logic circuit elements were acheived.
-This could be used to discern some information regarding any modifications discovered but is far from creating a complete description of a trojan.
+Finally, the authors were able to only partially able to convert the \gls{Bitstream} to its netlist description.
+Only descriptions of the primary logic circuit elements were achieved.
+This could be used to discern some information regarding modifications discovered but is far from creating a complete description of a trojan.
 
 
 \setlength{\unitlength}{\savedunitlength}

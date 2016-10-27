@@ -197,10 +197,10 @@ Each frame is compared bit by bit.
 A trojan-free circuit will have no differences between the \gls{golden} and \gls{target} files.
 Any modified frames discovered are stored in a 'Modified\_Frame' class.
 The 'Modified\_Frame' object stores the \gls{golden} frame data, the \gls{target} frame data, the address of the frame and more.
-They are then used by the 'Tile Mapping' method described in section~\ref{sec:tileMapping} to determine where in the architecture the modifications have been made.
+They are then used by the 'Component Mapping' method described in section~\ref{sec:tileMapping} to determine where in the architecture the modifications have been made.
 
-The tile-mapping procedure relies heavily on the compressed XDLRC files and the corresponding \acrshort{API} described in section~\ref{sec:XDLRC} as well as the 'Device' class structure shown in Figure~\ref{fig:rapidSmithDevice}.
-Tile mapping produces a list of objects of the 'Modified\_Tile' class.
+The component mapping procedure relies heavily on the compressed XDLRC files and the corresponding \acrshort{API} described in section~\ref{sec:XDLRC} as well as the 'Device' class structure shown in Figure~\ref{fig:rapidSmithDevice}.
+Component mapping produces a list of objects of the 'Modified\_Tile' class.
 This class contains a reference to the corresponding tile in the XDLRC file, the \gls{golden} and \gls{target} words (which differ), the frame address in which it occurred, the sub-column type and the column type.
 The user is also required to enter the \gls{golden} \acrshort{XDL} file.
 As described in section~\ref{sec:XDL} the \acrshort{XDL} file contains the Netlist for the \gls{golden} design.
