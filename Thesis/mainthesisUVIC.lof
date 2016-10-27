@@ -13,8 +13,8 @@
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Configuration Words in the Bitstream\nobreakspace {}\cite {virtex5ConfigGuide}}}{20}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces The \textit {RapidSmith}\nobreakspace {}Class Hierarchy\nobreakspace {}\cite {rapidSmithManual}\relax }}{31}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces The User-Interface of the Automated Hardware Trojan System\nobreakspace {}}}{32}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of Functional Operation}}{34}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The User-Interface of the \acrshort {FPGA} Trojan Detector\nobreakspace {}}}{32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Overview of Functional Operation}}{33}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Priority Decoder Analysis Results}}{36}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces The User Authentication Circuit: Clean and Trojan\relax }}{38}

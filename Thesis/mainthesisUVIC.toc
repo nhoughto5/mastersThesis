@@ -38,9 +38,9 @@
 \contentsline {subsubsection}{\acrfull {XDL}}{27}
 \contentsline {subsubsection}{XDLRC}{28}
 \contentsline {subsection}{\numberline {4.2.2}Java}{29}
-\contentsline {subsection}{\numberline {4.2.3}\textit {RapidSmith}\nobreakspace {}}{29}
+\contentsline {subsection}{\numberline {4.2.3}\textit {RapidSmith}\nobreakspace {}}{30}
 \contentsline {subsubsection}{Class Structure}{30}
-\contentsline {section}{\numberline {4.3}Automated Hardware Trojan System}{31}
+\contentsline {section}{\numberline {4.3}\acrshort {FPGA} Trojan Detector}{31}
 \contentsline {subsection}{\numberline {4.3.1}\acrfull {UI}}{31}
 \contentsline {subsection}{\numberline {4.3.2}Operation}{33}
 \contentsline {chapter}{\numberline {5}Results and Discussion}{35}
