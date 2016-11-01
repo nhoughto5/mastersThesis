@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  31 OCT 2016 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  1 NOV 2016 07:27
 entering extended mode
 **mainthesisUVIC.tex
 (mainthesisUVIC.tex
@@ -1144,10 +1144,10 @@ Writing nomenclature file mainthesisUVIC.nlo
 \glswrite=\write6
 \glo@main@file=\write7
 Package glossaries Info: Writing glossary file mainthesisUVIC.glo on input line
- 170.
+ 174.
 \glo@acronym@file=\write8
 Package glossaries Info: Writing glossary file mainthesisUVIC.acn on input line
- 170.
+ 174.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
@@ -1164,18 +1164,18 @@ LaTeX Warning: Label `R' multiply defined.
 
 ) (chapters/web/chapter_Web.aux) (chapters/5/chapter_Results.aux)
 (chapters/6/chapter_conclusion.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 175.
-LaTeX Font Info:    ... okay on input line 175.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 179.
+LaTeX Font Info:    ... okay on input line 179.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1361,8 +1361,8 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 175.
-Package biblatex Info: Reference segment=0 on input line 175.
+Package biblatex Info: Reference section=0 on input line 179.
+Package biblatex Info: Reference segment=0 on input line 179.
  (mainthesisUVIC.glsdefs)
 \c@lstlisting=\count381
 Package caption Info: Begin \AtBeginDocument code.
@@ -1376,17 +1376,17 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2015/10/15 v2.6m siunitx: Abbreviated units
 )
 \c__siunitx_mathsf_int=\count382
-LaTeX Font Info:    Try loading font information for U+msa on input line 175.
+LaTeX Font Info:    Try loading font information for U+msa on input line 179.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 175.
+LaTeX Font Info:    Try loading font information for U+msb on input line 179.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 175.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 179.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\wasysym\uwasy.fd"
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -1477,185 +1477,192 @@ Package pdftex.def Info: figures/trojan_life_cycle.png used on input line 52.
 (pdftex.def)             Requested size: 346.89732pt x 155.94197pt.
  [6 <./figures/trojan_life_cycle.png>]
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 163--173
+Underfull \hbox (badness 10000) in paragraph at lines 170--180
 
  []
 
 [8]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 183.
+               Default added (so using `tbp') on input line 190.
 
 <figures/full2.png, id=67, 478.03593pt x 304.88907pt>
 File: figures/full2.png Graphic file (type png)
  <use figures/full2.png>
-Package pdftex.def Info: figures/full2.png used on input line 185.
+Package pdftex.def Info: figures/full2.png used on input line 192.
 (pdftex.def)             Requested size: 260.17465pt x 165.93561pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [9 <./figures/full2.png>]
-Overfull \hbox (0.75262pt too wide) in paragraph at lines 245--245
+Overfull \hbox (3.5979pt too wide) in paragraph at lines 245--245
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.66792pt too wide) in paragraph at lines 245--245
+Overfull \hbox (3.5132pt too wide) in paragraph at lines 245--245
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.97902pt too wide) in paragraph at lines 245--245
+Overfull \hbox (3.8243pt too wide) in paragraph at lines 245--245
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.86096pt too wide) in paragraph at lines 245--245
+Overfull \hbox (2.92708pt too wide) in paragraph at lines 245--245
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.92458pt too wide) in paragraph at lines 245--245
+Overfull \hbox (3.70624pt too wide) in paragraph at lines 245--245
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.87068pt too wide) in paragraph at lines 245--245
+Overfull \hbox (3.76985pt too wide) in paragraph at lines 245--245
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (3.97682pt too wide) in paragraph at lines 245--245
-[]|$\OML/cmm/m/it/12 C[]$| 
- []
-
-
-Overfull \hbox (3.89212pt too wide) in paragraph at lines 245--245
-[]|$\OML/cmm/m/it/12 C[]$| 
- []
-
-
-Overfull \hbox (4.20322pt too wide) in paragraph at lines 245--245
-[]|$\OML/cmm/m/it/12 C[]$| 
- []
-
-
-Overfull \hbox (3.306pt too wide) in paragraph at lines 245--245
-[]|$\OML/cmm/m/it/12 C[]$| 
- []
-
-
-Overfull \hbox (4.08516pt too wide) in paragraph at lines 245--245
-[]|$\OML/cmm/m/it/12 C[]$| 
- []
-
-
-Overfull \hbox (4.14877pt too wide) in paragraph at lines 245--245
-[]|$\OML/cmm/m/it/12 C[]$| 
- []
-
-
-Overfull \hbox (4.09488pt too wide) in paragraph at lines 245--245
-[]|$\OML/cmm/m/it/12 C[]$| 
- []
-
-
-Overfull \hbox (2.78836pt too wide) in paragraph at lines 245--245
-[]|$\OML/cmm/m/it/12 C[]$| 
- []
-
-
-Overfull \hbox (26.4386pt too wide) in paragraph at lines 242--249
- [][] 
- []
-
-
-Overfull \hbox (0.75262pt too wide) in paragraph at lines 258--258
+Overfull \hbox (3.71596pt too wide) in paragraph at lines 245--245
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.66792pt too wide) in paragraph at lines 258--258
+Overfull \hbox (2.40944pt too wide) in paragraph at lines 245--245
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.97902pt too wide) in paragraph at lines 258--258
+Overfull \hbox (6.8221pt too wide) in paragraph at lines 245--245
+[]|$\OML/cmm/m/it/12 C[]$| 
+ []
+
+
+Overfull \hbox (6.7374pt too wide) in paragraph at lines 245--245
+[]|$\OML/cmm/m/it/12 C[]$| 
+ []
+
+
+Overfull \hbox (7.0485pt too wide) in paragraph at lines 245--245
+[]|$\OML/cmm/m/it/12 C[]$| 
+ []
+
+
+Overfull \hbox (6.15128pt too wide) in paragraph at lines 245--245
+[]|$\OML/cmm/m/it/12 C[]$| 
+ []
+
+
+Overfull \hbox (6.93044pt too wide) in paragraph at lines 245--245
+[]|$\OML/cmm/m/it/12 C[]$| 
+ []
+
+
+Overfull \hbox (6.99405pt too wide) in paragraph at lines 245--245
+[]|$\OML/cmm/m/it/12 C[]$| 
+ []
+
+
+Overfull \hbox (6.94016pt too wide) in paragraph at lines 245--245
+[]|$\OML/cmm/m/it/12 C[]$| 
+ []
+
+
+Overfull \hbox (5.63364pt too wide) in paragraph at lines 245--245
+[]|$\OML/cmm/m/it/12 C[]$| 
+ []
+
+
+Overfull \hbox (3.5979pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.86096pt too wide) in paragraph at lines 258--258
+Overfull \hbox (3.5132pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.92458pt too wide) in paragraph at lines 258--258
+Overfull \hbox (3.8243pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (0.87068pt too wide) in paragraph at lines 258--258
+Overfull \hbox (2.92708pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 I[]$| 
  []
 
 
-Overfull \hbox (3.97682pt too wide) in paragraph at lines 258--258
+Overfull \hbox (3.70624pt too wide) in paragraph at lines 258--258
+[]|$\OML/cmm/m/it/12 I[]$| 
+ []
+
+
+Overfull \hbox (3.76985pt too wide) in paragraph at lines 258--258
+[]|$\OML/cmm/m/it/12 I[]$| 
+ []
+
+
+Overfull \hbox (3.71596pt too wide) in paragraph at lines 258--258
+[]|$\OML/cmm/m/it/12 I[]$| 
+ []
+
+
+Overfull \hbox (2.40944pt too wide) in paragraph at lines 258--258
+[]|$\OML/cmm/m/it/12 I[]$| 
+ []
+
+
+Overfull \hbox (6.8221pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 C[]$| 
  []
 
 
-Overfull \hbox (3.89212pt too wide) in paragraph at lines 258--258
+Overfull \hbox (6.7374pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 C[]$| 
  []
 
 
-Overfull \hbox (4.20322pt too wide) in paragraph at lines 258--258
+Overfull \hbox (7.0485pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 C[]$| 
  []
 
 
-Overfull \hbox (3.306pt too wide) in paragraph at lines 258--258
+Overfull \hbox (6.15128pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 C[]$| 
  []
 
 
-Overfull \hbox (4.08516pt too wide) in paragraph at lines 258--258
+Overfull \hbox (6.93044pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 C[]$| 
  []
 
 
-Overfull \hbox (4.14877pt too wide) in paragraph at lines 258--258
+Overfull \hbox (6.99405pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 C[]$| 
  []
 
 
-Overfull \hbox (4.09488pt too wide) in paragraph at lines 258--258
+Overfull \hbox (6.94016pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 C[]$| 
  []
 
 
-Overfull \hbox (2.78836pt too wide) in paragraph at lines 258--258
+Overfull \hbox (5.63364pt too wide) in paragraph at lines 258--258
 []|$\OML/cmm/m/it/12 C[]$| 
- []
-
-
-Overfull \hbox (8.81795pt too wide) in paragraph at lines 255--262
- [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10]
+[10] [11]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [11] [12]) [13] (chapters/3/chapter_AutomatedDetection.tex
+ [12]) [13] (chapters/3/chapter_AutomatedDetection.tex
 Chapter 3.
 <figures/Concept.png, id=85, 560.0925pt x 252.945pt>
 File: figures/Concept.png Graphic file (type png)
@@ -1723,23 +1730,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [22] [23 <./Figures/frameTileMap.png>] [24] [25] [26] [27]) [28]
 (chapters/web/chapter_Web.tex
 Chapter 4.
-
-LaTeX Warning: Reference `sec:techniqueClassification' on page 29 undefined on 
-input line 8.
-
-
-LaTeX Warning: Reference `fig:visualRepresentaion' on page 29 undefined on inpu
-t line 9.
-
-
-LaTeX Warning: Reference `fig:visualRepresentaion' on page 29 undefined on inpu
-t line 11.
-
 <figures/visualRepresentaion.png, id=150, 563.85657pt x 291.33844pt>
 File: figures/visualRepresentaion.png Graphic file (type png)
 
 <use figures/visualRepresentaion.png>
-Package pdftex.def Info: figures/visualRepresentaion.png used on input line 15.
+Package pdftex.def Info: figures/visualRepresentaion.png used on input line 30.
 
 (pdftex.def)             Requested size: 390.25536pt x 201.64165pt.
 
@@ -1747,78 +1742,39 @@ Package pdftex.def Info: figures/visualRepresentaion.png used on input line 15.
 File: figures/visualRepresentaion2.png Graphic file (type png)
 
 <use figures/visualRepresentaion2.png>
-Package pdftex.def Info: figures/visualRepresentaion2.png used on input line 21
+Package pdftex.def Info: figures/visualRepresentaion2.png used on input line 36
 .
 (pdftex.def)             Requested size: 325.215pt x 187.82315pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `fig:visualRepresentaion' on page 29 undefined on inpu
-t line 29.
-
-
-LaTeX Warning: Reference `fig:visualRepresentaion2' on page 29 undefined on inp
-ut line 32.
-
-
-LaTeX Warning: Reference `sec:toolDetection' on page 29 undefined on input line
- 39.
-
-
-LaTeX Warning: Reference `fig:visualRepresentaion' on page 29 undefined on inpu
-t line 40.
-
-
-LaTeX Warning: Reference `fig:classificationSeverity' on page 29 undefined on i
-nput line 40.
-
-<figures/classificationSeverity.png, id=152, 885.3075pt x 115.93312pt>
-File: figures/classificationSeverity.png Graphic file (type png)
-
-<use figures/classificationSeverity.png>
-Package pdftex.def Info: figures/classificationSeverity.png used on input line 
-44.
-(pdftex.def)             Requested size: 433.62886pt x 85.35928pt.
-
-
-LaTeX Warning: Reference `fig:visualRepresentaion' on page 29 undefined on inpu
-t line 45.
-
-
-LaTeX Warning: Reference `fig:visualRepresentaion' on page 29 undefined on inpu
-t line 45.
-
-[29
+ [29
 
 
 
 ]
 
-LaTeX Warning: Reference `fig:comparison' on page 30 undefined on input line 55
-.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+[30 <./figures/visualRepresentaion.png>]
+<figures/classificationSeverity.png, id=158, 885.3075pt x 115.93312pt>
+File: figures/classificationSeverity.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:comparison' on page 30 undefined on input line 57
-.
-
+<use figures/classificationSeverity.png>
+Package pdftex.def Info: figures/classificationSeverity.png used on input line 
+59.
+(pdftex.def)             Requested size: 433.62886pt x 85.35928pt.
+ [31 <./figures/visualRepresentaion2.png> <./figures/classificationSeverity.png
+>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 65.
+               Default added (so using `tbp') on input line 80.
 
-<figures/comparison.png, id=156, 867.24pt x 385.44pt>
+<figures/comparison.png, id=162, 867.24pt x 385.44pt>
 File: figures/comparison.png Graphic file (type png)
 
 <use figures/comparison.png>
-Package pdftex.def Info: figures/comparison.png used on input line 67.
+Package pdftex.def Info: figures/comparison.png used on input line 82.
 (pdftex.def)             Requested size: 433.62001pt x 192.71953pt.
-) [30 <./figures/visualRepresentaion.png>] [31 <./figures/visualRepresentaion2.
-png> <./figures/classificationSeverity.png>]
-[32 <./figures/comparison.png>] (chapters/5/chapter_Results.tex
+) [32 <./figures/comparison.png>]
+(chapters/5/chapter_Results.tex
 Chapter 5.
 <Figures/priorityDecoder.png, id=166, 609.77812pt x 417.81094pt>
 File: Figures/priorityDecoder.png Graphic file (type png)
@@ -1887,19 +1843,19 @@ Chapter 6.
 
 
 ]) [43]
-Overfull \hbox (2.83281pt too wide) in paragraph at lines 207--207
+Overfull \hbox (2.83281pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 News. url: http://spectrum.ieee.org/semiconductors/design/stopp
 ing-hardware-
  []
 
 
-Overfull \hbox (67.19994pt too wide) in paragraph at lines 207--207
+Overfull \hbox (67.19994pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 gi-neer-ing, and Sci-ence News. url: http://spectrum.ieee.org/c
 omputing/hardware/counterfeit-
  []
 
 
-Overfull \hbox (1.29814pt too wide) in paragraph at lines 207--207
+Overfull \hbox (1.29814pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 ogy". In: \OT1/cmr/m/it/12 2014 3rd Mediter-ranean Con-fer-ence
  on Em-bed-ded Com-put-ing (MECO)\OT1/cmr/m/n/12 .
  []
@@ -1914,31 +1870,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Overfull \hbox (13.14677pt too wide) in paragraph at lines 207--207
+Overfull \hbox (13.14677pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 anal-y-sis and PCA al-go-rithm". In: \OT1/cmr/m/it/12 Re-li-a-b
 il-ity, Main-tain-abil-ity and Safety (ICRMS),
  []
 
 [45]
-Overfull \hbox (9.02249pt too wide) in paragraph at lines 207--207
+Overfull \hbox (9.02249pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 ter-i-za-tion". In: \OT1/cmr/m/it/12 De-sign Au-toma-tion Con-f
 er-ence, 2009. DAC '09. 46th ACM/IEEE\OT1/cmr/m/n/12 .
  []
 
 
-Overfull \hbox (3.77332pt too wide) in paragraph at lines 207--207
+Overfull \hbox (3.77332pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 Channel Anal-y-sis". In: \OT1/cmr/m/it/12 IEEE Trans-ac-tions o
 n Com-put-ers \OT1/cmr/m/n/12 62.11 (2013), pp. 2183{
  []
 
 
-Overfull \hbox (4.3116pt too wide) in paragraph at lines 207--207
+Overfull \hbox (4.3116pt too wide) in paragraph at lines 211--211
 []\OT1/cmr/m/n/12 P. Kit-sos and A. G. Voyi-atzis. \  FPGA Tro-jan De-tec-tion 
 Us-ing Length-Optimized
  []
 
 [46]
-Overfull \hbox (15.08582pt too wide) in paragraph at lines 207--207
+Overfull \hbox (15.08582pt too wide) in paragraph at lines 211--211
 []\OT1/cmr/m/it/12 Collection of Dig-i-tal De-sign Bench-marks\OT1/cmr/m/n/12 .
  http://ddd.fit.cvut.cz/prj/Benchmarks/.
  []
@@ -1961,10 +1917,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package logreq Info: Writing requests to 'mainthesisUVIC.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 30195 strings out of 493698
- 558403 string characters out of 3144415
- 1053100 words of memory out of 3000000
- 33053 multiletter control sequences out of 15000+200000
+ 30198 strings out of 493698
+ 558441 string characters out of 3144415
+ 1053128 words of memory out of 3000000
+ 33056 multiletter control sequences out of 15000+200000
  19059 words of font info for 74 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  53i,13n,92p,10386b,1410s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1983,7 +1939,7 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmtt12.pfb>
-Output written on mainthesisUVIC.pdf (56 pages, 977058 bytes).
+Output written on mainthesisUVIC.pdf (56 pages, 979169 bytes).
 PDF statistics:
  274 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

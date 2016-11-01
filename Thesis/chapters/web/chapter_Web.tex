@@ -1,5 +1,20 @@
-\startchapter{Web Application}
+\startchapter{The \WebName}
 \label{chapter:webSite}
+\section{Introduction}
+Scientific interests benefit greatly from collaboration.
+Sharing new information and techniques allows a parallelization of efforts; no one person is responsible for an entire discipline.
+Researchers, academics, technicians, and so on use various methods to spread knowledge.
+The study of hardware trojans has yet to develop a centralized place for researchers to browse and reference discovered trojans or detection methods.
+\acrfull{IC} manufacturers would benefit greatly from the ability to search for known trojans and cross reference their design with the circuits the trojans are known to attack.
+In this way, a manufacturer or researcher developing a clock circuit, for example, can search for trojans known to attack clock circuits.
+Being aware of all known trojans which attack clock circuits provides valuable insight into defending against them.
+
+A website, called the \WebName, which allows users to input information regarding discovered trojans has been developed.
+A user is able to input a taxonomic description using the taxonomy described in section~\ref{sec:topology} and textual information. 
+The \WebNameNoPeriod stores input trojans in a relational database which is search-able by a user-friendly web \acrshort{UI}.
+Further, \WebNameNoPeriod provides similar storage for known detection methods. 
+With this, manufacturers worried about certain trojans can search the database for known methods of detecting them. 
+The \WebNameNoPeriod additionally provides a series of web tools which implement the analysis techniques described in section~\ref{sec:techniques}.
 \section{Web Tools}
 %%%%%%%%%%%%%%%%%%%%%%%
 \subsection{The Classification Tool} \label{sec:toolClassification}
