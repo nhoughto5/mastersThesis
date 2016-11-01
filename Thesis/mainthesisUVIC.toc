@@ -13,40 +13,34 @@
 \contentsline {chapter}{\numberline {2}Hardware Trojans}{4}
 \contentsline {section}{\numberline {2.1}Background}{4}
 \contentsline {section}{\numberline {2.2}Topology}{4}
-\contentsline {section}{\numberline {2.3}Recent Work}{8}
-\contentsline {subsection}{\numberline {2.3.1}\acrfull {CRC} Detection}{8}
-\contentsline {subsection}{\numberline {2.3.2}\acrfull {RO} Detection}{9}
-\contentsline {subsection}{\numberline {2.3.3}The Multi-Faceted Approach}{9}
-\contentsline {chapter}{\numberline {3}Automated Trojan Detection}{11}
-\contentsline {section}{\numberline {3.1}Methodology}{11}
-\contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{14}
-\contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{16}
-\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} \gls {Bitstream} Analysis}{17}
-\contentsline {section}{\numberline {3.5}Component Mapping}{19}
-\contentsline {subsection}{\numberline {3.5.1}Frame to Column Mapping}{19}
-\contentsline {subsection}{\numberline {3.5.2}Word to Block Mapping}{19}
-\contentsline {section}{\numberline {3.6}Determining Trojan Attributes}{21}
-\contentsline {subsection}{\numberline {3.6.1}Extraction Methods}{21}
-\contentsline {subsubsection}{Observed Location Attributes}{21}
-\contentsline {subsubsection}{Scatter Score Method}{22}
-\contentsline {subsubsection}{Insertion and Abstraction Attributes}{24}
-\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{24}
-\contentsline {chapter}{\numberline {4}Software Implementation}{26}
-\contentsline {section}{\numberline {4.1}Introduction}{26}
-\contentsline {section}{\numberline {4.2}Technologies Used}{26}
-\contentsline {subsection}{\numberline {4.2.1}\textit {Xilinx}\nobreakspace {}}{26}
-\contentsline {subsubsection}{\acrfull {XDL}}{27}
-\contentsline {subsubsection}{XDLRC}{28}
-\contentsline {subsection}{\numberline {4.2.2}Java}{29}
-\contentsline {subsection}{\numberline {4.2.3}\textit {RapidSmith}\nobreakspace {}}{30}
-\contentsline {subsubsection}{Class Structure}{30}
-\contentsline {section}{\numberline {4.3}\acrshort {FPGA} Trojan Detector}{31}
-\contentsline {subsection}{\numberline {4.3.1}\acrfull {UI}}{31}
-\contentsline {subsection}{\numberline {4.3.2}Operation}{33}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{35}
-\contentsline {section}{\numberline {5.1}Results}{35}
-\contentsline {subsection}{\numberline {5.1.1}Methodology}{35}
-\contentsline {subsection}{\numberline {5.1.2}Priority Decoder}{35}
-\contentsline {subsection}{\numberline {5.1.3}User Authentication Circuit}{36}
-\contentsline {subsection}{\numberline {5.1.4}AES-T100}{40}
-\contentsline {chapter}{\numberline {6}Contributions}{44}
+\contentsline {subsection}{\numberline {2.2.1}Classification}{8}
+\contentsline {subsection}{\numberline {2.2.2}Trojan Evaluation}{9}
+\contentsline {section}{\numberline {2.3}Recent Work}{11}
+\contentsline {subsection}{\numberline {2.3.1}\acrfull {CRC} Detection}{11}
+\contentsline {subsection}{\numberline {2.3.2}\acrfull {RO} Detection}{12}
+\contentsline {subsection}{\numberline {2.3.3}The Multi-Faceted Approach}{12}
+\contentsline {chapter}{\numberline {3}Automated Trojan Detection}{14}
+\contentsline {section}{\numberline {3.1}Methodology}{14}
+\contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{17}
+\contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{19}
+\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} \gls {Bitstream} Analysis}{20}
+\contentsline {section}{\numberline {3.5}Component Mapping}{22}
+\contentsline {subsection}{\numberline {3.5.1}Frame to Column Mapping}{22}
+\contentsline {subsection}{\numberline {3.5.2}Word to Block Mapping}{22}
+\contentsline {section}{\numberline {3.6}Determining Trojan Attributes}{24}
+\contentsline {subsection}{\numberline {3.6.1}Extraction Methods}{24}
+\contentsline {subsubsection}{Observed Location Attributes}{24}
+\contentsline {subsubsection}{Scatter Score Method}{25}
+\contentsline {subsubsection}{Insertion and Abstraction Attributes}{27}
+\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{27}
+\contentsline {chapter}{\numberline {4}Web Application}{29}
+\contentsline {section}{\numberline {4.1}Web Tools}{29}
+\contentsline {subsection}{\numberline {4.1.1}The Classification Tool}{29}
+\contentsline {subsection}{\numberline {4.1.2}The Evaluation Tool}{30}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{33}
+\contentsline {section}{\numberline {5.1}Results}{33}
+\contentsline {subsection}{\numberline {5.1.1}Methodology}{33}
+\contentsline {subsection}{\numberline {5.1.2}Priority Decoder}{33}
+\contentsline {subsection}{\numberline {5.1.3}User Authentication Circuit}{34}
+\contentsline {subsection}{\numberline {5.1.4}AES-T100}{38}
+\contentsline {chapter}{\numberline {6}Contributions}{42}

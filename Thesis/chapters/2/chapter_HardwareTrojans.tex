@@ -159,6 +159,107 @@ An example of this submatrix is
 \right ]
 \label{R12}
 \]
+\subsection{Classification}
+A hardware trojan must be observed to determine its attributes and these are used to form $\mathbf{R}$.
+Then a systematic process of scanning the rows and columns can be used to gain insight into the characteristics of the trojan.
+This process is described in detail in~\cite{samerAttribute,samerDissertation}.
+The observed attributes can be used to determine the possible locations of a trojan within the design and in which manufacturing phases it can be inserted.
+Conversely, the phase a trojan was inserted can be used to determine which abstraction levels are vulnerable,
+the trojan properties, and what locations can be compromised.
+To easily understand the characteristics of a trojan, a directed graph is generated from $\mathbf{R}$.
+Attributes are represented by nodes and their relationships by edges.\newline\newline
+Consider a trojan that has the following attributes:
+\begin{itemize}
+	\item causes denial of service (DoD) (attribute 15),
+	\item composed of combinational logic (attribute 17),
+	\item functional (attribute 18), and
+	\item externally triggered (attribute 22).
+\end{itemize}
+A visual examination of $\mathbf{R}$ leads to the graph drawn in Fig.~\ref{fig:full2}.
+If it is determined that it is not possible to insert the trojan in the design phase (attribute 2), then
+attribute 2 can be removed from the graph.
+Without a direct connection to attribute 1, attributes 3, 4 and 5 must also be removed.
+Further, without attribute 2 the trojan can only be inserted in the specification phase (attribute 1).
+\begin{figure}[]
+	\centering
+	\includegraphics[width=0.6\linewidth]{figures/full2}
+	\caption{The directed graph corresponding to a trojan.}
+	\label{fig:full2}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Trojan Evaluation}
+\label{sec:techniqueEvaluation}
+Due to the complexity of IC designs, hardware trojans are typically unique.
+As a consequence, detection methods developed thus far have been developed to detect specific trojans.
+The diversity in both trojans and detection methods makes it difficult to evaluate, compare, and organize them.
+A means of evaluating hardware trojans and detection methods based on the eight attribute categories was proposed in~\cite{samerClassDetection}.
+A trojan or detection method will possess some combination of attributes from each of the eight categories, and
+each combination is assigned two numerical values.
+The value $I$ is used to identify the combination, while the
+value $C$ is used to denote the severity (for a trojan) or coverage (for a detection method) of the combination.
+Tables of $I$ and $C$ values for the eight categories were presented in~\cite{samerDissertation}.
+For example, the logic type category describes the circuit logic which activates the trojan.
+Table~\ref{tbl:logicTypeTable} shows the possible attribute combinations for this category and the corresponding values of $I_L$ and $C_L$.
+\begin{table}[h]
+	\centering
+	\caption{Logic Type Category Values}
+	\label{tbl:logicTypeTable}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		Attributes & $I_L$ & $C_L$ \\ \hline
+		Sequential (16) & 2 & 2 \\
+		Combinational (17) & 1 & 1 \\
+		Both (16 and 17)& 3 & 3 \\ \hline
+	\end{tabular}
+\end{table}
+
+The $I$ and $C$ values from the category tables are arranged into identification and severity/coverage vectors, respectively.
+For a trojan the vectors are denoted $I_T$ and $C_T$, and for a detection method they are denoted $I_D$ and $C_D$.
+Thus, an identification vector is
+\[
+I = I_RI_AI_EI_LI_FI_CI_PI_O,
+\]
+where {$I_R,I_A,I_E,I_L,I_F,I_C,I_P,I_O$} are the
+\{Insertion, Abstraction, Effect, Logic Type, Functionality, Activation, Physical Layout, Location\} category identification values, respectively, and
+a severity/coverage vector is
+\[
+C = C_RC_AC_EC_LC_FC_CC_PC_O,
+\]
+where {$C_RC_AC_EC_LC_FC_CC_PC_O$} are the
+\{Insertion, Abstraction, Effect, Logic Type, Functionality, Activation, Physical Layout, Location\} category strength values, respectively.
+
+Table~\ref{tbl:severityTable} provides a comparison of two hardware trojans.
+Trojan A has a lower severity than Trojan B in the insertion category, denoted by $C_R$.
+This indicates that Trojan B can be inserted in more stages of the manufacturing process than Trojan A.
+Table~\ref{tbl:detectionTable} gives a comparison between two detection methods.
+The method in \cite{method1} has a higher coverage in the effect category ($C_E$) than the method in \cite{method2},
+indicating that it can detect more trojans based on their effects.
+\begin{table}[h]
+	\centering
+	\caption{Identification and Severity Vectors for Two Hardware Trojans}
+	\label{tbl:severityTable}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|c|p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4.5mm}|p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4.5mm}|}
+		\hline
+		Technique & \multicolumn{8}{c|}{Parameters ($I_P$)} & \multicolumn{8}{c|}{Severity ($C_P$)} \\ \cline{2-17}
+		& $I_R$ & $I_A$ & $I_E$ & $I_L$ & $I_F$ & $I_C$ & $I_P$ & $I_O$ & $C_R$ & $C_A$ & $C_E$ & $C_L$ & $C_F$ & $C_C$ & $C_P$ & $C_O$ \\ \hline
+		Trojan A~\cite{samerAttribute} & 2 & 6 & 2 & 1 & 2 & 1 & 7 & 7 & \textbf{\textcolor{red}{2}} & 6 & 4 & 1 & 2 & 1 & 5 & 2 \\ \hline
+		Trojan B~\cite{samerAttribute} & 3 & 3 & 1 & 2 & 1 & 2 & 8 & 1 & \textbf{\textcolor{red}{3}} & 3 & 2 & 2 & 1 & 3 & 6 & 1 \\ \hline
+	\end{tabular}
+\end{table}
+\begin{table}[h]
+	\centering
+	\caption{Identification and Coverage Vectors for Two Hardware Trojan Detection Methods}
+	\label{tbl:detectionTable}
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|c|p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4.5mm}|p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4mm}p{4.5mm}|}
+		\hline
+		Technique & \multicolumn{8}{c|}{Parameters ($I_P$)} & \multicolumn{8}{c|}{Coverage ($C_P$)} \\ \cline{2-17}
+		& $I_R$ & $I_A$ & $I_E$ & $I_L$ & $I_F$ & $I_C$ & $I_P$ & $I_O$ & $C_R$ & $C_A$ & $C_E$ & $C_L$ & $C_F$ & $C_C$ & $C_P$ & $C_O$ \\ \hline
+		\cite{method1} & 3 & 3 & B & 1 & 2 & 4 & 7 & V  & 3 & 3 & \textbf{\textcolor{red}{7}} & 1 & 2 & 3 & 5 & 5 \\ \hline
+		\cite{method2} & 3 & 3 & 1 & 2 & 1 & 4 & 7 & V  & 3 & 3 & \textbf{\textcolor{red}{2}} & 3 & 1 & 3 & 5 & 5 \\ \hline
+	\end{tabular}
+\end{table}
 \section{Recent Work}
 Hardware trojans are a new and exciting field of study.
 As \acrshort{FPGA}s take a larger portion of the \acrfull{IC} market the need for security becomes greater.

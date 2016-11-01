@@ -757,6 +757,210 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{samerDissertation}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=MS}{%
+         family={Moein},
+         familyi={M\bibinitperiod},
+         given={Samer},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS1}
+    \strng{fullhash}{MS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Systematic Analysis and Methodologies for Hardware Security}
+    \list{location}{1}{%
+      {3800 Finnerty Rd, Victoria, BC, Canada V8P 5C2}%
+    }
+    \list{institution}{1}{%
+      {University of Victoria}%
+    }
+    \field{type}{phdthesis}
+    \field{month}{08}
+    \field{year}{2015}
+  \endentry
+
+  \entry{samerClassDetection}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=MS}{%
+         family={Moein},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Subramnian},
+         familyi={S\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=GTA}{%
+         family={Gulliver},
+         familyi={G\bibinitperiod},
+         given={T.\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gebali},
+         familyi={G\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=EKMW}{%
+         family={El-Kharashi},
+         familyi={E\bibinitperiod-K\bibinitperiod},
+         given={M.\bibnamedelima W.},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{integrated circuit manufacture;invasive software;hardware trojan
+  classification;hardware trojan detection technique;hardware trojan
+  identification;Delays;Hardware;Integrated circuits;Monitoring;Power
+  demand;Testing;Trojan horses}
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSSJGTAGFEKMW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Computer Engineering Systems (ICCES), 2015 Tenth
+  International Conference on}
+    \verb{doi}
+    \verb 10.1109/ICCES.2015.7393075
+    \endverb
+    \field{pages}{357\bibrangedash 362}
+    \field{title}{Classification of hardware trojan detection techniques}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{method1}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=PM}{%
+         family={Potkonjak},
+         familyi={P\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=NA}{%
+         family={Nahapetian},
+         familyi={N\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=NM}{%
+         family={Nelson},
+         familyi={N\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MT}{%
+         family={Massey},
+         familyi={M\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \keyw{integrated circuits;invasive software;linear programming;logic
+  gates;power aware computing;gate level characterization;hardware Trojan horse
+  detection;hardware specification;linear programming;nondestructive power
+  measurements;Application software;Data privacy;Data
+  security;Foundries;Hardware;Invasive software;Manufacturing;Research and
+  development;Software libraries;Testing;Hardware Trojan horses;gate-level
+  characterization;linear programming;manufacturing variability}
+    \strng{namehash}{PM+2}
+    \strng{fullhash}{PMNANMMT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Design Automation Conference, 2009. DAC '09. 46th
+  ACM/IEEE}
+    \verb{doi}
+    \verb 10.1145/1629911.1630091
+    \endverb
+    \field{issn}{0738-100X}
+    \field{pages}{688\bibrangedash 693}
+    \field{title}{Hardware Trojan horse detection using gate-level
+  characterization}
+    \field{year}{2009}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{method2}{article}{}
+    \name{author}{8}{}{%
+      {{hash=NS}{%
+         family={Narasimhan},
+         familyi={N\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=DD}{%
+         family={Du},
+         familyi={D\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=CRS}{%
+         family={Chakraborty},
+         familyi={C\bibinitperiod},
+         given={R.\bibnamedelima S.},
+         giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Paul},
+         familyi={P\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=WFG}{%
+         family={Wolff},
+         familyi={W\bibinitperiod},
+         given={F.\bibnamedelima G.},
+         giveni={F\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=PCA}{%
+         family={Papachristou},
+         familyi={P\bibinitperiod},
+         given={C.\bibnamedelima A.},
+         giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=RK}{%
+         family={Roy},
+         familyi={R\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bhunia},
+         familyi={B\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \keyw{cryptography;logic testing;AES cipher;Trojan circuit;advanced
+  encryption standard;detection sensitivity;hardware Trojan detection;integer
+  execution unit;logic testing approach;multiple-parameter side-channel
+  analysis;nanometer technology;security threat;vector generation
+  approach;Hardware;Integrated circuits;Logic
+  testing;Noise;Payloads;Sensitivity;Trojan horses;Hardware security;hardware
+  Trojan attack;logic testing;side-channel analysis}
+    \strng{namehash}{NS+1}
+    \strng{fullhash}{NSDDCRSPSWFGPCARKBS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TC.2012.200
+    \endverb
+    \field{issn}{0018-9340}
+    \field{number}{11}
+    \field{pages}{2183\bibrangedash 2195}
+    \field{title}{Hardware Trojan Detection by Multiple-Parameter Side-Channel
+  Analysis}
+    \field{volume}{62}
+    \field{journaltitle}{IEEE Transactions on Computers}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{crcDetection}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=AAA}{%
@@ -1017,195 +1221,6 @@
   Trojans}
     \field{year}{2008}
     \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{thirdPartyLogistics}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=HBN}{%
-         family={Hwang},
-         familyi={H\bibinitperiod},
-         given={B.\bibnamedelima N.},
-         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-      {{hash=CMH}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={M.\bibnamedelima H.},
-         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-    }
-    \keyw{cost reduction;logistics;outsourcing;problem solving;semiconductor
-  industry;supply chain management;IC industry disintegration;IC manufacturing
-  industry;TPL providers;Taiwan;continuous cost reduction;cost control;document
-  accuracy;globalization;key selection criteria;outsourcing;problem solving
-  capability;supply chain management;third party logistics;value-added services
-  provision;Companies;Integrated circuits;Manufacturing;Manufacturing
-  industries;Supply chains;IC Manufacturing Industry;Supply Chain
-  Management;Third Party Logistics (TPL)}
-    \strng{namehash}{HBNCMH1}
-    \strng{fullhash}{HBNCMH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Service Operations and Logistics, and Informatics (SOLI),
-  2013 IEEE International Conference on}
-    \verb{doi}
-    \verb 10.1109/SOLI.2013.6611456
-    \endverb
-    \field{pages}{445\bibrangedash 449}
-    \field{title}{Key selection criteria for third party logistics in the IC
-  manufacturing industry}
-    \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{xdlTutorial}{inproceedings}{}
-    \name{author}{3}{}{%
-      {{hash=BC}{%
-         family={Beckhoff},
-         familyi={B\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=KD}{%
-         family={Koch},
-         familyi={K\bibinitperiod},
-         given={D.},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=TJ}{%
-         family={Torresen},
-         familyi={T\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-    }
-    \keyw{field programmable gate arrays;hardware description languages;FPGA
-  primitives;XDL;Xilinx design language;routing fabric}
-    \strng{namehash}{BCKDTJ1}
-    \strng{fullhash}{BCKDTJ1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Reconfigurable Communication-centric Systems-on-Chip
-  (ReCoSoC), 2011 6th International Workshop on}
-    \verb{doi}
-    \verb 10.1109/ReCoSoC.2011.5981545
-    \endverb
-    \field{pages}{1\bibrangedash 8}
-    \field{title}{The Xilinx Design Language (XDL): Tutorial and use cases}
-    \field{year}{2011}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{rapidSmith}{inproceedings}{}
-    \name{author}{6}{}{%
-      {{hash=LC}{%
-         family={Lavin},
-         familyi={L\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=PM}{%
-         family={Padilla},
-         familyi={P\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=LJ}{%
-         family={Lamprecht},
-         familyi={L\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=LP}{%
-         family={Lundrigan},
-         familyi={L\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=NB}{%
-         family={Nelson},
-         familyi={N\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=HB}{%
-         family={Hutchings},
-         familyi={H\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \keyw{CAD;electronic engineering computing;field programmable gate
-  arrays;API;CAD Tools;XDL;Xilinx FPGA;Xilinx design language;commercial
-  architectures;hypothetical architectures;Data structures;Databases;Design
-  automation;Field programmable gate arrays;Routing;Tiles;Wires;CAD
-  Tools;FPGA;Open Source;Placer;Rapid Prototyping;RapidSmith;Router;XDL;Xilinx}
-    \strng{namehash}{LC+1}
-    \strng{fullhash}{LCPMLJLPNBHB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{2011 21st International Conference on Field Programmable
-  Logic and Applications}
-    \verb{doi}
-    \verb 10.1109/FPL.2011.69
-    \endverb
-    \field{issn}{1946-147X}
-    \field{pages}{349\bibrangedash 355}
-    \field{title}{RapidSmith: Do-It-Yourself CAD Tools for Xilinx FPGAs}
-    \field{year}{2011}
-    \warn{\item Invalid format of field 'month'}
-  \endentry
-
-  \entry{rapidSmithManual}{misc}{}
-    \name{author}{6}{}{%
-      {{hash=LC}{%
-         family={Lavin},
-         familyi={L\bibinitperiod},
-         given={C.},
-         giveni={C\bibinitperiod},
-      }}%
-      {{hash=PM}{%
-         family={Padilla},
-         familyi={P\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=LJ}{%
-         family={Lamprecht},
-         familyi={L\bibinitperiod},
-         given={J.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=LP}{%
-         family={Lundrigan},
-         familyi={L\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=NB}{%
-         family={Nelson},
-         familyi={N\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-      {{hash=BHMW}{%
-         family={B.\bibnamedelima Hutchings},
-         familyi={B\bibinitperiod\bibinitdelim H\bibinitperiod},
-         given={M.\bibnamedelima Wirthlin},
-         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{LC+1}
-    \strng{fullhash}{LCPMLJLPNBBHMW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{howpublished}{NSF Center for High Performance Reconfigurable
-  Computing (CHREC) Department of Electrical and Computer Engineering Brigham
-  Young University}
-    \field{title}{RapidSmith: A Library for Low-level Manipulation of Partially
-  Placed-and-Routed FPGA Designs}
-    \field{month}{01}
-    \field{year}{2014}
   \endentry
 
   \entry{iscas85}{inproceedings}{}

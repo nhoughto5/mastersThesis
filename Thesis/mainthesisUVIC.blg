@@ -3,9 +3,12 @@ The style file: biblatex.bst
 A level-1 auxiliary file: chapters/1/chapter_intro.aux
 A level-1 auxiliary file: chapters/2/chapter_HardwareTrojans.aux
 A level-1 auxiliary file: chapters/3/chapter_AutomatedDetection.aux
-A level-1 auxiliary file: chapters/4/chapter_Implementation.aux
+A level-1 auxiliary file: chapters/web/chapter_Web.aux
 A level-1 auxiliary file: chapters/5/chapter_Results.aux
 A level-1 auxiliary file: chapters/6/chapter_conclusion.aux
 Database file #1: mainthesisUVIC-blx.bib
 Database file #2: UvicThesis.bib
 Biblatex version: 3.3
+Too many commas in name 1 of "3800 Finnerty Rd, Victoria, BC, Canada V8P 5C2" for entry samerDissertation
+while executing---line 2746 of file biblatex.bst
+(There was 1 error message)
