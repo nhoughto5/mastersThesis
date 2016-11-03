@@ -1325,5 +1325,260 @@
     \field{note}{Accessed: 2016-10-24}
     \field{title}{Trust-Hub.org}
   \endentry
+
+  \entry{thirdPartyLogistics}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=HBN}{%
+         family={Hwang},
+         familyi={H\bibinitperiod},
+         given={B.\bibnamedelima N.},
+         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=CMH}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={M.\bibnamedelima H.},
+         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{cost reduction;logistics;outsourcing;problem solving;semiconductor
+  industry;supply chain management;IC industry disintegration;IC manufacturing
+  industry;TPL providers;Taiwan;continuous cost reduction;cost control;document
+  accuracy;globalization;key selection criteria;outsourcing;problem solving
+  capability;supply chain management;third party logistics;value-added services
+  provision;Companies;Integrated circuits;Manufacturing;Manufacturing
+  industries;Supply chains;IC Manufacturing Industry;Supply Chain
+  Management;Third Party Logistics (TPL)}
+    \strng{namehash}{HBNCMH1}
+    \strng{fullhash}{HBNCMH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Service Operations and Logistics, and Informatics (SOLI),
+  2013 IEEE International Conference on}
+    \verb{doi}
+    \verb 10.1109/SOLI.2013.6611456
+    \endverb
+    \field{pages}{445\bibrangedash 449}
+    \field{title}{Key selection criteria for third party logistics in the IC
+  manufacturing industry}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{xdlTutorial}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BC}{%
+         family={Beckhoff},
+         familyi={B\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Koch},
+         familyi={K\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Torresen},
+         familyi={T\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{field programmable gate arrays;hardware description languages;FPGA
+  primitives;XDL;Xilinx design language;routing fabric}
+    \strng{namehash}{BCKDTJ1}
+    \strng{fullhash}{BCKDTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Reconfigurable Communication-centric Systems-on-Chip
+  (ReCoSoC), 2011 6th International Workshop on}
+    \verb{doi}
+    \verb 10.1109/ReCoSoC.2011.5981545
+    \endverb
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{The Xilinx Design Language (XDL): Tutorial and use cases}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{rapidSmith}{inproceedings}{}
+    \name{author}{6}{}{%
+      {{hash=LC}{%
+         family={Lavin},
+         familyi={L\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Padilla},
+         familyi={P\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lamprecht},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lundrigan},
+         familyi={L\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=NB}{%
+         family={Nelson},
+         familyi={N\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=HB}{%
+         family={Hutchings},
+         familyi={H\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \keyw{CAD;electronic engineering computing;field programmable gate
+  arrays;API;CAD Tools;XDL;Xilinx FPGA;Xilinx design language;commercial
+  architectures;hypothetical architectures;Data structures;Databases;Design
+  automation;Field programmable gate arrays;Routing;Tiles;Wires;CAD
+  Tools;FPGA;Open Source;Placer;Rapid Prototyping;RapidSmith;Router;XDL;Xilinx}
+    \strng{namehash}{LC+1}
+    \strng{fullhash}{LCPMLJLPNBHB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2011 21st International Conference on Field Programmable
+  Logic and Applications}
+    \verb{doi}
+    \verb 10.1109/FPL.2011.69
+    \endverb
+    \field{issn}{1946-147X}
+    \field{pages}{349\bibrangedash 355}
+    \field{title}{RapidSmith: Do-It-Yourself CAD Tools for Xilinx FPGAs}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{rapidSmithManual}{misc}{}
+    \name{author}{6}{}{%
+      {{hash=LC}{%
+         family={Lavin},
+         familyi={L\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Padilla},
+         familyi={P\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=LJ}{%
+         family={Lamprecht},
+         familyi={L\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LP}{%
+         family={Lundrigan},
+         familyi={L\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=NB}{%
+         family={Nelson},
+         familyi={N\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=BHMW}{%
+         family={B.\bibnamedelima Hutchings},
+         familyi={B\bibinitperiod\bibinitdelim H\bibinitperiod},
+         given={M.\bibnamedelima Wirthlin},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LC+1}
+    \strng{fullhash}{LCPMLJLPNBBHMW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{NSF Center for High Performance Reconfigurable
+  Computing (CHREC) Department of Electrical and Computer Engineering Brigham
+  Young University}
+    \field{title}{RapidSmith: A Library for Low-level Manipulation of Partially
+  Placed-and-Routed FPGA Designs}
+    \field{month}{01}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Azure}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{ azure.microsoft.com}}
+    \field{title}{Azure Cloud System [Computer Software]}
+    \field{year}{2010}
+  \endentry
+
+  \entry{ASP}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{http://www.asp.net/}}
+    \field{title}{ASP.NET 4.5 [Computer Software]}
+    \field{year}{2002}
+  \endentry
+
+  \entry{Entity}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Microsoft},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://msdn.microsoft.com/en-ca/data/ef.aspx}}
+    \field{title}{Entity Framework}
+    \field{year}{2008}
+  \endentry
+
+  \entry{D3}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=BM}{%
+         family={Bostock},
+         familyi={B\bibinitperiod},
+         given={Mike},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BM1}
+    \strng{fullhash}{BM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://d3js.org/}}
+    \field{title}{Data Driven Documents (D3) v3.5.6}
+    \field{year}{2015}
+  \endentry
 \endsortlist
 \endinput

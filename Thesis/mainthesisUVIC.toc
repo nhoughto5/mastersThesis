@@ -4,45 +4,61 @@
 \contentsline {chapter}{Table of Contents}{iv}
 \contentsline {chapter}{List of Tables}{vi}
 \contentsline {chapter}{List of Figures}{vii}
-\contentsline {chapter}{Acknowledgements}{viii}
-\contentsline {chapter}{Dedication}{ix}
-\contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}Motivation}{1}
-\contentsline {section}{\numberline {1.2}Contributions}{2}
-\contentsline {section}{\numberline {1.3}Organization}{3}
-\contentsline {chapter}{\numberline {2}Hardware Trojans}{4}
-\contentsline {section}{\numberline {2.1}Background}{4}
-\contentsline {section}{\numberline {2.2}Topology}{4}
-\contentsline {section}{\numberline {2.3}Hardware Trojan Analysis Techniques}{8}
-\contentsline {subsection}{\numberline {2.3.1}Classification}{8}
-\contentsline {subsection}{\numberline {2.3.2}Trojan Evaluation}{9}
-\contentsline {section}{\numberline {2.4}Recent Work}{11}
-\contentsline {subsection}{\numberline {2.4.1}\acrfull {CRC} Detection}{11}
-\contentsline {subsection}{\numberline {2.4.2}\acrfull {RO} Detection}{12}
-\contentsline {subsection}{\numberline {2.4.3}The Multi-Faceted Approach}{12}
-\contentsline {chapter}{\numberline {3}Automated Trojan Detection}{14}
-\contentsline {section}{\numberline {3.1}Methodology}{14}
-\contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{17}
-\contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{19}
-\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} \gls {Bitstream} Analysis}{20}
-\contentsline {section}{\numberline {3.5}Component Mapping}{22}
-\contentsline {subsection}{\numberline {3.5.1}Frame to Column Mapping}{22}
-\contentsline {subsection}{\numberline {3.5.2}Word to Block Mapping}{22}
-\contentsline {section}{\numberline {3.6}Determining Trojan Attributes}{24}
-\contentsline {subsection}{\numberline {3.6.1}Extraction Methods}{24}
-\contentsline {subsubsection}{Observed Location Attributes}{24}
-\contentsline {subsubsection}{Scatter Score Method}{25}
-\contentsline {subsubsection}{Insertion and Abstraction Attributes}{27}
-\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{27}
-\contentsline {chapter}{\numberline {4}The Hardware Trojan System}{29}
-\contentsline {section}{\numberline {4.1}Introduction}{29}
-\contentsline {section}{\numberline {4.2}Web Tools}{30}
-\contentsline {subsection}{\numberline {4.2.1}The Classification Tool}{30}
-\contentsline {subsection}{\numberline {4.2.2}The Evaluation Tool}{31}
-\contentsline {chapter}{\numberline {5}Results and Discussion}{33}
-\contentsline {section}{\numberline {5.1}Results}{33}
-\contentsline {subsection}{\numberline {5.1.1}Methodology}{33}
-\contentsline {subsection}{\numberline {5.1.2}Priority Decoder}{33}
-\contentsline {subsection}{\numberline {5.1.3}User Authentication Circuit}{34}
-\contentsline {subsection}{\numberline {5.1.4}AES-T100}{38}
-\contentsline {chapter}{\numberline {6}Contributions}{42}
+\contentsline {chapter}{Acknowledgements}{ix}
+\contentsline {chapter}{Dedication}{x}
+\contentsline {chapter}{\numberline {1}Introduction}{5}
+\contentsline {section}{\numberline {1.1}Motivation}{5}
+\contentsline {section}{\numberline {1.2}Contributions}{6}
+\contentsline {section}{\numberline {1.3}Organization}{7}
+\contentsline {chapter}{\numberline {2}Hardware Trojans}{8}
+\contentsline {section}{\numberline {2.1}Background}{8}
+\contentsline {section}{\numberline {2.2}Topology}{8}
+\contentsline {section}{\numberline {2.3}Hardware Trojan Analysis Techniques}{12}
+\contentsline {subsection}{\numberline {2.3.1}Classification}{12}
+\contentsline {subsection}{\numberline {2.3.2}Trojan Evaluation}{13}
+\contentsline {section}{\numberline {2.4}Recent Work}{15}
+\contentsline {subsection}{\numberline {2.4.1}\acrfull {CRC} Detection}{15}
+\contentsline {subsection}{\numberline {2.4.2}\acrfull {RO} Detection}{16}
+\contentsline {subsection}{\numberline {2.4.3}The Multi-Faceted Approach}{16}
+\contentsline {chapter}{\numberline {3}Automated Trojan Detection}{18}
+\contentsline {section}{\numberline {3.1}Methodology}{18}
+\contentsline {section}{\numberline {3.2}FPGA Architecture and Configuration}{21}
+\contentsline {section}{\numberline {3.3}\gls {Bitstream} Extraction}{23}
+\contentsline {section}{\numberline {3.4}The \acrshort {FPGA} \gls {Bitstream} Analysis}{24}
+\contentsline {section}{\numberline {3.5}Component Mapping}{26}
+\contentsline {subsection}{\numberline {3.5.1}Frame to Column Mapping}{26}
+\contentsline {subsection}{\numberline {3.5.2}Word to Block Mapping}{26}
+\contentsline {section}{\numberline {3.6}Determining Trojan Attributes}{28}
+\contentsline {subsection}{\numberline {3.6.1}Extraction Methods}{28}
+\contentsline {subsubsection}{Observed Location Attributes}{28}
+\contentsline {subsubsection}{Scatter Score Method}{29}
+\contentsline {subsubsection}{Insertion and Abstraction Attributes}{31}
+\contentsline {subsection}{\numberline {3.6.2}Relation Matrix Use}{31}
+\contentsline {section}{\numberline {3.7}Coverage Rating}{32}
+\contentsline {chapter}{\numberline {4}The Hardware Trojan System}{33}
+\contentsline {section}{\numberline {4.1}Introduction}{33}
+\contentsline {section}{\numberline {4.2}The Classification Tool}{34}
+\contentsline {section}{\numberline {4.3}The Evaluation Tool}{36}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{37}
+\contentsline {section}{\numberline {5.1}Results}{37}
+\contentsline {subsection}{\numberline {5.1.1}Methodology}{37}
+\contentsline {subsection}{\numberline {5.1.2}Priority Decoder}{37}
+\contentsline {subsection}{\numberline {5.1.3}User Authentication Circuit}{38}
+\contentsline {subsubsection}{Detection and Analysis using the \acrshort {FPGA} Trojan Detector}{40}
+\contentsline {subsubsection}{Web Analysis using the Hardware Trojan System}{42}
+\contentsline {subsection}{\numberline {5.1.4}AES-T100}{43}
+\contentsline {subsubsection}{Detection and Analysis using the \acrshort {FPGA} Trojan Detector}{45}
+\contentsline {subsubsection}{Web Analysis using the Hardware Trojan System}{46}
+\contentsline {chapter}{\numberline {6}Contributions}{48}
+\contentsline {chapter}{\numberline {A}Software Implementations}{50}
+\contentsline {section}{\numberline {A.1}Technologies Used}{50}
+\contentsline {subsection}{\numberline {A.1.1}\textit {\gls {Xilinx}}\nobreakspace {}}{50}
+\contentsline {subsubsection}{\acrfull {XDL}}{51}
+\contentsline {subsubsection}{XDLRC}{51}
+\contentsline {subsection}{\numberline {A.1.2}Java}{53}
+\contentsline {subsection}{\numberline {A.1.3}\textit {RapidSmith}\nobreakspace {}}{53}
+\contentsline {subsubsection}{Class Structure}{54}
+\contentsline {section}{\numberline {A.2}\acrshort {FPGA} Trojan Detector}{55}
+\contentsline {subsection}{\numberline {A.2.1}\acrfull {UI}}{55}
+\contentsline {subsection}{\numberline {A.2.2}Operation}{57}
+\contentsline {subsection}{\numberline {A.2.3}The Web Environment}{58}

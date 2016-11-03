@@ -163,14 +163,14 @@ An example of this submatrix is
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hardware Trojan Analysis Techniques} \label{sec:techniques}
 %\color{red}
-The benefit of the taxonomy described in section~\ref{sec:topology} is that it comprehensive and structured design provides the ability to develop systematic methods of analysis.
+The benefit of the taxonomy described in section~\ref{sec:topology} is that its comprehensive and structured design provides the ability to develop systematic methods of analysis.
 A pair of techniques have already been proposed that provide additional insight.
 
 \subsection{Classification}  \label{sec:techniqueClassification}
-An observed hardware trojan must have its descriptive attributes extracted.
-These attributes are then used as input to a systematic process of scanning the rows and columns of matrix $\mathbf{R}$; this technique can be used to gain valuable insight into the characteristics of the trojan.
-This process is described in detail in~\cite{samerAttribute,samerDissertation}.
-The observed attributes can be used to determine the possible locations of a trojan within the design and in which manufacturing phases it can be inserted.
+Attributes of a trojan are not always immediately observable.
+The complex nature of \acrshort{IC}s leaves a lot of room for difficulty extracting them all.
+Those that can be extracted are used as input to a systematic process of scanning the rows and columns of matrix $\mathbf{R}$ to infer the existence of others~\cite{samerAttribute,samerDissertation}.
+It can be used to determine the possible locations of a trojan within the design and in which manufacturing phases it can be inserted.
 Conversely, the phase a trojan was inserted can be used to determine which abstraction levels are vulnerable,
 the trojan properties, and what locations can be compromised.
 To easily understand the characteristics of a trojan, a directed graph is generated from $\mathbf{R}$.
@@ -187,6 +187,7 @@ If it is determined that it is not possible to insert the trojan in the design p
 attribute 2 can be removed from the graph.
 Without a direct connection to attribute 1, attributes 3, 4 and 5 must also be removed.
 Without attribute 2 the trojan can only be inserted in the specification phase (attribute 1).
+These relationships are cataloged in matrix $\mathbf{R}$ as described in section~\ref{sec:topology} but the directed graph provides a much more human-friendly visual.
 \begin{figure}[]
 	\centering
 	\includegraphics[width=0.6\linewidth]{figures/full2}

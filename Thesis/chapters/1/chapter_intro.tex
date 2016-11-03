@@ -29,27 +29,39 @@ This method has been shown to provide some success but is commonly beaten by att
 Another common strategy is to search for side effects of modified circuits; these methods are referred to as 'side-channel' analysis methods.
 Such side effects include, changes to power consumption, temperature differences, radiation differences and more~\cite{sideChannelObfuscation, postLayout, controllableSleepTransistors, pcaAlgorithm}.
 Again, these methods provide varying success but face a lot of difficulty.
+Trojans and detection methods alike are new.
+The work in this field has only seen progress in the last few decades.
+The results of this work are still primarily buried in academic publications in various locations, in various formats.
+The discovery of what has already been achieved and what still needs to be done in this field is arduous 
 
 \acrshort{IC} designs for \acrfull{FPGAs} are made using a software language.
 The design is then converted to a binary file called a configuration \gls{Bitstream} which is then downloaded onto the device; this process is known as synthesizing the design.
 There have been many attempts to develop mechanisms and techniques to determine whether a malicious user has tampered with the design via test vectoring or side-channel analysis.
 As of yet there has been little effort to directly analyze the configuration \gls{Bitstream}.
+
+
 \section{Contributions}
-The goal of this work is to prove that analysis of the configuration \gls{Bitstream} is the most powerful means of detecting trojans in \acrshort{FPGA}s.
+The goal of this work is two-fold.
+First, to prove that analysis of the configuration \gls{Bitstream} is the most powerful means of detecting trojans in \acrshort{FPGA}s.
 To do so, an application was developed which parses and analyzes the \gls{Bitstream}, detects the presence of trojans and provides an astute description of the modification.
+Secondly, to provide a centralized place for researchers to review and analyze discovered trojans.
+A website was developed which provides the automation of useful analysis techniques as well as a database, yet to be populated, of all known trojans and detection methods. 
 
 The contributions of this work can be said to be:
 \begin{enumerate}
 	\item Proof that though \acrshort{FPGA} manufacturers hide the intimate details of the configuration \gls{Bitstream} it is the most viable means of trojan detection and analysis. 
 	\item Proof of concept for a new method of detecting and analyzing trojans.
 	\item Develop a software application which automates the described methodology.
+	\item Develop a database structure to house all known trojans and detection methods
+	\item A user friendly web site to interact and access the trojan/detection method database.
 \end{enumerate}
 \section{Organization}
 This enclosing section presents a map of this work and a short description of each chapter.
 Chapter 2 provides some background information on trojans themselves and introduces the descriptive taxonomy used.
 Chapter 3 introduces the new detection and analysis methodology.
 It gives a brief overview of \acrshort{FPGA} architecture and configuration, describes the analysis process of the \gls{Bitstream}, introduces \textit{Component Mapping}, and discusses how the taxonomic attributes are extracted.
-Chapter 4 discusses the software implementation which has been named \Name.
+Chapter 4 presents an online 
+%Chapter 4 discusses the software implementation which has been named \Name.
 It discusses the technologies used and why they were chosen, presents the \acrlong{UI} and discusses its operating procedure.
 Chapter 5 presents the results of experimentation done using three \acrshort{FPGA}-trojan benchmarks
 These benchmarks were specifically chosen to demonstrate that the application works as expected and is easy to use.
