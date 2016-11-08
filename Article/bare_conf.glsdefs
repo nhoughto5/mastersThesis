@@ -28,6 +28,66 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{FPGAs}{}%
+{%
+\gls@defglossaryentry{FPGAs}%
+{%
+name={FPGAs},%
+sort={FPGAs},%
+type={acronym},%
+first={Field Programmable Gate-Arrays\glsspace (FPGAs)},%
+firstplural={Field Programmable Gate-Arrayss\glsspace (FPGAss)},%
+text={FPGAs},%
+plural={FPGAss},%
+description={Field Programmable Gate-Arrays},%
+descriptionplural={Field Programmable Gate-Arrays\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Field Programmable Gate-Arrays},%
+longplural={Field Programmable Gate-Arrayss},%
+short={FPGAs},%
+shortplural={FPGAss},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CL}{}%
+{%
+\gls@defglossaryentry{CL}%
+{%
+name={CL},%
+sort={CL},%
+type={acronym},%
+first={Configurable Logic\glsspace (CL)},%
+firstplural={Configurable Logics\glsspace (CLs)},%
+text={CL},%
+plural={CLs},%
+description={Configurable Logic},%
+descriptionplural={Configurable Logic\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Configurable Logic},%
+longplural={Configurable Logics},%
+short={CL},%
+shortplural={CLs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{ASIC}{}%
 {%
 \gls@defglossaryentry{ASIC}%
@@ -173,6 +233,246 @@ long={Configurable Logic Block},%
 longplural={Configurable Logic Blocks},%
 short={CLB},%
 shortplural={CLBs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{IOBs}{}%
+{%
+\gls@defglossaryentry{IOBs}%
+{%
+name={IOBs},%
+sort={IOBs},%
+type={acronym},%
+first={Input-Output Blocks\glsspace (IOBs)},%
+firstplural={Input-Output Blockss\glsspace (IOBss)},%
+text={IOBs},%
+plural={IOBss},%
+description={Input-Output Blocks},%
+descriptionplural={Input-Output Blocks\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Input-Output Blocks},%
+longplural={Input-Output Blockss},%
+short={IOBs},%
+shortplural={IOBss},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CRC}{}%
+{%
+\gls@defglossaryentry{CRC}%
+{%
+name={CRC},%
+sort={CRC},%
+type={acronym},%
+first={Cyclic Redundancy Check\glsspace (CRC)},%
+firstplural={Cyclic Redundancy Checks\glsspace (CRCs)},%
+text={CRC},%
+plural={CRCs},%
+description={Cyclic Redundancy Check},%
+descriptionplural={Cyclic Redundancy Check\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Cyclic Redundancy Check},%
+longplural={Cyclic Redundancy Checks},%
+short={CRC},%
+shortplural={CRCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CLBs}{}%
+{%
+\gls@defglossaryentry{CLBs}%
+{%
+name={CLBs},%
+sort={CLBs},%
+type={acronym},%
+first={Configurable Logic Blocks\glsspace (CLBs)},%
+firstplural={Configurable Logic Blockss\glsspace (CLBss)},%
+text={CLBs},%
+plural={CLBss},%
+description={Configurable Logic Blocks},%
+descriptionplural={Configurable Logic Blocks\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Configurable Logic Blocks},%
+longplural={Configurable Logic Blockss},%
+short={CLBs},%
+shortplural={CLBss},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{IOI}{}%
+{%
+\gls@defglossaryentry{IOI}%
+{%
+name={IOI},%
+sort={IOI},%
+type={acronym},%
+first={Input-Output Interconnect\glsspace (IOI)},%
+firstplural={Input-Output Interconnects\glsspace (IOIs)},%
+text={IOI},%
+plural={IOIs},%
+description={Input-Output Interconnect},%
+descriptionplural={Input-Output Interconnect\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Input-Output Interconnect},%
+longplural={Input-Output Interconnects},%
+short={IOI},%
+shortplural={IOIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{IOIs}{}%
+{%
+\gls@defglossaryentry{IOIs}%
+{%
+name={IOIs},%
+sort={IOIs},%
+type={acronym},%
+first={Input-Output Interconnects\glsspace (IOIs)},%
+firstplural={Input-Output Interconnectss\glsspace (IOIss)},%
+text={IOIs},%
+plural={IOIss},%
+description={Input-Output Interconnects},%
+descriptionplural={Input-Output Interconnects\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Input-Output Interconnects},%
+longplural={Input-Output Interconnectss},%
+short={IOIs},%
+shortplural={IOIss},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{IP}{}%
+{%
+\gls@defglossaryentry{IP}%
+{%
+name={IP},%
+sort={IP},%
+type={acronym},%
+first={Intelectual Property\glsspace (IP)},%
+firstplural={Intelectual Propertys\glsspace (IPs)},%
+text={IP},%
+plural={IPs},%
+description={Intelectual Property},%
+descriptionplural={Intelectual Property\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Intelectual Property},%
+longplural={Intelectual Propertys},%
+short={IP},%
+shortplural={IPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{RO}{}%
+{%
+\gls@defglossaryentry{RO}%
+{%
+name={RO},%
+sort={RO},%
+type={acronym},%
+first={Ring Oscillator\glsspace (RO)},%
+firstplural={Ring Oscillators\glsspace (ROs)},%
+text={RO},%
+plural={ROs},%
+description={Ring Oscillator},%
+descriptionplural={Ring Oscillator\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Ring Oscillator},%
+longplural={Ring Oscillators},%
+short={RO},%
+shortplural={ROs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ROs}{}%
+{%
+\gls@defglossaryentry{ROs}%
+{%
+name={RO},%
+sort={RO},%
+type={acronym},%
+first={Ring Oscillators\glsspace (RO)},%
+firstplural={Ring Oscillatorss\glsspace (ROs)},%
+text={RO},%
+plural={ROs},%
+description={Ring Oscillators},%
+descriptionplural={Ring Oscillators\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Ring Oscillators},%
+longplural={Ring Oscillatorss},%
+short={RO},%
+shortplural={ROs},%
 counter={page},%
 parent={},%
 %
@@ -928,6 +1228,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{UIs}{}%
+{%
+\gls@defglossaryentry{UIs}%
+{%
+name={UI},%
+sort={UI},%
+type={acronym},%
+first={User-Interfaces\glsspace (UI)},%
+firstplural={User-Interfacess\glsspace (UIs)},%
+text={UI},%
+plural={UIs},%
+description={User-Interfaces},%
+descriptionplural={User-Interfaces\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={User-Interfaces},%
+longplural={User-Interfacess},%
+short={UI},%
+shortplural={UIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{DCM}{}%
 {%
 \gls@defglossaryentry{DCM}%
@@ -1018,6 +1348,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{ISCAS}{}%
+{%
+\gls@defglossaryentry{ISCAS}%
+{%
+name={ISCAS},%
+sort={ISCAS},%
+type={acronym},%
+first={IEEE International Symposium on Circuits and Systems\glsspace (ISCAS)},%
+firstplural={IEEE International Symposium on Circuits and Systemss\glsspace (ISCASs)},%
+text={ISCAS},%
+plural={ISCASs},%
+description={IEEE International Symposium on Circuits and Systems},%
+descriptionplural={IEEE International Symposium on Circuits and Systems\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={IEEE International Symposium on Circuits and Systems},%
+longplural={IEEE International Symposium on Circuits and Systemss},%
+short={ISCAS},%
+shortplural={ISCASs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{UCF}{}%
 {%
 \gls@defglossaryentry{UCF}%
@@ -1073,6 +1433,66 @@ long={Application Programming Interface},%
 longplural={Application Programming Interfaces},%
 short={API},%
 shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{APIs}{}%
+{%
+\gls@defglossaryentry{APIs}%
+{%
+name={API},%
+sort={API},%
+type={acronym},%
+first={Application Programming Interfaces\glsspace (API)},%
+firstplural={Application Programming Interfacess\glsspace (APIs)},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interfaces},%
+descriptionplural={Application Programming Interfaces\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interfaces},%
+longplural={Application Programming Interfacess},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{CAD}{}%
+{%
+\gls@defglossaryentry{CAD}%
+{%
+name={CAD},%
+sort={CAD},%
+type={acronym},%
+first={Computer Aided Design\glsspace (CAD)},%
+firstplural={Computer Aided Designs\glsspace (CADs)},%
+text={CAD},%
+plural={CADs},%
+description={Computer Aided Design},%
+descriptionplural={Computer Aided Design\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Computer Aided Design},%
+longplural={Computer Aided Designs},%
+short={CAD},%
+shortplural={CADs},%
 counter={page},%
 parent={},%
 %
@@ -1318,6 +1738,246 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{IC}{}%
+{%
+\gls@defglossaryentry{IC}%
+{%
+name={IC},%
+sort={IC},%
+type={acronym},%
+first={Integrated Circuit\glsspace (IC)},%
+firstplural={Integrated Circuits\glsspace (ICs)},%
+text={IC},%
+plural={ICs},%
+description={Integrated Circuit},%
+descriptionplural={Integrated Circuit\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Integrated Circuit},%
+longplural={Integrated Circuits},%
+short={IC},%
+shortplural={ICs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ICs}{}%
+{%
+\gls@defglossaryentry{ICs}%
+{%
+name={IC},%
+sort={IC},%
+type={acronym},%
+first={Integrated Circuits\glsspace (IC)},%
+firstplural={Integrated Circuitss\glsspace (ICs)},%
+text={IC},%
+plural={ICs},%
+description={Integrated Circuits},%
+descriptionplural={Integrated Circuits\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Integrated Circuits},%
+longplural={Integrated Circuitss},%
+short={IC},%
+shortplural={ICs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PLD}{}%
+{%
+\gls@defglossaryentry{PLD}%
+{%
+name={PLD},%
+sort={PLD},%
+type={acronym},%
+first={Programmable Logic Device\glsspace (PLD)},%
+firstplural={Programmable Logic Devices\glsspace (PLDs)},%
+text={PLD},%
+plural={PLDs},%
+description={Programmable Logic Device},%
+descriptionplural={Programmable Logic Device\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Programmable Logic Device},%
+longplural={Programmable Logic Devices},%
+short={PLD},%
+shortplural={PLDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PLDs}{}%
+{%
+\gls@defglossaryentry{PLDs}%
+{%
+name={PLD},%
+sort={PLD},%
+type={acronym},%
+first={Programmable Logic Devices\glsspace (PLD)},%
+firstplural={Programmable Logic Devicess\glsspace (PLDs)},%
+text={PLD},%
+plural={PLDs},%
+description={Programmable Logic Devices},%
+descriptionplural={Programmable Logic Devices\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Programmable Logic Devices},%
+longplural={Programmable Logic Devicess},%
+short={PLD},%
+shortplural={PLDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ERAI}{}%
+{%
+\gls@defglossaryentry{ERAI}%
+{%
+name={ERAI},%
+sort={ERAI},%
+type={acronym},%
+first={Electronic Resellers Association International\glsspace (ERAI)},%
+firstplural={Electronic Resellers Association Internationals\glsspace (ERAIs)},%
+text={ERAI},%
+plural={ERAIs},%
+description={Electronic Resellers Association International},%
+descriptionplural={Electronic Resellers Association International\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Electronic Resellers Association International},%
+longplural={Electronic Resellers Association Internationals},%
+short={ERAI},%
+shortplural={ERAIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{BA}{}%
+{%
+\gls@defglossaryentry{BA}%
+{%
+name={BA},%
+sort={BA},%
+type={acronym},%
+first={Block Address\glsspace (BA)},%
+firstplural={Block Addresss\glsspace (BAs)},%
+text={BA},%
+plural={BAs},%
+description={Block Address},%
+descriptionplural={Block Address\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Block Address},%
+longplural={Block Addresss},%
+short={BA},%
+shortplural={BAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{GCLK}{}%
+{%
+\gls@defglossaryentry{GCLK}%
+{%
+name={GCLK},%
+sort={GCLK},%
+type={acronym},%
+first={Global Clock\glsspace (GCLK)},%
+firstplural={Global Clocks\glsspace (GCLKs)},%
+text={GCLK},%
+plural={GCLKs},%
+description={Global Clock},%
+descriptionplural={Global Clock\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Global Clock},%
+longplural={Global Clocks},%
+short={GCLK},%
+shortplural={GCLKs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PC}{}%
+{%
+\gls@defglossaryentry{PC}%
+{%
+name={PC},%
+sort={PC},%
+type={acronym},%
+first={Personal Computer\glsspace (PC)},%
+firstplural={Personal Computers\glsspace (PCs)},%
+text={PC},%
+plural={PCs},%
+description={Personal Computer},%
+descriptionplural={Personal Computer\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Personal Computer},%
+longplural={Personal Computers},%
+short={PC},%
+shortplural={PCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{BYU}{}%
 {%
 \gls@defglossaryentry{BYU}%
@@ -1348,6 +2008,516 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{log}{}%
+{%
+\gls@defglossaryentry{log}%
+{%
+name={log},%
+sort={log},%
+type={main},%
+first={log},%
+firstplural={logs},%
+text={log},%
+plural={logs},%
+description={A log file generated by XST},%
+descriptionplural={A log file generated by XST},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Bitstream}{}%
+{%
+\gls@defglossaryentry{Bitstream}%
+{%
+name={Bitstream},%
+sort={Bitstream},%
+type={main},%
+first={Bitstream},%
+firstplural={Bitstreams},%
+text={Bitstream},%
+plural={Bitstreams},%
+description={The sequence of one and zeroes which makes up the configuration data},%
+descriptionplural={The sequence of one and zeroes which makes up the configuration data},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Bit}{}%
+{%
+\gls@defglossaryentry{Bit}%
+{%
+name={Bit},%
+sort={Bit},%
+type={main},%
+first={Bit},%
+firstplural={Bits},%
+text={Bit},%
+plural={Bits},%
+description={The binary file containing the configuration data for the implementation},%
+descriptionplural={The binary file containing the configuration data for the implementation},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Vivado}{}%
+{%
+\gls@defglossaryentry{Vivado}%
+{%
+name={Vivado},%
+sort={Vivado},%
+type={main},%
+first={Vivado},%
+firstplural={Vivados},%
+text={Vivado},%
+plural={Vivados},%
+description={The Integrated Development Environment Used Exclusively for 7-series FPGAs},%
+descriptionplural={The Integrated Development Environment Used Exclusively for 7-series FPGAs},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Xilinx}{}%
+{%
+\gls@defglossaryentry{Xilinx}%
+{%
+name={Xilinx},%
+sort={Xilinx},%
+type={main},%
+first={Xilinx},%
+firstplural={Xilinxs},%
+text={Xilinx},%
+plural={Xilinxs},%
+description={an American technology company, primarily a supplier of programmable logic devices. It is known for inventing the field-programmable gate array (FPGA) and as the first semiconductor company with a fabless manufacturing model.},%
+descriptionplural={an American technology company, primarily a supplier of programmable logic devices. It is known for inventing the field-programmable gate array (FPGA) and as the first semiconductor company with a fabless manufacturing model.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Readback}{}%
+{%
+\gls@defglossaryentry{Readback}%
+{%
+name={Readback},%
+sort={Readback},%
+type={main},%
+first={Readback},%
+firstplural={Readbacks},%
+text={Readback},%
+plural={Readbacks},%
+description={A feature in all \Xilinx FPGAs where by the current state of the \gls {gateArray} is stored in the configuration memory to be read by the user via the JTAG port},%
+descriptionplural={A feature in all \Xilinx FPGAs where by the current state of the \gls {gateArray} is stored in the configuration memory to be read by the user via the JTAG port},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SelectMap}{}%
+{%
+\gls@defglossaryentry{SelectMap}%
+{%
+name={SelectMap},%
+sort={SelectMap},%
+type={main},%
+first={SelectMap},%
+firstplural={SelectMaps},%
+text={SelectMap},%
+plural={SelectMaps},%
+description={A \Xilinx device configuration mode which allows for the programming of multiple devices in parallel},%
+descriptionplural={A \Xilinx device configuration mode which allows for the programming of multiple devices in parallel},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{golden}{}%
+{%
+\gls@defglossaryentry{golden}%
+{%
+name={Golden},%
+sort={Golden},%
+type={main},%
+first={Golden},%
+firstplural={Goldens},%
+text={Golden},%
+plural={Goldens},%
+description={The clean, untampered version of the synthesis files generated by XST},%
+descriptionplural={The clean, untampered version of the synthesis files generated by XST},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{target}{}%
+{%
+\gls@defglossaryentry{target}%
+{%
+name={Target},%
+sort={Target},%
+type={main},%
+first={Target},%
+firstplural={Targets},%
+text={Target},%
+plural={Targets},%
+description={The generated files from devices received from the third-party fabrication house},%
+descriptionplural={The generated files from devices received from the third-party fabrication house},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Library}{}%
+{%
+\gls@defglossaryentry{Library}%
+{%
+name={\textit {Library}},%
+sort={\textit {Library}},%
+type={main},%
+first={\protect \textit {Library}},%
+firstplural={\protect \textit {Library}s},%
+text={\protect \textit {Library}},%
+plural={\protect \textit {Library}s},%
+description={The list of absolute addresses for all components in a \gls {gateArray}},%
+descriptionplural={The list of absolute addresses for all components in a \gls {gateArray}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{NGC}{}%
+{%
+\gls@defglossaryentry{NGC}%
+{%
+name={NGC},%
+sort={NGC},%
+type={main},%
+first={NGC},%
+firstplural={NGCs},%
+text={NGC},%
+plural={NGCs},%
+description={The NGC file is a netlist that contains both logical design data and constraints. The NGC file takes the place of both \acrfull {EDIF} and \acrfull {NCF} files},%
+descriptionplural={The NGC file is a netlist that contains both logical design data and constraints. The NGC file takes the place of both \acrfull {EDIF} and \acrfull {NCF} files},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Plan Ahead}{}%
+{%
+\gls@defglossaryentry{Plan Ahead}%
+{%
+name={Plan Ahead},%
+sort={Plan Ahead},%
+type={main},%
+first={Plan Ahead},%
+firstplural={Plan Aheads},%
+text={Plan Ahead},%
+plural={Plan Aheads},%
+description={Software provided by \Xilinx for RTL to bitstream design flow management},%
+descriptionplural={Software provided by \Xilinx for RTL to bitstream design flow management},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{RAM16}{}%
+{%
+\gls@defglossaryentry{RAM16}%
+{%
+name={RAM16},%
+sort={RAM16},%
+type={main},%
+first={RAM16},%
+firstplural={RAM16s},%
+text={RAM16},%
+plural={RAM16s},%
+description={\acrshort {LUT} used as a 16x1 memory unit},%
+descriptionplural={\acrshort {LUT} used as a 16x1 memory unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SRL16}{}%
+{%
+\gls@defglossaryentry{SRL16}%
+{%
+name={SRL16},%
+sort={SRL16},%
+type={main},%
+first={SRL16},%
+firstplural={SRL16s},%
+text={SRL16},%
+plural={SRL16s},%
+description={\acrshort {LUT} used as a 16-bit shift register},%
+descriptionplural={\acrshort {LUT} used as a 16-bit shift register},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SLICEM}{}%
+{%
+\gls@defglossaryentry{SLICEM}%
+{%
+name={SLICEM},%
+sort={SLICEM},%
+type={main},%
+first={SLICEM},%
+firstplural={SLICEMs},%
+text={SLICEM},%
+plural={SLICEMs},%
+description={A component of a \acrshort {CLB} in the Spartan-3E family of \acrshort {FPGA}s capable of both logic and memory functions},%
+descriptionplural={A component of a \acrshort {CLB} in the Spartan-3E family of \acrshort {FPGA}s capable of both logic and memory functions},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{SLICEL}{}%
+{%
+\gls@defglossaryentry{SLICEL}%
+{%
+name={SLICEL},%
+sort={SLICEL},%
+type={main},%
+first={SLICEL},%
+firstplural={SLICELs},%
+text={SLICEL},%
+plural={SLICELs},%
+description={A component of a \acrshort {CLB} in the Spartan-3E family of \acrshort {FPGA}s capable of only logic functions},%
+descriptionplural={A component of a \acrshort {CLB} in the Spartan-3E family of \acrshort {FPGA}s capable of only logic functions},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sch2hdl}{}%
+{%
+\gls@defglossaryentry{sch2hdl}%
+{%
+name={sch2hdl},%
+sort={sch2hdl},%
+type={main},%
+first={sch2hdl},%
+firstplural={sch2hdls},%
+text={sch2hdl},%
+plural={sch2hdls},%
+description={used to convert schematic designs to \gls {HDL}. This stage is optional as many choose to develop directly in \acrshort {HDL}},%
+descriptionplural={used to convert schematic designs to \gls {HDL}. This stage is optional as many choose to develop directly in \acrshort {HDL}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{XST}{}%
 {%
 \gls@defglossaryentry{XST}%
@@ -1373,6 +2543,486 @@ long={\protect \textit {Xilinx}\protect \nobreakspace {}Synthesis Tools},%
 longplural={\protect \textit {Xilinx}\protect \nobreakspace {}Synthesis Toolss},%
 short={XST},%
 shortplural={XSTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ngdbuild}{}%
+{%
+\gls@defglossaryentry{ngdbuild}%
+{%
+name={ngdbuild},%
+sort={ngdbuild},%
+type={main},%
+first={ngdbuild},%
+firstplural={ngdbuilds},%
+text={ngdbuild},%
+plural={ngdbuilds},%
+description={A tool used to build a NETLIST.},%
+descriptionplural={A tool used to build a NETLIST.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{MAP}{}%
+{%
+\gls@defglossaryentry{MAP}%
+{%
+name={MAP},%
+sort={MAP},%
+type={main},%
+first={MAP},%
+firstplural={MAPs},%
+text={MAP},%
+plural={MAPs},%
+description={A \gls {Xilinx} tool used to calculate the optimal routing for the finalized design.},%
+descriptionplural={A \gls {Xilinx} tool used to calculate the optimal routing for the finalized design.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{PAR}{}%
+{%
+\gls@defglossaryentry{PAR}%
+{%
+name={PAR},%
+sort={PAR},%
+type={main},%
+first={PAR},%
+firstplural={PARs},%
+text={PAR},%
+plural={PARs},%
+description={used to place and route the design in the specific \Xilinx device.},%
+descriptionplural={used to place and route the design in the specific \Xilinx device.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{trce}{}%
+{%
+\gls@defglossaryentry{trce}%
+{%
+name={trce},%
+sort={trce},%
+type={main},%
+first={trce},%
+firstplural={trces},%
+text={trce},%
+plural={trces},%
+description={used to perform timing and performance analysis.},%
+descriptionplural={used to perform timing and performance analysis.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Bitgen}{}%
+{%
+\gls@defglossaryentry{Bitgen}%
+{%
+name={Bitgen},%
+sort={Bitgen},%
+type={main},%
+first={Bitgen},%
+firstplural={Bitgens},%
+text={Bitgen},%
+plural={Bitgens},%
+description={The final stage used to generate the configuration \gls {Bitstream} which will configure the device.},%
+descriptionplural={The final stage used to generate the configuration \gls {Bitstream} which will configure the device.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{xdl2ndc}{}%
+{%
+\gls@defglossaryentry{xdl2ndc}%
+{%
+name={xdl2ndc},%
+sort={xdl2ndc},%
+type={main},%
+first={xdl2ndc},%
+firstplural={xdl2ndcs},%
+text={xdl2ndc},%
+plural={xdl2ndcs},%
+description={A command line tool used to convert between the non human-readable ndc netlist format and the human readable \acrshort {XDL} format.},%
+descriptionplural={A command line tool used to convert between the non human-readable ndc netlist format and the human readable \acrshort {XDL} format.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{thread}{}%
+{%
+\gls@defglossaryentry{thread}%
+{%
+name={thread},%
+sort={thread},%
+type={main},%
+first={thread},%
+firstplural={threads},%
+text={thread},%
+plural={threads},%
+description={The smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system.},%
+descriptionplural={The smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Group}{}%
+{%
+\gls@defglossaryentry{Group}%
+{%
+name={Group},%
+sort={Group},%
+type={main},%
+first={Group},%
+firstplural={Groups},%
+text={Group},%
+plural={Groups},%
+description={A collection of columns of 1-bit wide components in an FPGA},%
+descriptionplural={A collection of columns of 1-bit wide components in an FPGA},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{FragementMatrix}{}%
+{%
+\gls@defglossaryentry{FragementMatrix}%
+{%
+name={Fragement Matrix},%
+sort={Fragement Matrix},%
+type={main},%
+first={Fragement Matrix},%
+firstplural={Fragement Matrixs},%
+text={Fragement Matrix},%
+plural={Fragement Matrixs},%
+description={A conceptual interpretation of the architecture of an FPGA where by it is imagined as a matrix of 1-bit configurable components},%
+descriptionplural={A conceptual interpretation of the architecture of an FPGA where by it is imagined as a matrix of 1-bit configurable components},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{QT}{}%
+{%
+\gls@defglossaryentry{QT}%
+{%
+name={QT},%
+sort={QT},%
+type={main},%
+first={QT},%
+firstplural={QTs},%
+text={QT},%
+plural={QTs},%
+description={a cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms. It provides easy to use \acrshort {UI} design tools and features used for this project.~\cite {QT}},%
+descriptionplural={a cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms. It provides easy to use \acrshort {UI} design tools and features used for this project.~\cite {QT}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Boost}{}%
+{%
+\gls@defglossaryentry{Boost}%
+{%
+name={Boost},%
+sort={Boost},%
+type={main},%
+first={Boost},%
+firstplural={Boosts},%
+text={Boost},%
+plural={Boosts},%
+description={a set of libraries for the C++ programming language that provide support for tasks and structures such as linear algebra, pseudorandom number generation, multithreading, image processing, regular expressions, and unit testing.~\cite {boostLibrary}},%
+descriptionplural={a set of libraries for the C++ programming language that provide support for tasks and structures such as linear algebra, pseudorandom number generation, multithreading, image processing, regular expressions, and unit testing.~\cite {boostLibrary}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{winAPI}{}%
+{%
+\gls@defglossaryentry{winAPI}%
+{%
+name={Windows \gls {API}},%
+sort={Windows \gls {API}},%
+type={main},%
+first={Windows \gls {API}},%
+firstplural={Windows \gls {API}s},%
+text={Windows \gls {API}},%
+plural={Windows \gls {API}s},%
+description={Windows API or WinAPI is a core set of Microsoft's \acrshort {API}s available within the Windows Operating System. It provides basic \acrshort {UI}, Environment handling, data access and storage utilities and more.~\cite {windowsAPI}},%
+descriptionplural={Windows API or WinAPI is a core set of Microsoft's \acrshort {API}s available within the Windows Operating System. It provides basic \acrshort {UI}, Environment handling, data access and storage utilities and more.~\cite {windowsAPI}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{Fragment}{}%
+{%
+\gls@defglossaryentry{Fragment}%
+{%
+name={Fragment},%
+sort={Fragment},%
+type={main},%
+first={Fragment},%
+firstplural={Fragments},%
+text={Fragment},%
+plural={Fragments},%
+description={A 1-bit configurable component of an FPGA. Fragments do not exist however they are used as a conceptual aid to improve understanding of configuration process.},%
+descriptionplural={A 1-bit configurable component of an FPGA. Fragments do not exist however they are used as a conceptual aid to improve understanding of configuration process.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gateArray}{}%
+{%
+\gls@defglossaryentry{gateArray}%
+{%
+name={Gate Array},%
+sort={Gate Array},%
+type={main},%
+first={Gate Array},%
+firstplural={Gate Arrays},%
+text={Gate Array},%
+plural={Gate Arrays},%
+description={The primary structure of an \gls {FPGA} device. Composed of a regular arrangement of logic gates.},%
+descriptionplural={The primary structure of an \gls {FPGA} device. Composed of a regular arrangement of logic gates.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{positionMedian}{}%
+{%
+\gls@defglossaryentry{positionMedian}%
+{%
+name={Position Median},%
+sort={Position Median},%
+type={main},%
+first={Position Median},%
+firstplural={Position Medians},%
+text={Position Median},%
+plural={Position Medians},%
+description={The computed center of an \acrshort {FPGA} design},%
+descriptionplural={The computed center of an \acrshort {FPGA} design},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{scatterScore}{}%
+{%
+\gls@defglossaryentry{scatterScore}%
+{%
+name={Scatter Score},%
+sort={Scatter Score},%
+type={main},%
+first={Scatter Score},%
+firstplural={Scatter Scores},%
+text={Scatter Score},%
+plural={Scatter Scores},%
+description={A numeric representation of the clustering of a design},%
+descriptionplural={A numeric representation of the clustering of a design},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
 counter={page},%
 parent={},%
 %

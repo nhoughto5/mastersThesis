@@ -1,131 +1,6 @@
 
-%% bare_conf.tex
-%% V1.3
-%% 2007/01/11
-%% by Michael Shell
-%% See:
-%% http://www.michaelshell.org/
-%% for current contact information.
-%%
-%% This is a skeleton file demonstrating the use of IEEEtran.cls
-%% (requires IEEEtran.cls version 1.7 or later) with an IEEE conference paper.
-%%
-%% Support sites:
-%% http://www.michaelshell.org/tex/ieeetran/
-%% http://www.ctan.org/tex-archive/macros/latex/contrib/IEEEtran/
-%% and
-%% http://www.ieee.org/
-
-%%*************************************************************************
-%% Legal Notice:
-%% This code is offered as-is without any warranty either expressed or
-%% implied; without even the implied warranty of MERCHANTABILITY or
-%% FITNESS FOR A PARTICULAR PURPOSE! 
-%% User assumes all risk.
-%% In no event shall IEEE or any contributor to this code be liable for
-%% any damages or losses, including, but not limited to, incidental,
-%% consequential, or any other damages, resulting from the use or misuse
-%% of any information contained here.
-%%
-%% All comments are the opinions of their respective authors and are not
-%% necessarily endorsed by the IEEE.
-%%
-%% This work is distributed under the LaTeX Project Public License (LPPL)
-%% ( http://www.latex-project.org/ ) version 1.3, and may be freely used,
-%% distributed and modified. A copy of the LPPL, version 1.3, is included
-%% in the base LaTeX documentation of all distributions of LaTeX released
-%% 2003/12/01 or later.
-%% Retain all contribution notices and credits.
-%% ** Modified files should be clearly indicated as such, including  **
-%% ** renaming them and changing author support contact information. **
-%%
-%% File list of work: IEEEtran.cls, IEEEtran_HOWTO.pdf, bare_adv.tex,
-%%                    bare_conf.tex, bare_jrnl.tex, bare_jrnl_compsoc.tex
-%%*************************************************************************
-
-% *** Authors should verify (and, if needed, correct) their LaTeX system  ***
-% *** with the testflow diagnostic prior to trusting their LaTeX platform ***
-% *** with production work. IEEE's font choices can trigger bugs that do  ***
-% *** not appear when using other class files.                            ***
-% The testflow support page is at:
-% http://www.michaelshell.org/tex/testflow/
-
-
-
-% Note that the a4paper option is mainly intended so that authors in
-% countries using A4 can easily print to A4 and see how their papers will
-% look in print - the typesetting of the document will not typically be
-% affected with changes in paper size (but the bottom and side margins will).
-% Use the testflow package mentioned above to verify correct handling of
-% both paper sizes by the user's LaTeX system.
-%
-% Also note that the "draftcls" or "draftclsnofoot", not "draft", option
-% should be used if it is desired that the figures are to be displayed in
-% draft mode.
-%
 \documentclass[conference]{IEEEtran}
-% Add the compsoc option for Computer Society conferences.
-%
-% If IEEEtran.cls has not been installed into the LaTeX system files,
-% manually specify the path to it like:
-% \documentclass[conference]{../sty/IEEEtran}
 
-
-
-
-
-% Some very useful LaTeX packages include:
-% (uncomment the ones you want to load)
-
-
-% *** MISC UTILITY PACKAGES ***
-%
-%\usepackage{ifpdf}
-% Heiko Oberdiek's ifpdf.sty is very useful if you need conditional
-% compilation based on whether the output is pdf or dvi.
-% usage:
-% \ifpdf
-%   % pdf code
-% \else
-%   % dvi code
-% \fi
-% The latest version of ifpdf.sty can be obtained from:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/oberdiek/
-% Also, note that IEEEtran.cls V1.7 and later provides a builtin
-% \ifCLASSINFOpdf conditional that works the same way.
-% When switching from latex to pdflatex and vice-versa, the compiler may
-% have to be run twice to clear warning/error messages.
-
-
-
-
-
-
-% *** CITATION PACKAGES ***
-%
-%\usepackage{cite}
-% cite.sty was written by Donald Arseneau
-% V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
-% \cite{} output to follow that of IEEE. Loading the cite package will
-% result in citation numbers being automatically sorted and properly
-% "compressed/ranged". e.g., [1], [9], [2], [7], [5], [6] without using
-% cite.sty will become [1], [2], [5]--[7], [9] using cite.sty. cite.sty's
-% \cite will automatically add leading space, if needed. Use cite.sty's
-% noadjust option (cite.sty V3.8 and later) if you want to turn this off.
-% cite.sty is already installed on most LaTeX systems. Be sure and use
-% version 4.0 (2003-05-27) and later if using hyperref.sty. cite.sty does
-% not currently provide for hyperlinked citations.
-% The latest version can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/cite/
-% The documentation is contained in the cite.sty file itself.
-
-
-
-
-
-
-% *** GRAPHICS RELATED PACKAGES ***
-%
 \ifCLASSINFOpdf
   % \usepackage[pdftex]{graphicx}
   % declare the path(s) where your graphic files are
@@ -144,240 +19,73 @@
   % every instance of \includegraphics
   % \DeclareGraphicsExtensions{.eps}
 \fi
-% graphicx was written by David Carlisle and Sebastian Rahtz. It is
-% required if you want graphics, photos, etc. graphicx.sty is already
-% installed on most LaTeX systems. The latest version and documentation can
-% be obtained at: 
-% http://www.ctan.org/tex-archive/macros/latex/required/graphics/
-% Another good source of documentation is "Using Imported Graphics in
-% LaTeX2e" by Keith Reckdahl which can be found as epslatex.ps or
-% epslatex.pdf at: http://www.ctan.org/tex-archive/info/
-%
-% latex, and pdflatex in dvi mode, support graphics in encapsulated
-% postscript (.eps) format. pdflatex in pdf mode supports graphics
-% in .pdf, .jpeg, .png and .mps (metapost) formats. Users should ensure
-% that all non-photo figures use a vector format (.eps, .pdf, .mps) and
-% not a bitmapped formats (.jpeg, .png). IEEE frowns on bitmapped formats
-% which can result in "jaggedy"/blurry rendering of lines and letters as
-% well as large increases in file sizes.
-%
-% You can find documentation about the pdfTeX application at:
-% http://www.tug.org/applications/pdftex
 
-
-
-
-
-% *** MATH PACKAGES ***
-%
-%\usepackage[cmex10]{amsmath}
-% A popular package from the American Mathematical Society that provides
-% many useful and powerful commands for dealing with mathematics. If using
-% it, be sure to load this package with the cmex10 option to ensure that
-% only type 1 fonts will utilized at all point sizes. Without this option,
-% it is possible that some math symbols, particularly those within
-% footnotes, will be rendered in bitmap form which will result in a
-% document that can not be IEEE Xplore compliant!
-%
-% Also, note that the amsmath package sets \interdisplaylinepenalty to 10000
-% thus preventing page breaks from occurring within multiline equations. Use:
-%\interdisplaylinepenalty=2500
-% after loading amsmath to restore such page breaks as IEEEtran.cls normally
-% does. amsmath.sty is already installed on most LaTeX systems. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/required/amslatex/math/
-
-
-
-
-
-% *** SPECIALIZED LIST PACKAGES ***
-%
-%\usepackage{algorithmic}
-% algorithmic.sty was written by Peter Williams and Rogerio Brito.
-% This package provides an algorithmic environment fo describing algorithms.
-% You can use the algorithmic environment in-text or within a figure
-% environment to provide for a floating algorithm. Do NOT use the algorithm
-% floating environment provided by algorithm.sty (by the same authors) or
-% algorithm2e.sty (by Christophe Fiorio) as IEEE does not use dedicated
-% algorithm float types and packages that provide these will not provide
-% correct IEEE style captions. The latest version and documentation of
-% algorithmic.sty can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithms/
-% There is also a support site at:
-% http://algorithms.berlios.de/index.html
-% Also of interest may be the (relatively newer and more customizable)
-% algorithmicx.sty package by Szasz Janos:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/algorithmicx/
-
-
-
-
-% *** ALIGNMENT PACKAGES ***
-%
-%\usepackage{array}
-% Frank Mittelbach's and David Carlisle's array.sty patches and improves
-% the standard LaTeX2e array and tabular environments to provide better
-% appearance and additional user controls. As the default LaTeX2e table
-% generation code is lacking to the point of almost being broken with
-% respect to the quality of the end results, all users are strongly
-% advised to use an enhanced (at the very least that provided by array.sty)
-% set of table tools. array.sty is already installed on most systems. The
-% latest version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/required/tools/
-
-
-%\usepackage{mdwmath}
-%\usepackage{mdwtab}
-% Also highly recommended is Mark Wooding's extremely powerful MDW tools,
-% especially mdwmath.sty and mdwtab.sty which are used to format equations
-% and tables, respectively. The MDWtools set is already installed on most
-% LaTeX systems. The lastest version and documentation is available at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/mdwtools/
-
-
-% IEEEtran contains the IEEEeqnarray family of commands that can be used to
-% generate multiline equations as well as matrices, tables, etc., of high
-% quality.
-
-
-%\usepackage{eqparbox}
-% Also of notable interest is Scott Pakin's eqparbox package for creating
-% (automatically sized) equal width boxes - aka "natural width parboxes".
-% Available at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox/
-
-
-
-
-
-% *** SUBFIGURE PACKAGES ***
-%\usepackage[tight,footnotesize]{subfigure}
-% subfigure.sty was written by Steven Douglas Cochran. This package makes it
-% easy to put subfigures in your figures. e.g., "Figure 1a and 1b". For IEEE
-% work, it is a good idea to load it with the tight package option to reduce
-% the amount of white space around the subfigures. subfigure.sty is already
-% installed on most LaTeX systems. The latest version and documentation can
-% be obtained at:
-% http://www.ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
-% subfigure.sty has been superceeded by subfig.sty.
-
-
-
-%\usepackage[caption=false]{caption}
-%\usepackage[font=footnotesize]{subfig}
-% subfig.sty, also written by Steven Douglas Cochran, is the modern
-% replacement for subfigure.sty. However, subfig.sty requires and
-% automatically loads Axel Sommerfeldt's caption.sty which will override
-% IEEEtran.cls handling of captions and this will result in nonIEEE style
-% figure/table captions. To prevent this problem, be sure and preload
-% caption.sty with its "caption=false" package option. This is will preserve
-% IEEEtran.cls handing of captions. Version 1.3 (2005/06/28) and later 
-% (recommended due to many improvements over 1.2) of subfig.sty supports
-% the caption=false option directly:
-%\usepackage[caption=false,font=footnotesize]{subfig}
-%
-% The latest version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/subfig/
-% The latest version and documentation of caption.sty can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/caption/
-
-
-
-
-% *** FLOAT PACKAGES ***
-%
-%\usepackage{fixltx2e}
-% fixltx2e, the successor to the earlier fix2col.sty, was written by
-% Frank Mittelbach and David Carlisle. This package corrects a few problems
-% in the LaTeX2e kernel, the most notable of which is that in current
-% LaTeX2e releases, the ordering of single and double column floats is not
-% guaranteed to be preserved. Thus, an unpatched LaTeX2e can allow a
-% single column figure to be placed prior to an earlier double column
-% figure. The latest version and documentation can be found at:
-% http://www.ctan.org/tex-archive/macros/latex/base/
-
-
-
-%\usepackage{stfloats}
-% stfloats.sty was written by Sigitas Tolusis. This package gives LaTeX2e
-% the ability to do double column floats at the bottom of the page as well
-% as the top. (e.g., "\begin{figure*}[!b]" is not normally possible in
-% LaTeX2e). It also provides a command:
-%\fnbelowfloat
-% to enable the placement of footnotes below bottom floats (the standard
-% LaTeX2e kernel puts them above bottom floats). This is an invasive package
-% which rewrites many portions of the LaTeX2e float routines. It may not work
-% with other packages that modify the LaTeX2e float routines. The latest
-% version and documentation can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/sttools/
-% Documentation is contained in the stfloats.sty comments as well as in the
-% presfull.pdf file. Do not use the stfloats baselinefloat ability as IEEE
-% does not allow \baselineskip to stretch. Authors submitting work to the
-% IEEE should note that IEEE rarely uses double column equations and
-% that authors should try to avoid such use. Do not be tempted to use the
-% cuted.sty or midfloat.sty packages (also by Sigitas Tolusis) as IEEE does
-% not format its papers in such ways.
-
-
-
-
-
-% *** PDF, URL AND HYPERLINK PACKAGES ***
-%
-%\usepackage{url}
-% url.sty was written by Donald Arseneau. It provides better support for
-% handling and breaking URLs. url.sty is already installed on most LaTeX
-% systems. The latest version can be obtained at:
-% http://www.ctan.org/tex-archive/macros/latex/contrib/misc/
-% Read the url.sty source comments for usage information. Basically,
-% \url{my_url_here}.
-
-
-
-
-
-% *** Do not adjust lengths that control margins, column widths, etc. ***
-% *** Do not use packages that alter fonts (such as pslatex).         ***
-% There should be no need to do such things with IEEEtran.cls V1.6 and later.
-% (Unless specifically asked to do so by the journal or conference you plan
-% to submit to, of course. )
 
 
 % correct bad hyphenation here
-\hyphenation{op-tical net-works semi-conduc-tor}
-\usepackage[pdftex]{graphicx}
-\usepackage{cite}
-\usepackage{color}
-\usepackage{float}
+\include{macros/style}
+\include{macros/use_packages}
+%\usepackage{cite}
+\usepackage[backend=bibtex,style=numeric, sorting=none]{biblatex}
+\usepackage[acronym]{glossaries}
+\usepackage{nomencl}
 \usepackage{array}
-\usepackage[justification=centering]{caption}
-\definecolor{bluekeywords}{rgb}{0,0,1}
-\definecolor{greencomments}{rgb}{0,0.5,0}
-\definecolor{redstrings}{rgb}{0.64,0.08,0.08}
-\definecolor{xmlcomments}{rgb}{0.5,0.5,0.5}
-\definecolor{types}{rgb}{0.17,0.57,0.68}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage[flushleft]{threeparttable}
+\usepackage{amsmath}
 \usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{caption}
 \usepackage{subcaption}
-\usepackage{amstext} % for \text macro
-\usepackage{array}   % for \newcolumntype macro
+\usepackage{siunitx}
 \usepackage{multirow}
+\usepackage{csquotes}
 \let\labelindent\relax
 \usepackage{enumitem}
 \setlist{nolistsep}
 \usepackage{stfloats}
-\usepackage[acronym]{glossaries}
-\usepackage{nomencl}
-\usepackage{threeparttable}
-\makeglossaries
-\makenomenclature
 \newcolumntype{C}{>{$}c<{$}} % math-mode version of "l" column type
-\newcommand{\etal}{\textit{et al}. }
-\newcommand{\Xilinx}{\textit{Xilinx}~}
+%\loadglsentries{Utils/Glossary}
+\makenomenclature
+\renewcommand{\nomname}{List of Symbols}
+\newcommand{\Xilinx}{\textit{\gls{Xilinx}}~}
+\newcommand{\ConditionSize}{\footnotesize}
+
+\newcommand{\Name}{\acrshort{FPGA} Trojan Detector}
+\newcommand{\NameNoPeriod}{\Name~}
+\newcommand{\WebName}{Hardware Trojan System}
+\newcommand{\WebNameNoPeriod}{\WebName~}
+
+\newcommand{\Swing}{\textit{Swing}~}
+\newcommand{\SwingEnd}{\textit{Swing}}
 \newcommand{\RapidSmith}{\textit{RapidSmith}~}
-\newcommand{\Name}{\textit{Automated Trojan Detection System}~}
-\newcommand{\gold}{'golden'~}
-\newcommand{\target}{'target'~}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+\definecolor{dkgreen}{rgb}{0.1,0.5,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	aboveskip=1mm,
+	belowskip=1mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+\newenvironment{conditions}
+{\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+	{\end{tabular}\par\vspace{\belowdisplayskip}}
+\addbibresource{UvicThesis.bib} 
 \begin{document}
 %
 % paper title
@@ -420,15 +128,30 @@
 
 
 
-% use for special paper notices
-%\IEEEspecialpapernotice{(Invited Paper)}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%To compile glossary and acronyms run following sequence under Tools
+%Commands -> pdfLatex
+%User -> MakeGlossaries
+%Commands -> Make Index
+%Commands -> pdfLatex
+%Build
+%%%%%%%%%%%%%%%%%%%%%%%%Acronyms%%%%%%%%%%%%%%%%%%%%%%%%%
 \newacronym{FPGA}{FPGA}{Field Programmable Gate-Array}
+\newacronym{FPGAs}{FPGA}{Field Programmable Gate-Arrays}
+\newacronym{CL}{CL}{Configurable Logic}
 \newacronym{ASIC}{ASIC}{Application Specific Integrated Circuit}
 \newacronym{HDL}{HDL}{Hardware Description Language}
 \newacronym{ISE}{ISE}{Integrated Synthesis Environment}
-\newacronym{IOB}{IOB}{Input-Output Blocks}
+\newacronym{IOB}{IOB}{Input-Output Block}
 \newacronym{CLB}{CLB}{Configurable Logic Block}
+\newacronym{IOBs}{IOBs}{Input-Output Blocks}
+\newacronym{CRC}{CRC}{Cyclic Redundancy Check}
+\newacronym{CLBs}{CLBs}{Configurable Logic Blocks}
+\newacronym{IOI}{IOI}{Input-Output Interconnect}
+\newacronym{IOIs}{IOIs}{Input-Output Interconnects}
+\newacronym{IP}{IP}{Intelectual Property}
+\newacronym{RO}{RO}{Ring Oscillator}
+\newacronym{ROs}{RO}{Ring Oscillators}
 \newacronym{LUT}{LUT}{Look-up Table}
 \newacronym{IR}{IR}{Interconnect Resources}
 \newacronym{SM}{SM}{Switching Matrix}
@@ -454,22 +177,67 @@
 \newacronym{EDIF}{EDIF}{Electronic Data Interchange Format}
 \newacronym{NCF}{NCF}{Netlist Constraints File}
 \newacronym{UI}{UI}{User-Interface}
+\newacronym{UIs}{UI}{User-Interfaces}
 \newacronym{DCM}{DCM}{Digital Clock Managers}
 \newacronym{ROM}{ROM}{Read-Only Memory}
 \newacronym{BEL}{BEL}{Basic Element}
+\newacronym{ISCAS}{ISCAS}{IEEE International Symposium on Circuits and Systems}
 \newacronym{UCF}{UCF}{User Constraint File}
 \newacronym{API}{API}{Application Programming Interface}
+\newacronym{APIs}{API}{Application Programming Interfaces}
+\newacronym{CAD}{CAD}{Computer Aided Design}
 \newacronym{IO}{IO}{Input-Output}
-\newacronym{BRAM}{BRAM}{Block RAM}
-\newacronym{SRAM}{SRAM}{Static RAM}
+\newacronym{BRAM}{BRAM}{Block \acrlong{RAM}}
+\newacronym{SRAM}{SRAM}{Static \acrlong{RAM}}
 \newacronym{CMD}{CMD}{Command Register}
 \newacronym{WCFG}{WCFG}{CMD Write Packet Data}
 \newacronym{MSK}{MSK}{Readback Mask File}
 \newacronym{appName}{\textit{F-TRAP}}{\acrshort{FPGA} Trojan Recognition and Parsing}
 \newacronym{FLR}{FLR}{Frame Length Register}
+\newacronym{IC}{IC}{Integrated Circuit}
+\newacronym{ICs}{IC}{Integrated Circuits}
+\newacronym{PLD}{PLD}{Programmable Logic Device}
+\newacronym{PLDs}{PLD}{Programmable Logic Devices}
+\newacronym{ERAI}{ERAI}{Electronic Resellers Association International}
+\newacronym{BA}{BA}{Block Address}
+\newacronym{GCLK}{GCLK}{Global Clock}
+\newacronym{PC}{PC}{Personal Computer}
 \newacronym{BYU}{BYU}{Brigham Young University}
-\newacronym{XST}{XST}{\Xilinx Synthesis Tools}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%Glossary Entries%%%%%%%%%%%%%%%%%
+\newglossaryentry{log}{name={log},description={A log file generated by XST}}
+\newglossaryentry{Bitstream}{name={Bitstream},description={The sequence of one and zeroes which makes up the configuration data}}
+\newglossaryentry{Bit}{name={Bit},description={The binary file containing the configuration data for the implementation}}
+\newglossaryentry{Vivado}{name={Vivado},description={The Integrated Development Environment Used Exclusively for 7-series FPGAs}}
+\newglossaryentry{Xilinx}{name={Xilinx},description={an American technology company, primarily a supplier of programmable logic devices. It is known for inventing the field-programmable gate array (FPGA) and as the first semiconductor company with a fabless manufacturing model.}}
+\newglossaryentry{Readback}{name={Readback},description={A feature in all \Xilinx FPGAs where by the current state of the \gls{gateArray} is stored in the configuration memory to be read by the user via the JTAG port}}
+\newglossaryentry{SelectMap}{name={SelectMap},description={A \Xilinx device configuration mode which allows for the programming of multiple devices in parallel}}
+\newglossaryentry{golden}{name={Golden},description={The clean, untampered version of the synthesis files generated by XST}}
+\newglossaryentry{target}{name={Target},description={The generated files from devices received from the third-party fabrication house}}
+\newglossaryentry{Library}{name={\textit{Library}},description={The list of absolute addresses for all components in a \gls{gateArray}}}
+\newglossaryentry{NGC}{name={NGC},description={The NGC file is a netlist that contains both logical design data and constraints. The NGC file takes the place of both \acrfull{EDIF} and \acrfull{NCF} files}}
+\newglossaryentry{Plan Ahead}{name={Plan Ahead},description={Software provided by \Xilinx for RTL to \gls{Bitstream} design flow management}}
+\newglossaryentry{RAM16}{name={RAM16},description={\acrshort{LUT} used as a 16x1 memory unit}}
+\newglossaryentry{SRL16}{name={SRL16},description={\acrshort{LUT} used as a 16-bit shift register}}
+\newglossaryentry{SLICEM}{name={SLICEM},description={A component of a \acrshort{CLB} in the Spartan-3E family of \acrshort{FPGA}s capable of both logic and memory functions}}
+\newglossaryentry{SLICEL}{name={SLICEL},description={A component of a \acrshort{CLB} in the Spartan-3E family of \acrshort{FPGA}s capable of only logic functions}}
+\newglossaryentry{sch2hdl}{name={sch2hdl},description={used to convert schematic designs to \gls{HDL}. This stage is optional as many choose to develop directly in \acrshort{HDL}}}
+\newglossaryentry{XST}{name={XST},description={\gls{Xilinx} Synthesis Tools, a package that parses, optimizes and compiles the \acrshort{HDL} code.}}
+\newglossaryentry{ngdbuild}{name={ngdbuild},description={A tool used to build a NETLIST.}}
+\newglossaryentry{MAP}{name={MAP},description={A \gls{Xilinx} tool used to calculate the optimal routing for the finalized design.}}
+\newglossaryentry{PAR}{name={PAR},description={used to place and route the design in the specific \Xilinx device.}}
+\newglossaryentry{trce}{name={trce},description={used to perform timing and performance analysis.}}
+\newglossaryentry{Bitgen}{name={Bitgen},description={The final stage used to generate the configuration \gls{Bitstream} which will configure the device.}}
+\newglossaryentry{xdl2ndc}{name={xdl2ndc},description={A command line tool used to convert between the non human-readable ndc netlist format and the human readable \acrshort{XDL} format.}}
+\newglossaryentry{thread}{name={thread},description={The smallest sequence of programmed instructions that can be managed independently by a scheduler, which is typically a part of the operating system.}}
+\newglossaryentry{Group}{name={Group},description={A collection of columns of 1-bit wide components in an FPGA}}
+\newglossaryentry{FragementMatrix}{name={Fragement Matrix},description={A conceptual interpretation of the architecture of an FPGA where by it is imagined as a matrix of 1-bit configurable components}}
+\newglossaryentry{QT}{name={QT},description={ a cross-platform application framework that is widely used for developing application software that can be run on various software and hardware platforms. It provides easy to use \acrshort{UI} design tools and features used for this project.~\cite{QT}}}
+\newglossaryentry{Boost}{name={Boost},description={ a set of libraries for the C++ programming language that provide support for tasks and structures such as linear algebra, pseudorandom number generation, multithreading, image processing, regular expressions, and unit testing.~\cite{boostLibrary}}}
+\newglossaryentry{winAPI}{name={Windows \gls{API}},description={Windows API or WinAPI is a core set of Microsoft's \acrshort{API}s available within the Windows Operating System. It provides basic \acrshort{UI}, Environment handling, data access and storage utilities and more.~\cite{windowsAPI}}}
+\newglossaryentry{Fragment}{name={Fragment},description={A 1-bit configurable component of an FPGA. Fragments do not exist however they are used as a conceptual aid to improve understanding of configuration process.}}
+\newglossaryentry{gateArray}{name={Gate Array},description={The primary structure of an \gls{FPGA} device. Composed of a regular arrangement of logic gates.}}
+\newglossaryentry{positionMedian}{name={Position Median},description={The computed center of an \acrshort{FPGA} design}}
+\newglossaryentry{scatterScore}{name={Scatter Score},description={A numeric representation of the clustering of a design}}
 % make the title area
 \maketitle
 
@@ -503,154 +271,473 @@ The abstract goes here.
 
 
 \section{Introduction}
+The term \textit{Trojan Horse} or \textit{Trojan} has become a modern metaphor for a deception where by an unsuspecting victim welcomes a foe into an otherwise safe environment~\cite{searchForTrojanWar}.
+Since the dawn of the computer we have dealt with software threats.
+We are almost as good at protecting ourselves against them as attackers are at making them.
+In recent years a new incarnation of electronic danger has emerged; in hardware.
+In this new arena of attack and defend those who seek to defend are far behind.
 
-\subsection{Background}
-A \Xilinx \acrfull{FPGA} is comprised of a matrix of tiles.
-A device can contain anywhere from a couple hundred to a few thousand.
-Tiles are arranged into columns by their type.
-An FPGA may have over one-hundred different types of tiles however each column is comprised almost entirely of a single type.
-Columns are separated by clock regions.
-Each clock region is an independent array of tiles which uses a dedicated clock resource; this minimizes clock skew from timing delays.
-The functionality of each tile is dictated by a binary file referred to as a bitstream. 
-When an \acrshort{FPGA} is turned on the bitstream is loaded from an external memory into the device, implementing the user's design.
+\acrshort{IC} designs for \acrfull{FPGAs} are made using a software language known as an \acrfull{HDL}.
+The design is then converted to a binary file called a configuration \gls{Bitstream} which is then downloaded onto the device; this process is known as synthesizing the design.
+There have been many attempts to develop mechanisms and techniques to determine whether a malicious user has tampered with the design via test vectoring or side-channel analysis.
+As of yet there has been little effort to directly analyze the configuration \gls{Bitstream}.
+
+A method of extracting and analyzing the configuration \gls{Bitstream} to determine the presence of hardware trojans has been developed.
+This method is able to meaningfully read the long binary file and extract modifications.
+Any discovered changes are located on the device using a new technique referred to as 'Component Mapping'.
+Further, these changes are then mapped to the user's original design.
+Knowing which components of the device have been modified, and the instances of the synthesized design allows for a powerful description to be built.
+A software tool known as \NameNoPeriod which implements this new method has been built. 
+\NameNoPeriod is able to automatically detect and analyze trojans in \acrshort{FPGAs}.
+Once analyzed a meaningful description is provided using the trojan taxonomy presented in~\cite{samerAttribute}.
+
+The contributions of this paper are:
+\begin{enumerate}
+	\item A new method mapping configuration \gls{Bitstream} words to device components named 'Component Mapping'.
+	\item A systematic process of detecting and analyzing hardware trojans in \acrshort{FPGAs}
+	\item A software tool which automates these new methods.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Background}
+%\subsection{Taxonomy}
+%The discussion, detection and evaluation of hardware trojans requires a comprehensive means of description.
+%Several hardware trojan taxonomies have been proposed~\cite{taxonomy1, taxonomy2, taxonomy3, taxonomy4}.
+%An additional taxonomy was proposed in~\cite{samerAttribute} which considers all attributes a hardware trojan may posses.
+%This taxonomy is the most comprehensive and was selected as the means of description for this work.
+%This taxonomy is comprised of thirty-three attributes organized into eight categories as shown in Fig.~\ref{fig:HW_trojan}.
+%These categories can be arranged into four levels as shown in Fig.~\ref{fig:trojan_life_cycle}.
+%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure*}[]
+%	\centering
+%	\includegraphics[width=0.7\linewidth]{../Thesis/Figures/HW_trojan}
+%	\caption{The hardware trojan attribute taxonomy \cite{samerAttribute}.}
+%	\label{fig:HW_trojan}
+%\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{enumerate}
+%	\item The \textbf{insertion} (chip life-cycle) level comprises the attributes pertaining to the IC production stages.
+%	\item The \textbf{abstraction} level corresponds to where in the IC abstraction the trojan is introduced.
+%	\item The \textbf{properties} level comprises the behavior and physical characteristics of the trojan.
+%	It contains the taxonomy categories \textit{effect}, \textit{logic type}, \textit{functionality}, \textit{activation} and \textit{layout}.
+%	\item The \textbf{location} level corresponds to the location of the trojan in the IC.
+%\end{enumerate}
+%\begin{figure}[]
+%	\centering
+%	\includegraphics[width=0.99\linewidth]{../Thesis/Figures/trojan_life_cycle}
+%	\caption{Hardware trojan life-cycle levels \cite{samerAttribute}.}
+%	\label{fig:trojan_life_cycle}
+%\end{figure}
+%The properties level has the following categories.
+%\begin{itemize}
+%	\item The \textbf{effect} category describes the disruption or effect a trojan has on the system.
+%	\item The \textbf{logic type} category describes the circuit logic that triggers the trojan, either combinational logic or sequential.
+%	\item The \textbf{functionality} category differentiates between trojans which are functional or parametric.
+%	\item The \textbf{activation} category differentiates between trojans which are always on or are triggered.
+%	\item The \textbf{layout} category is based on the physical characteristics of the trojan.
+%\end{itemize}
+%The relationships between the trojan attributes shown in Fig.~\ref{fig:HW_trojan} can be described using a matrix $\mathbf{R}$~\cite{samerAttribute}.
+%Entry $r(i,j)$ in $\mathbf{R}$ indicates whether or not attribute $i$ can lead to attribute $j$.
+%For example, $r(2,3) = 1$ indicates that design (attribute 2) can lead to fabrication (attribute 3).
+%This implies that if an IC can be compromised during the design phase (attribute 2), it may influence the fabrication phase (attribute 3).
+%
+%The matrix $\mathbf{R}$ is divided into sub matrices as follows
+%\[
+%\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+%\mathbf{R} =\left[
+%\scalemath{1.1}{
+%	\begin{array}{l*{3}{c}}
+%	\mathbf{R_1} ~ & ~ \mathbf{R_{12}} ~ & ~ 0 ~  &  ~ 0   \\
+%	0         & \mathbf{R_2}      &\mathbf{R_{23}}       & ~ 0 \\
+%	0          & 0           & \mathbf{R_3}          & ~ \mathbf{R_{34}} \\
+%	0          & 0           & 0                & ~ \mathbf{R_4} \\
+%	\end{array}
+%}
+%\right]
+%\label{R}
+%\]
+%where $\mathbf{R_1}$, $\mathbf{R_2}$, $\mathbf{R_3}$ and $\mathbf{R_4}$ indicate the attribute relationships within a category.
+%For example, $\mathbf{R_1}$ is given by
+%\[
+%\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+%\mathbf{R_1} =\left[
+%\scalemath{1.0}{
+%	\begin{array}{l|*{11}{c}}
+%	A & 1$~$ & 2$~$  & 3$~$ & 4$~$& 5$~$\\ \hline
+%	1 & 0 & 1 & 0 & 0 & 0  \\
+%	2 & 0 & 0 & 1 & 0 & 0  \\
+%	3 & 0 & 0 & 0 & 1 & 0  \\
+%	4 & 0 & 0 & 0 & 0 & 1  \\
+%	5 & 0 & 0 & 0 & 0 & 0  \\
+%	\end{array}
+%}
+%\right ]
+%\label{R1}
+%\]
+%Submatrix $\mathbf{R_{12}}$ relates the attributes of the insertion category to the attributes of the abstraction category.
+%An example of this submatrix is
+%\[
+%\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+%\mathbf{R_{12}} =\left[
+%\scalemath{1.0}{
+%	\begin{array}{l|*{11}{c}}
+%	A & 6$~$  & 7$~$ & 8$~$ & 9$~$ & 10  & 11\\ \hline
+%	1  & 1 & 0 & 0 & 0 & 0 & 0 \\
+%	2  & 0 & 1 & 0 & 0 & 0 & 0 \\
+%	3  & 0 & 0 & 0 & 0 & 0 & 1 \\
+%	4  & 1 & 0 & 0 & 1 & 0 & 0 \\
+%	5  & 1 & 0 & 0 & 0 & 0 & 0 \\
+%	\end{array}
+%}
+%\right ]
+%\label{R12}
+%\]
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{\acrlong{FPGAs}}
+%An \acrfull{IC} belongs to one of two categories.
+%An \acrfull{ASIC} or a \acrfull{FPGA}.
+%An \acrshort{ASIC} is manufactured once and is immutable; its hardware is permanently printed into its silicon.
+%\acrshort{FPGA}s are reconfigurable because they are comprised of an array of \acrfull{PLDs}.
+%A \acrshort{PLD} is a component whose functionality is dependent on a set of configuration options; in other words, a user can define how it behaves.
+%Each \acrshort{PLD} receives configuration instructions from the user that defines its functionality; these instructions are in the form of a binary message.
+%In \Xilinx terminology a \acrshort{PLD} is referred to as a tile. 
+%A single \acrshort{FPGA} can contain hundreds, or even thousands of tiles; a device is usually made up of over a hundred different types.
+%Different types are used for different functions, such as \acrfull{IO}, Logic, Memory...etc.
+%The set of messages sent to all of the tiles in the device from the user is referred to as the configuration \gls{Bitstream}.
+%\acrshort{FPGA} users create designs using a programming language referred to as a \acrfull{HDL}.
+%The design is then compiled and synthesized into the \gls{Bitstream} which is then downloaded or "configured" onto the device.
 %\begin{figure}[h]
 %	\centering
-%	\includegraphics[width=1\linewidth]{figures/FPGA}
+%	\includegraphics[width=1\linewidth]{../Thesis/Figures/FPGA}
 %	\caption[Rudimentary Layout of a Virtex \acrshort{FPGA}]{Rudimentary Layout of a Virtex \acrshort{FPGA}}
 %	\label{fig:FPGA}
 %\end{figure}
-\begin{figure}[h]
-\centering
-\includegraphics[width=1\linewidth]{../Thesis/Figures/FPGA}
-\caption[Rudimentary Layout of a Virtex \acrshort{FPGA}]{Rudimentary Layout of a Virtex \acrshort{FPGA}}
-\label{fig:FPGA}
-\end{figure}
-
-The \Xilinx bitstream is organized into 'frames'.
-A frame is a string of single bits that span from the top to the bottom of a clock region of a device.
-In other words, each frame affects every tile in a column.
-Multiple adjacent frames are required to configure an entire column. 
-
-\subsection{Implementation}
-A software tool has been developed to automate the detection and analysis of trojans.
-This tool was written in Java and employs the \textit{Swing} toolkit to provide a simple-to-use \acrfull{UI}.
-The \RapidSmith \acrfull{API} was developed at the \acrfull{BYU} in Utah.
-\RapidSmith is a research-based, open source FPGA CAD tool written in Java.
-It uses the \acrfull{XDL} to generate a series of database files which describe the layout and architecture of modern \acrshort{FPGA}s.
-These files are then references by a series of tools and methods that serve as a rapid prototyping platform for 'low-level' research ideas and algorithms.
-Employing \RapidSmith has made the \Name much more efficient and universal.
-
-\section{Methodology}
-Before a design is sent to be fabricated the finalized design must be used to generate the \gold configuration bitstream via the \acrfull{XST}. 
-This file is to be preserved in order to be used as a reference during detection.
-After fabrication a \target device must be selected from the batch returned. 
-This \target device must then have the configuration bitstream extracted from the SRAM. 
-The \gold and \target bitstream will be compared to determine modification.
- 
-\subsection{Bitstream Parsing and Analysis}
-At the beginning of a configuration file there are a series of instructions.
-These instructions are used to perform a variety of tasks to prepare the gate-array for configuration.
-Each configuration manual, example \cite{xilinxVirtex5_UG191} for the Virtex-5 family, provides the definition of the instructions used during configuration.
-These instructions can be used to gain insight into the structure, size and format of configuration frames.
-Extracting details such as frame length, size, packet organization and more allows for the unnecessary information to be discarded and the frames to be organized and stored as a list.
-The \gold and \target configuration files are for the exact same device; in consequence the bitstreams have the same length and organization.
-The list of frames from the \gold and \target bit files are compared at the binary level.
-Frames containing a difference between the two files are stored for analysis.
-
-\subsection{Tile Mapping}
-Any bits which differ between the \gold and \target files result in undesired behavior.
-To understand the effect of such differences the affected component must be identified.
-\RapidSmith provides a database file for every device in the Virtex-4, 5 and 6 families. 
-Using the \acrshort{API} the definition and organization of each tile, wire and primitive can be extracted.
-Configuration frames are loaded sequentially according to an addressing scheme.
-Each device is slightly different however addresses increment from left to right across a clock region. 
-
-\subsection{Attribute Extraction}
-
-
-% An example of a floating figure using the graphicx package.
-% Note that \label must occur AFTER (or within) \caption.
-% For figures, \caption should occur after the \includegraphics.
-% Note that IEEEtran v1.7 and later has special internal code that
-% is designed to preserve the operation of \label within \caption
-% even when the captionsoff option is in effect. However, because
-% of issues like this, it may be the safest practice to put all your
-% \label just after \caption rather than within \caption{}.
+%A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Figure~\ref{fig:FPGA}~\cite{xilnxDevManual}.
+%A device can contain anywhere from a couple hundred to a few thousand blocks and are arranged into columns by type.
+%Columns are separated into regions shown by the dashed lines in Figure~\ref{fig:FPGA}.
+%These regions each use a separate clock mechanism and are referred to as 'Clock Regions'.
 %
-% Reminder: the "draftcls" or "draftclsnofoot", not "draft", class
-% option should be used if it is desired that the figures are to be
-% displayed while in draft mode.
-%
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=2.5in]{myfigure}
-% where an .eps filename suffix will be assumed under latex, 
-% and a .pdf suffix will be assumed for pdflatex; or what has been declared
-% via \DeclareGraphicsExtensions.
-%\caption{Simulation Results}
-%\label{fig_sim}
+%The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into 'frames'.
+%A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Figure~\ref{fig:FPGA}.
+%A frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
+%Each frame is uniquely identified by a 32-bit address and is the smallest addressable element.
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=.85\linewidth]{../Thesis/Figures/RowOrder}
+%	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
+%	\label{fig:RowOrder}
 %\end{figure}
-
-% Note that IEEE typically puts floats only at the top, even when this
-% results in a large percentage of a column being occupied by floats.
-
-
-% An example of a double column floating figure using two subfigures.
-% (The subfig.sty package must be loaded for this to work.)
-% The subfigure \label commands are set within each subfloat command, the
-% \label for the overall figure must come after \caption.
-% \hfil must be used as a separator to get equal spacing.
-% The subfigure.sty package works much the same way, except \subfigure is
-% used instead of \subfloat.
-%
-%\begin{figure*}[!t]
-%\centerline{\subfloat[Case I]\includegraphics[width=2.5in]{subfigcase1}%
-%\label{fig_first_case}}
-%\hfil
-%\subfloat[Case II]{\includegraphics[width=2.5in]{subfigcase2}%
-%\label{fig_second_case}}}
-%\caption{Simulation results}
-%\label{fig_sim}
-%\end{figure*}
-%
-% Note that often IEEE papers with subfigures do not employ subfigure
-% captions (using the optional argument to \subfloat), but instead will
-% reference/describe all of them (a), (b), etc., within the main caption.
-
-
-% An example of a floating table. Note that, for IEEE style tables, the 
-% \caption command should come BEFORE the table. Table text will default to
-% \footnotesize as IEEE normally uses this smaller font for tables.
-% The \label must come after \caption as always.
-%
-%\begin{table}[!t]
-%% increase table row spacing, adjust to taste
-%\renewcommand{\arraystretch}{1.3}
-% if using array.sty, it might be a good idea to tweak the value of
-% \extrarowheight as needed to properly center the text within the cells
-%\caption{An Example of a Table}
-%\label{table_example}
-%\centering
-%% Some packages, such as MDW tools, offer better commands for making tables
-%% than the plain LaTeX2e tabular which is used here.
-%\begin{tabular}{|c||c|}
-%\hline
-%One & Two\\
-%\hline
-%Three & Four\\
-%\hline
-%\end{tabular}
+%Each clock region is given a row value in its address that increments away from the center of the device starting at 0. 
+%%The frame address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the center of the device~\cite{virtex5ConfigGuide}.
+%The major address specifies the column within the row.
+%These addresses are numbered from left to right and begin at 0.
+%The minor address indicates the frame number within a column. 
+%Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column type.
+%\begin{table}[h!]
+%	\centering
+%	\caption{Number of Frames (minor addresses) per Column~\cite{virtex5ConfigGuide}}
+%	\label{tbl:minorAddressNumbers}
+%	\begin{tabular}{|c|c|}
+%		\hline
+%		Block             & Number Of Frames \\ \hline
+%		CLB               & 36               \\ \hline
+%		DSP               & 28               \\ \hline
+%		\acrshort{BRAM}   & 30               \\ \hline
+%		IOB               & 54               \\ \hline
+%		Clock             & 4                \\ \hline
+%	\end{tabular}
 %\end{table}
+%Frames are numbered from left to right, starting with 0. 
+%A block may contain multiple tiles.
+%In a \acrshort{CLB} column a block consists of an interconnect tile (also known as a \acrfull{SM}) and a \acrshort{CLB}.
+%For each block frames numbered 0 to 25 access the interconnect tile for that column. 
+%For all blocks, except the \acrshort{CLB} and the clock column, frames numbered 26 and 27 access the Interface for that column. 
+%All other frames are specific to that block~\cite{virtex5ConfigGuide}.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Methodology}
+Figure~\ref{fig:Concept} provides a visual representation of the use-case assumed for the purposes of this work. 
+With the exception of the fabrication process, all stages of production of an \acrshort{FPGA} implementation are assumed to have been done "in-house". 
+Any trojan discovered is inserted in the fabrication phase; all other stages are trusted.  
+The method of automated trojan detection described in this work would take place in the 'testing' phase of the life-cycle. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{../Thesis/Figures/Concept}
+	\caption[FPGA Life-Cycle]{FPGA Life-Cycle}
+	\label{fig:Concept}
+\end{figure}
+Figure~\ref{fig:methodologyOverview} shows an overview of the trojan detection methodology.
+As mentioned, \acrshort{FPGA} designs are written in a \acrfull{HDL}.
+\Xilinx provides a series of \acrfull{UI} and command line tools to process the \acrshort{HDL} known as the 'tool-chain'.
+The tool chain generates a series of files that are used for a variety of purposes as shown in the 'Resultant Files' box in Figure~\ref{fig:methodologyOverview}.
+The NGC file is a non-human readable semantic description of the design known as a netlist.
+This file can be converted into a human-readable version known as \acrfull{XDL} which will be described in section~\ref{sec:XDL}.
+The Bit file is the binary representation of the design to be implemented.
+It is referred to as the \gls{Bitstream} or 'configuration' \gls{Bitstream} and is the final form that is loaded into the \acrshort{FPGA}.
+\begin{figure}
+	\centering
+	\includegraphics[width=1\linewidth]{../Thesis/Figures/methodologyOverview}
+	\caption[Methodology Overview]{Methodology Overview}
+	\label{fig:methodologyOverview}
+\end{figure}
+This Bit file is the primary file sent to the fabrication house where it will be implemented onto the batch of devices ordered.
+The resultant files, produced 'in-house' are to be kept in secure storage while a copy is sent to be fabricated; these stored copies are referred to as \gls{golden} and assumed to be trojan-free.
+Though it is known that the fabrication houses will often attempt to make optimizations on designs, this methodology requires that no such efforts be made.
+When the completed batch of fabricated chips are returned the \gls{Bitstream} is extracted from a sample using the \Xilinx feature \gls{Readback}. 
+That which is extracted is referred to as the \gls{target} \gls{Bitstream}.
+The \gls{golden} and \gls{target} \gls{Bitstream}s are analyzed in conjunction to detect differences.
+Any discovered differences are then attributed to the corresponding component in the architecture, described in section~\ref{sec:tileMapping}.
+Finally, the resultant taxonomic description is returned to the user.
 
-% Note that IEEE does not put floats in the very first column - or typically
-% anywhere on the first page for that matter. Also, in-text middle ("here")
-% positioning is not used. Most IEEE journals/conferences use top floats
-% exclusively. Note that, LaTeX2e, unlike IEEE journals/conferences, places
-% footnotes above bottom floats. This can be corrected via the \fnbelowfloat
-% command of the stfloats package.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{The \acrshort{FPGA} \gls{Bitstream} Analysis} \label{sec:fpgaBitStream}
+The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into 'frames'.
+A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Figure~\ref{fig:FPGA}.
+A frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
+Each frame is uniquely identified by a 32-bit address and is the smallest addressable element.
+The composition of the frame address is fairly consistent across the \Xilinx catalog however there are small differences between device families.
+The following is the structure of the Virtex-5 family frame address scheme according to~\cite{virtex5ConfigGuide}.
+The make-up of a frame address is shown in Table~\ref{tbl:frameAddress}.
+\begin{table*}[t!]
+	\centering
+	\caption{Frame Address}
+	\label{tbl:frameAddress}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\multicolumn{8}{|c|}{Unused} & \multicolumn{3}{c|}{BA} & T & \multicolumn{5}{c|}{Row Address} & \multicolumn{8}{c|}{Major Address} & \multicolumn{7}{c|}{Minor Address} \\ \hline
+			31 & 30 & 29 & 28 & 27 & 26 & 25 & 24 & 23 & 22 & 21 & 20 & 19 & 18 & 17 & 16 & 15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\ \hline
+			0 & 0 & 0 & 0 & 0 & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\end{tabular}		
+	}
+\end{table*}
 
+The \acrfull{BA} identifies the block type.
+\begin{itemize}
+	\item BA 0: Logic type.
+	\item BA 1: \acrfull{BRAM}.
+	\item BA 2: \acrshort{BRAM} Interconnect.
+	\item BA 3: \acrshort{BRAM} non-configuration frame.
+\end{itemize}
+The logic block contains the columns which provides the primary configuration for the device (\acrshort{CLBs}, \acrshort{IOBs}... etc).
+The \acrshort{BRAM} columns initialize the memory for the device while the \acrshort{BRAM} Interconnect columns configure how the logic of the design interacts with the \acrshort{BRAM}.
 
+%In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Figure~\ref{fig:RowOrder}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.7\linewidth]{../Thesis/Figures/RowOrder}
+	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
+	\label{fig:RowOrder}
+\end{figure}
+Each clock region is given a row value in its address that increments away from the center of the device starting at 0. 
+The frame address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the center of the device~\cite{virtex5ConfigGuide}.
+The major address specifies the column within the row.
+These addresses are numbered from left to right and begin at 0.
+The minor address indicates the frame number within a column. 
+Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column type.
+\begin{table}[h!]
+	\centering
+	\caption{Number of Frames (minor addresses) per Column~\cite{virtex5ConfigGuide}}
+	\label{tbl:minorAddressNumbers}
+	\begin{tabular}{|c|c|}
+		\hline
+		Block             & Number Of Frames \\ \hline
+		CLB               & 36               \\ \hline
+		DSP               & 28               \\ \hline
+		\acrshort{BRAM}   & 30               \\ \hline
+		IOB               & 54               \\ \hline
+		Clock             & 4                \\ \hline
+	\end{tabular}
+\end{table}
+A block may contain multiple tiles.
+In a \acrshort{CLB} column a block consists of an interconnect tile, also known as a \acrfull{SM} and a \acrshort{CLB}.
+Frames are numbered from left to right, starting with 0. 
+For each block, except in a clock column, frames numbered 0 to 25 access the interconnect tile for that column. 
+For all blocks, except the \acrshort{CLB} and the clock column, frames numbered 26 and 27 access the Interface for that column. 
+All other frames are specific to that block~\cite{virtex5ConfigGuide}.
+To further understand how frames configure tiles a mapping must be made between each frame and the corresponding tile.
+This is described in section~\ref{sec:tileMapping}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Component Mapping} \label{sec:tileMapping}
+The \NameNoPeriod employs a method referred to as Component Mapping to create a mapping between each word in a configuration frame and the component on the device that it configures.
+This information is not publicly released by \Xilinx as a means of providing security through obscurity.
+
+\subsubsection{Frame to Column Mapping}
+The configuration \gls{Bitstream} is stored in an external memory device as described in section~\ref{sec:architectureAndConfig}.
+When powered-on the \gls{Bitstream} is transmitted in frame address order to populate the dynamic memory in the tiles of the gate-array.
+The frame addressing scheme describes where in the gate-array the frame is destined fairly directly.
+Frames with a \acrshort{BA} value of 1 are clearly destined to configure the \acrshort{BRAM} and do not need further analysis for the purposes of this method.
+Frames with a \acrshort{BA} value of 0 or 2 must be mapped more finitely.
+The row address specifies which row of clock-regions the frame is destined.
+Figure~\ref{fig:FPGA} shows four clock regions organized into two rows. 
+
+As an example the Virtex-5 240T has 12 rows; its row address spans from 0-5 and the Top bit in the address indicates whether it is in the top or bottom half of the device in accordance with Figure~\ref{fig:RowOrder}.
+Once the correct clock region is discerned the major address is used to determine which column the frame configures.
+The major address begins at 0 on the left and counts up towards the number of columns in the row.
+Finally, the minor address is used to determine which sub-column has been modified according to Table~\ref{tbl:frameAddress}.
+\subsubsection{Word to Block Mapping}
+In the case of Virtex-5 devices a frame is composed of 41 words that can be thought of as a vertical stack that aligns with a column.
+As described in section~\ref{sec:fpgaBitStream} a row consists of a stack of basic blocks; there are 20 \acrshort{CLB} blocks per column, 40 \acrshort{IOB}s, 4 \acrshort{BRAM}...etc for Virtex-5 devices.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{../Thesis/Figures/frameTileMap}
+	\caption[Configuration Words in the Bitstream~\cite{virtex5ConfigGuide}]{Configuration Words in the Bitstream~\cite{virtex5ConfigGuide}}
+	\label{fig:frameTileMap}
+\end{figure}
+As can be seen in Figure~\ref{fig:frameTileMap} the central word in a frame configures the horizontally running clock bus.
+The remaining words are used to configure the blocks in the column.
+The purpose of the central word in the column is known to be mapped to the clock bus.
+For the purposes of the following computations it is considered removed from the frame.
+From this, equation~\ref{eqn:numWordsPerBlock} can be deduced which is used to compute the number of 32-bit words that span each block.
+\begin{equation} \label{eqn:numWordsPerBlock}
+n = (W - C) + B
+\end{equation}
+\ConditionSize
+where:
+\begin{conditions}
+	n     &  Number of Words per Block \\
+	W     &  Number of 32-bit words per frame \\   
+	C     &  Number of clock words per frame \\
+	B     &  Number of blocks per column
+\end{conditions}
+\normalsize
+As shown in Figure~\ref{fig:frameTileMap} words are addressed from the 'top' of a device down.
+Equation~\ref{eqn:getTileNumber} can be used to map a particular word in a frame to a block on the device.
+\begin{equation} \label{eqn:getTileNumber}
+i = B - \floor*{\frac{w}{n}}
+\end{equation}
+\ConditionSize
+where:
+\begin{conditions}
+	i     &  Word Number in frame\\
+	B     &  Number of blocks per column \\
+	w     &  Word number \\
+	n     &  Number of Words per Block 
+\end{conditions}
+\normalsize
+With equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber} it is now possible attribute any modifications in the \gls{Bitstream} to its corresponding block.
+
+\subsection{Determining Trojan Attributes} \label{sec:trojanAttributes}
+The complexity of \acrlong{IC} designs and their corresponding trojans requires a more human-friendly scope.
+The taxonomy in~\cite{samerAttribute} provides a series of thirty-three attributes which a trojan may or may not posses.
+Though it is desirable to be able to observe and directly extract the attributes a trojan possesses it is not always possible. 
+In~\cite{samerAttribute} a matrix, $\mathbf{R}$, is provided which describes the relationships between each of the thirty-three attributes in the taxonomy.
+When it is not possible to directly determine the presence of certain attributes, this relation matrix is used to infer their existence.
+The analysis stage of the automated trojan detection technique provided by this work begins by extracting those attributes that are directly observable then using matrix $\mathbf{R}$ to infer the existence of the remainder. 
+\subsubsection{Observed Location Attributes}
+The presence of attributes in the \textit{Location} category are directly observable from the results of the component mapping method described in section~\ref{sec:tileMapping}.
+\Xilinx tiles conform to purpose-specific groups or block types which were discussed in section~\ref{sec:fpgaBitStream}.
+These block types contain sub-types that perform actions which pertain to the \textit{Location}, category. 
+\begin{enumerate}
+	\item The \textbf{Processor} attribute pertains to the core functionality of the design logic. It can be awarded for presence of a modified \acrshort{CLB} tile or Interconnect tile.
+	\item The \textbf{Memory} attribute can be awarded for the presence of modified \acrshort{BRAM} components.
+	\item The \textbf{\acrshort{IO}} attribute can be awarded for presence of modified \acrshort{IOB} tiles.
+	\item The \textbf{Power Supply} attribute can be awarded for the presence of modified interface or configuration tiles.
+	\item The \textbf{Clock Grid} attribute can be awarded for modified clock tiles.
+\end{enumerate}
+\subsubsection{Scatter Score Method} \label{sec:scatterScore}
+The gate-array configuration of components in \Xilinx \acrshort{FPGA}s allows for an analytical method of determining attributes in the \textit{Physical Layout} category.
+The "Scatter Score" method uses the grid coordinates of components to derive a numerical score rating for the size, position, and augmentation of configured tiles.
+Tiles are assigned global coordinates that represent their horizontal and vertical positions within the gate array denoted $x$ and $y$ respectively. 
+These values can then be used to strongly infer the presence of \textit{Physical Location} attributes.
+
+The golden chip is first analyzed.
+The set of all tiles which are configured in the golden design is found and a series of numerical descriptors are computed.
+\begin{equation} \label{eqn:numConfiguredTiles}
+n = \sum_{x = 0}^{X}\sum_{y = 0}^{Y}T_{xy}
+\end{equation}
+\ConditionSize
+where:
+\begin{conditions}
+	n     &  Number of all \textbf{configured} tiles \\
+	X     &  The column width of the gate-array \\   
+	Y     &  The number of rows of the gate-array \\
+	T     &  A configured tile
+\end{conditions}
+\normalsize
+
+\noindent\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:xAverage}
+	a_x = \frac{1}{n}\sum_{x=0}^{n}T_x
+	\end{equation}
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:yAverage}
+	a_y = \frac{1}{n}\sum_{y=0}^{n}T_y
+	\end{equation}
+\end{minipage}
+\\
+\noindent\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:stdDevX}
+	\sigma_x = \sqrt{\frac{1}{n}\sum_{x = 0}^{X}(x_i - a_x)^2)}
+	\end{equation}
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:stdDevY}
+	\sigma_y = \sqrt{\frac{1}{n}\sum_{y = 0}^{Y}(y_i - a_y)^2)}
+	\end{equation}
+\end{minipage}
+
+\ConditionSize
+where:
+\begin{conditions}
+	$$a_x$$     &  The average x coordinate of configured tiles \\   
+	$$a_y$$     &  The average y coordinate of configured tiles \\
+	$$T_x$$     &  The x coordinate of a configured tile \\
+	$$T_y$$	    &  The y coordinate of a configured tile \\
+	$$\sigma_x$$ & The standard deviation of the x coordinate of configured tiles \\
+	$$\sigma_y$$ & The standard deviation of the y coordinate of configured tiles
+\end{conditions}
+\normalsize
+Equations~\ref{eqn:xAverage} and~\ref{eqn:yAverage} are used to create a rating known as the \gls{positionMedian} in Equation~\ref{eqn:positionMedian}.
+The \gls{positionMedian} value provides a simple descriptor for where in the gate array the design is centralized.
+The \gls{scatterScore} in Equation~\ref{eqn:scatterScore} describes how spread out or, \textit{clustered} the design is.
+
+\noindent\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:positionMedian}
+	M_{xy} = (a_x,~a_y)
+	\end{equation}
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+	\begin{equation} \label{eqn:scatterScore}
+	S_{xy} = (\sigma_x,~\sigma_y)
+	\end{equation}
+\end{minipage}
+\ConditionSize
+
+where:
+\begin{conditions}
+	$$M_{xy}$$     &  The \gls{positionMedian} \\   
+	$$S_{xy}$$     &  The \gls{scatterScore}
+\end{conditions}
+\normalsize
+
+The results of the component mapping method described in section~\ref{fig:frameTileMap} are used to generate the set of all tiles reconfigured by the trojan.
+The set of reconfigured tiles can be said to contain three subsets: the subset of tiles activated by the trojan, those deactivated and those modified. 
+The results of the golden design analysis, the subsets, and the numeric descriptors can be used to discern which of the \textit{Physical Location} attributes the trojan possesses. 
+The \textit{Physical Location} category contains six attributes.
+These six can be considered three pairs; a trojan exhibits one attribute from each pair. 
+\begin{enumerate}
+	\item \textbf{Large or Small} (attributes 23 or 24): According to~\cite{samerAttribute}, small trojans are defined as those that are nearly impossible to detect via power consumption. From this it can be said that 'small' trojans occupy minimal resources. Trojans where the number of reconfigured tiles is less than 5\% of the number of tiles in the golden design are considered small. Other wise they are attributed as large.
+	\item \textbf{Changed Layout or Augmented} (attributes 25 or 26): A 'changed layout' trojan is such that only tiles that are configured by the golden design are reconfigured. An augmented trojan is where additional layout is added. The presence of 'activated' or 'deactivated' tiles indicates an augmented trojan. 
+	\item \textbf{Clustered or Distributed} (attributes 27 or 28): The trojan is considered to be clustered when the standard deviation of the reconfigured tile positions is less than 15\%; distributed otherwise.
+\end{enumerate}
+\subsubsection{Insertion and Abstraction Attributes}
+The linear nature of the manufacturing life-cycle implies a propagation of effects.
+For the purposes of this method it is assumed that the only non-trustworthy stage in the life-cycle is fabrication.
+In other words, the trojan was inserted in the third-party fabrication stage.
+Due to the propagating nature of the life-cycle the effects of the modifications made in the fabrication stage (attribute 3) are felt in the testing (attribute 4) and assembly (attribute 5) stages.
+Hence, it can be said that this trojan possesses insertion category attributes 3, 4 and 5.
+\acrshort{FPGA} designs are made with a \acrshort{HDL}.
+These languages dictate component arrangement in the \acrfull{RTL} abstraction level.
+Hence it can be said that trojans occurring in \acrshort{FPGAs} take place in the System (attribute 6) and \acrshort{RTL} (attribute 7).
+  
+\subsubsection{Relation Matrix Use} \label{sec:matrixUse}
+Attributes which are not directly observable can be inferred using a systematic method of analyzing the rows and columns of the relation matrix presented in~\cite{samerAttribute}.
+The \NameNoPeriod takes the attributes it is able to directly observe and uses them as input to this process.
+A thorough description of this method is given in~\cite{samerDissertation} and~\cite{meCategorization}.
 
 \section{Conclusion}
 The conclusion goes here.
@@ -667,42 +754,7 @@ The conclusion goes here.
 
 The authors would like to thank...
 
-
-
-
-
-% trigger a \newpage just before the given reference
-% number - used to balance the columns on the last page
-% adjust value as needed - may need to be readjusted if
-% the document is modified later
-%\IEEEtriggeratref{8}
-% The "triggered" command can be changed if desired:
-%\IEEEtriggercmd{\enlargethispage{-5in}}
-
-% references section
-
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
-
-\bibitem{xilinxVirtex5_UG191}
-\Xilinx,
-``Virtex-5 FPGA Configuration User Guide,"
-Version 3.11, Oct. 2012.
-
-\end{thebibliography}
-
-% that's all folks
+\printbibliography
 \end{document}
 
 

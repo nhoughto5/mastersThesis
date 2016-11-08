@@ -1,0 +1,169 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{searchForTrojanWar}{book}{}
+    \name{author}{1}{}{%
+      {{hash=WM}{%
+         family={Wood},
+         familyi={W\bibinitperiod},
+         given={Michael},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {The British Broadcasting Corporation}%
+    }
+    \strng{namehash}{WM1}
+    \strng{fullhash}{WM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{edition}{1}
+    \field{isbn}{978-0-520-21599-3}
+    \field{title}{"In search of the Trojan war}
+    \field{year}{1998}
+  \endentry
+
+  \entry{samerAttribute}{inproceedings}{}
+    \name{author}{5}{}{%
+      {{hash=MS}{%
+         family={Moein},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Khan},
+         familyi={K\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GTA}{%
+         family={Gulliver},
+         familyi={G\bibinitperiod},
+         given={T.\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gebali},
+         familyi={G\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=EKMW}{%
+         family={El-Kharashi},
+         familyi={E\bibinitperiod-K\bibinitperiod},
+         given={M.\bibnamedelima W.},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{integrated circuit manufacture;invasive software;attribute based
+  classification;chip production life-cycle;comprehensive attribute
+  taxonomy;hardware trojans;semiconductor chip;trojan
+  insertion;Fabrication;Hardware;Integrated
+  circuits;Production;Taxonomy;Testing;Trojan horses}
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSKSGTAGFEKMW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Computer Engineering Systems (ICCES), 2015 Tenth
+  International Conference on}
+    \verb{doi}
+    \verb 10.1109/ICCES.2015.7393074
+    \endverb
+    \field{pages}{351\bibrangedash 356}
+    \field{title}{An attribute based classification of hardware trojans}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{virtex5ConfigGuide}{manual}{}
+    \list{organization}{1}{%
+      {Xilinx}%
+    }
+    \field{labeltitlesource}{title}
+    \field{edition}{v3.11}
+    \field{title}{Virtex-5 FPGA Configuration User Guide}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{samerDissertation}{thesis}{}
+    \name{author}{1}{}{%
+      {{hash=MS}{%
+         family={Moein},
+         familyi={M\bibinitperiod},
+         given={Samer},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS1}
+    \strng{fullhash}{MS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Systematic Analysis and Methodologies for Hardware Security}
+    \list{location}{1}{%
+      {3800 Finnerty Rd, Victoria, BC, Canada V8P 5C2}%
+    }
+    \list{institution}{1}{%
+      {University of Victoria}%
+    }
+    \field{type}{phdthesis}
+    \field{month}{08}
+    \field{year}{2015}
+  \endentry
+
+  \entry{meCategorization}{article}{}
+    \name{author}{4}{}{%
+      {{hash=HN}{%
+         family={Houghton},
+         familyi={H\bibinitperiod},
+         given={N.},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={Moein},
+         familyi={M\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=GF}{%
+         family={Gebali},
+         familyi={G\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GTA}{%
+         family={Gulliver},
+         familyi={G\bibinitperiod},
+         given={T.\bibnamedelima A.},
+         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HN+1}
+    \strng{fullhash}{HNMSGFGTA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{2}
+    \field{title}{An Automated Web Tool for Hardware Trojan Classification}
+    \field{journaltitle}{ESC'16}
+    \field{month}{07}
+    \field{year}{2015}
+  \endentry
+\endsortlist
+\endinput
