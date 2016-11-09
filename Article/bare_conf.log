@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  8 NOV 2016 08:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  8 NOV 2016 19:28
 entering extended mode
 **bare_conf.tex
 (bare_conf.tex
@@ -1157,6 +1157,11 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'virtex5ConfigGuide':
 (biblatex)                - Invalid format of field 'month'.
 
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'iscas85':
+(biblatex)                - Invalid format of field 'month'.
+
 )
 Package biblatex Info: Reference section=0 on input line 89.
 Package biblatex Info: Reference segment=0 on input line 89.
@@ -1203,11 +1208,11 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 File: ../Thesis/Figures/Concept.png Graphic file (type png)
 
 <use ../Thesis/Figures/Concept.png>
-Package pdftex.def Info: ../Thesis/Figures/Concept.png used on input line 466.
+Package pdftex.def Info: ../Thesis/Figures/Concept.png used on input line 476.
 (pdftex.def)             Requested size: 253.04987pt x 114.27963pt.
 
 
-LaTeX Warning: Reference `sec:XDL' on page 1 undefined on input line 475.
+LaTeX Warning: Reference `sec:XDL' on page 1 undefined on input line 485.
 
 
 <../Thesis/Figures/methodologyOverview.png, id=2, 2522.42375pt x 1769.61125pt>
@@ -1215,7 +1220,7 @@ File: ../Thesis/Figures/methodologyOverview.png Graphic file (type png)
 
 <use ../Thesis/Figures/methodologyOverview.png>
 Package pdftex.def Info: ../Thesis/Figures/methodologyOverview.png used on inpu
-t line 480.
+t line 490.
 (pdftex.def)             Requested size: 253.04987pt x 177.51154pt.
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
@@ -1226,28 +1231,22 @@ t line 480.
 
  <../Thesis/Figures/Concept.png>]
 
-LaTeX Warning: Reference `fig:FPGA' on page 2 undefined on input line 496.
+LaTeX Warning: Reference `fig:FPGA' on page 2 undefined on input line 506.
 
 <../Thesis/Figures/RowOrder.png, id=13, 1167.36125pt x 1129.21875pt>
 File: ../Thesis/Figures/RowOrder.png Graphic file (type png)
 
 <use ../Thesis/Figures/RowOrder.png>
-Package pdftex.def Info: ../Thesis/Figures/RowOrder.png used on input line 529.
+Package pdftex.def Info: ../Thesis/Figures/RowOrder.png used on input line 539.
 
 (pdftex.def)             Requested size: 177.13412pt x 171.33977pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 LaTeX Warning: Reference `sec:architectureAndConfig' on page 2 undefined on inp
-ut line 568.
+ut line 578.
 
 
-LaTeX Warning: Reference `fig:FPGA' on page 2 undefined on input line 574.
+LaTeX Warning: Reference `fig:FPGA' on page 2 undefined on input line 584.
 
 [2 <../Thesis/Figures/methodologyOverview.png> <../Thesis/Figures/RowOrder.png>
 ] <../Thesis/Figures/frameTileMap.png, id=19, 536.0025pt x 492.33937pt>
@@ -1255,9 +1254,32 @@ File: ../Thesis/Figures/frameTileMap.png Graphic file (type png)
 
 <use ../Thesis/Figures/frameTileMap.png>
 Package pdftex.def Info: ../Thesis/Figures/frameTileMap.png used on input line 
-585.
+595.
 (pdftex.def)             Requested size: 227.74333pt x 209.1851pt.
- [3 <../Thesis/Figures/frameTileMap.png>]
+ [3 <../Thesis/Figures/frameTileMap.png>] [4] <../Thesis/Figures/circuit1.png, 
+id=35, 477.785pt x 349.305pt>
+File: ../Thesis/Figures/circuit1.png Graphic file (type png)
+
+<use ../Thesis/Figures/circuit1.png>
+Package pdftex.def Info: ../Thesis/Figures/circuit1.png used on input line 773.
+
+(pdftex.def)             Requested size: 177.13412pt x 129.50198pt.
+
+<../Thesis/Figures/circuit2.jpg, id=36, 543.53062pt x 402.75468pt>
+File: ../Thesis/Figures/circuit2.jpg Graphic file (type jpg)
+
+<use ../Thesis/Figures/circuit2.jpg>
+Package pdftex.def Info: ../Thesis/Figures/circuit2.jpg used on input line 779.
+
+(pdftex.def)             Requested size: 177.13412pt x 131.2563pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <../Thesis/Figures/circuit1.png> <../Thesis/Figures/circuit2.jpg>]
+Underfull \vbox (badness 1292) has occurred while \output is active []
+
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1269,20 +1291,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (bare_conf.aux)
+[6] (bare_conf.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'bare_conf.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 29109 strings out of 493698
- 535732 string characters out of 3144415
- 908780 words of memory out of 3000000
- 32125 multiletter control sequences out of 15000+200000
+ 29129 strings out of 493698
+ 536784 string characters out of 3144415
+ 910780 words of memory out of 3000000
+ 32142 multiletter control sequences out of 15000+200000
  42919 words of font info for 90 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 53i,11n,92p,10381b,1572s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,13n,92p,10381b,1584s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fon
@@ -1290,15 +1312,16 @@ ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (4 pages, 358032 bytes).
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
+tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on bare_conf.pdf (6 pages, 474314 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
