@@ -19,48 +19,40 @@
 \@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}}
 \@writefile{toc}{\contentsline {section}{\numberline {II}Methodology}{1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces FPGA Life-Cycle}}{1}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:Concept}{{1}{1}}
 \citation{virtex5ConfigGuide}
 \abx@aux@cite{virtex5ConfigGuide}
 \abx@aux@segm{0}{0}{virtex5ConfigGuide}
 \citation{virtex5ConfigGuide}
 \abx@aux@segm{0}{0}{virtex5ConfigGuide}
-\citation{virtex5ConfigGuide}
-\abx@aux@segm{0}{0}{virtex5ConfigGuide}
-\citation{virtex5ConfigGuide}
-\abx@aux@segm{0}{0}{virtex5ConfigGuide}
-\citation{virtex5ConfigGuide}
-\abx@aux@segm{0}{0}{virtex5ConfigGuide}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Methodology Overview}}{2}}
 \newlabel{fig:methodologyOverview}{{2}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-A}}The \acrshort {FPGA} \gls {Bitstream} Analysis}{2}}
-\newlabel{sec:fpgaBitStream}{{\unhbox \voidb@x \hbox {II-A}}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}\gls {Bitstream} and User Design Analysis}{2}}
+\newlabel{sec:fpgaBitStream}{{III}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-A}}Component Mapping}{2}}
+\newlabel{sec:tileMapping}{{\unhbox \voidb@x \hbox {III-A}}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Row Order of Virtex-5 Clock Region}}{2}}
 \newlabel{fig:RowOrder}{{3}{2}}
-\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Number of Frames (minor addresses) per Column\nobreakspace  {}\cite {virtex5ConfigGuide}\relax }}{2}}
-\newlabel{tbl:minorAddressNumbers}{{II}{2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-B}}Component Mapping}{2}}
-\newlabel{sec:tileMapping}{{\unhbox \voidb@x \hbox {II-B}}{2}}
-\citation{virtex5ConfigGuide}
-\abx@aux@segm{0}{0}{virtex5ConfigGuide}
-\citation{virtex5ConfigGuide}
-\abx@aux@segm{0}{0}{virtex5ConfigGuide}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Frame Address\relax }}{2}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tbl:frameAddress}{{I}{2}}
 \citation{samerAttribute}
 \abx@aux@segm{0}{0}{samerAttribute}
 \citation{samerAttribute}
 \abx@aux@segm{0}{0}{samerAttribute}
-\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Frame Address\relax }}{3}}
-\newlabel{tbl:frameAddress}{{I}{3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-B}1}Frame to Column Mapping}{3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-B}2}Word to Block Mapping}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Configuration Words in the Bitstream\nobreakspace  {}\cite {virtex5ConfigGuide}}}{3}}
-\newlabel{fig:frameTileMap}{{4}{3}}
 \newlabel{eqn:numWordsPerBlock}{{1}{3}}
 \newlabel{eqn:getTileNumber}{{2}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {II-C}}Determining Trojan Attributes}{3}}
-\newlabel{sec:trojanAttributes}{{\unhbox \voidb@x \hbox {II-C}}{3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-C}1}Observed Location Attributes}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {III-B}}Design Analysis}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Determining Trojan Attributes}{3}}
+\newlabel{sec:trojanAttributes}{{IV}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Observed Location Attributes}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}Scatter Score Method}{3}}
+\newlabel{sec:scatterScore}{{\unhbox \voidb@x \hbox {IV-B}}{3}}
+\newlabel{eqn:numConfiguredTiles}{{3}{3}}
+\newlabel{eqn:xAverage}{{4}{3}}
+\newlabel{eqn:yAverage}{{5}{3}}
+\newlabel{eqn:stdDevX}{{6}{3}}
+\newlabel{eqn:stdDevY}{{7}{3}}
 \citation{samerAttribute}
 \abx@aux@segm{0}{0}{samerAttribute}
 \citation{samerAttribute}
@@ -74,41 +66,35 @@
 \citation{iscas85}
 \abx@aux@cite{iscas85}
 \abx@aux@segm{0}{0}{iscas85}
-\newlabel{sec:scatterScore}{{\unhbox \voidb@x \hbox {II-C}2}{4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-C}2}Scatter Score Method}{4}}
-\newlabel{eqn:numConfiguredTiles}{{3}{4}}
-\newlabel{eqn:xAverage}{{4}{4}}
-\newlabel{eqn:yAverage}{{5}{4}}
-\newlabel{eqn:stdDevX}{{6}{4}}
-\newlabel{eqn:stdDevY}{{7}{4}}
+\citation{samerAttribute}
+\abx@aux@segm{0}{0}{samerAttribute}
+\citation{samerAttribute}
+\abx@aux@segm{0}{0}{samerAttribute}
 \newlabel{eqn:positionMedian}{{8}{4}}
 \newlabel{eqn:scatterScore}{{9}{4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-C}3}Insertion and Abstraction Attributes}{4}}
-\newlabel{sec:matrixUse}{{\unhbox \voidb@x \hbox {II-C}4}{4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {\unhbox \voidb@x \hbox {II-C}4}Relation Matrix Use}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {III}\acrshort {FPGA} Trojan Detector}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {IV}Results}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-A}}Priority Decoder}{4}}
-\newlabel{sec:priorityDecoder}{{\unhbox \voidb@x \hbox {IV-A}}{4}}
-\citation{samerAttribute}
-\abx@aux@segm{0}{0}{samerAttribute}
-\citation{samerAttribute}
-\abx@aux@segm{0}{0}{samerAttribute}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-B}}User Authentication Circuit}{5}}
-\newlabel{sec:userAuthentication}{{\unhbox \voidb@x \hbox {IV-B}}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces A Simple User Authentication Circuit\relax }}{5}}
-\newlabel{fig:userAuthenticationCircuit}{{5}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The Back-door Trojan\relax }}{5}}
-\newlabel{fig:userAuthenticationCircuitTrojan}{{6}{5}}
-\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Outputs of the Circuits in Figs.\nobreakspace  {}5\hbox {} and 6\hbox {}\nobreakspace  {}\cite {samerAttribute}\relax }}{5}}
-\newlabel{tbl:trojanOutputs}{{III}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}Insertion and Abstraction Attributes}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-D}}Relation Matrix Use}{4}}
+\newlabel{sec:matrixUse}{{\unhbox \voidb@x \hbox {IV-D}}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {V}\acrshort {FPGA} Trojan Detector}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Results}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-A}}Priority Decoder}{4}}
+\newlabel{sec:priorityDecoder}{{\unhbox \voidb@x \hbox {VI-A}}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-B}}User Authentication Circuit}{4}}
+\newlabel{sec:userAuthentication}{{\unhbox \voidb@x \hbox {VI-B}}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces A Simple User Authentication Circuit\relax }}{4}}
+\newlabel{fig:userAuthenticationCircuit}{{4}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The Back-door Trojan\relax }}{5}}
+\newlabel{fig:userAuthenticationCircuitTrojan}{{5}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Outputs of the Circuits in Figs.\nobreakspace  {}4\hbox {} and 5\hbox {}\nobreakspace  {}\cite {samerAttribute}\relax }}{5}}
+\newlabel{tbl:trojanOutputs}{{II}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {VI-C}}AES-T100}{5}}
+\newlabel{sec:aesT100}{{\unhbox \voidb@x \hbox {VI-C}}{5}}
 \abx@aux@refcontextdefaultsdone
 \abx@aux@defaultrefcontext{0}{searchForTrojanWar}{none/global/}
 \abx@aux@defaultrefcontext{0}{samerAttribute}{none/global/}
 \abx@aux@defaultrefcontext{0}{virtex5ConfigGuide}{none/global/}
+\abx@aux@defaultrefcontext{0}{xdlTutorial}{none/global/}
 \abx@aux@defaultrefcontext{0}{samerDissertation}{none/global/}
 \abx@aux@defaultrefcontext{0}{meCategorization}{none/global/}
 \abx@aux@defaultrefcontext{0}{iscas85}{none/global/}
-\@writefile{toc}{\contentsline {subsection}{\numberline {\unhbox \voidb@x \hbox {IV-C}}AES-T100}{6}}
-\newlabel{sec:aesT100}{{\unhbox \voidb@x \hbox {IV-C}}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {V}Conclusion}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {VII}Conclusion}{6}}

@@ -103,6 +103,44 @@
     \warn{\item Invalid format of field 'month'}
   \endentry
 
+  \entry{xdlTutorial}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=BC}{%
+         family={Beckhoff},
+         familyi={B\bibinitperiod},
+         given={C.},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Koch},
+         familyi={K\bibinitperiod},
+         given={D.},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Torresen},
+         familyi={T\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \keyw{field programmable gate arrays;hardware description languages;FPGA
+  primitives;XDL;Xilinx design language;routing fabric}
+    \strng{namehash}{BCKDTJ1}
+    \strng{fullhash}{BCKDTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Reconfigurable Communication-centric Systems-on-Chip
+  (ReCoSoC), 2011 6th International Workshop on}
+    \verb{doi}
+    \verb 10.1109/ReCoSoC.2011.5981545
+    \endverb
+    \field{pages}{1\bibrangedash 8}
+    \field{title}{The Xilinx Design Language (XDL): Tutorial and use cases}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
   \entry{samerDissertation}{thesis}{}
     \name{author}{1}{}{%
       {{hash=MS}{%
