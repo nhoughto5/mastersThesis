@@ -346,6 +346,7 @@ The contributions of this paper are:
 \end{enumerate}
 
 The remainder of this paper is organized as follows.
+Section~\ref{sec:background} provides some useful background on the trojan taxonomy used by the new method, and on \acrshort{FPGA}s architecture.
 Section~\ref{sec:methodolgy} describes the overall process of the new trojan detection technique.
 Section~\ref{sec:fpgaBitStream} describes the analysis procedure used by the new method.
 Section~\ref{sec:trojanAttributes} presents how the analysis results of Section~\ref{sec:fpgaBitStream} are used to generate a comprehensive description of a discovered trojan.
@@ -354,125 +355,130 @@ Section~\ref{sec:results} presents three case studies using benchmark designs co
 Finally, Section~\ref{sec:conclusion} provides some concluding remarks.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Background}
-%\subsection{Taxonomy}
-%The discussion, detection and evaluation of hardware trojans requires a comprehensive means of description.
-%Several hardware trojan taxonomies have been proposed~\cite{taxonomy1, taxonomy2, taxonomy3, taxonomy4}.
-%An additional taxonomy was proposed in~\cite{samerAttribute} which considers all attributes a hardware trojan may posses.
-%This taxonomy is the most comprehensive and was selected as the means of description for this work.
-%This taxonomy is comprised of thirty-three attributes organized into eight categories as shown in Fig.~\ref{fig:HW_trojan}.
-%These categories can be arranged into four levels as shown in Fig.~\ref{fig:trojan_life_cycle}.
-%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{figure*}[]
-%	\centering
-%	\includegraphics[width=0.7\linewidth]{../Thesis/Figures/HW_trojan}
-%	\caption{The hardware trojan attribute taxonomy \cite{samerAttribute}.}
-%	\label{fig:HW_trojan}
-%\end{figure*}
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\begin{enumerate}
-%	\item The \textbf{insertion} (chip life-cycle) level comprises the attributes pertaining to the IC production stages.
-%	\item The \textbf{abstraction} level corresponds to where in the IC abstraction the trojan is introduced.
-%	\item The \textbf{properties} level comprises the behavior and physical characteristics of the trojan.
-%	It contains the taxonomy categories \textit{effect}, \textit{logic type}, \textit{functionality}, \textit{activation} and \textit{layout}.
-%	\item The \textbf{location} level corresponds to the location of the trojan in the IC.
-%\end{enumerate}
-%\begin{figure}[]
-%	\centering
-%	\includegraphics[width=0.99\linewidth]{../Thesis/Figures/trojan_life_cycle}
-%	\caption{Hardware trojan life-cycle levels \cite{samerAttribute}.}
-%	\label{fig:trojan_life_cycle}
-%\end{figure}
-%The properties level has the following categories.
-%\begin{itemize}
-%	\item The \textbf{effect} category describes the disruption or effect a trojan has on the system.
-%	\item The \textbf{logic type} category describes the circuit logic that triggers the trojan, either combinational logic or sequential.
-%	\item The \textbf{functionality} category differentiates between trojans which are functional or parametric.
-%	\item The \textbf{activation} category differentiates between trojans which are always on or are triggered.
-%	\item The \textbf{layout} category is based on the physical characteristics of the trojan.
-%\end{itemize}
-%The relationships between the trojan attributes shown in Fig.~\ref{fig:HW_trojan} can be described using a matrix $\mathbf{R}$~\cite{samerAttribute}.
-%Entry $r(i,j)$ in $\mathbf{R}$ indicates whether or not attribute $i$ can lead to attribute $j$.
-%For example, $r(2,3) = 1$ indicates that design (attribute 2) can lead to fabrication (attribute 3).
-%This implies that if an IC can be compromised during the design phase (attribute 2), it may influence the fabrication phase (attribute 3).
-%
-%The matrix $\mathbf{R}$ is divided into sub matrices as follows
-%\[
-%\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
-%\mathbf{R} =\left[
-%\scalemath{1.1}{
-%	\begin{array}{l*{3}{c}}
-%	\mathbf{R_1} ~ & ~ \mathbf{R_{12}} ~ & ~ 0 ~  &  ~ 0   \\
-%	0         & \mathbf{R_2}      &\mathbf{R_{23}}       & ~ 0 \\
-%	0          & 0           & \mathbf{R_3}          & ~ \mathbf{R_{34}} \\
-%	0          & 0           & 0                & ~ \mathbf{R_4} \\
-%	\end{array}
-%}
-%\right]
-%\label{R}
-%\]
-%where $\mathbf{R_1}$, $\mathbf{R_2}$, $\mathbf{R_3}$ and $\mathbf{R_4}$ indicate the attribute relationships within a category.
-%For example, $\mathbf{R_1}$ is given by
-%\[
-%\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
-%\mathbf{R_1} =\left[
-%\scalemath{1.0}{
-%	\begin{array}{l|*{11}{c}}
-%	A & 1$~$ & 2$~$  & 3$~$ & 4$~$& 5$~$\\ \hline
-%	1 & 0 & 1 & 0 & 0 & 0  \\
-%	2 & 0 & 0 & 1 & 0 & 0  \\
-%	3 & 0 & 0 & 0 & 1 & 0  \\
-%	4 & 0 & 0 & 0 & 0 & 1  \\
-%	5 & 0 & 0 & 0 & 0 & 0  \\
-%	\end{array}
-%}
-%\right ]
-%\label{R1}
-%\]
-%Submatrix $\mathbf{R_{12}}$ relates the attributes of the insertion category to the attributes of the abstraction category.
-%An example of this submatrix is
-%\[
-%\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
-%\mathbf{R_{12}} =\left[
-%\scalemath{1.0}{
-%	\begin{array}{l|*{11}{c}}
-%	A & 6$~$  & 7$~$ & 8$~$ & 9$~$ & 10  & 11\\ \hline
-%	1  & 1 & 0 & 0 & 0 & 0 & 0 \\
-%	2  & 0 & 1 & 0 & 0 & 0 & 0 \\
-%	3  & 0 & 0 & 0 & 0 & 0 & 1 \\
-%	4  & 1 & 0 & 0 & 1 & 0 & 0 \\
-%	5  & 1 & 0 & 0 & 0 & 0 & 0 \\
-%	\end{array}
-%}
-%\right ]
-%\label{R12}
-%\]
-%
+\section{Background} \label{sec:background}
+\subsection{Taxonomy} \label{sec:taxonomy}
+The discussion, detection and evaluation of hardware trojans requires a comprehensive means of description.
+Several hardware trojan taxonomies have been proposed~\cite{taxonomy1, taxonomy2, taxonomy3, taxonomy4}.
+An additional taxonomy was proposed in~\cite{samerAttribute} which considers all attributes a hardware trojan may posses.
+This taxonomy is the most comprehensive and was selected as the means of description for this work.
+This taxonomy is comprised of thirty-three attributes organized into eight categories as shown in Fig.~\ref{fig:HW_trojan}.
+These categories can be arranged into four levels as shown in Fig.~\ref{fig:trojan_life_cycle}.
+%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../Thesis/Figures/HW_trojan}
+	\caption{The hardware trojan attribute taxonomy \cite{samerAttribute}.}
+	\label{fig:HW_trojan}
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{enumerate}
+	\item The \textbf{insertion} (chip life-cycle) level comprises the attributes pertaining to the IC production stages.
+	\item The \textbf{abstraction} level corresponds to where in the IC abstraction the trojan is introduced.
+	\item The \textbf{properties} level comprises the behavior and physical characteristics of the trojan.
+	It contains the taxonomy categories \textit{effect}, \textit{logic type}, \textit{functionality}, \textit{activation} and \textit{layout}.
+	\item The \textbf{location} level corresponds to the location of the trojan in the IC.
+\end{enumerate}
+\begin{figure}[]
+	\centering
+	\includegraphics[width=0.99\linewidth]{../Thesis/Figures/trojan_life_cycle}
+	\caption{Hardware trojan life-cycle levels \cite{samerAttribute}.}
+	\label{fig:trojan_life_cycle}
+\end{figure}
+The properties level has the following categories.
+\begin{itemize}
+	\item The \textbf{effect} category describes the disruption or effect a trojan has on the system.
+	\item The \textbf{logic type} category describes the circuit logic that triggers the trojan, either combinational logic or sequential.
+	\item The \textbf{functionality} category differentiates between trojans which are functional or parametric.
+	\item The \textbf{activation} category differentiates between trojans which are always on or are triggered.
+	\item The \textbf{layout} category is based on the physical characteristics of the trojan.
+\end{itemize}
+The relationships between the trojan attributes shown in Fig.~\ref{fig:HW_trojan} can be described using a matrix $\mathbf{R}$~\cite{samerAttribute}.
+Entry $r(i,j)$ in $\mathbf{R}$ indicates whether or not attribute $i$ can lead to attribute $j$.
+For example, $r(2,3) = 1$ indicates that design (attribute 2) can lead to fabrication (attribute 3).
+This implies that if an IC can be compromised during the design phase (attribute 2), it may influence the fabrication phase (attribute 3).
+
+The matrix $\mathbf{R}$ is divided into sub matrices as follows
+\[
+\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+\mathbf{R} =\left[
+\scalemath{1.1}{
+	\begin{array}{l*{3}{c}}
+	\mathbf{R_1} ~ & ~ \mathbf{R_{12}} ~ & ~ 0 ~  &  ~ 0   \\
+	0         & \mathbf{R_2}      &\mathbf{R_{23}}       & ~ 0 \\
+	0          & 0           & \mathbf{R_3}          & ~ \mathbf{R_{34}} \\
+	0          & 0           & 0                & ~ \mathbf{R_4} \\
+	\end{array}
+}
+\right]
+\label{R}
+\]
+where $\mathbf{R_1}$, $\mathbf{R_2}$, $\mathbf{R_3}$ and $\mathbf{R_4}$ indicate the attribute relationships within a category.
+For example, $\mathbf{R_1}$ is given by
+\[
+\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+\mathbf{R_1} =\left[
+\scalemath{1.0}{
+	\begin{array}{l|*{11}{c}}
+	A & 1$~$ & 2$~$  & 3$~$ & 4$~$& 5$~$\\ \hline
+	1 & 0 & 1 & 0 & 0 & 0  \\
+	2 & 0 & 0 & 1 & 0 & 0  \\
+	3 & 0 & 0 & 0 & 1 & 0  \\
+	4 & 0 & 0 & 0 & 0 & 1  \\
+	5 & 0 & 0 & 0 & 0 & 0  \\
+	\end{array}
+}
+\right ]
+\label{R1}
+\]
+Submatrix $\mathbf{R_{12}}$ relates the attributes of the insertion category to the attributes of the abstraction category.
+An example of this submatrix is
+\[
+\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+\mathbf{R_{12}} =\left[
+\scalemath{1.0}{
+	\begin{array}{l|*{11}{c}}
+	A & 6$~$  & 7$~$ & 8$~$ & 9$~$ & 10  & 11\\ \hline
+	1  & 1 & 0 & 0 & 0 & 0 & 0 \\
+	2  & 0 & 1 & 0 & 0 & 0 & 0 \\
+	3  & 0 & 0 & 0 & 0 & 0 & 1 \\
+	4  & 1 & 0 & 0 & 1 & 0 & 0 \\
+	5  & 1 & 0 & 0 & 0 & 0 & 0 \\
+	\end{array}
+}
+\right ]
+\label{R12}
+\]
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\subsection{\acrlong{FPGAs}}
-%An \acrfull{IC} belongs to one of two categories.
-%An \acrfull{ASIC} or a \acrfull{FPGA}.
-%An \acrshort{ASIC} is manufactured once and is immutable; its hardware is permanently printed into its silicon.
-%\acrshort{FPGA}s are reconfigurable because they are comprised of an array of \acrfull{PLDs}.
-%A \acrshort{PLD} is a component whose functionality is dependent on a set of configuration options; in other words, a user can define how it behaves.
-%Each \acrshort{PLD} receives configuration instructions from the user that defines its functionality; these instructions are in the form of a binary message.
-%In \Xilinx terminology a \acrshort{PLD} is referred to as a tile. 
-%A single \acrshort{FPGA} can contain hundreds, or even thousands of tiles; a device is usually made up of over a hundred different types.
-%Different types are used for different functions, such as \acrfull{IO}, Logic, Memory...etc.
-%The set of messages sent to all of the tiles in the device from the user is referred to as the configuration \gls{Bitstream}.
-%\acrshort{FPGA} users create designs using a programming language referred to as a \acrfull{HDL}.
-%The design is then compiled and synthesized into the \gls{Bitstream} which is then downloaded or "configured" onto the device.
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=1\linewidth]{../Thesis/Figures/FPGA}
-%	\caption[Rudimentary Layout of a Virtex \acrshort{FPGA}]{Rudimentary Layout of a Virtex \acrshort{FPGA}}
-%	\label{fig:FPGA}
-%\end{figure}
-%A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Fig.~\ref{fig:FPGA}~\cite{xilnxDevManual}.
-%A device can contain anywhere from a couple hundred to a few thousand blocks and are arranged into columns by type.
-%Columns are separated into regions shown by the dashed lines in Fig.~\ref{fig:FPGA}.
-%These regions each use a separate clock mechanism and are referred to as 'Clock Regions'.
-%
+\subsection{\acrlong{FPGAs}}
+An \acrfull{IC} belongs to one of two categories.
+An \acrfull{ASIC} or a \acrfull{FPGA}.
+An \acrshort{ASIC} is manufactured once and is immutable; its hardware is permanently printed into its silicon.
+\acrshort{FPGA} users create designs using a programming language referred to as a \acrfull{HDL}.
+The design is then compiled and synthesized into the \gls{Bitstream} which is then downloaded or "configured" onto the device.
+
+\acrshort{FPGA}s are reconfigurable because they are comprised of an array of \acrfull{PLDs}.
+A \acrshort{PLD} is a component whose functionality is dependent on a set of configuration options; in other words, a user can define how it behaves.
+Each \acrshort{PLD} receives configuration instructions from the user that defines its functionality; these instructions are in the form of a binary message.
+In \Xilinx terminology a \acrshort{PLD} is referred to as a tile. 
+A single \acrshort{FPGA} can contain hundreds, or even thousands of tiles; a device is usually made up of over a hundred different types.
+Different types are used for different functions, such as \acrfull{IO}, Logic, Memory and so on.
+A \Xilinx device is organized into a matrix of blocks referred to as the 'gate-array' as shown in Fig.~\ref{fig:FPGA}~\cite{xilnxDevManual}.
+A block is not a physical device but a conceptual grouping of tiles.
+A block will consist of one or multiple tiles depending on its type.
+A device can contain anywhere from a couple hundred to a few thousand blocks and are arranged into columns by type.
+Columns are separated into regions shown by the dashed lines in Fig.~\ref{fig:FPGA}.
+These regions each use a separate clock mechanism and are referred to as 'Clock Regions'.
+The set of messages sent to all of the tiles in the device from the user is referred to as the configuration \gls{Bitstream}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{../Thesis/Figures/FPGA}
+	\caption[Rudimentary Layout of a Virtex \acrshort{FPGA}]{Rudimentary Layout of a Virtex \acrshort{FPGA}}
+	\label{fig:FPGA}
+\end{figure}
+
+
 %The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into 'frames'.
 %A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Fig.~\ref{fig:FPGA}.
 %A frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
@@ -510,20 +516,6 @@ Finally, Section~\ref{sec:conclusion} provides some concluding remarks.
 %For all blocks, except the \acrshort{CLB} and the clock column, frames numbered 26 and 27 access the Interface for that column. 
 %All other frames are specific to that block~\cite{virtex5ConfigGuide}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table*}[b]
-	\centering
-	\caption{Frame Address}
-	\label{tbl:frameAddress}
-	\resizebox{\textwidth}{!}{
-		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-			\hline
-			\multicolumn{8}{|c|}{Unused} & \multicolumn{3}{c|}{BA} & T & \multicolumn{5}{c|}{Row Address} & \multicolumn{8}{c|}{Major Address} & \multicolumn{7}{c|}{Minor Address} \\ \hline
-			31 & 30 & 29 & 28 & 27 & 26 & 25 & 24 & 23 & 22 & 21 & 20 & 19 & 18 & 17 & 16 & 15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\ \hline
-			0 & 0 & 0 & 0 & 0 & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-		\end{tabular}		
-	}
-\end{table*}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methodology} \label{sec:methodolgy}
@@ -538,11 +530,21 @@ The method of automated trojan detection described in this work would take place
 	\label{fig:Concept}
 \end{figure}
 Fig.~\ref{fig:methodologyOverview} shows an overview of the trojan detection methodology.
-As mentioned, \acrshort{FPGA} designs are written in a \acrfull{HDL}.
+As mentioned, \acrshort{FPGA} designs are written in \acrshort{HDL}.
 \Xilinx provides a series of \acrfull{UI} and command line tools to process the \acrshort{HDL} known as the 'tool-chain'.
 The tool chain generates a series of files that are used for a variety of purposes as shown in the 'Resultant Files' box in Fig.~\ref{fig:methodologyOverview}.
-The NGC file is a non-human readable semantic description of the design known as a netlist.
-This file can be converted into a human-readable version known as a \acrfull{XDL} file which will be used to relate any discovered modifications to the user's design.
+This includes but is not limited to:
+\begin{itemize}
+	\item Bit: the configuration \gls{Bitstream}
+	\item \acrshort{XDL}: \acrfull{XDL}
+	\item NGC: a non-human readable semantic description of the design known as a netlist
+	\item RDB: the readback data text file
+	\item MSD: a mask file used to hide unwanted data during the a readback procedure
+	\item log: a log file which collects compiler output.
+\end{itemize}
+The majority of these files are used for specific purposes that do not pertain to the new hardware trojan detection method.
+The netlist (NGC) file, however, contains a thorough description of the user's design and how it relates to the device.
+It can be converted into a human-readable version known as a \acrfull{XDL} file which will be used to relate any discovered modifications to the user's design.
 The Bit file is the binary representation of the design implementation.
 It is referred to as the \gls{Bitstream} or 'configuration' \gls{Bitstream} and is the final form that is loaded into the \acrshort{FPGA}.
 \begin{figure}
@@ -562,6 +564,7 @@ Finally, the resultant taxonomic description is built and returned to the user.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\gls{Bitstream} and User Design Analysis} \label{sec:fpgaBitStream}
+\subsection{\gls{Bitstream} Composition} \label{sec:bitstreamComposition}
 An \acrshort{FPGA} is composed of a matrix of blocks referred to as the gate-array.
 Blocks perform functions specified by the configuration they receive from the synthesis process.
 The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into 'frames'.
@@ -569,87 +572,99 @@ A frame is a string of single bits that span from the top to the bottom of a clo
 A frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
 Each frame is uniquely identified by a 32-bit address shown in Table~\ref{tbl:frameAddress} and is the smallest addressable element.
 
+%%%%%%%%%%%
+\begin{table*}[t]
+	\centering
+	\caption{\gls{Bitstream} Frame Address Structure}
+	\label{tbl:frameAddress}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\multicolumn{8}{|c|}{Unused} & \multicolumn{3}{c|}{BA} & T & \multicolumn{5}{c|}{Row Address} & \multicolumn{8}{c|}{Major Address} & \multicolumn{7}{c|}{Minor Address} \\ \hline
+			31 & 30 & 29 & 28 & 27 & 26 & 25 & 24 & 23 & 22 & 21 & 20 & 19 & 18 & 17 & 16 & 15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\ \hline
+			0 & 0 & 0 & 0 & 0 & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\end{tabular}		
+	}
+\end{table*}
 
+\begin{itemize}
+	\item BA 0: Logic type.
+	\item BA 1: \acrfull{BRAM}.
+	\item BA 2: \acrshort{BRAM} Interconnect.
+	\item BA 3: \acrshort{BRAM} non-configuration frame.
+\end{itemize}
 
-%\begin{itemize}
-%	\item BA 0: Logic type.
-%	\item BA 1: \acrfull{BRAM}.
-%	\item BA 2: \acrshort{BRAM} Interconnect.
-%	\item BA 3: \acrshort{BRAM} non-configuration frame.
-%\end{itemize}
+The \acrfull{BA} discerns whether the block type is a logic block, a memory block or memory interconnect.
+The Logic block (BA: 0) contains the columns which provide the primary configuration for the device (\acrshort{CLBs}, \acrshort{IOBs}... etc).
+The \acrshort{BRAM} columns (BA: 1) initialize the memory for the device while the \acrshort{BRAM} Interconnect columns (BA: 2) configure how the logic of the design interacts with the \acrshort{BRAM}.
 
+In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Fig.~\ref{fig:RowOrder}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{../Thesis/Figures/RowOrder}
+	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
+	\label{fig:RowOrder}
+\end{figure}
 
+Each clock region is given a row value in its address that increments away from the center of the device starting at 0. 
+The frame address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the center of the device~\cite{virtex5ConfigGuide}.
+The major address specifies the column within the row.
+These addresses are numbered from left to right and begin at 0.
+The minor address indicates the frame number within a column. 
+Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column type.
 
-%The \acrfull{BA} discerns whether the block type is a logic block, a memory block or memory interconnect.
-%The Logic block (BA: 0) contains the columns which provide the primary configuration for the device (\acrshort{CLBs}, \acrshort{IOBs}... etc).
-%The \acrshort{BRAM} columns (BA: 1) initialize the memory for the device while the \acrshort{BRAM} Interconnect columns (BA: 2) configure how the logic of the design interacts with the \acrshort{BRAM}.
+\begin{table}[h]
+	\centering
+	\caption{Number of Frames (minor addresses) per Column~\cite{virtex5ConfigGuide}}
+	\label{tbl:minorAddressNumbers}
+	\begin{tabular}{|c|c|}
+		\hline
+		Block             & Number Of Frames \\ \hline
+		CLB               & 36               \\ \hline
+		DSP               & 28               \\ \hline
+		\acrshort{BRAM}   & 30               \\ \hline
+		IOB               & 54               \\ \hline
+		Clock             & 4                \\ \hline
+	\end{tabular}
+\end{table}
 
-%In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Fig.~\ref{fig:RowOrder}.
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=.7\linewidth]{../Thesis/Figures/RowOrder}
-%	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
-%	\label{fig:RowOrder}
-%\end{figure}
+In the \Xilinx jargon, a tile is a conceptual encapsulation of components in the gate-array which perform a specific task.
+A block may contain multiple tiles.
+A Logic (BA: 0) column of blocks may be one of many types.
+As an example, in a \acrfull{CLB} column, each block consists of an interconnect tile (also known as a \acrfull{SM}) on the left, and a \acrshort{CLB} tile on the right, as shown in Fig~\ref{fig:column}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{../Thesis/Figures/column}
+	\caption[Column Composition]{Column Composition}
+	\label{fig:column}
+\end{figure}
 
-
-
-%Each clock region is given a row value in its address that increments away from the center of the device starting at 0. 
-%The frame address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the center of the device~\cite{virtex5ConfigGuide}.
-%The major address specifies the column within the row.
-%These addresses are numbered from left to right and begin at 0.
-%The minor address indicates the frame number within a column. 
-
-
-
-%Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column type.
-%\begin{table}[h!]
-%	\centering
-%	\caption{Number of Frames (minor addresses) per Column~\cite{virtex5ConfigGuide}}
-%	\label{tbl:minorAddressNumbers}
-%	\begin{tabular}{|c|c|}
-%		\hline
-%		Block             & Number Of Frames \\ \hline
-%		CLB               & 36               \\ \hline
-%		DSP               & 28               \\ \hline
-%		\acrshort{BRAM}   & 30               \\ \hline
-%		IOB               & 54               \\ \hline
-%		Clock             & 4                \\ \hline
-%	\end{tabular}
-%\end{table}
-
-%In the \Xilinx jargon, a tile is a conceptual encapsulation of components in the gate-array which perform a specific task.
-%A block may contain multiple tiles.
-%A Logic (BA: 0) column of blocks may be one of many types.
-%As an example, in a \acrfull{CLB} column, each block consists of an interconnect tile (also known as a \acrfull{SM}) and a \acrshort{CLB} tile.
-%The Frames which configure a column are numbered from left to right, starting with 0.  
-%For the \acrfull{CLB} column, frames with a minor address of 0 to 25 configure the interconnect (\acrshort{SM}) tile.
-%Frames numbered 26 and 27 access the Interface for that column. 
-%The remainder configure the \acrshort{CLB} tile~\cite{virtex5ConfigGuide}.
-%To further understand how frames configure tiles a mapping must be made between each frame and the corresponding tile.
-%When analyzing the \gls{golden} and \gls{target} \gls{Bitstream}s, by understanding how frames configure the blocks of the gate-array, the address of any modified frames can point to exactly which tile has been affected.
-%A process know as 'Component Mapping' has been developed. 
+The Frames which configure a column are numbered from left to right, starting with 0.  
+For the \acrfull{CLB} column, frames with a minor address of 0 to 25 configure the interconnect (\acrshort{SM}) tile.
+Frames numbered 26 and 27 access the Interface for that column. 
+The remainder configure the \acrshort{CLB} tile~\cite{virtex5ConfigGuide}.
+To further understand how frames configure tiles a mapping must be made between each frame and the corresponding tile.
+When analyzing the \gls{golden} and \gls{target} \gls{Bitstream}s, by understanding how frames configure the blocks of the gate-array, the address of any modified frames can point to exactly which tile has been affected.
+A process know as 'Component Mapping' has been developed. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Component Mapping} \label{sec:tileMapping}
-The \NameNoPeriod employs a method referred to as Component Mapping to create a link between each word in a configuration frame and the component on the device that it configures.
-This information is not publicly released by \Xilinx as a means of providing security through obscurity.
+The format of the configuration \gls{Bitstream} describes the link between each word in a configuration frame and the component on the device that it configures. This information is not publicly released by \Xilinx as a means of providing security through obscurity.
+The \NameNoPeriod employs a method referred to as Component Mapping to create a discern which how any discovered modifications affect the device.
 
 %\subsubsection{Frame to Column Mapping}
 When powered-on the \gls{Bitstream} is transmitted in frame address order to populate the dynamic memory in the tiles of the gate-array.
 The frame addressing scheme describes where in the gate-array the frame is destined fairly directly.
-
-
-The \acrfull{BA} value discerns whether the column type is a logic block column (BA: 0), a \acrfull{BRAM} column (BA: 1), or a memory interconnect block (BA: 2).
+As described in section~\ref{sec:bitstreamComposition}, the \acrfull{BA} value discerns whether the column type is a logic block column (BA: 0), a \acrfull{BRAM} column (BA: 1), or a memory interconnect block (BA: 2).
 Frames with a \acrshort{BA} value of 1 are clearly destined to configure the \acrshort{BRAM} and do not need further analysis for the purposes of this method.
 Frames with a \acrshort{BA} value of 0 or 2 must be mapped more finitely.
-The row address specifies which row of clock-regions the frame is destined, as seen in Fig.~\ref{fig:RowOrder}.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=.85\linewidth]{../Thesis/Figures/RowOrder}
-	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
-	\label{fig:RowOrder}
-\end{figure}
+The row address specifies which row of clock-regions the frame is destined, as was seen in Fig.~\ref{fig:RowOrder}.
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=.85\linewidth]{../Thesis/Figures/RowOrder}
+%	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
+%	\label{fig:RowOrder}
+%\end{figure}
 As an example the Virtex-5 240T has 12 rows~\cite{virtex5ConfigGuide}; its row address spans from 0-5 and the Top bit in the address indicates whether it is in the top or bottom half of the device in accordance with Fig.~\ref{fig:RowOrder}.
 Once the correct clock region is discerned the major address is used to determine which column the frame configures.
 The major address begins at 0 on the left and counts up towards the number of columns in the row.
@@ -664,18 +679,20 @@ Frames with a minor address from 0 to 25 configure the interconnect (\acrshort{S
 Frames numbered 26 and 27 access the interface tile and the remainder configure the \acrshort{CLB} tile~\cite{virtex5ConfigGuide}.
 
 A frame is composed of 41 words that can be thought of as a vertical stack that aligns within a column.
-A column consists of a stack of blocks; there are 20 blocks per \acrshort{CLB} column, 40 per \acrshort{IOB} column, 4 per \acrshort{BRAM}...etc for Virtex-5 devices.
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=0.9\linewidth]{../Thesis/Figures/frameTileMap}
-%	\caption[Configuration Words in the Bitstream~\cite{virtex5ConfigGuide}]{Configuration Words in the Bitstream~\cite{virtex5ConfigGuide}}
-%	\label{fig:frameTileMap}
-%\end{figure}
-Equation~\ref{eqn:numWordsPerBlock} can be used to compute the number of 32-bit words that span each block.
+A column consists of a stack of blocks; there are 20 blocks per \acrshort{CLB} column, 40 per \acrshort{IOB} column, 4 per \acrshort{BRAM} and so on.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{../Thesis/Figures/frameTileMap}
+	\caption[Configuration Words in the Bitstream~\cite{virtex5ConfigGuide}]{Configuration Words in the Bitstream~\cite{virtex5ConfigGuide}}
+	\label{fig:frameTileMap}
+\end{figure}
+
+To compute which word corresponds to which component a series of equations has been developed.
+First, Equation~\ref{eqn:numWordsPerBlock} is used to compute the number of 32-bit words that span each block.
 \begin{equation} \label{eqn:numWordsPerBlock}
 n = (W - C) + B
 \end{equation}
-\ConditionSize
+%\ConditionSize
 where:
 \begin{conditions}
 	n     &  Number of Words per Block \\
@@ -683,23 +700,26 @@ where:
 	C     &  Number of clock words per frame \\
 	B     &  Number of blocks per column
 \end{conditions}
-\normalsize
-The 32-bit Words are addressed from the 'top' of a device down.
-Equation~\ref{eqn:getTileNumber} can be used to map a particular word in a frame to a block in the column.
+%\normalsize
+When a modified word is discovered it must be determined which component in the column it configures.
+The 32-bit Words are addressed from the 'top' of a column down while blocks are numbered from the bottom of a column, beginning at zero.
+The result of Equation~\ref{eqn:numWordsPerBlock} and the modified word's number can be used in Equation~\ref{eqn:getTileNumber} to determine the block number within the column.
 \begin{equation} \label{eqn:getTileNumber}
 i = B - \floor*{\frac{w}{n}}
 \end{equation}
-\ConditionSize
+%\ConditionSize
 where:
 \begin{conditions}
-	i     &  Word Number in frame\\
+	i     &  Block number in column\\
 	B     &  Number of blocks per column \\
-	w     &  Word number \\
+	w     &  Modified Word's number in the frame\\
 	n     &  Number of Words per Block 
 \end{conditions}
-\normalsize
-By using equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber}  and knowing how the minor address relates to the column it is possible to link any modifications in the \gls{Bitstream} to its corresponding tile in the device.
-\subsection{Design Analysis}
+%\normalsize
+By using equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber} and knowing how the minor address relates to the column it is possible to link any modifications in the \gls{Bitstream} to its corresponding tile in the device.
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Design Analysis}
 
 \section{Determining Trojan Attributes} \label{sec:trojanAttributes}
 The complexity of \acrlong{IC} designs and their corresponding trojans requires a more human-friendly scope.
@@ -708,6 +728,8 @@ Though it is desirable to be able to observe and directly extract the attributes
 In~\cite{samerAttribute} a matrix, $\mathbf{R}$, is provided which describes the relationships between each of the thirty-three attributes in the taxonomy.
 When it is not possible to directly determine the presence of certain attributes, this relation matrix is used to infer their existence.
 The analysis stage of the automated trojan detection technique provided by this work begins by extracting those attributes that are directly observable then using matrix $\mathbf{R}$ to infer the existence of the remainder. 
+
+%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Observed Location Attributes}
 The presence of attributes in the \textit{Location} category are directly observable from the results of the component mapping method described in section~\ref{sec:tileMapping}.
 \Xilinx tiles conform to purpose-specific groups or block types which were discussed in section~\ref{sec:fpgaBitStream}.
@@ -719,6 +741,8 @@ These block types contain sub-types that perform actions which pertain to the \t
 	\item The \textbf{Power Supply} attribute can be awarded for the presence of modified interface or configuration tiles.
 	\item The \textbf{Clock Grid} attribute can be awarded for modified clock tiles.
 \end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Scatter Score Method} \label{sec:scatterScore}
 The gate-array configuration of components in \Xilinx \acrshort{FPGA}s allows for an analytical method of determining attributes in the \textit{Physical Layout} category.
 The "Scatter Score" method uses the grid coordinates of components to derive a numerical score rating for the size, position, and augmentation of configured tiles.

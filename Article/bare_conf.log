@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  21 NOV 2016 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  22 NOV 2016 07:50
 entering extended mode
 **bare_conf.tex
 (bare_conf.tex
@@ -1169,6 +1169,31 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'taxonomy1':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'taxonomy2':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'taxonomy3':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'taxonomy4':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'xilnxDevManual':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'virtex5ConfigGuide':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -1237,56 +1262,103 @@ Missing character: There is no ù in font ptmr7t!
 
 
 ]
-<../Thesis/Figures/Concept.png, id=10, 560.0925pt x 252.945pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 367.
+
+<../Thesis/Figures/HW_trojan.png, id=10, 561.5379pt x 347.6187pt>
+File: ../Thesis/Figures/HW_trojan.png Graphic file (type png)
+
+<use ../Thesis/Figures/HW_trojan.png>
+Package pdftex.def Info: ../Thesis/Figures/HW_trojan.png used on input line 369
+.
+(pdftex.def)             Requested size: 366.86821pt x 227.10579pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 381.
+
+<../Thesis/Figures/trojan_life_cycle.png, id=12, 364.9635pt x 164.0529pt>
+File: ../Thesis/Figures/trojan_life_cycle.png Graphic file (type png)
+
+<use ../Thesis/Figures/trojan_life_cycle.png>
+Package pdftex.def Info: ../Thesis/Figures/trojan_life_cycle.png used on input 
+line 383.
+(pdftex.def)             Requested size: 250.52075pt x 112.61086pt.
+ [2 <../Thesis/Figures/trojan_life_cycle.png>] <../Thesis/Figures/FPGA.png, id=
+22, 1957.3125pt x 978.65625pt>
+File: ../Thesis/Figures/FPGA.png Graphic file (type png)
+
+<use ../Thesis/Figures/FPGA.png>
+Package pdftex.def Info: ../Thesis/Figures/FPGA.png used on input line 476.
+(pdftex.def)             Requested size: 253.04987pt x 126.51299pt.
+
+<../Thesis/Figures/Concept.png, id=23, 560.0925pt x 252.945pt>
 File: ../Thesis/Figures/Concept.png Graphic file (type png)
 
 <use ../Thesis/Figures/Concept.png>
-Package pdftex.def Info: ../Thesis/Figures/Concept.png used on input line 536.
+Package pdftex.def Info: ../Thesis/Figures/Concept.png used on input line 528.
 (pdftex.def)             Requested size: 253.04987pt x 114.27963pt.
-
-<../Thesis/Figures/methodologyOverview.png, id=11, 2522.42375pt x 1769.61125pt>
-File: ../Thesis/Figures/methodologyOverview.png Graphic file (type png)
-<use ../Thesis/Figures/methodologyOverview.png>
-Package pdftex.def Info: ../Thesis/Figures/methodologyOverview.png used on inpu
-t line 550.
-(pdftex.def)             Requested size: 253.04987pt x 177.51154pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <../Thesis/Figures/Concept.png> <../Thesis/Figures/methodologyOverview.png>]
-<../Thesis/Figures/RowOrder.png, id=17, 1167.36125pt x 1129.21875pt>
+[3 <../Thesis/Figures/HW_trojan.png> <../Thesis/Figures/FPGA.png>]
+<../Thesis/Figures/methodologyOverview.png, id=29, 2522.42375pt x 1769.61125pt>
+File: ../Thesis/Figures/methodologyOverview.png Graphic file (type png)
+<use ../Thesis/Figures/methodologyOverview.png>
+Package pdftex.def Info: ../Thesis/Figures/methodologyOverview.png used on inpu
+t line 552.
+(pdftex.def)             Requested size: 253.04987pt x 177.51154pt.
+
+<../Thesis/Figures/RowOrder.png, id=30, 1167.36125pt x 1129.21875pt>
 File: ../Thesis/Figures/RowOrder.png Graphic file (type png)
 
 <use ../Thesis/Figures/RowOrder.png>
-Package pdftex.def Info: ../Thesis/Figures/RowOrder.png used on input line 649.
+Package pdftex.def Info: ../Thesis/Figures/RowOrder.png used on input line 604.
 
-(pdftex.def)             Requested size: 215.09392pt x 208.0579pt.
- [3 <../Thesis/Figures/RowOrder.png>]
+(pdftex.def)             Requested size: 253.04987pt x 244.77603pt.
+ [4 <../Thesis/Figures/Concept.png> <../Thesis/Figures/methodologyOverview.png>
+ <../Thesis/Figures/RowOrder.png>]
+<../Thesis/Figures/column.png, id=36, 1071.00125pt x 1204.5pt>
+File: ../Thesis/Figures/column.png Graphic file (type png)
 
-LaTeX Warning: Reference `fig:frameTileMap' on page 4 undefined on input line 7
-99.
+<use ../Thesis/Figures/column.png>
+Package pdftex.def Info: ../Thesis/Figures/column.png used on input line 637.
+(pdftex.def)             Requested size: 202.44066pt x 227.66273pt.
 
-[4] <../Thesis/Figures/circuit1.png, id=34, 477.785pt x 349.305pt>
+<../Thesis/Figures/frameTileMap.png, id=37, 536.0025pt x 492.33937pt>
+File: ../Thesis/Figures/frameTileMap.png Graphic file (type png)
+
+<use ../Thesis/Figures/frameTileMap.png>
+Package pdftex.def Info: ../Thesis/Figures/frameTileMap.png used on input line 
+685.
+(pdftex.def)             Requested size: 253.04987pt x 232.43625pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <../Thesis/Figures/column.png>] [6 <../Thesis/Figures/frameTileMap.png>]
+[7] <../Thesis/Figures/circuit1.png, id=54, 477.785pt x 349.305pt>
 File: ../Thesis/Figures/circuit1.png Graphic file (type png)
 
 <use ../Thesis/Figures/circuit1.png>
-Package pdftex.def Info: ../Thesis/Figures/circuit1.png used on input line 871.
+Package pdftex.def Info: ../Thesis/Figures/circuit1.png used on input line 895.
 
 (pdftex.def)             Requested size: 177.13412pt x 129.50198pt.
 
-<../Thesis/Figures/circuit2.jpg, id=35, 543.53062pt x 402.75468pt>
+<../Thesis/Figures/circuit2.jpg, id=55, 543.53062pt x 402.75468pt>
 File: ../Thesis/Figures/circuit2.jpg Graphic file (type jpg)
 
 <use ../Thesis/Figures/circuit2.jpg>
-Package pdftex.def Info: ../Thesis/Figures/circuit2.jpg used on input line 877.
+Package pdftex.def Info: ../Thesis/Figures/circuit2.jpg used on input line 901.
 
 (pdftex.def)             Requested size: 177.13412pt x 131.2563pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <../Thesis/Figures/circuit1.png> <../Thesis/Figures/circuit2.jpg>] [6]
+[8 <../Thesis/Figures/circuit1.png> <../Thesis/Figures/circuit2.jpg>] [9]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1298,39 +1370,37 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
+[10
 
 ] (bare_conf.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'bare_conf.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 29140 strings out of 493698
- 538637 string characters out of 3144415
+ 29191 strings out of 493698
+ 541285 string characters out of 3144415
  912780 words of memory out of 3000000
- 32154 multiletter control sequences out of 15000+200000
+ 32200 multiletter control sequences out of 15000+200000
  42919 words of font info for 90 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  53i,13n,92p,10381b,1584s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
-tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (7 pages, 434160 bytes).
+ 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on bare_conf.pdf (10 pages, 648861 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
