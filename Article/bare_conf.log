@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  10 NOV 2016 08:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  21 NOV 2016 17:58
 entering extended mode
 **bare_conf.tex
 (bare_conf.tex
@@ -1149,6 +1149,21 @@ Package biblatex Info: ... file 'bare_conf.bbl' found.
  (bare_conf.bbl
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'crcDetection':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'ringOscillatorMethod':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'multiFacetedApproach':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'samerAttribute':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -1159,7 +1174,7 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'xdlTutorial':
+(biblatex)                with 'rapidSmith':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -1208,21 +1223,12 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 242.
-
-<../Thesis/Figures/Concept.png, id=1, 560.0925pt x 252.945pt>
-File: ../Thesis/Figures/Concept.png Graphic file (type png)
-
-<use ../Thesis/Figures/Concept.png>
-Package pdftex.def Info: ../Thesis/Figures/Concept.png used on input line 489.
-(pdftex.def)             Requested size: 253.04987pt x 114.27963pt.
-
-<../Thesis/Figures/methodologyOverview.png, id=2, 2522.42375pt x 1769.61125pt>
-File: ../Thesis/Figures/methodologyOverview.png Graphic file (type png)
-
-<use ../Thesis/Figures/methodologyOverview.png>
-Package pdftex.def Info: ../Thesis/Figures/methodologyOverview.png used on inpu
-t line 503.
-(pdftex.def)             Requested size: 253.04987pt x 177.51154pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
  [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
@@ -1230,43 +1236,57 @@ t line 503.
 
 
 
- <../Thesis/Figures/Concept.png>]
-<../Thesis/Figures/RowOrder.png, id=13, 1167.36125pt x 1129.21875pt>
+]
+<../Thesis/Figures/Concept.png, id=10, 560.0925pt x 252.945pt>
+File: ../Thesis/Figures/Concept.png Graphic file (type png)
+
+<use ../Thesis/Figures/Concept.png>
+Package pdftex.def Info: ../Thesis/Figures/Concept.png used on input line 536.
+(pdftex.def)             Requested size: 253.04987pt x 114.27963pt.
+
+<../Thesis/Figures/methodologyOverview.png, id=11, 2522.42375pt x 1769.61125pt>
+File: ../Thesis/Figures/methodologyOverview.png Graphic file (type png)
+<use ../Thesis/Figures/methodologyOverview.png>
+Package pdftex.def Info: ../Thesis/Figures/methodologyOverview.png used on inpu
+t line 550.
+(pdftex.def)             Requested size: 253.04987pt x 177.51154pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <../Thesis/Figures/Concept.png> <../Thesis/Figures/methodologyOverview.png>]
+<../Thesis/Figures/RowOrder.png, id=17, 1167.36125pt x 1129.21875pt>
 File: ../Thesis/Figures/RowOrder.png Graphic file (type png)
 
 <use ../Thesis/Figures/RowOrder.png>
-Package pdftex.def Info: ../Thesis/Figures/RowOrder.png used on input line 602.
+Package pdftex.def Info: ../Thesis/Figures/RowOrder.png used on input line 649.
 
 (pdftex.def)             Requested size: 215.09392pt x 208.0579pt.
- [2 <../Thesis/Figures/methodologyOverview.png> <../Thesis/Figures/RowOrder.png
->] [3]
+ [3 <../Thesis/Figures/RowOrder.png>]
 
 LaTeX Warning: Reference `fig:frameTileMap' on page 4 undefined on input line 7
-52.
+99.
 
-<../Thesis/Figures/circuit1.png, id=31, 477.785pt x 349.305pt>
+[4] <../Thesis/Figures/circuit1.png, id=34, 477.785pt x 349.305pt>
 File: ../Thesis/Figures/circuit1.png Graphic file (type png)
 
 <use ../Thesis/Figures/circuit1.png>
-Package pdftex.def Info: ../Thesis/Figures/circuit1.png used on input line 798.
+Package pdftex.def Info: ../Thesis/Figures/circuit1.png used on input line 871.
 
 (pdftex.def)             Requested size: 177.13412pt x 129.50198pt.
 
-<../Thesis/Figures/circuit2.jpg, id=32, 543.53062pt x 402.75468pt>
+<../Thesis/Figures/circuit2.jpg, id=35, 543.53062pt x 402.75468pt>
 File: ../Thesis/Figures/circuit2.jpg Graphic file (type jpg)
 
 <use ../Thesis/Figures/circuit2.jpg>
-Package pdftex.def Info: ../Thesis/Figures/circuit2.jpg used on input line 804.
+Package pdftex.def Info: ../Thesis/Figures/circuit2.jpg used on input line 877.
 
 (pdftex.def)             Requested size: 177.13412pt x 131.2563pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <../Thesis/Figures/circuit1.png>] [5 <../Thesis/Figures/circuit2.jpg>]
+[5 <../Thesis/Figures/circuit1.png> <../Thesis/Figures/circuit2.jpg>] [6]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1278,7 +1298,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
+[7
 
 ] (bare_conf.aux)
 
@@ -1287,10 +1307,10 @@ LaTeX Warning: There were undefined references.
 Package logreq Info: Writing requests to 'bare_conf.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 29123 strings out of 493698
- 536746 string characters out of 3144415
- 910780 words of memory out of 3000000
- 32137 multiletter control sequences out of 15000+200000
+ 29140 strings out of 493698
+ 538637 string characters out of 3144415
+ 912780 words of memory out of 3000000
+ 32154 multiletter control sequences out of 15000+200000
  42919 words of font info for 90 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  53i,13n,92p,10381b,1584s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1308,9 +1328,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (6 pages, 427594 bytes).
+Output written on bare_conf.pdf (7 pages, 434160 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

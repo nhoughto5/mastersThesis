@@ -291,9 +291,46 @@ In this new arena of attack and defend those who seek to defend are far behind.
 The design is then converted to a binary file called a configuration \gls{Bitstream} which is then downloaded onto the device; this process is known as synthesizing the design.
 There have been many attempts to develop mechanisms and techniques to determine whether a malicious user has tampered with the design via test vectoring or side-channel analysis.
 As of yet there has been little effort to directly analyze the configuration \gls{Bitstream}.
+The majority of work focused on \acrshort{FPGA} trojans has employed either a means of reverse engineering, functional testing or 'side-channel' analysis.
 
-A method of extracting and analyzing the configuration \gls{Bitstream} to determine the presence of hardware trojans has been developed.
-This method is able to meaningfully read the long binary file and extract modifications.
+%%%%%%% Recent Work Start %%%%%%%%%%%
+In 2013 researchers at Cairo University proposed a method of insulating externally sourced \acrshort{IP} with \acrfull{CRC} defense modules~\cite{crcDetection}.
+According to the authors their method is capable of detecting leaked information with a 99.95\% accuracy.
+This method employs a methodology referred to as 'built-in-self-test" (BIST) where additional hardware is added to the design.
+It was designed specifically for detecting trojans that leak information; trojans which exhibit other behaviors can not be detected.
+In addition the authors report considerable detriment to power consumption and performance.
+
+Researchers at the Technological Educational Institute of Western Greece and Industrial Systems Institute/RC “Athena” jointly proposed a method of using \acrfull{ROs} as a mechanism for detecting hardware trojans~\cite{ringOscillatorMethod}.
+A \acrshort{RO} is a circuit composed of inverters formed into a loop.
+Electric current looping through the \acrshort{RO} does so at an inherent frequency.
+By configuring the circuit paths of the user's design into a \acrshort{RO} it is possible to create a 'signature'.
+This signature is an expected frequency emitted from the desired design. 
+The authors claim that modifications to the design will alter the frequency emitted by its circular configuration.
+The experimental results showed that modifications did in-fact alter the frequency enough to reliably detect modifications.
+This method can reliably detect hardware trojans but is incapable of providing any details regarding its effect.
+Further, the stipulation that the desired design must be such that it forms an oscillating ring is impractical.
+It is impossible to guarantee that all real-world designs can form an \acrshort{RO} whilst maintaining desired functionality and performance.
+
+Researchers from Iowa State University proposed a multi-faceted approach to trojan detection in \acrshort{FPGA}s~\cite{multiFacetedApproach}.
+Their method composed of three approaches:
+\begin{itemize}
+	\item Functional Testing: A means of feeding test vectors and comparing the output to expected results.
+	\item Power Analysis: Using an oscilloscope, the difference in power consumption between the desired design and the modified devices performing the same operations were recorded. Differences were used to discern the presence of a trojan.
+	\item Bitfile Analysis: The authors attempted to employ a binary file analysis library named \textit{deBit}~\cite{bitStreamToNetlist} to reverse engineer a netlist from the \gls{Bitstream}.
+\end{itemize}
+The functional testing method attempted provided reasonable results. 
+Test vectors used showed unexpected behavior; this provided only the information that a trojan was present.
+The power analysis method again provided results of moderate quality.
+With careful placement of the oscilloscope probes the authors were able to infer the physical location on the device where modifications occurred.
+This provided no information however as to the relation between the modifications and the design.
+Finally, the authors were able to only partially convert the \gls{Bitstream} to its netlist description.
+Only descriptions of the primary logic circuit elements were achieved.
+This could be used to discern some information regarding modifications discovered but is far from creating a complete description of a trojan.
+%%%%%%% Recent Work End %%%%%%%%%%%
+
+
+A new method of extracting and analyzing the configuration \gls{Bitstream} to determine the presence of hardware trojans has been developed and is presented in this work.
+This method is able to meaningfully read the long binary file which configures an \acrshort{FPGA} and extract modifications.
 Any discovered changes are located on the device using a new technique referred to as 'Component Mapping'.
 Further, these changes are then mapped to the user's original design.
 Knowing which components of the device have been modified, and the instances of the synthesized design allows for a powerful description to be built.
@@ -307,6 +344,14 @@ The contributions of this paper are:
 	\item A systematic process of detecting and analyzing hardware trojans in \acrshort{FPGAs}
 	\item A software tool which automates these new methods.
 \end{enumerate}
+
+The remainder of this paper is organized as follows.
+Section~\ref{sec:methodolgy} describes the overall process of the new trojan detection technique.
+Section~\ref{sec:fpgaBitStream} describes the analysis procedure used by the new method.
+Section~\ref{sec:trojanAttributes} presents how the analysis results of Section~\ref{sec:fpgaBitStream} are used to generate a comprehensive description of a discovered trojan.
+Section~\ref{sec:implementation} presents a software tool which demonstrates the efficacy of the new methodology.
+Section~\ref{sec:results} presents three case studies using benchmark designs containing trojans.
+Finally, Section~\ref{sec:conclusion} provides some concluding remarks.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\section{Background}
@@ -423,13 +468,13 @@ The contributions of this paper are:
 %	\caption[Rudimentary Layout of a Virtex \acrshort{FPGA}]{Rudimentary Layout of a Virtex \acrshort{FPGA}}
 %	\label{fig:FPGA}
 %\end{figure}
-%A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Figure~\ref{fig:FPGA}~\cite{xilnxDevManual}.
+%A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Fig.~\ref{fig:FPGA}~\cite{xilnxDevManual}.
 %A device can contain anywhere from a couple hundred to a few thousand blocks and are arranged into columns by type.
-%Columns are separated into regions shown by the dashed lines in Figure~\ref{fig:FPGA}.
+%Columns are separated into regions shown by the dashed lines in Fig.~\ref{fig:FPGA}.
 %These regions each use a separate clock mechanism and are referred to as 'Clock Regions'.
 %
 %The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into 'frames'.
-%A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Figure~\ref{fig:FPGA}.
+%A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Fig.~\ref{fig:FPGA}.
 %A frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
 %Each frame is uniquely identified by a 32-bit address and is the smallest addressable element.
 %\begin{figure}[h]
@@ -479,8 +524,10 @@ The contributions of this paper are:
 		\end{tabular}		
 	}
 \end{table*}
-\section{Methodology}
-Figure~\ref{fig:Concept} provides a visual representation of the use-case assumed for the purposes of this work. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Methodology} \label{sec:methodolgy}
+Fig.~\ref{fig:Concept} provides a visual representation of the use-case assumed for the purposes of this work. 
 With the exception of the fabrication process, all stages of production of an \acrshort{FPGA} implementation are assumed to have been done "in-house". 
 Any trojan discovered is inserted in the fabrication phase; all other stages are trusted.  
 The method of automated trojan detection described in this work would take place in the 'testing' phase of the life-cycle. 
@@ -490,10 +537,10 @@ The method of automated trojan detection described in this work would take place
 	\caption[FPGA Life-Cycle]{FPGA Life-Cycle}
 	\label{fig:Concept}
 \end{figure}
-Figure~\ref{fig:methodologyOverview} shows an overview of the trojan detection methodology.
+Fig.~\ref{fig:methodologyOverview} shows an overview of the trojan detection methodology.
 As mentioned, \acrshort{FPGA} designs are written in a \acrfull{HDL}.
 \Xilinx provides a series of \acrfull{UI} and command line tools to process the \acrshort{HDL} known as the 'tool-chain'.
-The tool chain generates a series of files that are used for a variety of purposes as shown in the 'Resultant Files' box in Figure~\ref{fig:methodologyOverview}.
+The tool chain generates a series of files that are used for a variety of purposes as shown in the 'Resultant Files' box in Fig.~\ref{fig:methodologyOverview}.
 The NGC file is a non-human readable semantic description of the design known as a netlist.
 This file can be converted into a human-readable version known as a \acrfull{XDL} file which will be used to relate any discovered modifications to the user's design.
 The Bit file is the binary representation of the design implementation.
@@ -537,7 +584,7 @@ Each frame is uniquely identified by a 32-bit address shown in Table~\ref{tbl:fr
 %The Logic block (BA: 0) contains the columns which provide the primary configuration for the device (\acrshort{CLBs}, \acrshort{IOBs}... etc).
 %The \acrshort{BRAM} columns (BA: 1) initialize the memory for the device while the \acrshort{BRAM} Interconnect columns (BA: 2) configure how the logic of the design interacts with the \acrshort{BRAM}.
 
-%In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Figure~\ref{fig:RowOrder}.
+%In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Fig.~\ref{fig:RowOrder}.
 %\begin{figure}[h]
 %	\centering
 %	\includegraphics[width=.7\linewidth]{../Thesis/Figures/RowOrder}
@@ -596,14 +643,14 @@ The frame addressing scheme describes where in the gate-array the frame is desti
 The \acrfull{BA} value discerns whether the column type is a logic block column (BA: 0), a \acrfull{BRAM} column (BA: 1), or a memory interconnect block (BA: 2).
 Frames with a \acrshort{BA} value of 1 are clearly destined to configure the \acrshort{BRAM} and do not need further analysis for the purposes of this method.
 Frames with a \acrshort{BA} value of 0 or 2 must be mapped more finitely.
-The row address specifies which row of clock-regions the frame is destined, as seen in Figure~\ref{fig:RowOrder}.
+The row address specifies which row of clock-regions the frame is destined, as seen in Fig.~\ref{fig:RowOrder}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=.85\linewidth]{../Thesis/Figures/RowOrder}
 	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
 	\label{fig:RowOrder}
 \end{figure}
-As an example the Virtex-5 240T has 12 rows~\cite{virtex5ConfigGuide}; its row address spans from 0-5 and the Top bit in the address indicates whether it is in the top or bottom half of the device in accordance with Figure~\ref{fig:RowOrder}.
+As an example the Virtex-5 240T has 12 rows~\cite{virtex5ConfigGuide}; its row address spans from 0-5 and the Top bit in the address indicates whether it is in the top or bottom half of the device in accordance with Fig.~\ref{fig:RowOrder}.
 Once the correct clock region is discerned the major address is used to determine which column the frame configures.
 The major address begins at 0 on the left and counts up towards the number of columns in the row.
 Finally, the minor address is used to determine which sub-column has been modified.
@@ -773,9 +820,35 @@ Hence it can be said that trojans occurring in \acrshort{FPGAs} take place in th
 Attributes which are not directly observable can be inferred using a systematic method of analyzing the rows and columns of the relation matrix presented in~\cite{samerAttribute}.
 The \NameNoPeriod takes the attributes it is able to directly observe and uses them as input to this process.
 A thorough description of this method is given in~\cite{samerDissertation} and~\cite{meCategorization}.
-\section{\Name}
-\section{Results}
-To demonstrate its potential, it has been tested using a series of benchmarks.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\Name} \label{sec:implementation}
+The \NameNoPeriod can provide manufacturers additional security that takes only minutes to complete; the analysis requires only a few button clicks.
+It was built to be a stand-alone application; it is light-weight, cross platform and does not require installation.
+\subsection{Technologies Used}
+\subsubsection{\Xilinx}
+\Xilinx is one of the two largest manufacturers of \acrshort{FPGA}s; their devices are considerably more popular than their competitors.
+\NameNoPeriod takes 
+
+\subsubsection{Java} \label{sec:java}
+\NameNoPeriod was written in Java primarily in order to interface with the \acrshort{API} known as \RapidSmith which is described in section~\ref{sec:rapidSmith}.
+However, Java additionally allows the \NameNoPeriod to be a compact, cross-platform application.
+The custodians of the Java language, Sun Microsystems, promote the slogan 'write-once, run anywhere'. 
+The Java language provides a native \acrfull{GUI} toolkit known as \SwingEnd.
+\Swing is an \acrshort{API} that is part of Oracle's Java Foundation Classes; in other words it is readily available to all users of Java.
+
+\subsubsection{\RapidSmith} \label{sec:rapidSmith}
+\RapidSmith is an \acrfull{APIs} written in Java that enables \acrfull{CAD} tool creation for \Xilinx \acrshort{FPGA}s~\cite{rapidSmith}.
+Its purpose is to be used as a rapid prototyping platform for experimentation and research.
+It was chosen as a supporting library for the \NameNoPeriod for several reasons.
+First, the code base provides a series of class structures that astutely mirror the architecture of \Xilinx devices.
+Secondly, it provides ready-made tools for extracting the configuration frames from \gls{Bitstream} files. 
+\gls{Bitstream} files are long binary sequences, without the tools provided by \RapidSmith the analysis of these files becomes an arduous task.
+Finally, and most importantly, the creators of \RapidSmith have developed a means of condensing XDLRC files into a greatly compressed format referred to as a 'database' file.
+The \NameNoPeriod requires considerable detail of an \acrshort{FPGA}'s architecture in order to accurately described the effects a trojan has on a design.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Results} \label{sec:results}
+To demonstrate its potential, \NameNoPeriod has been tested using a series of benchmarks.
 These benchmarks are included in the \NameNoPeriod application package as an example for users.
 \subsection{Priority Decoder} \label{sec:priorityDecoder}
 The \NameNoPeriod was first tested using a small 'Priority Decoder' circuit presented by F. Brglez and H. Fujiwara
@@ -907,7 +980,9 @@ The resultant \gls{Bitstream}s were analyzed and the \NameNoPeriod output the fo
 	\item Attribute 32: Power Supply
 	\item Attribute 33: Clock Grid
 \end{itemize}
-\section{Conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion} \label{sec:conclusion}
 Configuration \gls{Bitstream}s are enormous strings of binary data.
 To the human reader this information means nothing.
 To an \acrshort{FPGA}, however, this data is everything.
