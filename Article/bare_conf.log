@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  22 NOV 2016 07:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  22 NOV 2016 21:36
 entering extended mode
 **bare_conf.tex
 (bare_conf.tex
@@ -225,7 +225,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def")
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: ... file 'ieee.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count137
@@ -329,6 +329,16 @@ File: biblatex.def 2016/09/17 v3.6 biblatex compatibility (PK/JW/AB)
 \c@biburllcpenalty=\count208
 \c@smartand=\count209
 )
+Package biblatex Info: Trying to load bibliography style 'ieee'...
+Package biblatex Info: ... file 'ieee.bbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex-ieee\ieee.bbx"
+File: ieee.bbx 2016/08/31 v1.1q biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric-comp.bbx"
+File: numeric-comp.bbx 2016/09/17 v3.6 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
@@ -341,12 +351,19 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2016/09/17 v3.6 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count210
 \c@bbx:relatedtotal=\count211
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
+))))
+Package biblatex Info: Trying to load citation style 'ieee'...
+Package biblatex Info: ... file 'ieee.cbx' found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric.cbx"
-File: numeric.cbx 2016/09/17 v3.6 biblatex citation style (PK/JW/AB)
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex-ieee\ieee.cbx"
+File: ieee.cbx 2016/08/31 v1.1q biblatex citation style
+Package biblatex Info: Trying to load citation style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.cbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric-comp.cbx"
+File: numeric-comp.cbx 2016/09/17 v3.6 biblatex citation style (PK/JW/AB)
+\c@cbx@tempcnta=\count212
+\c@cbx@tempcntb=\count213
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
@@ -358,6 +375,9 @@ Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -376,7 +396,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks16
 \XKV@tempa@toks=\toks17
 )
-\XKV@depth=\count212
+\XKV@depth=\count214
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc.sty"
@@ -413,13 +433,13 @@ Package: amsbsy 1999/11/29 v1.2d
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count213
+\inf@bad=\count215
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count214
-\leftroot@=\count215
+\uproot@=\count216
+\leftroot@=\count217
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count216
-\DOTSCASE@=\count217
+\classnum@=\count218
+\DOTSCASE@=\count219
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -428,15 +448,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen119
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count218
-\c@MaxMatrixCols=\count219
+\macc@depth=\count220
+\c@MaxMatrixCols=\count221
 \dotsspace@=\muskip11
-\c@parentequation=\count220
-\dspbrk@lvl=\count221
+\c@parentequation=\count222
+\dspbrk@lvl=\count223
 \tag@help=\toks21
-\row@=\count222
-\column@=\count223
-\maxfields@=\count224
+\row@=\count224
+\column@=\count225
+\maxfields@=\count226
 \andhelp@=\toks22
 \eqnshift@=\dimen120
 \alignsep@=\dimen121
@@ -453,7 +473,7 @@ LaTeX Info: Redefining \] on input line 2666.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\substr\substr.sty"
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count225
+\c@su@anzahl=\count227
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\datatool\datatool-fp.sty"
 Package: datatool-fp 2016/01/18 v2.25 (NLCT)
@@ -464,20 +484,20 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
 Package: defpattern 1994/10/12
-\actioncount=\count226
+\actioncount=\count228
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
 Package: fp-basic 1996/05/13
-\FP@xs=\count227
-\FP@xia=\count228
-\FP@xib=\count229
-\FP@xfa=\count230
-\FP@xfb=\count231
-\FP@rega=\count232
-\FP@regb=\count233
+\FP@xs=\count229
+\FP@xia=\count230
+\FP@xib=\count231
+\FP@xfa=\count232
+\FP@xfb=\count233
 Normal \count register pool exhausted, switching to extended pool.
-\FP@regs=\count277
-\FP@times=\count278
+\FP@rega=\count277
+\FP@regb=\count278
+\FP@regs=\count279
+\FP@times=\count280
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-addons.sty"
 Package: fp-addons 1995/03/15
@@ -496,7 +516,7 @@ Package: fp-pas 1994/08/29
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
 Package: fp-random 1995/02/23
-\FPseed=\count279
+\FPseed=\count281
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
 Package: fp-eqn 1995/04/03
@@ -508,20 +528,20 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks25
-\@dtl@tmpcount=\count280
+\@dtl@tmpcount=\count282
 \dtl@tmplength=\skip61
-\dtl@sortresult=\count281
-\@dtl@numgrpsepcount=\count282
-\@dtl@datatype=\count283
-\dtl@codeA=\count284
-\dtl@codeB=\count285
-\@dtl@foreach@level=\count286
+\dtl@sortresult=\count283
+\@dtl@numgrpsepcount=\count284
+\@dtl@datatype=\count285
+\dtl@codeA=\count286
+\dtl@codeB=\count287
+\@dtl@foreach@level=\count288
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\base\glossaries-compatible-3
 07.sty"
 Package: glossaries-compatible-307 2016/01/24 v4.21 (NLCT)
 )
-\gls@level=\count287
+\gls@level=\count289
 \@gls@tmpb=\toks26
 \gls@tmplen=\skip62
 \glskeylisttok=\toks27
@@ -544,16 +564,16 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTright=\skip65
 \LTpre=\skip66
 \LTpost=\skip67
-\LTchunksize=\count288
+\LTchunksize=\count290
 \LTcapwidth=\dimen126
 \LT@head=\box29
 \LT@firsthead=\box30
 \LT@foot=\box31
 \LT@lastfoot=\box32
-\LT@cols=\count289
-\LT@rows=\count290
-\c@LT@tables=\count291
-\c@LT@chunks=\count292
+\LT@cols=\count291
+\LT@rows=\count292
+\c@LT@tables=\count293
+\c@LT@chunks=\count294
 \LT@p@ftn=\toks31
 )
 \glsdescwidth=\skip68
@@ -564,7 +584,7 @@ Package: glossary-super 2016/01/24 v4.21 (NLCT)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count293
+\c@tracingst=\count295
 \ST@wd=\dimen127
 \ST@rightskip=\skip70
 \ST@leftskip=\skip71
@@ -604,15 +624,15 @@ Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count294
-\calc@Bcount=\count295
+\calc@Acount=\count296
+\calc@Bcount=\count297
 \calc@Adimen=\dimen142
 \calc@Bdimen=\dimen143
 \calc@Askip=\skip77
 \calc@Bskip=\skip78
 LaTeX Info: Redefining \setlength on input line 75.
 LaTeX Info: Redefining \addtolength on input line 76.
-\calc@Ccount=\count296
+\calc@Ccount=\count298
 \calc@Cskip=\skip79
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
@@ -620,7 +640,7 @@ Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count297
+\g_MT_multlinerow_int=\count299
 \l_MT_multwidth_dim=\dimen144
 \origjot=\skip80
 \l_MT_shortvdotswithinadjustabove_dim=\dimen145
@@ -632,14 +652,14 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
 Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
-\c@tracingmulticols=\count298
+\c@tracingmulticols=\count300
 \mult@box=\box34
 \multicol@leftmargin=\dimen151
-\c@unbalance=\count299
-\c@collectmore=\count300
-\doublecol@number=\count301
-\multicoltolerance=\count302
-\multicolpretolerance=\count303
+\c@unbalance=\count301
+\c@collectmore=\count302
+\doublecol@number=\count303
+\multicoltolerance=\count304
+\multicolpretolerance=\count305
 \full@width=\dimen152
 \page@free=\dimen153
 \premulticols=\dimen154
@@ -670,37 +690,37 @@ Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
 \@tempa=\box55
 \@tempa=\box56
 \@tempa=\box57
-\c@columnbadness=\count304
-\c@finalcolumnbadness=\count305
+\c@columnbadness=\count306
+\c@finalcolumnbadness=\count307
 \last@try=\dimen157
 \multicolovershoot=\dimen158
 \multicolundershoot=\dimen159
 \mult@nat@firstbox=\box58
 \colbreak@box=\box59
-\mc@col@check@num=\count306
+\mc@col@check@num=\count308
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\threeparttable\threeparttable.sty"
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box60
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count307
+\lst@mode=\count309
 \lst@gtempboxa=\box61
 \lst@token=\toks33
-\lst@length=\count308
+\lst@length=\count310
 \lst@currlwidth=\dimen160
-\lst@column=\count309
-\lst@pos=\count310
+\lst@column=\count311
+\lst@pos=\count312
 \lst@lostspace=\dimen161
 \lst@width=\dimen162
-\lst@newlines=\count311
-\lst@lineno=\count312
+\lst@newlines=\count313
+\lst@lineno=\count314
 \lst@maxwidth=\dimen163
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count313
-\lst@skipnumbers=\count314
+\c@lstnumber=\count315
+\lst@skipnumbers=\count316
 \lst@framebox=\box62
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
@@ -718,7 +738,7 @@ Package color Info: Driver file: pdftex.def on input line 137.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count315
+\Gread@gobject=\count317
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
@@ -767,7 +787,7 @@ hsize \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}~~ }\parbox [t]{
 SSOPTIONconference \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \h
 fil }\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi
  \fi \fi .
-\c@ContinuedFloat=\count316
+\c@ContinuedFloat=\count318
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
@@ -778,8 +798,8 @@ Package caption Info: threeparttable package is loaded.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
 Package: subcaption 2015/09/15 v1.1-100 Sub-captions (AR)
-\c@subfigure=\count317
-\c@subtable=\count318
+\c@subfigure=\count319
+\c@subtable=\count320
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
@@ -795,24 +815,24 @@ L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
 L3 Module: l3str 2015/09/20 v6021 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2015/09/25 v6089 L3 Integers
-\c_max_int=\count319
-\l_tmpa_int=\count320
-\l_tmpb_int=\count321
-\g_tmpa_int=\count322
-\g_tmpb_int=\count323
+\c_max_int=\count321
+\l_tmpa_int=\count322
+\l_tmpb_int=\count323
+\g_tmpa_int=\count324
+\g_tmpb_int=\count325
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count324
+\g__prg_map_int=\count326
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2015/09/28 v6114 L3 Experimental token manipulation
 L3 Module: l3prop 2015/08/05 v5777 L3 Property lists
 L3 Module: l3msg 2015/09/28 v6113 L3 Messages
 L3 Module: l3file 2015/09/23 v6037 L3 File and I/O operations
-\l_iow_line_count_int=\count325
-\l__iow_target_count_int=\count326
-\l__iow_current_line_int=\count327
-\l__iow_current_word_int=\count328
-\l__iow_current_indentation_int=\count329
+\l_iow_line_count_int=\count327
+\l__iow_target_count_int=\count328
+\l__iow_current_line_int=\count329
+\l__iow_current_word_int=\count330
+\l__iow_current_indentation_int=\count331
 L3 Module: l3skip 2015/09/25 v6089 L3 Dimensions and skips
 \c_zero_dim=\dimen173
 \c_max_dim=\dimen174
@@ -833,18 +853,18 @@ L3 Module: l3skip 2015/09/25 v6089 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/09/23 v6037 L3 Key-value interfaces
-\g__keyval_level_int=\count330
-\l_keys_choice_int=\count331
+\g__keyval_level_int=\count332
+\l_keys_choice_int=\count333
 L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
-\c__fp_leading_shift_int=\count332
-\c__fp_middle_shift_int=\count333
-\c__fp_trailing_shift_int=\count334
-\c__fp_big_leading_shift_int=\count335
-\c__fp_big_middle_shift_int=\count336
-\c__fp_big_trailing_shift_int=\count337
-\c__fp_Bigg_leading_shift_int=\count338
-\c__fp_Bigg_middle_shift_int=\count339
-\c__fp_Bigg_trailing_shift_int=\count340
+\c__fp_leading_shift_int=\count334
+\c__fp_middle_shift_int=\count335
+\c__fp_trailing_shift_int=\count336
+\c__fp_big_leading_shift_int=\count337
+\c__fp_big_middle_shift_int=\count338
+\c__fp_big_trailing_shift_int=\count339
+\c__fp_Bigg_leading_shift_int=\count340
+\c__fp_Bigg_middle_shift_int=\count341
+\c__fp_Bigg_trailing_shift_int=\count342
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box63
 \l_tmpa_box=\box64
@@ -898,15 +918,15 @@ File: l3unicode-data.def 2015/07/20 v5676 L3 Unicode data
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def"
 File: l3pdfmode.def 2015/09/10 v5983 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count341
+\l__driver_color_stack_int=\count343
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
 Package: xparse 2015/11/04 v6224 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count342
-\l__xparse_m_args_int=\count343
-\l__xparse_mandatory_args_int=\count344
-\l__xparse_processor_int=\count345
-\l__xparse_v_nesting_int=\count346
+\l__xparse_current_arg_int=\count344
+\l__xparse_m_args_int=\count345
+\l__xparse_mandatory_args_int=\count346
+\l__xparse_processor_int=\count347
+\l__xparse_v_nesting_int=\count348
 )
 Package: siunitx 2015/10/15 v2.6m A comprehensive (SI) units package
 
@@ -915,27 +935,27 @@ Package: l3keys2e 2015/11/04 v6224 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box78
 \l__siunitx_tmp_dim=\dimen258
-\l__siunitx_tmp_int=\count347
-\l__siunitx_number_mantissa_length_int=\count348
-\l__siunitx_number_uncert_length_int=\count349
-\l__siunitx_round_int=\count350
-\l__siunitx_process_decimal_int=\count351
-\l__siunitx_process_uncertainty_int=\count352
-\l__siunitx_process_fixed_int=\count353
-\l__siunitx_process_integer_min_int=\count354
-\l__siunitx_process_precision_int=\count355
-\l__siunitx_group_min_int=\count356
+\l__siunitx_tmp_int=\count349
+\l__siunitx_number_mantissa_length_int=\count350
+\l__siunitx_number_uncert_length_int=\count351
+\l__siunitx_round_int=\count352
+\l__siunitx_process_decimal_int=\count353
+\l__siunitx_process_uncertainty_int=\count354
+\l__siunitx_process_fixed_int=\count355
+\l__siunitx_process_integer_min_int=\count356
+\l__siunitx_process_precision_int=\count357
+\l__siunitx_group_min_int=\count358
 \l__siunitx_angle_marker_box=\box79
 \l__siunitx_angle_unit_box=\box80
 \l__siunitx_angle_marker_dim=\dimen259
 \l__siunitx_angle_unit_dim=\dimen260
-\l__siunitx_unit_int=\count357
-\l__siunitx_unit_denominator_int=\count358
-\l__siunitx_unit_numerator_int=\count359
-\l__siunitx_unit_prefix_int=\count360
-\l__siunitx_unit_prefix_base_int=\count361
-\l__siunitx_unit_prefix_gram_int=\count362
-\l__siunitx_number_product_int=\count363
+\l__siunitx_unit_int=\count359
+\l__siunitx_unit_denominator_int=\count360
+\l__siunitx_unit_numerator_int=\count361
+\l__siunitx_unit_prefix_int=\count362
+\l__siunitx_unit_prefix_base_int=\count363
+\l__siunitx_unit_prefix_gram_int=\count364
+\l__siunitx_number_product_int=\count365
 \c__siunitx_one_fill_skip=\skip89
 \l__siunitx_table_unit_align_skip=\skip90
 \l__siunitx_table_exponent_dim=\dimen261
@@ -1082,12 +1102,12 @@ age-mappings.tex")))
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.sty"
 Package: csquotes 2016/07/14 v5.1h context-sensitive quotations (JAW)
-\csq@reset=\count364
-\csq@gtype=\count365
-\csq@glevel=\count366
-\csq@qlevel=\count367
-\csq@maxlvl=\count368
-\csq@tshold=\count369
+\csq@reset=\count366
+\csq@gtype=\count367
+\csq@glevel=\count368
+\csq@qlevel=\count369
+\csq@maxlvl=\count370
+\csq@tshold=\count371
 \csq@ltx@everypar=\toks34
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\csquotes\csquotes.def"
@@ -1105,13 +1125,13 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen271
 \enit@toks=\toks35
 \enit@inbox=\box85
-\enitdp@description=\count370
+\enitdp@description=\count372
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\sttools\stfloats.sty"
 Package: stfloats 2016/02/08 v2.0 Improve float mechanism and baselineskip sett
 ings
-\@dblbotnum=\count371
-\c@dblbotnumber=\count372
+\@dblbotnum=\count373
+\c@dblbotnumber=\count374
 )
 \@nomenclaturefile=\write5
 
@@ -1207,24 +1227,29 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'iscas85':
 (biblatex)                - Invalid format of field 'month'.
 
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'trustHubPaper':
+(biblatex)                - Invalid format of field 'month'.
+
 )
 Package biblatex Info: Reference section=0 on input line 89.
 Package biblatex Info: Reference segment=0 on input line 89.
  (bare_conf.glsdefs)
-\c@lstlisting=\count373
+\c@lstlisting=\count375
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count374
+\scratchcounter=\count376
 \scratchdimen=\dimen272
 \scratchbox=\box86
-\nofMPsegments=\count375
-\nofMParguments=\count376
+\nofMPsegments=\count377
+\nofMParguments=\count378
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count377
+\MPscratchCnt=\count379
 \MPscratchDim=\dimen273
-\MPnumerator=\count378
-\makeMPintoPDFobject=\count379
+\MPnumerator=\count380
+\makeMPintoPDFobject=\count381
 \everyMPtoPDFconversion=\toks37
 )
 Package caption Info: Begin \AtBeginDocument code.
@@ -1237,17 +1262,17 @@ Dictionary: translator-basic-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
 File: siunitx-abbreviations.cfg 2015/10/15 v2.6m siunitx: Abbreviated units
 )
-\c__siunitx_mathsf_int=\count380
-\c__siunitx_mathtt_int=\count381
+\c__siunitx_mathsf_int=\count382
+\c__siunitx_mathtt_int=\count383
 \@gls@deffile=\write6
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 242.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 243.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 242.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 243.
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ú in font ptmr7t!
@@ -1263,102 +1288,145 @@ Missing character: There is no ù in font ptmr7t!
 
 ]
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 367.
-
-<../Thesis/Figures/HW_trojan.png, id=10, 561.5379pt x 347.6187pt>
-File: ../Thesis/Figures/HW_trojan.png Graphic file (type png)
-
-<use ../Thesis/Figures/HW_trojan.png>
-Package pdftex.def Info: ../Thesis/Figures/HW_trojan.png used on input line 369
-.
-(pdftex.def)             Requested size: 366.86821pt x 227.10579pt.
+LaTeX Warning: Reference `sec:fpgaBitStream' on page 2 undefined on input line 
+350.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 381.
+LaTeX Warning: Reference `sec:fpgaBitStream' on page 2 undefined on input line 
+351.
 
-<../Thesis/Figures/trojan_life_cycle.png, id=12, 364.9635pt x 164.0529pt>
-File: ../Thesis/Figures/trojan_life_cycle.png Graphic file (type png)
+<Figures/trojan_life_cycle.png, id=10, 364.9635pt x 164.0529pt>
+File: Figures/trojan_life_cycle.png Graphic file (type png)
 
-<use ../Thesis/Figures/trojan_life_cycle.png>
-Package pdftex.def Info: ../Thesis/Figures/trojan_life_cycle.png used on input 
-line 383.
+<use Figures/trojan_life_cycle.png>
+Package pdftex.def Info: Figures/trojan_life_cycle.png used on input line 369.
 (pdftex.def)             Requested size: 250.52075pt x 112.61086pt.
- [2 <../Thesis/Figures/trojan_life_cycle.png>] <../Thesis/Figures/FPGA.png, id=
-22, 1957.3125pt x 978.65625pt>
-File: ../Thesis/Figures/FPGA.png Graphic file (type png)
 
-<use ../Thesis/Figures/FPGA.png>
-Package pdftex.def Info: ../Thesis/Figures/FPGA.png used on input line 476.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 373.
+
+<Figures/HW_trojan.png, id=12, 561.5379pt x 347.6187pt>
+File: Figures/HW_trojan.png Graphic file (type png)
+
+<use Figures/HW_trojan.png>
+Package pdftex.def Info: Figures/HW_trojan.png used on input line 375.
+(pdftex.def)             Requested size: 366.86821pt x 227.10579pt.
+ [2 <./Figures/trojan_life_cycle.png>]
+<Figures/FPGA.png, id=22, 1957.3125pt x 978.65625pt>
+File: Figures/FPGA.png Graphic file (type png)
+ <use Figures/FPGA.png>
+Package pdftex.def Info: Figures/FPGA.png used on input line 477.
 (pdftex.def)             Requested size: 253.04987pt x 126.51299pt.
 
-<../Thesis/Figures/Concept.png, id=23, 560.0925pt x 252.945pt>
-File: ../Thesis/Figures/Concept.png Graphic file (type png)
+<Figures/Concept.png, id=23, 2107.875pt x 1016.79875pt>
+File: Figures/Concept.png Graphic file (type png)
 
-<use ../Thesis/Figures/Concept.png>
-Package pdftex.def Info: ../Thesis/Figures/Concept.png used on input line 528.
-(pdftex.def)             Requested size: 253.04987pt x 114.27963pt.
+<use Figures/Concept.png>
+Package pdftex.def Info: Figures/Concept.png used on input line 531.
+(pdftex.def)             Requested size: 253.04987pt x 122.05713pt.
+ [3 <./Figures/HW_trojan.png> <./Figures/FPGA.png> <./Figures/Concept.png>]
+<Figures/methodologyOverview.png, id=30, 2522.42375pt x 1769.61125pt>
+File: Figures/methodologyOverview.png Graphic file (type png)
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3 <../Thesis/Figures/HW_trojan.png> <../Thesis/Figures/FPGA.png>]
-<../Thesis/Figures/methodologyOverview.png, id=29, 2522.42375pt x 1769.61125pt>
-File: ../Thesis/Figures/methodologyOverview.png Graphic file (type png)
-<use ../Thesis/Figures/methodologyOverview.png>
-Package pdftex.def Info: ../Thesis/Figures/methodologyOverview.png used on inpu
-t line 552.
+<use Figures/methodologyOverview.png>
+Package pdftex.def Info: Figures/methodologyOverview.png used on input line 555
+.
 (pdftex.def)             Requested size: 253.04987pt x 177.51154pt.
 
-<../Thesis/Figures/RowOrder.png, id=30, 1167.36125pt x 1129.21875pt>
-File: ../Thesis/Figures/RowOrder.png Graphic file (type png)
 
-<use ../Thesis/Figures/RowOrder.png>
-Package pdftex.def Info: ../Thesis/Figures/RowOrder.png used on input line 604.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 604.
 
+<Figures/RowOrder.png, id=31, 1167.36125pt x 1129.21875pt>
+File: Figures/RowOrder.png Graphic file (type png)
+
+<use Figures/RowOrder.png>
+Package pdftex.def Info: Figures/RowOrder.png used on input line 606.
 (pdftex.def)             Requested size: 253.04987pt x 244.77603pt.
- [4 <../Thesis/Figures/Concept.png> <../Thesis/Figures/methodologyOverview.png>
- <../Thesis/Figures/RowOrder.png>]
-<../Thesis/Figures/column.png, id=36, 1071.00125pt x 1204.5pt>
-File: ../Thesis/Figures/column.png Graphic file (type png)
 
-<use ../Thesis/Figures/column.png>
-Package pdftex.def Info: ../Thesis/Figures/column.png used on input line 637.
+<Figures/column.png, id=32, 1071.00125pt x 1204.5pt>
+File: Figures/column.png Graphic file (type png)
+ <use Figures/column.png>
+Package pdftex.def Info: Figures/column.png used on input line 636.
 (pdftex.def)             Requested size: 202.44066pt x 227.66273pt.
-
-<../Thesis/Figures/frameTileMap.png, id=37, 536.0025pt x 492.33937pt>
-File: ../Thesis/Figures/frameTileMap.png Graphic file (type png)
-
-<use ../Thesis/Figures/frameTileMap.png>
-Package pdftex.def Info: ../Thesis/Figures/frameTileMap.png used on input line 
-685.
-(pdftex.def)             Requested size: 253.04987pt x 232.43625pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <../Thesis/Figures/column.png>] [6 <../Thesis/Figures/frameTileMap.png>]
-[7] <../Thesis/Figures/circuit1.png, id=54, 477.785pt x 349.305pt>
-File: ../Thesis/Figures/circuit1.png Graphic file (type png)
 
-<use ../Thesis/Figures/circuit1.png>
-Package pdftex.def Info: ../Thesis/Figures/circuit1.png used on input line 895.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+[4 <./Figures/methodologyOverview.png> <./Figures/RowOrder.png>]
+<Figures/frameTileMap.png, id=38, 536.0025pt x 492.33937pt>
+File: Figures/frameTileMap.png Graphic file (type png)
+
+<use Figures/frameTileMap.png>
+Package pdftex.def Info: Figures/frameTileMap.png used on input line 680.
+(pdftex.def)             Requested size: 242.92957pt x 223.13579pt.
+ [5 <./Figures/column.png> <./Figures/frameTileMap.png>] [6]
+Overfull \hbox (6.86545pt too wide) in paragraph at lines 819--825
+[] 
+ []
+
+[7] <Figures/circuit1.png, id=52, 477.785pt x 349.305pt>
+File: Figures/circuit1.png Graphic file (type png)
+
+<use Figures/circuit1.png>
+Package pdftex.def Info: Figures/circuit1.png used on input line 952.
 (pdftex.def)             Requested size: 177.13412pt x 129.50198pt.
 
-<../Thesis/Figures/circuit2.jpg, id=55, 543.53062pt x 402.75468pt>
-File: ../Thesis/Figures/circuit2.jpg Graphic file (type jpg)
+<Figures/circuit2.jpg, id=53, 543.53062pt x 402.75468pt>
+File: Figures/circuit2.jpg Graphic file (type jpg)
 
-<use ../Thesis/Figures/circuit2.jpg>
-Package pdftex.def Info: ../Thesis/Figures/circuit2.jpg used on input line 901.
-
+<use Figures/circuit2.jpg>
+Package pdftex.def Info: Figures/circuit2.jpg used on input line 958.
 (pdftex.def)             Requested size: 177.13412pt x 131.2563pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8 <../Thesis/Figures/circuit1.png> <../Thesis/Figures/circuit2.jpg>] [9]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./Figures/circuit1.png> <./Figures/circuit2.jpg>]
+<Figures/backDoorResult.png, id=58, 610.53094pt x 417.81094pt>
+File: Figures/backDoorResult.png Graphic file (type png)
+
+<use Figures/backDoorResult.png>
+Package pdftex.def Info: Figures/backDoorResult.png used on input line 997.
+(pdftex.def)             Requested size: 253.04987pt x 173.17154pt.
+
+<Figures/backDoorVisual.png, id=59, 348.55219pt x 234.1247pt>
+File: Figures/backDoorVisual.png Graphic file (type png)
+
+<use Figures/backDoorVisual.png>
+Package pdftex.def Info: Figures/backDoorVisual.png used on input line 1028.
+(pdftex.def)             Requested size: 230.27629pt x 154.67995pt.
+ [9 <./Figures/backDoorResult.png> <./Figures/backDoorVisual.png>] <Figures/aes
+Result.png, id=63, 609.02531pt x 416.30531pt>
+File: Figures/aesResult.png Graphic file (type png)
+
+<use Figures/aesResult.png>
+Package pdftex.def Info: Figures/aesResult.png used on input line 1062.
+(pdftex.def)             Requested size: 253.04987pt x 172.9731pt.
+
+<Figures/aesVisual.png, id=64, 373.395pt x 219.82124pt>
+File: Figures/aesVisual.png Graphic file (type png)
+
+<use Figures/aesVisual.png>
+Package pdftex.def Info: Figures/aesVisual.png used on input line 1100.
+(pdftex.def)             Requested size: 230.27629pt x 135.56659pt.
+ [10 <./Figures/aesResult.png> <./Figures/aesVisual.png>]
+Underfull \hbox (badness 1796) in paragraph at lines 1131--1131
+[]\OT1/ptm/m/n/10 F. Wolff, C. Pa-pachris-tou, S. Bhu-nia, and R. S.
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 1131--1131
+\OT1/ptm/m/it/10 IEEE/ACM In-ter-na-tional Con-fer-ence on Computer-
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1370,37 +1438,35 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[10
+[11] (bare_conf.aux)
 
-] (bare_conf.aux)
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'bare_conf.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 29191 strings out of 493698
- 541285 string characters out of 3144415
- 912780 words of memory out of 3000000
- 32200 multiletter control sequences out of 15000+200000
- 42919 words of font info for 90 fonts, out of 3000000 for 9000
+ 29291 strings out of 493698
+ 543801 string characters out of 3144415
+ 938552 words of memory out of 3000000
+ 32297 multiletter control sequences out of 15000+200000
+ 37982 words of font info for 75 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 53i,13n,92p,10381b,1584s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,12n,92p,10381b,1174s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on bare_conf.pdf (10 pages, 648861 bytes).
+msfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/time
+s/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on bare_conf.pdf (11 pages, 762781 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

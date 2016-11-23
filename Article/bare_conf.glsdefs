@@ -2008,6 +2008,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{HTS}{}%
+{%
+\gls@defglossaryentry{HTS}%
+{%
+name={HTS},%
+sort={HTS},%
+type={acronym},%
+first={Hardware Trojan System\glsspace (HTS)},%
+firstplural={Hardware Trojan Systems\glsspace (HTSs)},%
+text={HTS},%
+plural={HTSs},%
+description={Hardware Trojan System},%
+descriptionplural={Hardware Trojan System\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Hardware Trojan System},%
+longplural={Hardware Trojan Systems},%
+short={HTS},%
+shortplural={HTSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{log}{}%
 {%
 \gls@defglossaryentry{log}%

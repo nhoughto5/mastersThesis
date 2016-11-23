@@ -17,28 +17,6 @@
 \endgroup
 
 \sortlist[entry]{none/global/}
-  \entry{searchForTrojanWar}{book}{}
-    \name{author}{1}{}{%
-      {{hash=WM}{%
-         family={Wood},
-         familyi={W\bibinitperiod},
-         given={Michael},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {The British Broadcasting Corporation}%
-    }
-    \strng{namehash}{WM1}
-    \strng{fullhash}{WM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{edition}{1}
-    \field{isbn}{978-0-520-21599-3}
-    \field{title}{"In search of the Trojan war}
-    \field{year}{1998}
-  \endentry
-
   \entry{crcDetection}{inproceedings}{}
     \name{author}{4}{}{%
       {{hash=AAA}{%
@@ -71,7 +49,7 @@
   silicon industry business model;infected IP;multiplexing reconfigurable
   IP;security properties;Delays;Detectors;Field programmable gate
   arrays;Hardware;IP networks;Multiplexing;Trojan horses}
-    \strng{namehash}{AAA+1}
+    \strng{namehash}{AAAAYEKMW+1}
     \strng{fullhash}{AAAAYEKMWBH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -170,7 +148,7 @@
   circuit detection;bitfile direct analysis;functional testing;multifaceted
   approach;power analysis;Combinational circuits;Correlation;Field programmable
   gate arrays;Hardware;Reliability;Testing;Trojan horses}
-    \strng{namehash}{PM+1}
+    \strng{namehash}{PMMASR+1}
     \strng{fullhash}{PMMASRTJDEZJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -249,7 +227,7 @@
   taxonomy;hardware trojans;semiconductor chip;trojan
   insertion;Fabrication;Hardware;Integrated
   circuits;Production;Taxonomy;Testing;Trojan horses}
-    \strng{namehash}{MS+1}
+    \strng{namehash}{MSKSGTA+1}
     \strng{fullhash}{MSKSGTAGFEKMW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -296,7 +274,7 @@
   security;problem analysis;trojan detection;Aerospace
   electronics;Circuits;Communication industry;Costs;Hardware;Invasive
   software;Manufacturing processes;Military communication;Outsourcing;Security}
-    \strng{namehash}{WF+1}
+    \strng{namehash}{WFPCBS+1}
     \strng{fullhash}{WFPCBSCRS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -345,7 +323,7 @@
   variation;test environment variation;Calibration;Chip scale
   packaging;Fabrication;Globalization;Hardware;Power supplies;Signal
   analysis;Signal resolution;Taxonomy;Weapons}
-    \strng{namehash}{RRM+1}
+    \strng{namehash}{RRMWXTM+1}
     \strng{fullhash}{RRMWXTMPJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -392,7 +370,7 @@
     \keyw{invasive software;critical systems;hardware Trojan
   taxonomy;trustworthy hardware;Hardware;Security;Trojan horses;Design and
   test;Hardware Trojans;Hardware security and trust;Security and privacy}
-    \strng{namehash}{KR+1}
+    \strng{namehash}{KRRJRK+1}
     \strng{fullhash}{KRRJRKTM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -415,7 +393,7 @@
       {{hash=WX}{%
          family={Wang},
          familyi={W\bibinitperiod},
-         given={Xiaoxiao},
+         given={X.},
          giveni={X\bibinitperiod},
       }}%
       {{hash=TM}{%
@@ -481,7 +459,7 @@
       {{hash=MS}{%
          family={Moein},
          familyi={M\bibinitperiod},
-         given={Samer},
+         given={S.},
          giveni={S\bibinitperiod},
       }}%
     }
@@ -528,7 +506,7 @@
          giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
       }}%
     }
-    \strng{namehash}{HN+1}
+    \strng{namehash}{HNMSGF+1}
     \strng{fullhash}{HNMSGFGTA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -537,6 +515,48 @@
     \field{journaltitle}{ESC'16}
     \field{month}{07}
     \field{year}{2015}
+  \endentry
+
+  \entry{java}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=JGMS}{%
+         family={J\bibnamedelima Gosling},
+         familyi={J\bibinitperiod\bibinitdelim G\bibinitperiod},
+         given={M\bibnamedelima Sheridan},
+         giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Naughton},
+         familyi={N\bibinitperiod},
+         given={P},
+         giveni={P},
+      }}%
+    }
+    \strng{namehash}{JGMSNP1}
+    \strng{fullhash}{JGMSNP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{\url{https://www.java.com/en/}}
+    \field{title}{Java}
+    \field{year}{1996}
+  \endentry
+
+  \entry{swing}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=CNC}{%
+         family={Corporation},
+         familyi={C\bibinitperiod},
+         given={Netscape\bibnamedelima Communications},
+         giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CNC1}
+    \strng{fullhash}{CNC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+  \field{howpublished}{\url{http://docs.oracle.com/javase/7/docs/technotes/guides/swing/}}
+    \field{title}{Java Swing API}
+    \field{year}{1996}
   \endentry
 
   \entry{rapidSmith}{inproceedings}{}
@@ -583,7 +603,7 @@
   architectures;hypothetical architectures;Data structures;Databases;Design
   automation;Field programmable gate arrays;Routing;Tiles;Wires;CAD
   Tools;FPGA;Open Source;Placer;Rapid Prototyping;RapidSmith;Router;XDL;Xilinx}
-    \strng{namehash}{LC+1}
+    \strng{namehash}{LCPMLJ+1}
     \strng{fullhash}{LCPMLJLPNBHB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -641,6 +661,58 @@
     \field{title}{Combinational profiles of sequential benchmark circuits}
     \field{year}{1989}
     \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{trustHubPaper}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=SH}{%
+         family={Salmani},
+         familyi={S\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tehranipoor},
+         familyi={T\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={Karri},
+         familyi={K\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \keyw{invasive software;trusted computing;Trojan activation
+  quantification;Trojan detectability metric;Trojan detection;Trojan effect
+  quantification;Trojan prevention;design vulnerability analysis;extensive
+  functional test analysis;hardware security;production test;strength
+  analysis;trust benchmark development;vulnerability analysis flow;weakness
+  analysis;Benchmark testing;Capacitance;Delays;Hardware;Logic gates;Trojan
+  horses}
+    \strng{namehash}{SHTMKR1}
+    \strng{fullhash}{SHTMKR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{2013 IEEE 31st International Conference on Computer
+  Design (ICCD)}
+    \verb{doi}
+    \verb 10.1109/ICCD.2013.6657085
+    \endverb
+    \field{issn}{1063-6404}
+    \field{pages}{471\bibrangedash 474}
+    \field{title}{On design vulnerability analysis and trust benchmarks
+  development}
+    \field{year}{2013}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{trusthubWebsite}{misc}{}
+    \field{labeltitlesource}{title}
+    \field{howpublished}{http://trust-hub.org/}
+    \field{note}{Accessed: 2016-10-24}
+    \field{title}{Trust-Hub.org}
   \endentry
 \endsortlist
 \endinput
