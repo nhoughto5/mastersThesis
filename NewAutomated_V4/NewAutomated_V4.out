@@ -1,0 +1,28 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Hardware Trojan Taxonomy}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Field Programmable Gate-Array Organization}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Proposed Trojan Detection}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Overview}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Bitstream Analysis}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Component Mapping}{section.3}% 8
+\BOOKMARK [1][-]{section.4}{Determining Trojan Attributes}{}% 9
+\BOOKMARK [2][-]{subsection.4.1}{Observed Location Attributes}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.2}{Scatter Score Method}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Insertion and Abstraction Attributes}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.4}{Relation Matrix Use}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{FPGA Trojan Detector}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Technologies Used}{section.5}% 15
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Xilinx}{subsection.5.1}% 16
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Java}{subsection.5.1}% 17
+\BOOKMARK [3][-]{subsubsection.5.1.3}{RapidSmith}{subsection.5.1}% 18
+\BOOKMARK [1][-]{section.6}{Results}{}% 19
+\BOOKMARK [2][-]{subsection.6.1}{Priority Decoder}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.2}{User Authentication Circuit}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.3}{AES-T100}{section.6}% 22
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 23
+\BOOKMARK [1][-]{section*.18}{References}{}% 24
+\BOOKMARK [1][-]{IEEEbiography.0}{Biographies}{}% 25
+\BOOKMARK [2][-]{IEEEbiography.1}{Nicholas Houghton}{IEEEbiography.0}% 26
+\BOOKMARK [2][-]{IEEEbiography.2}{Samer Moein}{IEEEbiography.0}% 27
+\BOOKMARK [2][-]{IEEEbiography.3}{Fayez Gebali}{IEEEbiography.0}% 28
