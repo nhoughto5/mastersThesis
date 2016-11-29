@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  28 NOV 2016 19:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  28 NOV 2016 22:15
 entering extended mode
 **NewAutomated_V4.tex
 (NewAutomated_V4.tex
@@ -994,11 +994,11 @@ Package pdftex.def Info: Figures/backDoorResult.png used on input line 1110.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9 <./Figures/backDoorResult.png>]
-<Figures/backDoorVisual.png, id=333, 348.55219pt x 234.1247pt>
+<Figures/backDoorVisual.png, id=332, 348.55219pt x 234.1247pt>
 File: Figures/backDoorVisual.png Graphic file (type png)
 
 <use Figures/backDoorVisual.png>
-Package pdftex.def Info: Figures/backDoorVisual.png used on input line 1162.
+Package pdftex.def Info: Figures/backDoorVisual.png used on input line 1160.
 (pdftex.def)             Requested size: 230.27629pt x 154.67995pt.
 
 
@@ -1018,57 +1018,57 @@ File: Figures/aesVisual.png Graphic file (type png)
 Package pdftex.def Info: Figures/aesVisual.png used on input line 1234.
 (pdftex.def)             Requested size: 230.27629pt x 135.56659pt.
 
-Underfull \vbox (badness 1466) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11 <./Figures/aesResult.png> <./Figures/aesVisual.png>]
-Underfull \hbox (badness 1796) in paragraph at lines 1299--1299
+Underfull \hbox (badness 1796) in paragraph at lines 1257--1257
 []\OT1/ptm/m/n/10 F. Wolff, C. Pa-pachris-tou, S. Bhu-nia, and R. S.
  []
 
 
-Underfull \hbox (badness 1721) in paragraph at lines 1299--1299
+Underfull \hbox (badness 1721) in paragraph at lines 1257--1257
 \OT1/ptm/m/it/10 IEEE/ACM In-ter-na-tional Con-fer-ence on Computer-
  []
 
-<pic/nick.jpg, id=366, 963.6pt x 722.7pt>
+<pic/nick.jpg, id=366, 202.7575pt x 271.0125pt>
 File: pic/nick.jpg Graphic file (type jpg)
  <use pic/nick.jpg>
-Package pdftex.def Info: pic/nick.jpg used on input line 1320.
-(pdftex.def)             Requested size: 72.26688pt x 54.20015pt.
+Package pdftex.def Info: pic/nick.jpg used on input line 1257.
+(pdftex.def)             Requested size: 67.58463pt x 90.33589pt.
 File: pic/nick.jpg Graphic file (type jpg)
 
 <use pic/nick.jpg>
-Package pdftex.def Info: pic/nick.jpg used on input line 1320.
-(pdftex.def)             Requested size: 72.26688pt x 54.20015pt.
+Package pdftex.def Info: pic/nick.jpg used on input line 1257.
+(pdftex.def)             Requested size: 67.58463pt x 90.33589pt.
  [12 <./pic/nick.jpg>]
 <pic/samer.png, id=385, 218.8175pt x 284.06125pt>
 File: pic/samer.png Graphic file (type png)
  <use pic/samer.png>
-Package pdftex.def Info: pic/samer.png used on input line 1327.
+Package pdftex.def Info: pic/samer.png used on input line 1262.
 (pdftex.def)             Requested size: 69.58896pt x 90.33797pt.
 File: pic/samer.png Graphic file (type png)
 
 <use pic/samer.png>
-Package pdftex.def Info: pic/samer.png used on input line 1327.
+Package pdftex.def Info: pic/samer.png used on input line 1262.
 (pdftex.def)             Requested size: 69.58896pt x 90.33797pt.
  <pic/gebali.jpg, id=388, 149.8097pt x 203.25937pt>
 File: pic/gebali.jpg Graphic file (type jpg)
 
 <use pic/gebali.jpg>
-Package pdftex.def Info: pic/gebali.jpg used on input line 1339.
+Package pdftex.def Info: pic/gebali.jpg used on input line 1272.
 (pdftex.def)             Requested size: 66.58165pt x 90.33691pt.
 File: pic/gebali.jpg Graphic file (type jpg)
  <use pic/gebali.jpg>
-Package pdftex.def Info: pic/gebali.jpg used on input line 1339.
+Package pdftex.def Info: pic/gebali.jpg used on input line 1272.
 (pdftex.def)             Requested size: 66.58165pt x 90.33691pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1363.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1296.
  [13
 
  <./pic/samer.png> <./pic/gebali.jpg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1363.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1296.
  (NewAutomated_V4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1363.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1363.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1296.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1296.
 
 Package rerunfilecheck Info: File `NewAutomated_V4.out' has not changed.
 (rerunfilecheck)             Checksum: 7C0E5A650C6B9820FBA94820B117D9EA;1777.
@@ -1077,11 +1077,11 @@ Package logreq Info: Writing requests to 'NewAutomated_V4.run.xml'.
 Here is how much of TeX's memory you used:
  15994 strings out of 493698
  270105 string characters out of 3144415
- 610417 words of memory out of 3000000
+ 610421 words of memory out of 3000000
  19009 multiletter control sequences out of 15000+200000
  43869 words of font info for 81 fonts, out of 3000000 for 9000
  1028 hyphenation exceptions out of 8191
- 44i,13n,49p,893b,1197s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,13n,49p,893b,1195s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX 2.9/font
@@ -1094,7 +1094,7 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
 s/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on NewAutomated_V4.pdf (13 pages, 1132988 bytes).
+Output written on NewAutomated_V4.pdf (13 pages, 1114494 bytes).
 PDF statistics:
  464 PDF objects out of 1000 (max. 8388607)
  102 named destinations out of 1000 (max. 500000)
