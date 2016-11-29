@@ -39,7 +39,7 @@
 
 % *** CITATION PACKAGES ***
 %
-\usepackage{cite}
+%\usepackage{cite}
 % cite.sty was written by Donald Arseneau
 % V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
 % \cite{} output to follow that of IEEE. Loading the cite package will
@@ -63,22 +63,22 @@
 % *** GRAPHICS RELATED PACKAGES ***
 %
 \ifCLASSINFOpdf
-  % \usepackage[pdftex]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../pdf/}{../jpeg/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+% \usepackage[pdftex]{graphicx}
+% declare the path(s) where your graphic files are
+% \graphicspath{{../pdf/}{../jpeg/}}
+% and their extensions so you won't have to specify these with
+% every instance of \includegraphics
+% \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
 \else
-  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
-  % will default to the driver specified in the system graphics.cfg if no
-  % driver is specified.
-  % \usepackage[dvips]{graphicx}
-  % declare the path(s) where your graphic files are
-  % \graphicspath{{../eps/}}
-  % and their extensions so you won't have to specify these with
-  % every instance of \includegraphics
-  % \DeclareGraphicsExtensions{.eps}
+% or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+% will default to the driver specified in the system graphics.cfg if no
+% driver is specified.
+% \usepackage[dvips]{graphicx}
+% declare the path(s) where your graphic files are
+% \graphicspath{{../eps/}}
+% and their extensions so you won't have to specify these with
+% every instance of \includegraphics
+% \DeclareGraphicsExtensions{.eps}
 \fi
 % graphicx was written by David Carlisle and Sebastian Rahtz. It is
 % required if you want graphics, photos, etc. graphicx.sty is already
@@ -326,6 +326,7 @@
 \hyphenation{op-tical net-works semi-conduc-tor}
 \usepackage[table]{xcolor}
 \usepackage{colortbl,bm}
+\usepackage[backend=bibtex,style=ieee, maxbibnames=99]{biblatex}
 \usepackage{multirow,graphicx}
 \usepackage{multirow}
 \usepackage{subfig}
@@ -338,7 +339,8 @@
 \newcolumntype{C}{>{$}c<{$}} % math-mode version of "l" column type
 \newenvironment{conditions}
 {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
-	{\end{tabular}\par\vspace{\belowdisplayskip}}
+{\end{tabular}\par\vspace{\belowdisplayskip}}
+\addbibresource{UvicThesis.bib} 
 \begin{document}
 \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
 \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
@@ -358,11 +360,11 @@
 %
 
 \author{Nicholas~Houghton,~\IEEEmembership{Member,~IEEE,}
-        Samer~Moein,~\IEEEmembership{Member,~IEEE,}
-        and~Fayez~Gebali,~\IEEEmembership{Life~Senior Member,~IEEE}% <-this % stops a space
-\thanks{N. Houghton, S. Moein, and F. Gebali are with the Department
-of Electrical and Computer Engineering, University of Victoria, Victoria, Canada.}
-\thanks{Manuscript received April 19, 2005; revised January 11, 2007.}}
+	Samer~Moein,~\IEEEmembership{Member,~IEEE,}
+	and~Fayez~Gebali,~\IEEEmembership{Life~Senior Member,~IEEE}% <-this % stops a space
+	\thanks{N. Houghton, S. Moein, and F. Gebali are with the Department
+		of Electrical and Computer Engineering, University of Victoria, Victoria, Canada.}
+	\thanks{Manuscript received April 19, 2005; revised January 11, 2007.}}
 
 % note the % following the last \IEEEmembership and also \thanks - 
 % these prevent an unwanted space from occurring between the last author name
@@ -417,18 +419,18 @@ of Electrical and Computer Engineering, University of Victoria, Victoria, Canada
 
 
 \begin{abstract}
-%\boldmath
-Embedded Systems have become ubiquitous in modern life; we are just as affected by their vulnerabilities as they are.
-Ensuring that the processors that control them are secure is paramount to the safety of commercial, transportation and military infrastructure.
-The market for integrated circuits is steadily being consumed by a reconfigurable type of processor known as a Field-Programmable Gate-Array (FPGA).
-The very features that make this type of device so successful also make them susceptible to attack.
-FPGAs are reconfigured by software; this makes it easy for attackers to make modification.
-Such modifications are known as hardware trojans.
-There have been many techniques and strategies to ensure that these devices are free from trojans but few have taken advantage of the central feature of these devices.
-The configuration Bitstream is the binary file which programs these devices.
-By extracting and analyzing it, a much more accurate and efficient means of detecting trojans can be achieved.
-This discussion presents a new methodology for exploiting the power of the configuration Bitstream to detect and described hardware trojans.
-A software application is developed that automates this methodology for \textit{Xilinx} FPGAs.
+	%\boldmath
+	Embedded Systems have become ubiquitous in modern life; we are just as affected by their vulnerabilities as they are.
+	Ensuring that the processors that control them are secure is paramount to the safety of commercial, transportation and military infrastructure.
+	The market for integrated circuits is steadily being consumed by a reconfigurable type of processor known as a Field-Programmable Gate-Array (FPGA).
+	The very features that make this type of device so successful also make them susceptible to attack.
+	FPGAs are reconfigured by software; this makes it easy for attackers to make modification.
+	Such modifications are known as hardware trojans.
+	There have been many techniques and strategies to ensure that these devices are free from trojans but few have taken advantage of the central feature of these devices.
+	The configuration Bitstream is the binary file which programs these devices.
+	By extracting and analyzing it, a much more accurate and efficient means of detecting trojans can be achieved.
+	This discussion presents a new methodology for exploiting the power of the configuration Bitstream to detect and described hardware trojans.
+	A software application is developed that automates this methodology for \textit{Xilinx} FPGAs.
 \end{abstract}
 % IEEEtran.cls defaults to using nonbold math in the Abstract.
 % This preserves the distinction between vectors and scalars. However,
@@ -438,9 +440,9 @@ A software application is developed that automates this methodology for \textit{
 % in the abstract anyway.
 
 % Note that keywords are not normally used for peerreview papers.
-\begin{IEEEkeywords}
-Hardware trojans, chip life cycle, hardware trojan taxonomy, hardware trojan attributes. ... Put your list
-\end{IEEEkeywords}
+%\begin{IEEEkeywords}
+%	Hardware trojans, chip life cycle, hardware trojan taxonomy, hardware trojan attributes. ... Put your list
+%\end{IEEEkeywords}
 
 
 
@@ -526,7 +528,7 @@ Further, these changes are then mapped to the user's original design.
 Knowing which components of the device have been modified, and the instances of the synthesized design allows for a powerful description to be built.
 A software tool known as the FPGA Trojan Detector, which implements this new method has been built using Java and an open-source application programming interface (API) known as RapidSmith. 
 It is able to automatically detect and analyze trojans in \textit{Xilinx} FPGAs.
-Once analyzed, a meaningful description is provided using the trojan taxonomy presented in~\cite{SMoein5}.
+Once analyzed, a meaningful description is provided using the trojan taxonomy presented in~\cite{samerAttribute}.
 
 The contributions of this paper are:
 \begin{enumerate}
@@ -554,18 +556,21 @@ It is comprised of four levels of description as shown in Fig.~\ref{fig:trojan_l
 There are eight categories comprised of a total of thirty-three attributes as shown in Fig.~\ref{fig:HW_trojan}.
 
 %%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.99\linewidth]{Figures/trojan_life_cycle}
+	\includegraphics[width=1\linewidth]{Figures/trojan_life_cyclePDF}
 	\caption{Hardware trojan life-cycle levels \cite{samerAttribute}.}
 	\label{fig:trojan_life_cycle}
 \end{figure}
-\begin{figure*}[]
+\begin{figure*}
 	\centering
-	\includegraphics[width=0.7\linewidth]{Figures/HW_trojan}
+	\includegraphics[width=0.775\linewidth]{Figures/HW_trojan}
 	\caption{The hardware trojan attribute taxonomy \cite{samerAttribute}.}
 	\label{fig:HW_trojan}
 \end{figure*}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{enumerate}
 	\item The \textbf{insertion} (chip life-cycle) level comprises the attributes pertaining to the IC production stages.
@@ -651,66 +656,39 @@ The design is then compiled and synthesized into the Bitstream which is then dow
 FPGAs are reconfigurable because they are comprised of an array of Programmable Logic Devices (PLD).
 A PLD is a component whose functionality is dependent on a set of configuration options; in other words, a user can define how it behaves.
 Each PLD receives configuration instructions from the user that defines its functionality; these instructions are in the form of a binary message.
-In \textit{Xilinx} terminology a PLD is referred to as a tile. 
-A single FPGA can contain hundreds, or even thousands of tiles; a device is usually made up of over a hundred different types.
-Different types are used for different functions, such as Input-Output (IO), Logic, Memory and so on.
-A \textit{Xilinx} device is organized into a matrix of blocks referred to as the 'gate-array' as shown in Fig.~\ref{fig:FPGA}~\cite{xilnxDevManual}.
-A block is not a physical device but a conceptual grouping of tiles.
-A block will consist of one or multiple tiles depending on its type.
-A device can contain anywhere from a couple hundred to a few thousand blocks and are arranged into columns by type.
-Columns are separated into regions shown by the dashed lines in Fig.~\ref{fig:FPGA}.
-These regions each use a separate clock mechanism and are referred to as 'Clock Regions'.
-The set of messages sent to all of the tiles in the device from the user is referred to as the configuration Bitstream.
+The set of messages sent to all of the PLDs in the device from the user is referred to as the configuration Bitstream.
 
+In \textit{Xilinx} terminology a PLD is referred to as a tile. 
+A single FPGA can contain hundreds, or even thousands of tiles; a device is usually made up of over a hundred different types of tile.
+Different types are used for different functions, such as Input-Output (IO), Logic, Memory and so on.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{Figures/FPGA}
 	\caption[Rudimentary Layout of a Virtex FPGA]{Rudimentary Layout of a Virtex FPGA}
 	\label{fig:FPGA}
 \end{figure}
-
-
-%The \textit{Xilinx} Bitstream is a binary file composed of a series of 32-bit words organized into 'frames'.
-%A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Fig.~\ref{fig:FPGA}.
-%A frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
-%Each frame is uniquely identified by a 32-bit address and is the smallest addressable element.
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=.85\linewidth]{Figures/RowOrder}
-%	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
-%	\label{fig:RowOrder}
-%\end{figure}
-%Each clock region is given a row value in its address that increments away from the center of the device starting at 0. 
-%%The frame address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the center of the device~\cite{virtex5ConfigGuide}.
-%The major address specifies the column within the row.
-%These addresses are numbered from left to right and begin at 0.
-%The minor address indicates the frame number within a column. 
-%Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column type.
-%\begin{table}[h!]
-%	\centering
-%	\caption{Number of Frames (minor addresses) per Column~\cite{virtex5ConfigGuide}}
-%	\label{tbl:minorAddressNumbers}
-%	\begin{tabular}{|c|c|}
-%		\hline
-%		Block             & Number Of Frames \\ \hline
-%		CLB               & 36               \\ \hline
-%		DSP               & 28               \\ \hline
-%		\acrshort{BRAM}   & 30               \\ \hline
-%		IOB               & 54               \\ \hline
-%		Clock             & 4                \\ \hline
-%	\end{tabular}
-%\end{table}
-%Frames are numbered from left to right, starting with 0. 
-%A block may contain multiple tiles.
-%In a CLB column a block consists of an interconnect tile (also known as a \acrfull{SM}) and a CLB.
-%For each block frames numbered 0 to 25 access the interconnect tile for that column. 
-%For all blocks, except the CLB and the clock column, frames numbered 26 and 27 access the Interface for that column. 
-%All other frames are specific to that block~\cite{virtex5ConfigGuide}.
-
+A \textit{Xilinx} device is organized into a matrix of blocks referred to as the 'gate-array' as shown in Fig.~\ref{fig:FPGA}~\cite{xilnxDevManual}.
+A block is not a physical device but a conceptual grouping of tiles.
+A block will consist of one or multiple tiles depending on its type and they are arranged into columns by type.
+Columns are separated into regions shown by the dashed lines in Fig.~\ref{fig:FPGA}.
+These regions each use a separate clock mechanism and are referred to as 'Clock Regions'.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Proposed Trojan Detection} \label{sec:methodolgy}
-
+%%% I couldn't get this table to sit in the right place unless I put it all the way up here %%%
+\begin{table*}[b!]
+	\centering
+	\caption{Bitstream Frame Address Structure}
+	\label{tbl:frameAddress}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+			\hline
+			\multicolumn{8}{|c|}{Unused} & \multicolumn{3}{c|}{BA} & T & \multicolumn{5}{c|}{Row Address} & \multicolumn{8}{c|}{Major Address} & \multicolumn{7}{c|}{Minor Address} \\ \hline
+			31 & 30 & 29 & 28 & 27 & 26 & 25 & 24 & 23 & 22 & 21 & 20 & 19 & 18 & 17 & 16 & 15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\ \hline
+			0 & 0 & 0 & 0 & 0 & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
+		\end{tabular}		
+	}
+\end{table*}
 \subsection{Overview}
 Fig.~\ref{fig:Concept} provides a visual representation of the use-case assumed for the purposes of this work. 
 With the exception of the fabrication process, all stages of production of an FPGA implementation are assumed to have been done "in-house". 
@@ -739,7 +717,7 @@ The majority of these files are used for specific purposes that do not pertain t
 The netlist (.ngc) file, however, contains a thorough description of the user's design and how it relates to the device.
 It can be converted into a human-readable version known as a \textit{Xilinx} Design Language (XDL) file which will be used to relate any discovered modifications to the user's design.
 The Bit file is the binary representation of the design implementation.
-It is referred to as the Bitstream or 'configuration' Bitstream and is the final form that is loaded into the FPGA.
+This file holds the Bitstream or 'configuration' Bitstream and is the final form that is loaded into the FPGA.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{Figures/methodologyOverview}
@@ -751,12 +729,13 @@ Though it is known that the fabrication houses will often attempt to make optimi
 When the completed batch of fabricated chips are returned the Bitstream is extracted from a sample using the \textit{Xilinx} feature Readback. 
 That which is extracted is referred to as the Target Bitstream.
 The Golden and Target Bitstreams are analyzed in conjunction to detect differences.
-Any discovered differences are then attributed to the corresponding component in the architecture, described in section~\ref{sec:tileMapping}.
+Any discovered differences are then attributed to the corresponding component in the architecture.
 Modified components are then related to the user's design using the XDL file.
 Finally, the resultant taxonomic description is built and returned to the user.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Bitstream Analysis} \label{sec:bitstreamComposition}
+
 An FPGA is composed of a matrix of blocks referred to as the gate-array.
 Blocks perform functions specified by the configuration they receive from the synthesis process.
 The \textit{Xilinx} Bitstream is a binary file composed of a series of 32-bit words organized into 'frames'.
@@ -765,19 +744,6 @@ A frame affects every block in a column and multiple horizontally adjacent frame
 Each frame is uniquely identified by a 32-bit address shown in Table~\ref{tbl:frameAddress} and is the smallest addressable element.
 
 %%%%%%%%%%%
-\begin{table*}[t]
-	\centering
-	\caption{Bitstream Frame Address Structure}
-	\label{tbl:frameAddress}
-	\resizebox{\textwidth}{!}{
-		\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-			\hline
-			\multicolumn{8}{|c|}{Unused} & \multicolumn{3}{c|}{BA} & T & \multicolumn{5}{c|}{Row Address} & \multicolumn{8}{c|}{Major Address} & \multicolumn{7}{c|}{Minor Address} \\ \hline
-			31 & 30 & 29 & 28 & 27 & 26 & 25 & 24 & 23 & 22 & 21 & 20 & 19 & 18 & 17 & 16 & 15 & 14 & 13 & 12 & 11 & 10 & 9 & 8 & 7 & 6 & 5 & 4 & 3 & 2 & 1 & 0 \\ \hline
-			0 & 0 & 0 & 0 & 0 & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ \hline
-		\end{tabular}		
-	}
-\end{table*}
 
 \begin{itemize}
 	\item BA 0: Logic type.
@@ -791,21 +757,26 @@ The Logic block (BA: 0) contains the columns which provide the primary configura
 The BRAM columns (BA: 1) initialize the memory for the device while the BRAM Interconnect columns (BA: 2) configure how the logic of the design interacts with the BRAM.
 
 In the case of the Virtex-5 family each clock region is composed of twenty blocks in a column separated by a horizontal clock bus as shown in Fig.~\ref{fig:RowOrder}.
-\begin{figure}[]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=1\linewidth]{Figures/RowOrder}
 	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
 	\label{fig:RowOrder}
 \end{figure}
 Each clock region is given a row value in its address that increments away from the center of the device starting at 0. 
-The frame address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the center of the device~\cite{virtex5ConfigGuide}.
-The major address specifies the column within the row.
+The frame-address includes a Top indicator bit in position 20 that indicates whether the specified row is above or below the center of the device~\cite{virtex5ConfigGuide}.
+The major-address specifies the column within the row.
 These addresses are numbered from left to right and begin at 0.
-The minor address indicates the frame number within a column. 
+The minor-address indicates the frame number within a column. 
 Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column type.
+
+In the \textit{Xilinx} jargon, a tile is a conceptual encapsulation of components in the gate-array which perform a specific task.
+A block may contain multiple tiles.
+A Logic (BA: 0) column of blocks may be one of many types.
+As an example, in a Configurable Logic Block (CLB) column, each block consists of an interconnect tile (also known as a Switching Matrix (SM)) on the left, and a CLB tile on the right, as shown in Fig~\ref{fig:column}.
 \begin{table}[h]
 	\centering
-	\caption{Number of Frames (minor addresses) per Column~\cite{virtex5ConfigGuide}}
+	\caption{Number of Frames (minor-addresses) per Column~\cite{virtex5ConfigGuide}}
 	\label{tbl:minorAddressNumbers}
 	\begin{tabular}{|c|c|}
 		\hline
@@ -817,10 +788,6 @@ Table~\ref{tbl:minorAddressNumbers} provides the number of frames per column typ
 		Clock             & 4                \\ \hline
 	\end{tabular}
 \end{table}
-In the \textit{Xilinx} jargon, a tile is a conceptual encapsulation of components in the gate-array which perform a specific task.
-A block may contain multiple tiles.
-A Logic (BA: 0) column of blocks may be one of many types.
-As an example, in a Configurable Logic Block (CLB) column, each block consists of an interconnect tile (also known as a Switching Matrix (SM)) on the left, and a CLB tile on the right, as shown in Fig~\ref{fig:column}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Figures/column}
@@ -829,7 +796,7 @@ As an example, in a Configurable Logic Block (CLB) column, each block consists o
 \end{figure}
 
 The Frames which configure a column are numbered from left to right, starting with 0.  
-For the Configurable Logic Block (CLB) column, frames with a minor address of 0 to 25 configure the interconnect (SM) tile.
+For the Configurable Logic Block (CLB) column, frames with a minor-address of 0 to 25 configure the interconnect (SM) tile.
 Frames numbered 26 and 27 access the Interface for that column. 
 The remainder configure the CLB tile~\cite{virtex5ConfigGuide}.
 To further understand how frames configure tiles a mapping must be made between each frame and the corresponding tile.
@@ -838,32 +805,28 @@ A process know as 'Component Mapping' has been developed.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Component Mapping} \label{sec:tileMapping}
-The format of the configuration Bitstream describes the link between each word in a configuration frame and the component on the device that it configures. This information is not publicly released by \textit{Xilinx} as a means of providing security through obscurity.
-The FPGA Trojan Detector employs a method referred to as Component Mapping to create a discern which how any discovered modifications affect the device.
+The format of the configuration Bitstream describes the link between each word in a configuration frame and the component on the device that it configures. 
+This format is not publicly released by \textit{Xilinx} as a means of providing security through obscurity.
+The FPGA Trojan Detector employs a method referred to as Component Mapping to discern how any discovered modifications affect the device.
 
-%\subsubsection{Frame to Column Mapping}
-When powered-on the Bitstream is transmitted in frame address order to populate the dynamic memory in the tiles of the gate-array.
-The frame addressing scheme describes where in the gate-array the frame is destined fairly directly.
+When powered-on, the Bitstream is transmitted in frame-address order to populate the dynamic memory in the tiles of the gate-array.
+The frame-addressing scheme describes where in the gate-array the frame is destined fairly directly.
 As described in section~\ref{sec:bitstreamComposition}, the Block Address (BA) value discerns whether the column type is a logic block column (BA: 0), a Block Random Access Memory (BRAM) column (BA: 1), or a memory interconnect block (BA: 2).
 Frames with a BA value of 1 are clearly destined to configure the BRAM and do not need further analysis for the purposes of this method.
 Frames with a BA value of 0 or 2 must be mapped more finitely.
-The row address specifies which row of clock-regions the frame is destined, as was seen in Fig.~\ref{fig:RowOrder}.
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=.85\linewidth]{Figures/RowOrder}
-%	\caption[Row Order of Virtex-5 Clock Region]{Row Order of Virtex-5 Clock Region}
-%	\label{fig:RowOrder}
-%\end{figure}
-As an example the Virtex-5 240T has 12 rows~\cite{virtex5ConfigGuide}; its row address spans from 0-5 and the Top bit in the address indicates whether it is in the top or bottom half of the device in accordance with Fig.~\ref{fig:RowOrder}.
-Once the correct clock region is discerned the major address is used to determine which column the frame configures.
-The major address begins at 0 on the left and counts up towards the number of columns in the row.
-Finally, the minor address is used to determine which sub-column has been modified.
+The row-address specifies which row of clock-regions the frame is destined, as was seen in Fig.~\ref{fig:RowOrder}.
+
+As an example the Virtex-5 240T has 12 rows~\cite{virtex5ConfigGuide}; its row-address spans from 0-5 and the Top bit in the address indicates whether it is in the top or bottom half of the device in accordance with Fig.~\ref{fig:RowOrder}.
+Once the correct clock region is discerned the major-address is used to determine which column the frame configures.
+The major-address begins at 0 on the left and counts up towards the number of columns in the row.
+Finally, the minor-address is used to determine which sub-column has been modified.
 %\subsubsection{Word to Tile Mapping}
 In the \textit{Xilinx} jargon, a tile is a conceptual encapsulation of components in the gate-array which perform a specific task.
 A block may contain multiple tiles.
+
 As an example, in a Configurable Logic Block (CLB) column, each block consists of an interconnect tile (also known as a Switching Matrix (SM)), an interface tile, and a CLB tile.
-The Frames which configure a column have a minor address numbered from left to right, starting with 0.
-Frames with a minor address from 0 to 25 configure the interconnect (SM).
+The Frames which configure a column have a minor-address numbered from left to right, starting with 0.
+Frames with a minor-address from 0 to 25 configure the interconnect (SM).
 Frames numbered 26 and 27 access the interface tile and the remainder configure the CLB tile~\cite{virtex5ConfigGuide}.
 \begin{figure}[h]
 	\centering
@@ -872,7 +835,7 @@ Frames numbered 26 and 27 access the interface tile and the remainder configure 
 	\label{fig:frameTileMap}
 \end{figure}
 
-Figure~\ref{fig:frameTileMap} shows how a frame is composed of 41 words that can be thought of as a vertical stack that aligns within a column.
+Figure~\ref{fig:frameTileMap} shows how a frame is composed of 41 words which can be thought of as a vertical stack that aligns within a column.
 Similarly, a component column consists of a stack of blocks; there are 20 blocks per CLB column, 40 per IOB column, 4 per BRAM and so on.
 The configuration words within a frame align with the physical blocks of the column.
 To compute which word corresponds to which component a series of equations has been developed.
@@ -880,7 +843,7 @@ First, Equation~\ref{eqn:numWordsPerBlock} is used to compute the number of 32-b
 \begin{equation} \label{eqn:numWordsPerBlock}
 n = (W - C) + B
 \end{equation}
-%\ConditionSize
+
 where:
 \begin{conditions}
 	n     &  Number of Words per Block \\
@@ -904,13 +867,12 @@ where:
 	n     &  Number of Words per Block 
 \end{conditions}
 %\normalsize
-By using equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber} and knowing how the minor address relates to the column it is possible to link any modifications in the Bitstream to its corresponding tile in the device.
+By using equations~\ref{eqn:numWordsPerBlock} and~\ref{eqn:getTileNumber} and knowing how the minor-address relates to the column it is possible to link any modifications in the Bitstream to its corresponding tile in the device.
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %\subsection{Design Analysis}
 
 \section{Determining Trojan Attributes} \label{sec:trojanAttributes}
-The complexity of integrated circuit designs and their corresponding trojans requires a more human-friendly scope.
 The taxonomy in~\cite{samerAttribute} provides a series of thirty-three attributes which a trojan may or may not posses.
 Though it is desirable to be able to observe and directly extract the attributes a trojan possesses it is not always possible. 
 In~\cite{samerAttribute} a matrix, $\mathbf{R}$, is provided which describes the relationships between each of the thirty-three attributes in the taxonomy.
@@ -921,7 +883,8 @@ The analysis stage of the automated trojan detection technique provided by this 
 \subsection{Observed Location Attributes}
 The presence of attributes in the \textit{Location} category are directly observable from the results of the component mapping method described in section~\ref{sec:tileMapping}.
 \textit{Xilinx} tiles conform to purpose-specific groups or block types.
-Blocks contain sub-types that perform actions which pertain directly to \textit{Location} category attributes as follows: 
+These block-types perform actions which pertain directly to \textit{Location} category attributes
+Attributes can be awarded for the following traits: 
 \begin{enumerate}
 	\item The \textbf{Processor} attribute pertains to the core functionality of the design logic. It can be awarded for the presence of a modified CLB tile or Interconnect tile in a trojan.
 	\item The \textbf{Memory} attribute can be awarded for the presence of modified BRAM components.
@@ -945,7 +908,7 @@ n = \sum_{x = 0}^{X}\sum_{y = 0}^{Y}T_{xy}
 \end{equation}
 where:
 \begin{conditions}
-	n     &  Number of all \textbf{configured} tiles \\
+	n     &  Number of all configured tiles \\
 	X     &  The column width of the gate-array \\   
 	Y     &  The number of rows of the gate-array \\
 	T     &  A configured tile
@@ -1013,37 +976,12 @@ where:
 	$$T_y$$	    &  The y coordinate of a configured tile \\
 	$$S_{xy}$$     &  The Scatter Score
 \end{conditions}
-Equations~\ref{eqn:xAverage} and~\ref{eqn:yAverage} are used to create a rating known as the Position Median in Equation~\ref{eqn:positionMedian}.
-The Position Median value provides a simple descriptor for where in the gate array the design is centralized.
-The Position Median in Equation~\ref{eqn:scatterScore} describes how spread out or, \textit{clustered} the design is.
-%\noindent\begin{minipage}{.5\linewidth}
-%	\begin{equation} \label{eqn:positionMedian}
-%	M_{xy} = (a_x,~a_y)
-%	\end{equation}
-%\end{minipage}%
-%\begin{minipage}{.5\linewidth}
-%	\begin{equation} \label{eqn:scatterScore}
-%	S_{xy} = (\sigma_x,~\sigma_y)
-%	\end{equation}
-%\end{minipage}
-%\ConditionSize
-%
-%where:
-%\begin{conditions}
-%	$$M_{xy}$$     &  The Position Median \\   
-%	$$S_{xy}$$     &  The Scatter Score
-%\end{conditions}
-%\normalsize
-
-%The results of the component mapping method described in section~\ref{fig:frameTileMap} are used to generate the set of all tiles reconfigured by the trojan.
-%The set of reconfigured tiles can be said to contain three subsets: the subset of tiles activated by the trojan, those deactivated and those modified. 
-%The results of the golden design analysis, the subsets, and the numeric descriptors can be used to discern which of the \textit{Physical Location} attributes the trojan possesses. 
 The \textit{Physical Location} category contains six attributes.
 These six can be considered three pairs; a trojan exhibits one attribute from each pair. 
 \begin{enumerate}
-	\item \textbf{Large or Small} (attributes 23 or 24): According to~\cite{samerAttribute}, small trojans are defined as those that are nearly impossible to detect via power consumption. From this it can be said that 'small' trojans occupy minimal resources. Trojans where the number of reconfigured tiles is less than 5\% of the number of tiles in the golden design are considered small. Other wise they are attributed as large.
+	\item \textbf{Large or Small} (attributes 23 or 24): According to~\cite{samerAttribute}, small trojans are defined as those that are nearly impossible to detect via power consumption. From this it can be said that 'small' trojans occupy minimal resources. It was found that trojans where the number of reconfigured tiles is less than 5\% of the number of tiles in the golden design should be considered small. Other wise they are attributed as large.
 	\item \textbf{Changed Layout or Augmented} (attributes 25 or 26): A 'changed layout' trojan is such that only tiles that are configured by the golden design are reconfigured. An augmented trojan is where additional layout is added. The presence of 'activated' or 'deactivated' tiles indicates an augmented trojan. 
-	\item \textbf{Clustered or Distributed} (attributes 27 or 28): The trojan is considered to be clustered when the standard deviation of the reconfigured tile positions is less than 15\%; distributed otherwise.
+	\item \textbf{Clustered or Distributed} (attributes 27 or 28): It was found that a trojan should be considered clustered when the standard deviation of the reconfigured tile positions is less than 15\%; distributed otherwise.
 \end{enumerate}
 \subsection{Insertion and Abstraction Attributes}
 The linear nature of the manufacturing life-cycle implies a propagation of effects.
@@ -1051,9 +989,10 @@ For the purposes of this method it is assumed that the only non-trustworthy stag
 In other words, the trojan was inserted in the third-party fabrication stage.
 Due to the propagating nature of the life-cycle the effects of the modifications made in the fabrication stage (attribute 3) are felt in the testing (attribute 4) and assembly (attribute 5) stages.
 Hence, it can be said that this trojan possesses insertion category attributes 3, 4 and 5.
+
 FPGA designs are made with a HDL.
 These languages dictate component arrangement in the Registry Transfer Level (RTL) abstraction level.
-Hence it can be said that trojans occurring in FPGAs take place in the System (attribute 6) and RTL (attribute 7).
+Hence it can be said that trojans occurring in FPGAs take place in the System (attribute 6) and RTL (attribute 7) abstraction levels.
 
 \subsection{Relation Matrix Use} \label{sec:matrixUse}
 Attributes which are not directly observable can be inferred using a systematic method of analyzing the rows and columns of the relation matrix presented in~\cite{samerAttribute}.
@@ -1063,7 +1002,7 @@ A thorough description of this method is given in~\cite{samerDissertation} and~\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{FPGA Trojan Detector} \label{sec:implementation}
 The FPGA Trojan Detector can provide manufacturers additional security that takes only minutes to complete; the analysis requires only a few button clicks.
-It was built to be a stand-alone application; it is light-weight, cross platform and does not require installation.
+It was built to be a stand-alone application; it is light-weight, cross platform and does not require a complex installation.
 \subsection{Technologies Used}
 \subsubsection{\textit{Xilinx}}
 \textit{Xilinx} is one of the two largest manufacturers of FPGAs; their devices are considerably more popular than their competitors.
@@ -1076,17 +1015,22 @@ The Java language provides a native Graphical User-Interface (GUI) toolkit known
 \textit{Swing} is an API that is part of Oracle's Java Foundation Classes; in other words it is readily available to all users of Java.
 
 \subsubsection{\textit{RapidSmith}} \label{sec:rapidSmith}
-RapidSmith is an APIs written in Java that enables Computer Aided Design (CAD) tool creation for \textit{Xilinx} FPGAs~\cite{rapidSmith}.
+RapidSmith is an API written in Java that enables Computer Aided Design (CAD) tool creation for \textit{Xilinx} FPGAs~\cite{rapidSmith}.
 Its purpose is to be used as a rapid prototyping platform for experimentation and research.
 It was chosen as a supporting library for the FPGA Trojan Detector for several reasons.
 First, the code base provides a series of class structures that astutely mirror the architecture of \textit{Xilinx} devices.
 Secondly, it provides ready-made tools for extracting the configuration frames from Bitstream files. 
 Bitstream files are long binary sequences, without the tools provided by RapidSmith the analysis of these files becomes an arduous task.
-Finally, and most importantly, the creators of RapidSmith have developed a means of condensing XDLRC files into a greatly compressed format referred to as a 'database' file.
-The FPGA Trojan Detector requires considerable detail of an FPGA's architecture in order to accurately described the effects a trojan has on a design.
+
+\textit{Xilinx} provides a tool capable of generating large text files which fully describe every facet of a chosen device.
+Known as XDLRC files, the FPGA Trojan Detector requires these descriptions to perform the Component Mapping described in section~\ref{sec:tileMapping}
+These description files can reach 20GB or more in size making them incredibly inefficient to analyze.
+The most important and beneficial feature of RapidSmith is that the creators have developed a means of condensing XDLRC files into a greatly compressed format referred to as a 'database' file.
+This compression reduces a 20GB XDLRC to a 7MB database file which allows for efficient analysis.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{table*}[b!]
+\begin{table*}[t!]
 	\setlength{\tabcolsep}{3pt}
 	\centering
 	\caption{Outputs of the Circuits in Figs.~\ref{fig:userAuthenticationCircuit} and \ref{fig:userAuthenticationCircuitTrojan}~\cite{samerAttribute}}
@@ -1115,10 +1059,9 @@ The FPGA Trojan Detector requires considerable detail of an FPGA's architecture 
 \end{table*}
 \section{Results} \label{sec:results}
 To demonstrate its potential, FPGA Trojan Detector has been tested using a series of benchmarks.
-These benchmarks are included in the FPGA Trojan Detector application package as an example for users.
 In addition, a website known as the Hardware Trojan System~\cite{meCategorization} (HTS) was used to further visualize the results of the benchmark analysis.
 The HTS provides a unique tool know as the Classification web tool which accepts a list of taxonomic attributes as input and generates a directed graph.
-This graph allows for easy observation of each attribute inter-relates and affects one another.
+This graph allows for easy observation of how each attribute inter-relates and affects one another.
 
 %%%%%%%%%%%%%%%%%%%
 \subsection{Priority Decoder} \label{sec:priorityDecoder}
@@ -1132,11 +1075,11 @@ The FPGA Trojan Detector successfully analyzed the Bitstreams and determined tha
 
 \subsection{User Authentication Circuit} \label{sec:userAuthentication}
 Consider a circuit designed to compute a function $F(x)$ for a system to authenticate user-password pairs $x$ and $F(x)$.
-The system performs the arithmetic operation $F(x) = x^2$ to validate users.
-The customer wishes to provide access to ten clients labeled $I_0$ to $I_9$.
+The system performs the arithmetic operation $F(x) = x^2$ to validate users; the customer wishes to provide access to ten clients labeled $I_0$ to $I_9$.
 To identify all ten clients, four input bits are required, $x_1$ to $x_4$.
-The largest function output is $81$ meaning seven bits are required for output, $Z_1$ to $Z_7$, as illustrated in Fig.~\ref{fig:userAuthenticationCircuit}.
-A trojan can be inserted into this circuit as shown in Fig.~\ref{fig:userAuthenticationCircuitTrojan} (called a backdoor trojan).
+In consequence, the largest valid output of $F(x) = x^2$ is $81$ meaning that seven bits are required for output. 
+These outputs are labeled $Z_1$ to $Z_7$ and are illustrated in Fig.~\ref{fig:userAuthenticationCircuit}.
+A trojan can be inserted into this circuit as shown in Fig.~\ref{fig:userAuthenticationCircuitTrojan} (referred to as a backdoor trojan).
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Figures/circuit1}
@@ -1160,12 +1103,19 @@ These results are not correct according to $F(x) = x^2$.
 This is an intended result by the circuit designer to add security for these don't care conditions.
 If an attacker is able to make the modification in Fig.~\ref{fig:userAuthenticationCircuitTrojan}, inputs $10$ and $11$ will now produce results 100 and 121 which are correct according to $F(x) = x^2$.
 This can be seen under the 'Circuit B' column of Table~\ref{tbl:trojanOutputs}.
-Now, the attacker has built a 'back-door' into the circuit.
-The original 10 users' authentication is not altered but inputs 10 and 11 provide unauthorized access to the attacker.
+The attacker has now built a 'back-door' into the circuit.
+The original 10 users' authentication is not altered but inputs 10 and 11 provide unauthorized access.
+\begin{figure*}[b]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/backDoorResult}
+	\caption[Results of The Authentication Circuit Trojan Detection]{Results of The Authentication Circuit Trojan Detection}
+	\label{fig:backDoorResult}
+\end{figure*}
 
 The circuits shown in Figures~\ref{fig:userAuthenticationCircuit} and~\ref{fig:userAuthenticationCircuitTrojan} were implemented and synthesized on a Virtex-5 240T  (XC5VSX240T).
 The resultant Bitstreams were input to the FPGA Trojan Detector and the analysis detected a trojan.
-It output the following list of attributes as can be seen in Figure~\ref{fig:backDoorResult}.
+It output the following list of attributes as can be partially seen in Figure~\ref{fig:backDoorResult}.
+
 \begin{itemize}
 	\item Attribute 3: Fabrication
 	\item Attribute 4: Testing
@@ -1182,12 +1132,6 @@ It output the following list of attributes as can be seen in Figure~\ref{fig:bac
 	\item Attribute 29: Processor
 \end{itemize}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1\linewidth]{Figures/backDoorResult}
-	\caption[Results of The Authentication Circuit Trojan Detection]{Results of The Authentication Circuit Trojan Detection}
-	\label{fig:backDoorResult}
-\end{figure}
 As expected the results state that the trojan was inserted in the Fabrication phase (3); it is the earliest stage in the 'insertion' phase produced indicating it as the source.
 The effects of this modification propagate to the Testing (4) and Assembly (5) phases as expected.
 The modifications reach both the System (6) and Registry Transfer Level (RTL) (7) abstraction levels.
@@ -1231,7 +1175,12 @@ The supporting documents describe this trojan as follows:
 \begin{displaycquote}{trusthubWebsite}
 	The Trojan leaks the secret key from a cryptographic chip running the AES algorithm through a covert channel. The channel adapts the concepts from spread spectrum communications (also known as Code-Division Multiple Access (CDMA)) to distribute the leakage of single bits over many clock cycles. The Trojan employs this method by using a pseudo-random number generator (PRNG) to create a CDMA code sequence, the PRNG initialized to a predefined value. The code sequence is then used to XOR modulate the secret information bits. The modulated sequence is forwarded to a leakage circuit (LC) to set up a covert CDMA channel in the power side-channel. The LC is realized by connecting eight identical flip-flop elements to the single output of the XOR gate to mimic a large capacitance.
 \end{displaycquote}
-
+\begin{figure*}[t]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/aesResult}
+	\caption[Results of Analysis on the AES-T100 Benchmark]{Results of Analysis on the AES-T100 Benchmark}
+	\label{fig:aesResult}
+\end{figure*}
 From the description it is reasonable to expect certain results from the FPGA Trojan Detector.
 The description states that the trojan 'leaks the secret key'.
 From this we should expect our results to contain Effect attribute Information Leakage (13).
@@ -1247,12 +1196,7 @@ This will require modification to power tiles; Location attribute Power Supply (
 
 The source code for the Golden and Target designs were downloaded from \textit{trust-hub.org} and synthesized on a Virtex-5 240T  (XC5VSX240T).
 The analysis results were successfully found by the system as seen in Figure~\ref{fig:aesResult}.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1\linewidth]{Figures/aesResult}
-	\caption[Results of Analysis on the AES-T100 Benchmark]{Results of Analysis on the AES-T100 Benchmark}
-	\label{fig:aesResult}
-\end{figure}
+
 
 The FPGA Trojan Detector output the following attributes:
 \begin{itemize}
@@ -1325,33 +1269,33 @@ The authors would like to thank...
 % Can use something like this to put references on a page
 % by themselves when using endfloat and the captionsoff option.
 \ifCLASSOPTIONcaptionsoff
-  \newpage
+\newpage
 \fi
 
 
 
-
-\begin{thebibliography}{1}
-
-
-\bibitem{SAdee} %journal 
-S.~Adee,
-``The hunt for the kill switch,''
-{\em IEEE Spectrum},
-vol. 45, no. 5, pp. 34--39, May 2008.
-
-\bibitem{DSB} %online
-Defense Science Board. (2005)
-Task force on high performance microchip supply.
-[online]. Available: \url{http://www.acq.osd.mil/dsb/reports/ADA435563.pdf}
-
-\bibitem{SMoein5} %conference
-S.~Moein, S.~Khan, T.~A. Gulliver, F.~Gebali, and M.~W. El-Kharashi,
-``An attribute based classification of hardware trojans,''
-in {\em Proc. Int. Conf. on Computer Eng. and Sys.}, Cairo, Egypt, Dec. 2015, pp. 351--356.
-
-
-\end{thebibliography}
+\printbibliography
+%\begin{thebibliography}{1}
+%
+%
+%\bibitem{SAdee} %journal 
+%S.~Adee,
+%``The hunt for the kill switch,''
+%{\em IEEE Spectrum},
+%vol. 45, no. 5, pp. 34--39, May 2008.
+%
+%\bibitem{DSB} %online
+%Defense Science Board. (2005)
+%Task force on high performance microchip supply.
+%[online]. Available: \url{http://www.acq.osd.mil/dsb/reports/ADA435563.pdf}
+%
+%\bibitem{SMoein5} %conference
+%S.~Moein, S.~Khan, T.~A. Gulliver, F.~Gebali, and M.~W. El-Kharashi,
+%``An attribute based classification of hardware trojans,''
+%in {\em Proc. Int. Conf. on Computer Eng. and Sys.}, Cairo, Egypt, Dec. 2015, pp. 351--356.
+%
+%\printbibliography
+%\end{thebibliography}
 
 % biography section
 % 
@@ -1374,31 +1318,31 @@ in {\em Proc. Int. Conf. on Computer Eng. and Sys.}, Cairo, Egypt, Dec. 2015, pp
 %\newpage
 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{pic/nick}}]{Nicholas Houghton}
-received his masters in Applied Science from the University of Victoria, BC, Canada in 2016.
-He received the B.Eng degree in Computer Engineering in 2015 also from the University of Victoria.
+	received his masters in Applied Science from the University of Victoria, BC, Canada in 2016.
+	He received the B.Eng degree in Computer Engineering in 2015 also from the University of Victoria.
 \end{IEEEbiography}
 
 
 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{pic/samer}}]{Samer Moein}
-received the Ph.D. degree in Computer Engineering from the University
-of Victoria, Victoria, BC, Canada, in 2015.
-Currently, he is a Post Doctoral Fellow in the Department of Electrical and Computer
-Engineering at the University of Victoria.
-He received the B.Sc. degree in Computer
-Engineering from Kuwait University, Kuwait in 2004, and the M.Sc.
-degree in Computer Engineering from Kuwait University, Kuwait in 2011.
-His research interests include computer security, cryptography, and crypto-processors.
+	received the Ph.D. degree in Computer Engineering from the University
+	of Victoria, Victoria, BC, Canada, in 2015.
+	Currently, he is a Post Doctoral Fellow in the Department of Electrical and Computer
+	Engineering at the University of Victoria.
+	He received the B.Sc. degree in Computer
+	Engineering from Kuwait University, Kuwait in 2004, and the M.Sc.
+	degree in Computer Engineering from Kuwait University, Kuwait in 2011.
+	His research interests include computer security, cryptography, and crypto-processors.
 \end{IEEEbiography}
 
 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{pic/gebali}}]{Fayez Gebali}
-received the B.Sc. degree in Electrical Engineering (first class honors) from Cairo University,
-the B.Sc. degree in Mathematics (first class honors) from Ain Shams University,
-and the Ph.D. degree in Electrical Engineering form the University of British Columbia where he held an NSERC postgraduate scholarship.
-Dr. Gebali is a Professor in the Department of Electrical and Computer Engineering at the University of Victoria,
-and is currently Department Chair.
-His research interests include parallel algorithms, networks-on-chip, three-dimensional integrated circuits, digital communications, and computer arithmetic.
+	received the B.Sc. degree in Electrical Engineering (first class honors) from Cairo University,
+	the B.Sc. degree in Mathematics (first class honors) from Ain Shams University,
+	and the Ph.D. degree in Electrical Engineering form the University of British Columbia where he held an NSERC postgraduate scholarship.
+	Dr. Gebali is a Professor in the Department of Electrical and Computer Engineering at the University of Victoria,
+	and is currently Department Chair.
+	His research interests include parallel algorithms, networks-on-chip, three-dimensional integrated circuits, digital communications, and computer arithmetic.
 \end{IEEEbiography}
 
 % You can push biographies down or up by placing
