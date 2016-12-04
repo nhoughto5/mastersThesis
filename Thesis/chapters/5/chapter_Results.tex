@@ -9,7 +9,7 @@ To demonstrate its potential, it has been tested using a series of benchmarks.
 These benchmarks are included in the \NameNoPeriod application package as an example for users.
 \subsection{Priority Decoder} \label{sec:priorityDecoder}
 At the \acrfull{ISCAS} in 1989, F. Brglez and H. Fujiwara presented a series of \acrshort{FPGA} benchmark circuits originally written in C~\cite{iscas85}. 
-These benchmarks were accessed and a small 'Priority Decoder' circuit was chosen~\cite{iscasBenchmarks}.
+These benchmarks were accessed and a small ``Priority Decoder'' circuit was chosen~\cite{iscasBenchmarks}.
 The provided verilog code for the decoder benchmark was synthesized on a Virtex-5 XC5VLX155 and the generated \gls{Bitstream} and \acrshort{XDL} files were acquired.
 The priority decoder \gls{Bitstream} file was fed to both the \gls{golden} and \gls{target} inputs to the \Name.
 Feeding the same \gls{Bitstream} file to both inputs replicates the occurrence where the third-party fabrication house made no modifications; the \gls{Bitstream} extracted from the \gls{target} device is exactly the same as the \gls{golden}.
@@ -77,14 +77,14 @@ A trojan can be inserted into this circuit as shown in Fig.~\ref{fig:userAuthent
 The outputs of the original and infected circuits are compared in Table~\ref{tbl:trojanOutputs}.
 A simple test will show that the circuit outputs the desired $F(x) = x^2$ for each of the users.
 However, upon closer inspection it is noted that the inputs corresponding to $x = 10$ to $x = 15$ are not used; there are no clients occupying those identifications.
-These unused inputs are referred to as 'dont-cares', meaning that it is not important to the function of the circuit what their corresponding output is.
+These unused inputs are referred to as ``dont-cares'', meaning that it is not important to the function of the circuit what their corresponding output is.
 Don't-care cases are a typical vulnerability which can be exploited by an attacker.
-Under the 'Circuit A' column of Table~\ref{tbl:trojanOutputs} it can be seen that $I_{10}$ and $I_{11}$ produce results 68 and 89 respectively.
+Under the ``Circuit A'' column of Table~\ref{tbl:trojanOutputs} it can be seen that $I_{10}$ and $I_{11}$ produce results 68 and 89 respectively.
 These results are not correct according to $F(x) = x^2$.
 This is an intended result by the circuit designer to add security for these don't care conditions.
 If an attacker is able to make the modification in Fig.~\ref{fig:userAuthenticationCircuitTrojan}, inputs $10$ and $11$ will now produce results 100 and 121 which are correct according to $F(x) = x^2$.
-This can be seen under the 'Circuit B' column of Table~\ref{tbl:trojanOutputs}.
-Now, the attacker has built a 'back-door' into the circuit.
+This can be seen under the ``Circuit B'' column of Table~\ref{tbl:trojanOutputs}.
+Now, the attacker has built a ``back-door'' into the circuit.
 The original 10 users' authentication is not altered but inputs 10 and 11 provide unauthorized access to the attacker.
 
 \subsubsection{Detection and Analysis using the \Name}
@@ -116,7 +116,7 @@ The system output the attributes:
 	\caption[Results of The Authentication Circuit Trojan Detection]{Results of The Authentication Circuit Trojan Detection}
 	\label{fig:backDoorResult}
 \end{figure}
-As expected the results state that the trojan was inserted in the Fabrication phase (3); it is the earliest stage in the 'insertion' phase produced indicating it as the source.
+As expected the results state that the trojan was inserted in the Fabrication phase (3); it is the earliest stage in the ``insertion'' phase produced indicating it as the source.
 The effects of this modification propagate to the Testing (4) and Assembly (5) phases as expected.
 The modifications reach both the System (6) and \acrfull{RTL} (7) abstraction levels.
 Since the modifications were made using the schematic designer provided by \Xilinx which works in the \acrshort{RTL} level, these results are as expected.
@@ -171,23 +171,23 @@ They collaboratively developed a series of verilog, VHDL and virtual machines th
 They took the benchmarks they created and published them on a website they created called \textit{Trust-Hub}.
 The benchmarks provided are organized by a taxonomy they proposed in~\cite{trustHubPaper}.
 Their taxonomy is slightly different than the one used by the \NameNoPeriod which was proposed in~\cite{samerAttribute}, however the two are conceptually similar.
-To demonstrate the efficacy of the \NameNoPeriod a benchmark named 'AES-T100' was chosen. 
+To demonstrate the efficacy of the \NameNoPeriod a benchmark named ``AES-T100'' was chosen. 
 The supporting documents describe this trojan as follows:
 \begin{displaycquote}{trusthubWebsite}
 	The Trojan leaks the secret key from a cryptographic chip running the AES algorithm through a covert channel. The channel adapts the concepts from spread spectrum communications (also known as Code-Division Multiple Access (CDMA)) to distribute the leakage of single bits over many clock cycles. The Trojan employs this method by using a pseudo-random number generator (PRNG) to create a CDMA code sequence, the PRNG initialized to a predefined value. The code sequence is then used to XOR modulate the secret information bits. The modulated sequence is forwarded to a leakage circuit (LC) to set up a covert CDMA channel in the power side-channel. The LC is realized by connecting eight identical flip-flop elements to the single output of the XOR gate to mimic a large capacitance.
 \end{displaycquote}
 
 From the description it is reasonable to expect certain results from the \Name.
-The description states that the trojan 'leaks the secret key'.
+The description states that the trojan ``leaks the secret key''.
 From this we should expect our results to contain Effect attribute Information Leakage (13).
 Information being leaked from a device will need a means to be transmitted to the attacker.
 Location attribute \acrshort{IO} (31) may be observed.
-It then states that it leaks 'single bits over many clock cycles'. 
+It then states that it leaks ``single bits over many clock cycles''. 
 This suggests that the trojan exhibits some form of Sequential Logic (16).
 This may or may not require modification to clock tiles; Location attribute Clock Grid (33) may be observed. 
 It then states that the PRNG is initialized to a predefined value; initialization requires the value be stored in memory. 
 Location attribute Memory (30) should be expected.
-The trojan then uses a 'power side-channel' as a communication channel.
+The trojan then uses a ``power side-channel'' as a communication channel.
 This will require modification to power tiles; Location attribute Power Supply (32) should be expected.
 
 \subsubsection{Detection and Analysis using the \Name}

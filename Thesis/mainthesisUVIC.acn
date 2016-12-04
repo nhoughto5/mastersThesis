@@ -6,10 +6,10 @@
 \glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{v}
 \glossaryentry{UI?\glossentry{UI}|setentrycounter[]{page}\glsnumberformat}{v}
 \glossaryentry{UI?\glossentry{UI}|setentrycounter[]{page}\glsnumberformat}{v}
-\glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{vi}
 \glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{vii}
 \glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{viii}
-\glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{viii}
+\glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{ix}
+\glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{ix}
 \glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{1}
 \glossaryentry{HDL?\glossentry{HDL}|setentrycounter[]{page}\glsnumberformat}{1}
@@ -271,3 +271,7 @@
 \glossaryentry{XDL?\glossentry{XDL}|setentrycounter[]{page}\glsnumberformat}{58}
 \glossaryentry{XDL?\glossentry{XDL}|setentrycounter[]{page}\glsnumberformat}{58}
 \glossaryentry{UI?\glossentry{UI}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{API?\glossentry{API}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{FPGA?\glossentry{FPGA}|setentrycounter[]{page}\glsnumberformat}{60}

@@ -9,7 +9,7 @@ These trends require ever more people and sophisticated means of manufacture whi
 Products developed by semiconductor companies tend to be compromised in one of two ways.
 First, due to its complexity it is rare for an \acrshort{IC} to be entirely manufactured within a single company.
 Frequently, steps in the production-chain are outsourced.
-It is within these 'third-party' contributors that products can be maliciously modified.
+It is within these ``third-party'' contributors that products can be maliciously modified.
 Secondly, for various reasons, employees of trusted contributors have been known to make modifications~\cite{trojanSurvey2014}.
 \acrshort{IC}s are an integral part of every facet of the modern world.
 Proper application of a trojan can provide information, control of mechanical systems, surveillance and more to an unauthorized party.
@@ -274,17 +274,17 @@ indicating that it can detect more trojans based on their effects.
 Hardware trojans are a new and exciting field of study.
 As \acrshort{FPGA}s take a larger portion of the \acrfull{IC} market the need for security becomes greater.
 With this, detection and analysis of trojans in \acrshort{FPGA}s has become a growing topic and has seen some development in recent years.
-The majority of work focused on \acrshort{FPGA} trojans has employed either a means of reverse engineering, functional testing or 'side-channel' analysis.
+The majority of work focused on \acrshort{FPGA} trojans has employed either a means of reverse engineering, functional testing or ``side-channel'' analysis.
 The configuration \gls{Bitstream} contains all of the information one would want to know about what is happening on the device.
 There has been little effort to directly analyze the \gls{Bitstream} because manufacturers are reluctant to provide intimate details of its format.
   
 \subsection{\acrfull{CRC} Detection} \label{sec:crcDetection}
 Because \acrshort{FPGA} design is done using a software language it is possible for designers to share component designs easily.
-It is common for designers to employ 'third-party' \acrfull{IP}. 
+It is common for designers to employ ``third-party'' \acrfull{IP}. 
 This sharing of component design provides the opportunity for attackers to add trojans to commercial products by sharing trojan-containing \acrshort{IP}.
 In 2013 researchers at Cairo University proposed a method of insulating externally sourced \acrshort{IP} with \acrfull{CRC} defense modules~\cite{crcDetection}.
 According to the authors their method is capable of detecting leaked information with a 99.95\% accuracy.
-This method employs a methodology referred to as 'built-in-self-test" (BIST) where additional hardware is added to the design.
+This method employs a methodology referred to as ``built-in-self-test'' (BIST) where additional hardware is added to the design.
 The additional hardware performs run-time checking of circuit output.
 In general, the BIST method is only capable of detecting modifications the designers have foreseen.
 In this case, this method is only capable of detecting trojans that possess the attribute Information Leakage (13) from the taxonomy presented ins section~\ref{sec:topology}.
@@ -295,7 +295,7 @@ In addition the authors report considerable detriment to power consumption and p
 Researchers at the Technological Educational Institute of Western Greece and Industrial Systems Institute/RC “Athena” jointly proposed a method of using \acrfull{ROs} as a mechanism for detecting hardware trojans~\cite{ringOscillatorMethod}.
 A \acrshort{RO} is a circuit composed of inverters formed into a loop.
 Electric current looping through the \acrshort{RO} does so at an inherent frequency.
-By configuring the circuit paths of the user's design into a \acrshort{RO} it is possible to create a 'signature'.
+By configuring the circuit paths of the user's design into a \acrshort{RO} it is possible to create a ``signature''.
 This signature is an expected frequency emitted from the desired design. 
 The authors claim that modifications to the design will alter the frequency emitted by its circular configuration.
 The experimental results showed that modifications did in-fact alter the frequency enough to reliably detect modifications.

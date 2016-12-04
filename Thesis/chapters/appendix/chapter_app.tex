@@ -4,8 +4,8 @@
 \section{Technologies Used}
 \subsection{\Xilinx}
 \Xilinx is one of the two largest manufacturers of \acrshort{FPGA}s; their devices are considerably more popular than their competitors.
-The configuration of devices employs a well known series of steps referred to as the \Xilinx 'tool-chain'~\cite{xilnxDevManual}.
-The 'tool-chain' not only compiles user designs and constraints into the configuration \gls{Bitstream} but performs a series of complex operations to optimize designs and effectively implement them on any \Xilinx model of the user's choosing.
+The configuration of devices employs a well known series of steps referred to as the \Xilinx ``tool-chain''~\cite{xilnxDevManual}.
+The ``tool-chain'' not only compiles user designs and constraints into the configuration \gls{Bitstream} but performs a series of complex operations to optimize designs and effectively implement them on any \Xilinx model of the user's choosing.
 \begin{enumerate}
 	\item \textbf{\gls{sch2hdl}}: \glsdesc{sch2hdl}
 	\item \textbf{\gls{XST}}: \glsdesc{XST}
@@ -19,13 +19,13 @@ Each step produces a series of files that are used for a variety of purposes.
 Often the resultant files are used by the subsequent step but some are intended for user information.
 The \gls{ngdbuild} tool generates what is known as the netlist for the design.
 The netlist is a description of the connectivity of the circuit implemented on the device. 
-The generated netlist is in a non human-readable format in an 'ndc' file.
+The generated netlist is in a non human-readable format in an ``ndc'' file.
 Fortunately, \Xilinx provides an additional tool called \gls{xdl2ndc} which allows the conversion to the human-readable \acrfull{XDL}.
 \subsubsection{\acrfull{XDL}} \label{sec:XDL}
-The \acrfull{XDL} is a human-readable ASCII format; though it is not actively part of the 'tool-chain' it is considered a native netlist format for describing and representing \acrshort{FPGA} designs~\cite{xdlTutorial}. 
-In a netlist, a 'part' is a human-defined component which is to be implemented.
+The \acrfull{XDL} is a human-readable ASCII format; though it is not actively part of the ``tool-chain'' it is considered a native netlist format for describing and representing \acrshort{FPGA} designs~\cite{xdlTutorial}. 
+In a netlist, a ``part'' is a human-defined component which is to be implemented.
 Netlists either contain or refer to descriptions of the parts used and where in the device they are implemented.
-When a part is used it is called an 'instance'; thus each 'instance' has a definition, sometimes referred to as a master.
+When a part is used it is called an ``instance''; thus each ``instance'' has a definition, sometimes referred to as a master.
 
 An \acrshort{XDL} file contains two sections, the instance placement and configuration section, and the net routing section. 
 The placement and configuration section provides a list of every instance in a design. 
@@ -88,7 +88,7 @@ The smaller files can be around 10MB while the fully detailed descriptions can r
 Java is a powerful and general-purpose programming language. 
 It is specifically designed to be as independent as possible.
 The original developer, James Gosling, intended the language to allow developers a comfortable implementation experience with seamless deployment. 
-The custodians of the Java language, Sun Microsystems, promote the slogan 'write-once, run anywhere'.  
+The custodians of the Java language, Sun Microsystems, promote the slogan ``write-once, run anywhere''.  
 \NameNoPeriod was written in Java primarily in order to interface with the \acrshort{API} known as \RapidSmith which is described in section~\ref{sec:rapidSmith}.
 However, Java additionally allows the \NameNoPeriod to be a compact, cross-platform application.
 The Java language provides a native \acrfull{GUI} toolkit known as \SwingEnd.
@@ -105,7 +105,7 @@ It was chosen as a supporting library for the \NameNoPeriod for several reasons.
 First, the code base provides a series of class structures that astutely mirror the architecture of \Xilinx devices.
 Secondly, it provides ready-made tools for extracting the configuration frames from \gls{Bitstream} files. 
 \gls{Bitstream} files are long binary sequences, without the tools provided by \RapidSmith the analysis of these files becomes an arduous task.
-Finally, and most importantly, the creators of \RapidSmith have developed a means of condensing XDLRC files into a greatly compressed format referred to as a 'database' file.
+Finally, and most importantly, the creators of \RapidSmith have developed a means of condensing XDLRC files into a greatly compressed format referred to as a ``database'' file.
 The \NameNoPeriod requires considerable detail of an \acrshort{FPGA}'s architecture in order to accurately described the effects a trojan has on a design.
 As mentioned in section~\ref{sec:XDLRC}, the fully detailed XDLRC files can reach 7GB in size.
 Working with text-based files of this size detriments performance to an unacceptable level.
@@ -116,15 +116,15 @@ With these compressed fies, \RapidSmith gives the \NameNoPeriod the ability to a
 \subsubsection{Class Structure} \label{sec:classStructure}
 Building off of the information provided by the XDLRC architecture files, \RapidSmith provides a class structure that enables developers an easy to use interface for working with \acrshort{FPGA}s.
 As described in section~\ref{sec:architectureAndConfig}, the gate-array of an \acrshort{FPGA} is composed of blocks made up of tiles.
-These tiles are further composed of sub-components collectively referred to as 'primitives'.
+These tiles are further composed of sub-components collectively referred to as ``primitives''.
 Figure~\ref{fig:classStructures} shows the top-down construction of the \RapidSmith class structure.
-The \NameNoPeriod employs both the 'Device' and 'Design' classes shown in Figures~\ref{fig:rapidSmithDevice} and~\ref{fig:rapidSmithDesign} respectively.
+The \NameNoPeriod employs both the ``Device'' and ``Design'' classes shown in Figures~\ref{fig:rapidSmithDevice} and~\ref{fig:rapidSmithDesign} respectively.
 The \gls{Bitstream} for the \gls{golden} and \gls{target} devices are read into memory. 
 A utility class which parses the \gls{Bitstream} into its configuration frames determines the model of the devices used.
-The 'Device' class is configured to the correct model and then is loaded with the architecture details from the compressed XDLRC file.
+The ``Device'' class is configured to the correct model and then is loaded with the architecture details from the compressed XDLRC file.
 The complete description of the architecture is read and loaded; every tile, primitive, wire, and how they all interconnect is stored in memory.
 The \gls{golden} \acrshort{XDL} file is then loaded.
-The \acrshort{XDL} file is read and the 'Design' class is similarly loaded with the user-defined design.
+The \acrshort{XDL} file is read and the ``Design'' class is similarly loaded with the user-defined design.
 \begin{figure*}[h]
 	\centering
 	\begin{subfigure}[t]{0.5\textwidth}
@@ -145,14 +145,14 @@ The \acrshort{XDL} file is read and the 'Design' class is similarly loaded with 
 \end{figure*}
 Not shown in Figure~\ref{fig:classStructures} are a series of utility classes.
 The \gls{Bitstream} parser class reads and interprets the \gls{Bitstream} files. 
-It uses a 'Frame' class to organize the \gls{Bitstream} file into an array of objects that adhere to the configuration pattern described in section~\ref{sec:architectureAndConfig}.
+It uses a ``Frame'' class to organize the \gls{Bitstream} file into an array of objects that adhere to the configuration pattern described in section~\ref{sec:architectureAndConfig}.
 The frame objects are populated with the frame's 32-bit address, an array of 32-bit words which make up the frame and a series of helper methods.
 \section{\Name}
 \subsection{\acrfull{UI}}
 Java and Java \Swing provide an easy to use \acrlong{UI} development system which produces light-weight, portable and cross platform applications.
 The \NameNoPeriod employs \Swing to provide a very simplistic and easy to use interface which can be seen in Figure~\ref{fig:UI}.
 To perform an analysis the user must use the \acrshort{UI} to navigate to and select the \gls{golden} \gls{Bitstream}, the \gls{target} \gls{Bitstream} and the \gls{golden} \acrshort{XDL} file via the three browse buttons on the left.
-Once loaded the detection process can be launched via the 'Analyze' button.
+Once loaded the detection process can be launched via the ``Analyze'' button.
 On the right the user is able to review information specific to the trojan, which will be described in section~\ref{sec:operation}.
 \begin{figure}
 	\centering
@@ -164,21 +164,21 @@ On the right the user is able to review information specific to the trojan, whic
 If a modification is discovered, the \NameNoPeriod analyzes it and reports a list of attributes from the taxonomy of Chapter~\ref{chapter:hardwareTrojans} which describe it.
 Results are printed textually in the text window.
 The attribute id-number, name, category and a brief description of the attribute are provided.
-After the analysis the user is able to use the 'Print Modified Tiles' feature.
+After the analysis the user is able to use the ``Print Modified Tiles'' feature.
 Any tile in the architecture which corresponds to a modified tile is printed to the text window. 
 This provides the user with the exact location on the their device where modification took place.
-The 'Print Modified Instances' feature corresponds each modified tile to the design-instance it belongs to.
+The ``Print Modified Instances'' feature corresponds each modified tile to the design-instance it belongs to.
 \Xilinx provides schematic design views which correspond instance names to the user's design.
 This can be used by the user to refer back to their design and view the trojan's effects from a high abstraction perspective.
-The 'Print Modified Net Names' provides only the names of each channel that has been modified. 
+The ``Print Modified Net Names'' provides only the names of each channel that has been modified. 
 Again this allows the user to relate modifications to their design.
-The 'Print Modified Net Details' button provides both the names of modified nets and their corresponding list of primitives.
-Finally, the 'Clear' button is a manual method of removing the text from the text-window.
+The ``Print Modified Net Details'' button provides both the names of modified nets and their corresponding list of primitives.
+Finally, the ``Clear'' button is a manual method of removing the text from the text-window.
 \subsection{Operation} \label{sec:operation}
 Figure~\ref{fig:Operation} gives a visual representation of the operating procedure of the \Name.
 To perform analysis the user must submit the \gls{golden} and \gls{target} \gls{Bitstream} files.
 As seen on the left of Figure~\ref{fig:Operation}, these large binary files are parsed by a utility class provided by \RapidSmith. 
-The parsing utility is able to detect the model of the device by scanning the 'header' information in the files.
+The parsing utility is able to detect the model of the device by scanning the ``header'' information in the files.
 Different \Xilinx models use different configuration patterns.
 The \gls{Bitstream} of different models may differ in a variety of features including frame size, ordering, address structure and more.
 \begin{figure}[h]
@@ -193,22 +193,35 @@ The \gls{golden} and \gls{target} frames are extracted and stored in memory as a
 The two arrays are then passed to a comparison process.
 Each frame is compared bit by bit.
 A trojan-free circuit will have no differences between the \gls{golden} and \gls{target} files.
-Any modified frames discovered are stored in a 'Modified\_Frame' class.
-The 'Modified\_Frame' object stores the \gls{golden} frame data, the \gls{target} frame data, the address of the frame and more.
-They are then used by the 'Component Mapping' method described in section~\ref{sec:tileMapping} to determine where in the architecture the modifications have been made.
+Any modified frames discovered are stored in a ``Modified\_Frame'' class.
+The ``Modified\_Frame'' object stores the \gls{golden} frame data, the \gls{target} frame data, the address of the frame and more.
+They are then used by the Component Mapping method described in section~\ref{sec:tileMapping} to determine where in the architecture the modifications have been made.
 
-The component mapping procedure relies heavily on the compressed XDLRC files and the corresponding \acrshort{API} described in section~\ref{sec:XDLRC} as well as the 'Device' class structure shown in Figure~\ref{fig:rapidSmithDevice}.
-Component mapping produces a list of objects of the 'Modified\_Tile' class.
+The component mapping procedure relies heavily on the compressed XDLRC files and the corresponding \acrshort{API} described in section~\ref{sec:XDLRC} as well as the ``Device'' class structure shown in Figure~\ref{fig:rapidSmithDevice}.
+Component mapping produces a list of objects of the ``Modified\_Tile'' class.
 This class contains a reference to the corresponding tile in the XDLRC file, the \gls{golden} and \gls{target} words (which differ), the frame address in which it occurred, the sub-column type and the column type.
 The user is also required to enter the \gls{golden} \acrshort{XDL} file.
 As described in section~\ref{sec:XDL} the \acrshort{XDL} file contains the Netlist for the \gls{golden} design.
 This file describes not only how each of the users components are built and interconnected but where on the device they are placed.
 The modified tiles, as shown in Figure~\ref{fig:Operation}, must be correlated to the users design to extract useful information.
 The instances and nets described in the \acrshort{XDL} file list the exact tile and primitive in which they are placed.
-The \RapidSmith \acrshort{XDL} parser reads the user's design and populates the 'Design' class shown in Figure~\ref{fig:rapidSmithDesign}.
-The list of 'Modified\_Tile' objects are compared to the tile placings of the instances and nets in the populated 'Design' object.
-Any instances or nets that are placed in 'modified' tiles are flagged and stored.
+The \RapidSmith \acrshort{XDL} parser reads the user's design and populates the ``Design'' class shown in Figure~\ref{fig:rapidSmithDesign}.
+The list of ``Modified\_Tile'' objects are compared to the tile placings of the instances and nets in the populated ``Design'' object.
+Any instances or nets that are placed in ``modified'' tiles are flagged and stored.
 The user is able to view which instances and nets of their design have been modified by the four buttons on the right of the \acrshort{UI} shown in Figure~\ref{fig:UI}.
+\subsection{Performance}
+The \NameNoPeriod takes less than a minute to perform an analysis.
+Improvement in a few key areas of the implementation can see even better performance.
+\begin{itemize}
+	\item Component Mapping: The current implementation of the component mapping algorithm relies on a pre-analysis step. 
+	This process reviews the architecture of the device to gather important information which is later used to map modified words to its corresponding tiles. 
+	For larger devices this step adds considerable latency which could be reduced with an improved implementation. 
+	\item Matrix Analysis: The analysis procedure used to analyze the rows and columns of the relation matrix employs a series of burdensome embedded loop operations. 
+	Again, an improved implementation can greatly reduce the latency period of the user experience.
+	\item \RapidSmith Database Files: The \RapidSmith \acrshort{API} includes the necessary methods to query the XDLRC database files.
+	Due to the density of the information stored in these compressed files, analysis could be considered a bottleneck to the \Name's operation. 
+	Improvement would require intimate knowledge of the compression algorithm used by the \RapidSmith team and is likely best left to its developers. 
+\end{itemize}
 \subsection{The Web Environment} \label{sec:webEnvironment}
 The HTS was designed as a web utility for portability and easy distribution.
 The application server performs all of the computations and generates page markup to minimize the burden on client-side browsers.
@@ -254,9 +267,21 @@ Email confirmation is used to verify user accounts.
 	\label{fig:WebsiteArchitecture}
 \end{figure}
 
-%This is a good place to put tables, lots of results, perhaps all the data compiled in the experiments. By avoiding putting all the results inside the chapters themselves, the whole thing may become much more readable and the various tables can be linked to appropriately.
-%
-%The main purpose of an Appendix however should be to take care of the future readers and researchers. This implies listing all the housekeeping facts needed to continue the research. For example: where is the raw data stored? where is the software used? which version of which operating system or library or experimental equipment was used and where can it be accessed again?
-%
-%Ask yourself: if you were given this thesis to read with the goal that you will be expanding the research presented here, what would you like to have as housekeeping information and what do you need? Be kind to the future graduate students and to your supervisor who will be the one stuck in the middle trying to find where all the stuff was left!
+\section{Future Work}
+The \NameNoPeriod is the first iteration of this new and exciting methodology. 
+With increased time and resources development of this application can provide an even more accurate and comprehensive automated tool.
+A primary focus of future efforts should pertain to improving and creating new techniques of directly observing attributes.
+The scatter score method is an example of a technique that aids the application in relying less on the inference provided by the relation matrix and more on direct analysis.
+Though the matrix provides insight that would otherwise be lacking, the results it provides can not be concretely relied on; too much of this tactic relies on speculation.
+
+The component mapping method has only been tested on Virtex-5 models. 
+In theory, the current application should work as expected with Virtex-4 and 6 models as well; the architecture across these families is fairly consistent. 
+Analysis of devices with vastly different structures, such as the Spartan-3, may cause failures.
+The methodology behind component mapping is perfectly viable however the application will need to become aware of the architectural differences and apply them as needed.
+
+Finally, the Hardware Trojan System is currently built with C\# in the ASP.NET framework.
+It may be desirable to translate it to the Java EE web framework.
+By doing so the two applications can be amalgamated into a single on-line application.
+This completely eliminates the platform or install issues of the desktop application.
+Additionally, discovered trojans could be automatically added to the database without human input. 
 

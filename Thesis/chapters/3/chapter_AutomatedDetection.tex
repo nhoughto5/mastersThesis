@@ -30,18 +30,18 @@ These same features, however, increase their vulnerability to attack.
 \end{figure}
 
 Figure~\ref{fig:Concept} provides a visual representation of the use-case assumed for the purposes of this work. 
-With the exception of the fabrication process, all stages of production of an \acrshort{FPGA} implementation are assumed to have been done "in-house". 
+With the exception of the fabrication process, all stages of production of an \acrshort{FPGA} implementation are assumed to have been done ``in-house''. 
 Any trojan discovered is inserted in the fabrication phase; all other stages are trusted.  
-The method of automated trojan detection described in this work would take place in the 'testing' phase of the life-cycle. 
+The method of automated trojan detection described in this work would take place in the ``testing'' phase of the life-cycle. 
 
 Figure~\ref{fig:methodologyOverview} shows an overview of the trojan detection methodology.
 As mentioned, \acrshort{FPGA} designs are written in a \acrfull{HDL}.
-\Xilinx provides a series of \acrfull{UI} and command line tools to process the \acrshort{HDL} known as the 'tool-chain'.
-The tool chain generates a series of files that are used for a variety of purposes as shown in the 'Resultant Files' box in Figure~\ref{fig:methodologyOverview}.
+\Xilinx provides a series of \acrfull{UI} and command line tools to process the \acrshort{HDL} known as the ``tool-chain''.
+The tool chain generates a series of files that are used for a variety of purposes as shown in the ``Resultant Files'' box in Figure~\ref{fig:methodologyOverview}.
 The NGC file is a non-human readable semantic description of the design known as a netlist.
 This file can be converted into a human-readable version known as \acrfull{XDL} which will be described in section~\ref{sec:XDL}.
 The Bit file is the binary representation of the design to be implemented.
-It is referred to as the \gls{Bitstream} or 'configuration' \gls{Bitstream} and is the final form that is loaded into the \acrshort{FPGA}.
+It is referred to as the \gls{Bitstream} or ``configuration'' \gls{Bitstream} and is the final form that is loaded into the \acrshort{FPGA}.
 \begin{figure}
 	\centering
 	\includegraphics[width=1\linewidth]{Figures/methodologyOverview}
@@ -49,7 +49,7 @@ It is referred to as the \gls{Bitstream} or 'configuration' \gls{Bitstream} and 
 	\label{fig:methodologyOverview}
 \end{figure}
 This Bit file is the primary file sent to the fabrication house where it will be implemented onto the batch of devices ordered.
-The resultant files, produced 'in-house' are to be kept in secure storage while a copy is sent to be fabricated; these stored copies are referred to as \gls{golden} and assumed to be trojan-free.
+The resultant files, produced ``in-house'' are to be kept in secure storage while a copy is sent to be fabricated; these stored copies are referred to as \gls{golden} and assumed to be trojan-free.
 Though it is known that the fabrication houses will often attempt to make optimizations on designs, this methodology requires that no such efforts be made.
 When the completed batch of fabricated chips are returned the \gls{Bitstream} is extracted from a sample via the method described in section~\ref{sec:bitstreamExtraction}. 
 That which is extracted is referred to as the \gls{target} \gls{Bitstream}.
@@ -62,7 +62,7 @@ This is described in section~\ref{sec:trojanAttributes}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{FPGA Architecture and Configuration} \label{sec:architectureAndConfig}
-A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the 'gate-array' and is shown in Figure~\ref{fig:FPGA}~\cite{xilnxDevManual}.
+A \Xilinx \acrfull{FPGA} is comprised of a matrix of blocks referred to as the ``gate-array'' and is shown in Figure~\ref{fig:FPGA}~\cite{xilnxDevManual}.
 A device can contain anywhere from a couple hundred to a few thousand blocks and are arranged into columns by type.
 \begin{figure}[h]
 	\centering
@@ -75,7 +75,7 @@ A block will consist of one or multiple tiles depending on its type.
 A tile is a component specific to a particular function such as \acrfull{IO}, design logic, memory...etc but their detailed functionality can be configured by the user.
 Though an \acrshort{FPGA} may have over one-hundred different types of tiles each column is comprised entirely by a single block type.
 Columns are separated into regions shown by the dashed lines in Figure~\ref{fig:FPGA}.
-These regions each use a separate clock mechanism and are referred to as 'Clock Regions'.
+These regions each use a separate clock mechanism and are referred to as ``Clock Regions''.
 
 
 Figure~\ref{fig:column} depicts a \acrfull{CLB} column.
@@ -85,7 +85,7 @@ In this column the \acrshort{CLB} tile is the primary feature of each block, hen
 Consequentially, since this column is made up of \acrshort{CLB} blocks it is referred to as a \acrshort{CLB} column.
 A column is comprised of blocks stacked vertically.
 In the case where blocks contains multiple tiles, columns can be thought to contain sub-columns.
-The stack of interconnects can be considered the 'interconnect' sub-column while the stack of \acrshort{CLB} tiles can be thought of as the \acrshort{CLB} sub-column.
+The stack of interconnects can be considered the ``interconnect'' sub-column while the stack of \acrshort{CLB} tiles can be thought of as the \acrshort{CLB} sub-column.
 Combined, the two sub-columns make up this \acrshort{CLB} column. 
 \begin{figure}
 \centering
@@ -115,7 +115,7 @@ As mentioned in section~\ref{sec:architectureAndConfig} the \gls{Bitstream} is s
 All \Xilinx devices provide a feature known as \gls{Readback}.
 There are two styles of \gls{Readback}; \gls{Readback} verify and \gls{Readback} capture.
 The \gls{Readback} capture method provides a large quantity of debug information which is not needed; \gls{Readback} verify will be used.
-\gls{Readback} verify is the process where the device is put into a 'frozen' state during run-time and all of the configuration bits are returned from the gate-array to the \acrshort{SRAM}. 
+\gls{Readback} verify is the process where the device is put into a ``frozen'' state during run-time and all of the configuration bits are returned from the gate-array to the \acrshort{SRAM}. 
 The results can then be uploaded to a \acrfull{PC} for analysis.
 This process overwrites the original frame data in the \acrshort{SRAM} with the values which actually configured the device. 
 By using this method rather than simply reading the \acrshort{SRAM} it ensures that what is tested in section~\ref{sec:fpgaBitStream} is actually what configured the device.
@@ -124,7 +124,7 @@ This minimizes risk of tampered external memory units or configuration mechanics
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{The \acrshort{FPGA} \gls{Bitstream} Analysis} \label{sec:fpgaBitStream}
-The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into 'frames'.
+The \Xilinx \gls{Bitstream} is a binary file composed of a series of 32-bit words organized into ``frames''.
 A frame is a string of single bits that span from the top to the bottom of a clock region of a device as seen in the top-right quadrant of Figure~\ref{fig:FPGA}.
 A frame affects every block in a column and multiple horizontally adjacent frames are required to configure an entire column.
 Each frame is uniquely identified by a 32-bit address and is the smallest addressable element.
@@ -235,7 +235,7 @@ where:
 	B     &  Number of blocks per column
 \end{conditions}
 \normalsize
-As shown in Figure~\ref{fig:frameTileMap} words are addressed from the 'top' of a device down.
+As shown in Figure~\ref{fig:frameTileMap} words are addressed from the ``top'' of a device down.
 Equation~\ref{eqn:getTileNumber} can be used to map a particular word in a frame to a block on the device.
 \begin{equation} \label{eqn:getTileNumber}
 i = B - \floor*{\frac{w}{n}}
@@ -355,8 +355,8 @@ The results of the golden design analysis, the subsets, and the numeric descript
 The \textit{Physical Location} category contains six attributes.
 These six can be considered three pairs; a trojan exhibits one attribute from each pair. 
 \begin{enumerate}
-	\item \textbf{Large or Small} (attributes 23 or 24): According to~\cite{samerAttribute}, small trojans are defined as those that are nearly impossible to detect via power consumption. From this it can be said that 'small' trojans occupy minimal resources. Trojans where the number of reconfigured tiles is less than 5\% of the number of tiles in the golden design are considered small. Other wise they are attributed as large.
-	\item \textbf{Changed Layout or Augmented} (attributes 25 or 26): A 'changed layout' trojan is such that only tiles that are configured by the golden design are reconfigured. An augmented trojan is where additional layout is added. The presence of 'activated' or 'deactivated' tiles indicates an augmented trojan. 
+	\item \textbf{Large or Small} (attributes 23 or 24): According to~\cite{samerAttribute}, small trojans are defined as those that are nearly impossible to detect via power consumption. From this it can be said that ``small'' trojans occupy minimal resources. Trojans where the number of reconfigured tiles is less than 5\% of the number of tiles in the golden design are considered small. Other wise they are attributed as large.
+	\item \textbf{Changed Layout or Augmented} (attributes 25 or 26): A ``changed layout'' trojan is such that only tiles that are configured by the golden design are reconfigured. An augmented trojan is where additional layout is added. The presence of ``activated'' or ``deactivated'' tiles indicates an augmented trojan. 
 	\item \textbf{Clustered or Distributed} (attributes 27 or 28): The trojan is considered to be clustered when the standard deviation of the reconfigured tile positions is less than 15\%; distributed otherwise.
 \end{enumerate}
 \subsubsection{Insertion and Abstraction Attributes}

@@ -2,10 +2,10 @@
 \contentsline {chapter}{Supervisory Committee}{ii}
 \contentsline {chapter}{Abstract}{iii}
 \contentsline {chapter}{Table of Contents}{iv}
-\contentsline {chapter}{List of Tables}{vi}
-\contentsline {chapter}{List of Figures}{vii}
-\contentsline {chapter}{Acknowledgements}{ix}
-\contentsline {chapter}{Dedication}{x}
+\contentsline {chapter}{List of Tables}{vii}
+\contentsline {chapter}{List of Figures}{viii}
+\contentsline {chapter}{Acknowledgements}{x}
+\contentsline {chapter}{Dedication}{xi}
 \contentsline {chapter}{\numberline {1}Introduction}{5}
 \contentsline {section}{\numberline {1.1}Motivation}{5}
 \contentsline {section}{\numberline {1.2}Contributions}{6}
@@ -61,4 +61,6 @@
 \contentsline {section}{\numberline {A.2}\acrshort {FPGA} Trojan Detector}{55}
 \contentsline {subsection}{\numberline {A.2.1}\acrfull {UI}}{55}
 \contentsline {subsection}{\numberline {A.2.2}Operation}{57}
-\contentsline {subsection}{\numberline {A.2.3}The Web Environment}{58}
+\contentsline {subsection}{\numberline {A.2.3}Performance}{58}
+\contentsline {subsection}{\numberline {A.2.4}The Web Environment}{59}
+\contentsline {section}{\numberline {A.3}Future Work}{60}
