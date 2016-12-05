@@ -1,0 +1,74 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{green}                              % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Nicholas}{Houghton}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(250)~893~1988}                   % optional, remove / comment the line if not wanted
+\email{nhoughto@uvic.ca}                               % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}{}
+\date{\today}
+\opening{Dear Professor Narayanan,}
+\closing{Sincerely,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+My name is Nicholas Houghton, I have just completed my Masters of Applied Science at the University of Victoria in British Columbia Canada.
+I have focused my efforts on the discipline of hardware security and have been studying the vulnerabilities of modern Field Programmable Gate-Arrays.
+Please find attached our manuscript ``Automated Hardware Trojan Detection in FPGAs'' which we wish to submit for publication as an original research article in your journal \textit{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}.
+
+This work provides a new methodology for automatically detecting and describing hardware trojans.
+Several new techniques presented have allowed this effort to be the first to employ direct bitstream analysis.
+This success has allowed for the development of a powerful and reliable software application.
+Its efficacy is proven by test of a series of known trojan benchmarks.
+In our manuscript we describe how our application was able to successfully detect and describe all trojan benchmarks tested.
+
+We hope this submission will be a valuable contribution to the field of integrated circuit design.
+We wish to express our deepest gratitude for your consideration of this work.
+
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.

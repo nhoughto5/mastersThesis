@@ -22,7 +22,7 @@
       {{hash=WM}{%
          family={Wood},
          familyi={W\bibinitperiod},
-         given={Michael},
+         given={M.},
          giveni={M\bibinitperiod},
       }}%
     }
@@ -34,24 +34,23 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{edition}{1}
-    \field{isbn}{978-0-520-21599-3}
-    \field{title}{"In search of the Trojan war}
+    \field{title}{In search of the Trojan war}
     \field{year}{1998}
   \endentry
 
   \entry{stoppingHTsIEEESpectrum}{misc}{}
     \name{author}{2}{}{%
       {{hash=SMHSPW}{%
-         family={Subhasish\bibnamedelima Mitra},
+         family={S.\bibnamedelima Mitra},
          familyi={S\bibinitperiod\bibinitdelim M\bibinitperiod},
-         given={H.-S. Philip\bibnamedelima Wong},
-         giveni={H\bibinitperiod-S\bibinitperiod P\bibinitperiod\bibinitdelim
-  W\bibinitperiod},
+         given={H.\bibnamedelima S.\bibnamedelima P.\bibnamedelima Wong},
+         giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  P\bibinitperiod\bibinitdelim W\bibinitperiod},
       }}%
       {{hash=WS}{%
          family={Wong},
          familyi={W\bibinitperiod},
-         given={Simon},
+         given={S.},
          giveni={S\bibinitperiod},
       }}%
     }
@@ -73,7 +72,7 @@
       {{hash=GC}{%
          family={Gorman},
          familyi={G\bibinitperiod},
-         given={Celia},
+         given={C.},
          giveni={C\bibinitperiod},
       }}%
     }
@@ -117,26 +116,16 @@
          giveni={Y\bibinitperiod},
       }}%
     }
-    \keyw{invasive software;safety;HT attacks;HT defense;HT detection;IC design
-  cycle;IC market model;countermeasures;hardware Trojan detection;internal
-  sensitive data;potential HT threats;safety hazards;Foundries;Hardware;IP
-  networks;Integrated circuit modeling;Security;Trojan horses;Hardware Trojan
-  detection;IC market model;hardware Trojan diagnosis;hardware Trojan
-  prevention}
     \strng{namehash}{LH+1}
     \strng{fullhash}{LHLQZJLY1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{2015 14th International Conference on Computer-Aided
-  Design and Computer Graphics (CAD/Graphics)}
-    \verb{doi}
-    \verb 10.1109/CADGRAPHICS.2015.41
-    \endverb
+    \field{booktitle}{14th International Conference on Computer-Aided Design
+  and Computer Graphics (CAD/Graphics)}
     \field{pages}{173\bibrangedash 180}
     \field{title}{A Survey of Hardware Trojan Detection, Diagnosis and
   Prevention}
     \field{year}{2015}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{kSubset}{inproceedings}{}
@@ -153,34 +142,23 @@
          given={S.},
          giveni={S\bibinitperiod},
       }}%
-      {{hash=CKT}{%
+      {{hash=CK}{%
          family={Cheng},
          familyi={C\bibinitperiod},
-         given={Kwang-Ting},
-         giveni={K\bibinitperiod-T\bibinitperiod},
+         given={K.},
+         giveni={K\bibinitperiod},
       }}%
     }
-    \keyw{cryptography;integrated circuit design;security;AES
-  design;controllability metrics;cryptographic hardware;design
-  modifications;exhaustive testing;k-bit subspaces;malicious
-  circuitry;observability metrics;plaintext bits;post-silicon hardware trojan
-  detection;verification effort;Equations;Hardware;Logic
-  gates;Observability;Testing;Trojan horses;Vectors}
-    \strng{namehash}{LNKSCKT1}
-    \strng{fullhash}{LNKSCKT1}
+    \strng{namehash}{LNKSCK1}
+    \strng{fullhash}{LNKSCK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{booktitle}{The 20th Asia and South Pacific Design Automation
   Conference}
-    \verb{doi}
-    \verb 10.1109/ASPDAC.2015.7059101
-    \endverb
-    \field{issn}{2153-6961}
     \field{pages}{755\bibrangedash 760}
     \field{title}{Hardware Trojan detection using exhaustive testing of k-bit
   subspaces}
     \field{year}{2015}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{monteCarloTestPattern}{inproceedings}{}
@@ -210,26 +188,16 @@
          giveni={L\bibinitperiod},
       }}%
     }
-    \keyw{Monte Carlo methods;automatic test pattern generation;invasive
-  software;HT detection technique;Monte Carlo technique;hardware Trojan
-  detection;hardware security;information security;security threat;test pattern
-  generation;Accuracy;Hardware;Integrated circuit modeling;Monte Carlo
-  methods;Trojan horses;Vectors;Monte Carlo technique;hardware Trojan
-  detection;hardware security;information security;test pattern generation}
     \strng{namehash}{MX+1}
     \strng{fullhash}{MXAHYHGL1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Dependable, Autonomic and Secure Computing (DASC), 2013
-  IEEE 11th International Conference on}
-    \verb{doi}
-    \verb 10.1109/DASC.2013.50
-    \endverb
+    \field{booktitle}{IEEE International Conference on Dependable, Autonomic
+  and Secure Computing (DASC)}
     \field{pages}{131\bibrangedash 136}
     \field{title}{Monte Carlo Based Test Pattern Generation for Hardware Trojan
   Detection}
     \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{towardsDetectionMethodology}{inproceedings}{}
@@ -247,23 +215,15 @@
          giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
-    \keyw{Delays;Hardware;Integrated circuit modeling;Power demand;Trojan
-  horses;Vectors;detection techniques;integrated circuits;security hardware
-  Trojans horses;trusted hardware}
     \strng{namehash}{KPVAG1}
     \strng{fullhash}{KPVAG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{2014 3rd Mediterranean Conference on Embedded Computing
+    \field{booktitle}{3rd Mediterranean Conference on Embedded Computing
   (MECO)}
-    \verb{doi}
-    \verb 10.1109/MECO.2014.6862687
-    \endverb
-    \field{issn}{2377-5475}
     \field{pages}{18\bibrangedash 23}
     \field{title}{Towards a hardware Trojan detection methodology}
     \field{year}{2014}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{sideChannelObfuscation}{inproceedings}{}
@@ -287,27 +247,15 @@
          giveni={V\bibinitperiod},
       }}%
     }
-    \keyw{copy protection;cryptography;integrated circuit design;integrated
-  circuit reliability;integrated circuit testing;invasive software;IC
-  piracy;delay analysis;environment variation;hardware Trojan
-  detection;integrated circuit piracy;obfuscation methods;process
-  variation;side channel analysis;Delays;Foundries;Handheld
-  computers;Hardware;Integrated circuits;Logic gates;Trojan horses;Design
-  obfuscation;HT detection based on Path delay analysis;HT detection based on
-  power analysis;design for hardware trust;hardware security}
     \strng{namehash}{NAHDBV1}
     \strng{fullhash}{NAHDBV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{2015 10th International Design Test Symposium (IDT)}
-    \verb{doi}
-    \verb 10.1109/IDT.2015.7396749
-    \endverb
+    \field{booktitle}{10th International Design Test Symposium (IDT)}
     \field{pages}{129\bibrangedash 134}
     \field{title}{Facilitating side channel analysis by obfuscation for
   Hardware Trojan detection}
     \field{year}{2015}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{postLayout}{inproceedings}{}
@@ -343,32 +291,16 @@
          giveni={C\bibinitperiod},
       }}%
     }
-    \keyw{cryptography;estimation theory;integrated circuit layout;logic
-  testing;power consumption;power supply circuits;security;DES
-  cryptosystem;DPA;DfS;IC;SPICE simulation;anomaly
-  detection;cipher-text;design-for-security;differential power
-  analysis;encryption core;hardware trojan;integrated circuit;logic
-  operation;malicious hardware insertion;plaintext;post-layout estimation;power
-  consumption correlation;power supply measurement;power supply
-  tracing;practical attack;prefabrication power consumption
-  prediction;side-channel based attack;side-channel power supply signature
-  estimation;Correlation;Hardware;Integrated circuits;Power
-  supplies;SPICE;Security;Transient analysis;Hardware Security;Power Supply
-  analysis;Side-channel attacks;Trojan Detection}
     \strng{namehash}{RSK+1}
     \strng{fullhash}{RSKKDRRBNPC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Hardware Oriented Security and Trust (HOST), 2015 IEEE
-  International Symposium on}
-    \verb{doi}
-    \verb 10.1109/HST.2015.7140244
-    \endverb
+    \field{booktitle}{IEEE International Symposium on Hardware Oriented
+  Security and Trust (HOST)}
     \field{pages}{92\bibrangedash 95}
     \field{title}{Post-layout estimation of side-channel power supply
   signatures}
     \field{year}{2015}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{controllableSleepTransistors}{inproceedings}{}
@@ -386,27 +318,15 @@
          giveni={K\bibinitperiod},
       }}%
     }
-    \keyw{invasive software;HT detection methodology;IC;controllable sleep
-  transistors;detection sensitivity;dynamic power;fabrication process;financial
-  sectors;hardware Trojan detection;integrated circuits;military sectors;power
-  based control;semiconductor design;static power based side channel
-  analysis;Delays;Integrated circuit modeling;Logic gates;Sensitivity;Switching
-  circuits;Transistors;Trojan horses;Hardware Security;Hardware Trojan;Power
-  Gating;sleep transistors;static power}
     \strng{namehash}{GNBLK1}
     \strng{fullhash}{GNBLK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{booktitle}{SoutheastCon 2015}
-    \verb{doi}
-    \verb 10.1109/SECON.2015.7132948
-    \endverb
-    \field{issn}{1091-0050}
     \field{pages}{1\bibrangedash 6}
     \field{title}{Efficient static power based side channel analysis for
   Hardware Trojan detection using controllable sleep transistors}
     \field{year}{2015}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{pcaAlgorithm}{inproceedings}{}
@@ -442,29 +362,16 @@
          giveni={S\bibinitperiod},
       }}%
     }
-    \keyw{cryptography;field programmable gate arrays;invasive software;logic
-  design;principal component analysis;18-bit CORDIC IP core;LabVIEW
-  software;PCA algorithm;Trojan circuit;Xilinx FPGA;automatic test
-  platform;data processing algorithm;detection sensitivity;hardware Trojan
-  detection method;high precision oscilloscope;logic test;principal component
-  analysis approach;side-channel analysis;side-channel test;Data
-  processing;Field programmable gate arrays;Hardware;Logic testing;Principal
-  component analysis;Sensitivity;Trojan horses;Hardware Trojan;logic
-  test;principal component analysis;side-channel analysis}
     \strng{namehash}{HC+1}
     \strng{fullhash}{HCHBWLEYXS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Reliability, Maintainability and Safety (ICRMS), 2014
-  International Conference on}
-    \verb{doi}
-    \verb 10.1109/ICRMS.2014.7107362
-    \endverb
+    \field{booktitle}{International Conference on Reliability, Maintainability
+  and Safety (ICRMS)}
     \field{pages}{1043\bibrangedash 1046}
     \field{title}{A novel hardware Trojan detection method based on
   side-channel analysis and PCA algorithm}
     \field{year}{2014}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{trojanSurvey2014}{article}{}
@@ -494,18 +401,10 @@
          giveni={G\bibinitperiod},
       }}%
     }
-    \keyw{integrated circuits;invasive software;Hardware Trojans;IC development
-  chain;IP;Trojan detection techniques;Trojan insertion;cost
-  reduction;detection techniques;intellectual properties;manufacturers
-  outsource parts}
     \strng{namehash}{JN+1}
     \strng{fullhash}{JNMDHJSG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1049/iet-cdt.2014.0039
-    \endverb
-    \field{issn}{1751-8601}
     \field{number}{6}
     \field{pages}{264\bibrangedash 273}
     \field{title}{Hardware Trojans: current challenges and approaches}
@@ -541,25 +440,16 @@
          giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
     }
-    \keyw{integrated circuit manufacture;invasive software;semiconductor device
-  manufacture;chip manufacturing processes;detection scheme;microchips
-  security;problem analysis;trojan detection;Aerospace
-  electronics;Circuits;Communication industry;Costs;Hardware;Invasive
-  software;Manufacturing processes;Military communication;Outsourcing;Security}
     \strng{namehash}{WF+1}
     \strng{fullhash}{WFPCBSCRS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{2008 Design, Automation and Test in Europe}
-    \verb{doi}
-    \verb 10.1109/DATE.2008.4484928
-    \endverb
-    \field{issn}{1530-1591}
+    \field{booktitle}{In Proceedings Design, Automation and Test in Europe
+  Conference and Exhibition}
     \field{pages}{1362\bibrangedash 1365}
     \field{title}{Towards Trojan-Free Trusted ICs: Problem Analysis and
   Detection Scheme}
     \field{year}{2008}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{taxonomy2}{inproceedings}{}
@@ -589,27 +479,16 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{invasive software;power supply circuits;Trojan classification
-  taxonomy;chip design;detection resolution;hardware Trojans;power supply
-  signal calibration;power supply transient signals;process environment
-  variation;test environment variation;Calibration;Chip scale
-  packaging;Fabrication;Globalization;Hardware;Power supplies;Signal
-  analysis;Signal resolution;Taxonomy;Weapons}
     \strng{namehash}{RRM+1}
     \strng{fullhash}{RRMWXTMPJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{2008 IEEE/ACM International Conference on Computer-Aided
+    \field{booktitle}{In IEEE/ACM International Conference on Computer-Aided
   Design}
-    \verb{doi}
-    \verb 10.1109/ICCAD.2008.4681643
-    \endverb
-    \field{issn}{1092-3152}
     \field{pages}{632\bibrangedash 639}
     \field{title}{Power supply signal calibration techniques for improving
   detection resolution to hardware Trojans}
     \field{year}{2008}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{taxonomy3}{article}{}
@@ -639,17 +518,10 @@
          giveni={M\bibinitperiod},
       }}%
     }
-    \keyw{invasive software;critical systems;hardware Trojan
-  taxonomy;trustworthy hardware;Hardware;Security;Trojan horses;Design and
-  test;Hardware Trojans;Hardware security and trust;Security and privacy}
     \strng{namehash}{KR+1}
     \strng{fullhash}{KRRJRKTM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1109/MC.2010.299
-    \endverb
-    \field{issn}{0018-9162}
     \field{number}{10}
     \field{pages}{39\bibrangedash 46}
     \field{title}{Trustworthy Hardware: Identifying and Classifying Hardware
@@ -657,7 +529,6 @@
     \field{volume}{43}
     \field{journaltitle}{Computer}
     \field{year}{2010}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{taxonomy4}{inproceedings}{}
@@ -665,7 +536,7 @@
       {{hash=WX}{%
          family={Wang},
          familyi={W\bibinitperiod},
-         given={Xiaoxiao},
+         given={X.},
          giveni={X\bibinitperiod},
       }}%
       {{hash=TM}{%
@@ -681,40 +552,23 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{integrated circuit reliability;microprocessor chips;security of
-  data;IC fabrication;catastrophic failure;functional changes;hardware
-  Trojans;integrated circuits security;low-cost foundries;malicious
-  alterations;malicious inclusions detecting;secure
-  hardware;Cryptography;Degradation;Design
-  methodology;Fabrication;Foundries;Hardware;Information security;Safety;Signal
-  design;Taxonomy}
     \strng{namehash}{WXTMPJ1}
     \strng{fullhash}{WXTMPJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Hardware-Oriented Security and Trust, 2008. HOST 2008.
-  IEEE International Workshop on}
-    \verb{doi}
-    \verb 10.1109/HST.2008.4559039
-    \endverb
+    \field{booktitle}{IEEE International Workshop on Hardware-Oriented Security
+  and Trust (HOST)}
     \field{pages}{15\bibrangedash 19}
     \field{title}{Detecting malicious inclusions in secure hardware: Challenges
   and solutions}
     \field{year}{2008}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
-  \entry{samerAttribute}{inproceedings}{}
-    \name{author}{5}{}{%
+  \entry{samerAttribute}{article}{}
+    \name{author}{4}{}{%
       {{hash=MS}{%
          family={Moein},
          familyi={M\bibinitperiod},
-         given={S.},
-         giveni={S\bibinitperiod},
-      }}%
-      {{hash=KS}{%
-         family={Khan},
-         familyi={K\bibinitperiod},
          given={S.},
          giveni={S\bibinitperiod},
       }}%
@@ -730,31 +584,22 @@
          given={F.},
          giveni={F\bibinitperiod},
       }}%
-      {{hash=EKMW}{%
-         family={El-Kharashi},
-         familyi={E\bibinitperiod-K\bibinitperiod},
-         given={M.\bibnamedelima W.},
-         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      {{hash=AA}{%
+         family={Alkandari},
+         familyi={A\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
       }}%
     }
-    \keyw{integrated circuit manufacture;invasive software;attribute based
-  classification;chip production life-cycle;comprehensive attribute
-  taxonomy;hardware trojans;semiconductor chip;trojan
-  insertion;Fabrication;Hardware;Integrated
-  circuits;Production;Taxonomy;Testing;Trojan horses}
     \strng{namehash}{MS+1}
-    \strng{fullhash}{MSKSGTAGFEKMW1}
+    \strng{fullhash}{MSGTAGFAA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Computer Engineering Systems (ICCES), 2015 Tenth
-  International Conference on}
-    \verb{doi}
-    \verb 10.1109/ICCES.2015.7393074
-    \endverb
-    \field{pages}{351\bibrangedash 356}
-    \field{title}{An attribute based classification of hardware trojans}
-    \field{year}{2015}
-    \warn{\item Invalid format of field 'month'}
+    \field{pages}{2721\bibrangedash 2731}
+    \field{title}{A New Characterization of Hardware Trojans}
+    \field{volume}{4}
+    \field{journaltitle}{IEEE Access}
+    \field{year}{2016}
   \endentry
 
   \entry{samerDissertation}{thesis}{}
@@ -762,7 +607,7 @@
       {{hash=MS}{%
          family={Moein},
          familyi={M\bibinitperiod},
-         given={Samer},
+         given={S.},
          giveni={S\bibinitperiod},
       }}%
     }
@@ -771,14 +616,10 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{title}{Systematic Analysis and Methodologies for Hardware Security}
-    \list{location}{1}{%
-      {3800 Finnerty Rd, Victoria, BC, Canada V8P 5C2}%
-    }
     \list{institution}{1}{%
       {University of Victoria}%
     }
     \field{type}{phdthesis}
-    \field{month}{08}
     \field{year}{2015}
   \endentry
 
@@ -815,44 +656,26 @@
          giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
       }}%
     }
-    \keyw{integrated circuit manufacture;invasive software;hardware trojan
-  classification;hardware trojan detection technique;hardware trojan
-  identification;Delays;Hardware;Integrated circuits;Monitoring;Power
-  demand;Testing;Trojan horses}
     \strng{namehash}{MS+1}
     \strng{fullhash}{MSSJGTAGFEKMW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Computer Engineering Systems (ICCES), 2015 Tenth
-  International Conference on}
-    \verb{doi}
-    \verb 10.1109/ICCES.2015.7393075
-    \endverb
+    \field{booktitle}{Tenth International Conference on Computer Engineering
+  Systems (ICCES)}
     \field{pages}{357\bibrangedash 362}
     \field{title}{Classification of hardware trojan detection techniques}
     \field{year}{2015}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{method1}{inproceedings}{}
-    \name{author}{4}{}{%
-      {{hash=PM}{%
-         family={Potkonjak},
-         familyi={P\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=NA}{%
-         family={Nahapetian},
-         familyi={N\bibinitperiod},
-         given={A.},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=NM}{%
-         family={Nelson},
-         familyi={N\bibinitperiod},
-         given={M.},
-         giveni={M\bibinitperiod},
+    \name{author}{2}{}{%
+      {{hash=MPMNAN}{%
+         family={M.\bibnamedelima Potkonjak},
+         familyi={M\bibinitperiod\bibinitdelim P\bibinitperiod},
+         suffix={A.\bibnamedelima Nahapetian},
+         suffixi={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+         given={M.\bibnamedelima Nelson},
+         giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod},
       }}%
       {{hash=MT}{%
          family={Massey},
@@ -861,28 +684,16 @@
          giveni={T\bibinitperiod},
       }}%
     }
-    \keyw{integrated circuits;invasive software;linear programming;logic
-  gates;power aware computing;gate level characterization;hardware Trojan horse
-  detection;hardware specification;linear programming;nondestructive power
-  measurements;Application software;Data privacy;Data
-  security;Foundries;Hardware;Invasive software;Manufacturing;Research and
-  development;Software libraries;Testing;Hardware Trojan horses;gate-level
-  characterization;linear programming;manufacturing variability}
-    \strng{namehash}{PM+2}
-    \strng{fullhash}{PMNANMMT1}
+    \strng{namehash}{MPANMNMT1}
+    \strng{fullhash}{MPANMNMT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{booktitle}{Design Automation Conference, 2009. DAC '09. 46th
   ACM/IEEE}
-    \verb{doi}
-    \verb 10.1145/1629911.1630091
-    \endverb
-    \field{issn}{0738-100X}
     \field{pages}{688\bibrangedash 693}
     \field{title}{Hardware Trojan horse detection using gate-level
   characterization}
     \field{year}{2009}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{method2}{article}{}
@@ -936,21 +747,10 @@
          giveni={S\bibinitperiod},
       }}%
     }
-    \keyw{cryptography;logic testing;AES cipher;Trojan circuit;advanced
-  encryption standard;detection sensitivity;hardware Trojan detection;integer
-  execution unit;logic testing approach;multiple-parameter side-channel
-  analysis;nanometer technology;security threat;vector generation
-  approach;Hardware;Integrated circuits;Logic
-  testing;Noise;Payloads;Sensitivity;Trojan horses;Hardware security;hardware
-  Trojan attack;logic testing;side-channel analysis}
     \strng{namehash}{NS+1}
     \strng{fullhash}{NSDDCRSPSWFGPCARKBS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1109/TC.2012.200
-    \endverb
-    \field{issn}{0018-9340}
     \field{number}{11}
     \field{pages}{2183\bibrangedash 2195}
     \field{title}{Hardware Trojan Detection by Multiple-Parameter Side-Channel
@@ -958,7 +758,6 @@
     \field{volume}{62}
     \field{journaltitle}{IEEE Transactions on Computers}
     \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{crcDetection}{inproceedings}{}
@@ -988,25 +787,15 @@
          giveni={H\bibinitperiod},
       }}%
     }
-    \keyw{field programmable gate arrays;invasive software;CRC Trojan detection
-  schema;FPGA;golden chip;hardware Trojan detection methodology;horizontal
-  silicon industry business model;infected IP;multiplexing reconfigurable
-  IP;security properties;Delays;Detectors;Field programmable gate
-  arrays;Hardware;IP networks;Multiplexing;Trojan horses}
     \strng{namehash}{AAA+1}
     \strng{fullhash}{AAAAYEKMWBH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Communications, Computers and Signal Processing (PACRIM),
-  2013 IEEE Pacific Rim Conference on}
-    \verb{doi}
-    \verb 10.1109/PACRIM.2013.6625470
-    \endverb
-    \field{issn}{1555-5798}
+    \field{booktitle}{IEEE Pacific Rim Conference on Communications, Computers
+  and Signal Processing (PACRIM)}
     \field{pages}{177\bibrangedash 182}
     \field{title}{Hardware Trojan detection methodology for FPGA}
     \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{ringOscillatorMethod}{inproceedings}{}
@@ -1024,28 +813,15 @@
          giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod},
       }}%
     }
-    \keyw{application specific integrated circuits;circuit optimisation;field
-  programmable gate arrays;invasive software;logic design;oscillators;ASIC;FPGA
-  Trojan detection;FPGA systems;RO length;field programmable gate
-  arrays;hardware Trojan horses;length-optimized ring oscillators;malicious
-  hardware functionality;malicious logic;power
-  profile;Ciphers;Conferences;Field programmable gate arrays;Hardware;Ring
-  oscillators;Table lookup;Trojan horses;FPGA;Trojan detection;hardware Trojan
-  horse;ring oscillators;security}
     \strng{namehash}{KPVAG1}
     \strng{fullhash}{KPVAG1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Digital System Design (DSD), 2014 17th Euromicro
-  Conference on}
-    \verb{doi}
-    \verb 10.1109/DSD.2014.74
-    \endverb
+    \field{booktitle}{17th Euromicro Conference on Digital System Design (DSD)}
     \field{pages}{675\bibrangedash 678}
     \field{title}{FPGA Trojan Detection Using Length-Optimized Ring
   Oscillators}
     \field{year}{2014}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{multiFacetedApproach}{inproceedings}{}
@@ -1087,25 +863,15 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{embedded systems;field programmable gate arrays;integrated circuit
-  testing;invasive software;CSAW embedded systems challenge;FPGA-based trojan
-  circuit detection;bitfile direct analysis;functional testing;multifaceted
-  approach;power analysis;Combinational circuits;Correlation;Field programmable
-  gate arrays;Hardware;Reliability;Testing;Trojan horses}
     \strng{namehash}{PM+1}
     \strng{fullhash}{PMMASRTJDEZJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{VLSI Test Symposium (VTS), 2013 IEEE 31st}
-    \verb{doi}
-    \verb 10.1109/VTS.2013.6548925
-    \endverb
-    \field{issn}{1093-0167}
+    \field{booktitle}{IEEE 31st conference on VLSI Test Symposium (VTS)}
     \field{pages}{1\bibrangedash 4}
     \field{title}{A multi-faceted approach to FPGA-based Trojan circuit
   detection}
     \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{bitStreamToNetlist}{inproceedings}{}
@@ -1127,8 +893,8 @@
     \strng{fullhash}{NJRE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{the International Symposium on Field Programmable Gate
-  Arrays (FPGA)}
+    \field{booktitle}{International Symposium on Field Programmable Gate Arrays
+  (FPGA)}
     \field{title}{From the bitstream to the netlist}
     \field{year}{2008}
   \endentry
@@ -1164,27 +930,16 @@
          giveni={S\bibinitperiod},
       }}%
     }
-    \keyw{integrated circuit design;military equipment;Defense Advanced
-  Research Projects Agency;DoD;Pentagon R&D;defense contractor;electronic
-  circuits;integrated circuits program;microelectronics;military
-  equipment;Adders;Aerospace electronics;Circuits;Control
-  systems;Manufacturing;Microprocessors;Military equipment;Radar;Switches;US
-  Department of Defense}
     \strng{namehash}{AS1}
     \strng{fullhash}{AS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1109/MSPEC.2008.4505310
-    \endverb
-    \field{issn}{0018-9235}
     \field{number}{5}
     \field{pages}{34\bibrangedash 39}
     \field{title}{The Hunt For The Kill Switch}
     \field{volume}{45}
     \field{journaltitle}{IEEE Spectrum}
     \field{year}{2008}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{regionBasedApproach}{inproceedings}{}
@@ -1202,25 +957,16 @@
          giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
       }}%
     }
-    \keyw{invasive software;system-on-chip;SoC fabrication units;circuit
-  partition based approach;hardware Trojan identification;side-channel
-  analysis;Built-in self-test;Circuit
-  testing;Costs;Fabrication;Foundries;Hamming distance;Hardware;Manufacturing
-  processes;Monitoring;Viruses (medical)}
     \strng{namehash}{BMHMS1}
     \strng{fullhash}{BMHMS1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Hardware-Oriented Security and Trust, 2008. HOST 2008.
-  IEEE International Workshop on}
-    \verb{doi}
-    \verb 10.1109/HST.2008.4559047
-    \endverb
+    \field{booktitle}{IEEE International Workshop on Hardware-Oriented Security
+  and Trust (HOST)}
     \field{pages}{40\bibrangedash 47}
     \field{title}{A region based approach for the identification of hardware
   Trojans}
     \field{year}{2008}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{iscas85}{inproceedings}{}
@@ -1244,27 +990,14 @@
          giveni={K\bibinitperiod},
       }}%
     }
-    \keyw{flip-flops;logic testing;sequential circuits;D-type
-  flip-flops;asynchronous behavior;digital sequential circuits;full-scan-mode
-  configuration;gate level;interior faults;partial scan techniques;scan-based
-  test generation;sequential benchmark circuits;sequential test
-  generation;standard functional model;testability profile;Automatic test
-  pattern generation;Benchmark testing;Circuit faults;Circuit synthesis;Circuit
-  testing;Combinational circuits;Computational modeling;Flip-flops;Sequential
-  analysis;Test pattern generators}
     \strng{namehash}{BFBDKK1}
     \strng{fullhash}{BFBDKK1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Circuits and Systems, 1989., IEEE International Symposium
-  on}
-    \verb{doi}
-    \verb 10.1109/ISCAS.1989.100747
-    \endverb
-    \field{pages}{1929\bibrangedash 1934 vol.3}
+    \field{booktitle}{IEEE International Symposium on Circuits and Systems}
+    \field{pages}{1929\bibrangedash 1934}
     \field{title}{Combinational profiles of sequential benchmark circuits}
     \field{year}{1989}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{iscasBenchmarks}{misc}{}
@@ -1295,28 +1028,16 @@
          giveni={R\bibinitperiod},
       }}%
     }
-    \keyw{invasive software;trusted computing;Trojan activation
-  quantification;Trojan detectability metric;Trojan detection;Trojan effect
-  quantification;Trojan prevention;design vulnerability analysis;extensive
-  functional test analysis;hardware security;production test;strength
-  analysis;trust benchmark development;vulnerability analysis flow;weakness
-  analysis;Benchmark testing;Capacitance;Delays;Hardware;Logic gates;Trojan
-  horses}
     \strng{namehash}{SHTMKR1}
     \strng{fullhash}{SHTMKR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{2013 IEEE 31st International Conference on Computer
-  Design (ICCD)}
-    \verb{doi}
-    \verb 10.1109/ICCD.2013.6657085
-    \endverb
-    \field{issn}{1063-6404}
+    \field{booktitle}{IEEE 31st International Conference on Computer Design
+  (ICCD)}
     \field{pages}{471\bibrangedash 474}
     \field{title}{On design vulnerability analysis and trust benchmarks
   development}
     \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{trusthubWebsite}{misc}{}
@@ -1324,45 +1045,6 @@
     \field{howpublished}{http://trust-hub.org/}
     \field{note}{Accessed: 2016-10-24}
     \field{title}{Trust-Hub.org}
-  \endentry
-
-  \entry{thirdPartyLogistics}{inproceedings}{}
-    \name{author}{2}{}{%
-      {{hash=HBN}{%
-         family={Hwang},
-         familyi={H\bibinitperiod},
-         given={B.\bibnamedelima N.},
-         giveni={B\bibinitperiod\bibinitdelim N\bibinitperiod},
-      }}%
-      {{hash=CMH}{%
-         family={Chen},
-         familyi={C\bibinitperiod},
-         given={M.\bibnamedelima H.},
-         giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-    }
-    \keyw{cost reduction;logistics;outsourcing;problem solving;semiconductor
-  industry;supply chain management;IC industry disintegration;IC manufacturing
-  industry;TPL providers;Taiwan;continuous cost reduction;cost control;document
-  accuracy;globalization;key selection criteria;outsourcing;problem solving
-  capability;supply chain management;third party logistics;value-added services
-  provision;Companies;Integrated circuits;Manufacturing;Manufacturing
-  industries;Supply chains;IC Manufacturing Industry;Supply Chain
-  Management;Third Party Logistics (TPL)}
-    \strng{namehash}{HBNCMH1}
-    \strng{fullhash}{HBNCMH1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Service Operations and Logistics, and Informatics (SOLI),
-  2013 IEEE International Conference on}
-    \verb{doi}
-    \verb 10.1109/SOLI.2013.6611456
-    \endverb
-    \field{pages}{445\bibrangedash 449}
-    \field{title}{Key selection criteria for third party logistics in the IC
-  manufacturing industry}
-    \field{year}{2013}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{xdlTutorial}{inproceedings}{}
@@ -1386,21 +1068,15 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \keyw{field programmable gate arrays;hardware description languages;FPGA
-  primitives;XDL;Xilinx design language;routing fabric}
     \strng{namehash}{BCKDTJ1}
     \strng{fullhash}{BCKDTJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{Reconfigurable Communication-centric Systems-on-Chip
-  (ReCoSoC), 2011 6th International Workshop on}
-    \verb{doi}
-    \verb 10.1109/ReCoSoC.2011.5981545
-    \endverb
+    \field{booktitle}{6th International Workshop on Reconfigurable
+  Communication-centric Systems-on-Chip (ReCoSoC)}
     \field{pages}{1\bibrangedash 8}
     \field{title}{The Xilinx Design Language (XDL): Tutorial and use cases}
     \field{year}{2011}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{rapidSmith}{inproceedings}{}
@@ -1442,25 +1118,15 @@
          giveni={B\bibinitperiod},
       }}%
     }
-    \keyw{CAD;electronic engineering computing;field programmable gate
-  arrays;API;CAD Tools;XDL;Xilinx FPGA;Xilinx design language;commercial
-  architectures;hypothetical architectures;Data structures;Databases;Design
-  automation;Field programmable gate arrays;Routing;Tiles;Wires;CAD
-  Tools;FPGA;Open Source;Placer;Rapid Prototyping;RapidSmith;Router;XDL;Xilinx}
     \strng{namehash}{LC+1}
     \strng{fullhash}{LCPMLJLPNBHB1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{booktitle}{2011 21st International Conference on Field Programmable
-  Logic and Applications}
-    \verb{doi}
-    \verb 10.1109/FPL.2011.69
-    \endverb
-    \field{issn}{1946-147X}
+    \field{booktitle}{21st International Conference on Field Programmable Logic
+  and Applications}
     \field{pages}{349\bibrangedash 355}
     \field{title}{RapidSmith: Do-It-Yourself CAD Tools for Xilinx FPGAs}
     \field{year}{2011}
-    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{rapidSmithManual}{misc}{}
@@ -1506,12 +1172,11 @@
     \strng{fullhash}{LCPMLJLPNBBHMW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{howpublished}{NSF Center for High Performance Reconfigurable
-  Computing (CHREC) Department of Electrical and Computer Engineering Brigham
+    \field{howpublished}{NSF Centre for High Performance Reconfigurable
+  Computing (CHREC), Department of Electrical and Computer Engineering, Brigham
   Young University}
     \field{title}{RapidSmith: A Library for Low-level Manipulation of Partially
   Placed-and-Routed FPGA Designs}
-    \field{month}{01}
     \field{year}{2014}
   \endentry
 
@@ -1568,8 +1233,8 @@
       {{hash=BM}{%
          family={Bostock},
          familyi={B\bibinitperiod},
-         given={Mike},
-         giveni={M\bibinitperiod},
+         given={M},
+         giveni={M},
       }}%
     }
     \strng{namehash}{BM1}

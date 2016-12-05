@@ -10,6 +10,42 @@ A level-1 auxiliary file: chapters/appendix/chapter_app.aux
 Database file #1: mainthesisUVIC-blx.bib
 Database file #2: UvicThesis.bib
 Biblatex version: 3.3
-Too many commas in name 1 of "3800 Finnerty Rd, Victoria, BC, Canada V8P 5C2" for entry samerDissertation
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2630 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2630 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2630 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2630 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2634 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2640 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2644 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2644 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2648 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2654 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2658 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2658 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
 while executing---line 2746 of file biblatex.bst
-(There was 1 error message)
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2746 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2746 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2746 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2746 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2746 of file biblatex.bst
+Name 1 in "F.~Brglez, and D.~Bryan and K.~Kozminski" has a comma at the end for entry iscas85
+while executing---line 2746 of file biblatex.bst
+(There were 19 error messages)
