@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  5 DEC 2016 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.27)  14 DEC 2016 18:39
 entering extended mode
 **mainthesisUVIC.tex
 (mainthesisUVIC.tex
@@ -1334,8 +1334,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [8])
 \tf@lof=\write11
- (frontmatter/ack.tex [9]) (frontmatter/ded.tex [10]) [11])
-(mainthesisUVIC.gls
+ (frontmatter/ack.tex [9]) (frontmatter/ded.tex [10]) (mainthesisUVIC.gls
+[11]
 Overfull \hbox (2.62874pt too wide) in paragraph at lines 49--49
 []\OT1/cmr/m/n/12 used to con-vert schematic de-signs to []Hard-ware De-scrip-t
 ion Lan-guage (HDL).
@@ -1347,20 +1347,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[1
+[12
 
 
-]) (mainthesisUVIC.acr [2]
+]) (mainthesisUVIC.acr [13]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3
+[14
 
 
-]) (mainthesisUVIC.nls) [4] (chapters/1/chapter_intro.tex
+]) (mainthesisUVIC.nls) [15]) (chapters/1/chapter_intro.tex
 Chapter 1.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1368,10 +1368,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5
+[1
 
 
-] [6]) [7] (chapters/2/chapter_HardwareTrojans.tex
+] [2]) [3] (chapters/2/chapter_HardwareTrojans.tex
 Chapter 2.
 \savedunitlength=\skip139
 <figures/HW_trojan.png, id=62, 561.5379pt x 347.6187pt>
@@ -1380,24 +1380,24 @@ File: figures/HW_trojan.png Graphic file (type png)
 <use figures/HW_trojan.png>
 Package pdftex.def Info: figures/HW_trojan.png used on input line 30.
 (pdftex.def)             Requested size: 433.62001pt x 268.43103pt.
- [8
+ [4
 
 
 
-] [9 <./figures/HW_trojan.png>]
+] [5 <./figures/HW_trojan.png>]
 <figures/trojan_life_cycle.png, id=72, 364.9635pt x 164.0529pt>
 File: figures/trojan_life_cycle.png Graphic file (type png)
 
 <use figures/trojan_life_cycle.png>
 Package pdftex.def Info: figures/trojan_life_cycle.png used on input line 52.
 (pdftex.def)             Requested size: 346.89732pt x 155.94197pt.
- [10 <./figures/trojan_life_cycle.png>]
-[11]
+ [6 <./figures/trojan_life_cycle.png>]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 170--180
 
  []
 
-[12]
+[8]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 191.
@@ -1408,7 +1408,7 @@ File: figures/full2.png Graphic file (type png)
 Package pdftex.def Info: figures/full2.png used on input line 193.
 (pdftex.def)             Requested size: 260.17465pt x 165.93561pt.
 
-[13 <./figures/full2.png>]
+[9 <./figures/full2.png>]
 Overfull \hbox (3.5979pt too wide) in paragraph at lines 246--246
 []|$\OML/cmm/m/it/12 I[]$| 
  []
@@ -1571,14 +1571,14 @@ Overfull \hbox (5.63364pt too wide) in paragraph at lines 259--259
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14] [15]
+[10] [11]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [16]) [17] (chapters/3/chapter_AutomatedDetection.tex
+ [12]) [13] (chapters/3/chapter_AutomatedDetection.tex
 Chapter 3.
 <figures/Concept.png, id=104, 560.0925pt x 252.945pt>
 File: figures/Concept.png Graphic file (type png)
@@ -1586,7 +1586,7 @@ File: figures/Concept.png Graphic file (type png)
 <use figures/Concept.png>
 Package pdftex.def Info: figures/Concept.png used on input line 27.
 (pdftex.def)             Requested size: 433.62001pt x 195.83736pt.
- [18
+ [14
 
 
 
@@ -1598,14 +1598,14 @@ File: Figures/methodologyOverview.png Graphic file (type png)
 Package pdftex.def Info: Figures/methodologyOverview.png used on input line 47.
 
 (pdftex.def)             Requested size: 433.62001pt x 304.20518pt.
- [19 <./figures/Concept.png>] [20 <./Figures/methodologyOverview.png>]
+ [15 <./figures/Concept.png>] [16 <./Figures/methodologyOverview.png>]
 <figures/FPGA.png, id=117, 1957.3125pt x 978.65625pt>
 File: figures/FPGA.png Graphic file (type png)
  <use figures/FPGA.png>
 Package pdftex.def Info: figures/FPGA.png used on input line 69.
 (pdftex.def)             Requested size: 433.62001pt x 216.79834pt.
 
-[21 <./figures/FPGA.png>]
+[17 <./figures/FPGA.png>]
 <Figures/column.png, id=122, 1071.00125pt x 1204.5pt>
 File: Figures/column.png Graphic file (type png)
  <use Figures/column.png>
@@ -1618,7 +1618,7 @@ File: Figures/architecture.png Graphic file (type png)
 <use Figures/architecture.png>
 Package pdftex.def Info: Figures/architecture.png used on input line 100.
 (pdftex.def)             Requested size: 390.25536pt x 208.81535pt.
- [22 <./Figures/column.png>] [23 <./Figures/architecture.png>] <Figures/RowOrde
+ [18 <./Figures/column.png>] [19 <./Figures/architecture.png>] <Figures/RowOrde
 r.png, id=132, 1167.36125pt x 1129.21875pt>
 File: Figures/RowOrder.png Graphic file (type png)
 
@@ -1629,7 +1629,7 @@ Package pdftex.def Info: Figures/RowOrder.png used on input line 161.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24] [25 <./Figures/RowOrder.png>]
+[20] [21 <./Figures/RowOrder.png>]
 <Figures/frameTileMap.png, id=140, 536.0025pt x 492.33937pt>
 File: Figures/frameTileMap.png Graphic file (type png)
 
@@ -1640,10 +1640,10 @@ Package pdftex.def Info: Figures/frameTileMap.png used on input line 217.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] [27 <./Figures/frameTileMap.png>] [28] [29] [30] [31]) [32]
+[22] [23 <./Figures/frameTileMap.png>] [24] [25] [26] [27]) [28]
 (chapters/web/chapter_Web.tex
 Chapter 4.
-[33
+[29
 
 
 
@@ -1666,7 +1666,7 @@ Package pdftex.def Info: figures/visualRepresentaion2.png used on input line 37
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34 <./figures/visualRepresentaion.png>]
+[30 <./figures/visualRepresentaion.png>]
 <figures/classificationSeverity.png, id=177, 885.3075pt x 115.93312pt>
 File: figures/classificationSeverity.png Graphic file (type png)
 
@@ -1674,7 +1674,7 @@ File: figures/classificationSeverity.png Graphic file (type png)
 Package pdftex.def Info: figures/classificationSeverity.png used on input line 
 59.
 (pdftex.def)             Requested size: 433.62886pt x 85.35928pt.
- [35 <./figures/visualRepresentaion2.png> <./figures/classificationSeverity.png
+ [31 <./figures/visualRepresentaion2.png> <./figures/classificationSeverity.png
 >]
 
 LaTeX Warning: No positions in optional float specifier.
@@ -1686,7 +1686,7 @@ File: figures/comparison.png Graphic file (type png)
 <use figures/comparison.png>
 Package pdftex.def Info: figures/comparison.png used on input line 82.
 (pdftex.def)             Requested size: 433.62001pt x 192.71953pt.
-) [36 <./figures/comparison.png>]
+) [32 <./figures/comparison.png>]
 (chapters/5/chapter_Results.tex
 Chapter 5.
 <Figures/priorityDecoder.png, id=185, 609.77812pt x 417.81094pt>
@@ -1695,7 +1695,7 @@ File: Figures/priorityDecoder.png Graphic file (type png)
 <use Figures/priorityDecoder.png>
 Package pdftex.def Info: Figures/priorityDecoder.png used on input line 20.
 (pdftex.def)             Requested size: 433.62001pt x 297.11961pt.
- [37
+ [33
 
 
 
@@ -1730,7 +1730,7 @@ Overfull \hbox (42.45316pt too wide) in paragraph at lines 54--75
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[38 <./Figures/priorityDecoder.png>] [39] [40 <./Figures/circuit1.png> <./Figur
+[34 <./Figures/priorityDecoder.png>] [35] [36 <./Figures/circuit1.png> <./Figur
 es/circuit2.jpg>]
 <Figures/backDoorResult.png, id=201, 610.53094pt x 417.81094pt>
 File: Figures/backDoorResult.png Graphic file (type png)
@@ -1738,7 +1738,7 @@ File: Figures/backDoorResult.png Graphic file (type png)
 <use Figures/backDoorResult.png>
 Package pdftex.def Info: Figures/backDoorResult.png used on input line 115.
 (pdftex.def)             Requested size: 433.62001pt x 296.75623pt.
- [41 <./Figures/backDoorResult.png>]
+ [37 <./Figures/backDoorResult.png>]
 <Figures/backDoorVisual.png, id=205, 348.55219pt x 234.1247pt>
 File: Figures/backDoorVisual.png Graphic file (type png)
 
@@ -1770,15 +1770,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[42] [43 <./Figures/backDoorVisual.png> <./Figures/backDoorSeverity.png>]
-[44 <./Figures/backdoorComparison.png>]
+[38] [39 <./Figures/backDoorVisual.png> <./Figures/backDoorSeverity.png>]
+[40 <./Figures/backdoorComparison.png>]
 <Figures/aesResult.png, id=218, 609.02531pt x 416.30531pt>
 File: Figures/aesResult.png Graphic file (type png)
 
 <use Figures/aesResult.png>
 Package pdftex.def Info: Figures/aesResult.png used on input line 198.
 (pdftex.def)             Requested size: 433.62001pt x 296.41098pt.
- [45 <./Figures/aesResult.png>]
+ [41 <./Figures/aesResult.png>]
 <Figures/aesVisual.png, id=222, 373.395pt x 219.82124pt>
 File: Figures/aesVisual.png Graphic file (type png)
 
@@ -1809,23 +1809,23 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[46] [47 <./Figures/aesVisual.png> <./Figures/aesSeverity.png> <./Figures/aesCo
+[42] [43 <./Figures/aesVisual.png> <./Figures/aesSeverity.png> <./Figures/aesCo
 mparison.png>] (chapters/6/chapter_conclusion.tex
 Chapter 6.
-[48
+[44
 
 
 
-]) [49] (chapters/appendix/chapter_app.tex
+]) [45] (chapters/appendix/chapter_app.tex
 Appendix A.
-[50
+[46
 
 
 
-] [51] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+] [47] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-[52] [53] <Figures/rapidSmithDevice.png, id=252, 231.11343pt x 216.81pt>
+[48] [49] <Figures/rapidSmithDevice.png, id=252, 231.11343pt x 216.81pt>
 File: Figures/rapidSmithDevice.png Graphic file (type png)
 
 <use Figures/rapidSmithDevice.png>
@@ -1857,15 +1857,15 @@ File: Figures/UI.png Graphic file (type png)
 Package pdftex.def Info: Figures/UI.png used on input line 159.
 (pdftex.def)             Requested size: 416.2781pt x 285.19547pt.
 
-[54] [55 <./Figures/rapidSmithDevice.png> <./Figures/rapidSmithDesign.png>]
-[56 <./Figures/UI.png>]
+[50] [51 <./Figures/rapidSmithDevice.png> <./Figures/rapidSmithDesign.png>]
+[52 <./Figures/UI.png>]
 <Figures/Operation.png, id=265, 2493.315pt x 1619.04875pt>
 File: Figures/Operation.png Graphic file (type png)
 
 <use Figures/Operation.png>
 Package pdftex.def Info: Figures/Operation.png used on input line 186.
 (pdftex.def)             Requested size: 433.62001pt x 281.55904pt.
- [57 <./Figures/Operation.png>] [58]
+ [53 <./Figures/Operation.png>] [54]
 <figures/Distribution.png, id=273, 468.7914pt x 303.534pt>
 File: figures/Distribution.png Graphic file (type png)
 
@@ -1876,7 +1876,7 @@ Package pdftex.def Info: figures/Distribution.png used on input line 244.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[59] <figures/WebsiteArchitecture.png, id=277, 2183.15625pt x 1298.8525pt>
+[55] <figures/WebsiteArchitecture.png, id=277, 2183.15625pt x 1298.8525pt>
 File: figures/WebsiteArchitecture.png Graphic file (type png)
 
 <use figures/WebsiteArchitecture.png>
@@ -1887,15 +1887,15 @@ Package pdftex.def Info: figures/WebsiteArchitecture.png used on input line 265
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[60 <./figures/Distribution.png>]) [61 <./figures/WebsiteArchitecture.png>]
-Overfull \hbox (267.70012pt too wide) in paragraph at lines 212--212
+[56 <./figures/Distribution.png>]) [57 <./figures/WebsiteArchitecture.png>]
+Overfull \hbox (267.70012pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/it/12 Tracks\OT1/cmr/m/n/12 . IEEE Spec-trum: Tech-nol-ogy, En-gi-ne
 er-ing, and Sci-ence News. url: http://spectrum.ieee.org/semiconductors/design/
 stopping-
  []
 
 
-Overfull \hbox (58.06114pt too wide) in paragraph at lines 212--212
+Overfull \hbox (58.06114pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 neer-ing, and Sci-ence News. url: http://spectrum.ieee.org/comp
 uting/hardware/counterfeit-
  []
@@ -1906,40 +1906,40 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[62
+[58
 
 
 ]
-Overfull \hbox (0.66331pt too wide) in paragraph at lines 212--212
+Overfull \hbox (0.66331pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 anal-y-sis and PCA al-go-rithm". In: \OT1/cmr/m/it/12 In-ter-na
 -tional Con-fer-ence on Re-li-a-bil-ity, Main-
  []
 
 
-Overfull \hbox (3.77332pt too wide) in paragraph at lines 212--212
+Overfull \hbox (3.77332pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 Channel Anal-y-sis". In: \OT1/cmr/m/it/12 IEEE Trans-ac-tions o
 n Com-put-ers \OT1/cmr/m/n/12 62.11 (2013), pp. 2183{
  []
 
-[63]
-Overfull \hbox (4.3116pt too wide) in paragraph at lines 212--212
+[59]
+Overfull \hbox (4.3116pt too wide) in paragraph at lines 211--211
 []\OT1/cmr/m/n/12 P. Kit-sos and A. G. Voyi-atzis. \  FPGA Tro-jan De-tec-tion 
 Us-ing Length-Optimized
  []
 
 
-Overfull \hbox (15.08582pt too wide) in paragraph at lines 212--212
+Overfull \hbox (15.08582pt too wide) in paragraph at lines 211--211
 []\OT1/cmr/m/it/12 Collection of Dig-i-tal De-sign Bench-marks\OT1/cmr/m/n/12 .
  http://ddd.fit.cvut.cz/prj/Benchmarks/.
  []
 
 
-Overfull \hbox (54.25938pt too wide) in paragraph at lines 212--212
+Overfull \hbox (54.25938pt too wide) in paragraph at lines 211--211
 \OT1/cmr/m/n/12 Tu-to-rial and use cases". In: \OT1/cmr/m/it/12 6th In-ter-na-t
 ional Work-shop on Re-con-fig-urable Communication-
  []
 
-[64] [65] (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
+[60] [61] (mainthesisUVIC.aux (chapters/1/chapter_intro.aux)
 (chapters/2/chapter_HardwareTrojans.aux)
 (chapters/3/chapter_AutomatedDetection.aux) (chapters/web/chapter_Web.aux)
 (chapters/5/chapter_Results.aux) (chapters/6/chapter_conclusion.aux)
@@ -1973,7 +1973,7 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9
 ype1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
 lic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmtt12.pfb>
-Output written on mainthesisUVIC.pdf (76 pages, 1376547 bytes).
+Output written on mainthesisUVIC.pdf (76 pages, 1376455 bytes).
 PDF statistics:
  356 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
